@@ -1,0 +1,4 @@
+.preview/
+artifacts/
+node_modules/
+*.log
