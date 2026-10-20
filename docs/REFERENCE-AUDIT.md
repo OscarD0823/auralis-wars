@@ -23,3 +23,9 @@ La versión conserva las 18 funciones de edificio, las 24 unidades jugables, las
 El archivo de preservación y el sitio en funcionamiento corresponden a revisiones diferentes: por ejemplo, el catálogo público puede mostrar otra cantidad de producción o desbloqueo. No se mezclaron esos valores sin comprobar unidades y tiempos. Aún quedan por trasladar y validar la economía original, los desbloqueos por experiencia, la asignación original de trabajadores, el tutorial, los capítulos y el catálogo completo. Tampoco hay multijugador real.
 
 Los ficheros de source-data/ y dist/classic/atlas.json permiten identificar qué recurso del archivo se muestra en cada función de Auralis. Se conserva el aviso de derechos de los titulares y la licencia del proyecto de preservación.
+
+## Avance 0.3.0
+
+Se sustituyeron los trabajadores decorativos por civiles controlables con rutas sobre la cuadrícula, extracción finita y transporte de cargas. Se añadieron las secuencias PICAR del archivo y BARRIL para el transporte en Wars. Los costes y ritmos siguen adaptados: esta implementación no se anuncia como el sistema original completo de aldeanos.
+
+La progresión utiliza los 100 umbrales de experiencia de la configuración de cada archivo. Los desbloqueos se limitan también por el nivel de mando de Auralis; el mínimo de experiencia de cada elemento se adapta a esa campaña. Los niveles y materiales de los guardados existentes se conservan.

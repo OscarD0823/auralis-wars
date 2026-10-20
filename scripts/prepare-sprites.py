@@ -37,10 +37,10 @@ def extract(game, item):
   depth={}; state='idle'
   for tag in sprite.find('subTags'):
    typ=tag.get('type')
-   if typ=='FrameLabelTag': state={'QUIETO':'idle','ANDAR':'walk','ATAQUE':'attack','MUERTE':'death','PICAR':'gather'}.get(tag.get('name'),tag.get('name','').lower())
+   if typ=='FrameLabelTag': state={'QUIETO':'idle','ANDAR':'walk','ATAQUE':'attack','MUERTE':'death','PICAR':'gather','BARRIL':'carry'}.get(tag.get('name'),tag.get('name','').lower())
    if typ in ('PlaceObject2Tag','PlaceObject3Tag') and tag.get('placeFlagHasCharacter')=='true': depth[tag.get('depth')]=int(tag.get('characterId'))
    if typ=='RemoveObject2Tag': depth.pop(tag.get('depth'),None)
-   if typ=='ShowFrameTag' and state in ('walk','attack'):
+   if typ=='ShowFrameTag' and (state in ('walk','attack') or (int(item['id']) in (500,1001) and state in ('gather','carry'))):
     states.setdefault(state,[]).append(depth[min(depth,key=int)] if depth else character)
   selected=set(sum(states.values(),[]))
   selected={i for i in selected if any(t.get('spriteId')==str(i) for t in tags)}
@@ -103,7 +103,7 @@ def extract(game, item):
  except urllib.error.HTTPError as e:
   if e.code!=404: raise
  thumbnail.save(target/f'{item["id"]}-thumb.webp','WEBP',quality=92,method=4)
- return str(item['id']),{'file':f'./classic/{item["id"]}.webp','thumb':f'./classic/{item["id"]}-thumb.webp','width':width,'height':height,'frames':rects,'states':sequences,'source':f"{base}/assets/{spec['folder']}/{name}.swf",'sourceName':name,'name':item['name'],'sourceId':int(item['id'])}
+ return str(item['id']),{'file':f'./classic/{item["id"]}.webp','thumb':f'./classic/{item["id"]}-thumb.webp','width':width,'height':height,'displayWidth':max(1,round(images[0].width*scale)),'frames':rects,'states':sequences,'source':f"{base}/assets/{spec['folder']}/{name}.swf",'sourceName':name,'name':item['name'],'sourceId':int(item['id'])}
 
 def main():
  for game,spec in SPECS.items():
