@@ -1,0 +1,135 @@
+{
+  "wars": {
+    "repo": "socialwarriors",
+    "config": "wars-config.json",
+    "folder": "sprites",
+    "buildings": {
+      "hq": [
+        26,
+        58,
+        59,
+        60
+      ],
+      "house": [
+        1,
+        47,
+        48
+      ],
+      "goldmine": [
+        5,
+        9,
+        13,
+        17
+      ],
+      "lumber": [
+        2,
+        6,
+        10,
+        14
+      ],
+      "supply": [
+        3,
+        7,
+        11,
+        15
+      ],
+      "metal": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "storage": [
+        932,
+        941,
+        942
+      ],
+      "infantry": [
+        30,
+        41,
+        42,
+        143
+      ],
+      "range": [
+        31,
+        43,
+        44,
+        141
+      ],
+      "vehicle": [
+        40,
+        64,
+        65
+      ],
+      "air": [
+        37,
+        76,
+        77
+      ],
+      "research": [
+        125
+      ],
+      "tower": [
+        22,
+        57,
+        49,
+        39,
+        88
+      ],
+      "cannon": [
+        45
+      ],
+      "wall": [
+        23,
+        24,
+        25,
+        78,
+        79
+      ],
+      "hospital": [
+        28
+      ],
+      "embassy": [
+        61
+      ],
+      "builders": [
+        38,
+        62,
+        63
+      ]
+    },
+    "units": {
+      "settler": 1001,
+      "rifle": 1007,
+      "assault": 1020,
+      "grenadier": 1045,
+      "engineer": 1051,
+      "commando": 1052,
+      "exosoldier": 1180,
+      "scout": 1005,
+      "sniper": 1021,
+      "medic": 1050,
+      "rocket": 1008,
+      "jeep": 1014,
+      "rocketjeep": 1044,
+      "tank": 1016,
+      "artillery": 1003,
+      "siegetank": 1037,
+      "missile": 1091,
+      "titan": 1153,
+      "helicopter": 1027,
+      "drone": 1128,
+      "gunship": 1029,
+      "bomber": 1015,
+      "interceptor": 1048,
+      "orbital": 1163,
+      "captain": 1017
+    },
+    "nature": {
+      "tree": 905,
+      "rock": 914
+    },
+    "commit": "c3fceeb1f8e93734a293b9bc25ae6025656f6822",
+    "configSource": "config/main.json"
+  }
+}

@@ -1,16 +1,13 @@
-# Recursos 3D y licencias
+# Referencias y procedencia gráfica
 
-La geometría procedural de edificios, vehículos y personajes deriva de Auralis Frontier (OscarD0823, MIT), con adaptaciones para esta campaña. No se incluyen gráficos, logotipos, clientes o sonidos de Clash of Clans, Social Wars o Social Empires. Las miniaturas se renderizan a partir de los mismos modelos del juego.
+Social Wars: https://github.com/AcidCaos/socialwarriors/tree/c3fceeb1f8e93734a293b9bc25ae6025656f6822
 
-Esta versión incorpora una selección de recursos de **Quaternius**, publicados bajo **CC0 1.0** para uso personal, educativo y comercial:
+Se extrajeron 84 recursos y 1840 fotogramas de sus archivos SWF con JPEXS FFDec 26.4.0. Los atlas WebP mantienen transparencia y secuencias de marcha/ataque por dirección. No contienen un fondo rectangular añadido. `dist/classic/atlas.json` identifica URL, nombre, ID, fotogramas y familia de cada recurso.
 
-- [Modular Character Outfits – Fantasy](https://quaternius.com/packs/modularcharacteroutfitsfantasy.html), edición Standard 2.1: campesino masculino y guardabosques masculino/femenino.
-- [Universal Base Characters](https://quaternius.com/packs/universalbasecharacters.html), edición Standard: cabezas obtenidas de las bases y peinados compatibles.
-- [Universal Animation Library](https://quaternius.com/packs/universalanimationlibrary.html) y [Universal Animation Library 2](https://quaternius.com/packs/universalanimationlibrary2.html), ediciones Standard: reposo, marcha, carga, trabajo y combate.
-- [Medieval Village MegaKit](https://quaternius.com/packs/medievalvillagemegakit.html), edición Standard: texturas de piedra, madera, revoco y teja.
+El código del proyecto de preservación está publicado bajo GPL-3.0. Se conserva su licencia en LICENSE. El arte de Social Wars pertenece a Social Point y a sus titulares originales; la licencia del código no se presenta como una cesión de las marcas o del arte comercial. Esta adaptación no está afiliada al juego original. El aviso MIT del código previo de Auralis se conserva en LICENSE-AURALIS-MIT.
 
-Licencia: [Creative Commons CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). Los archivos de las ediciones Standard se obtuvieron desde los enlaces públicos del autor en itch.io; no se utilizan modelos de las ediciones de pago.
+La versión web usa un motor Canvas propio; no distribuye ni requiere un reproductor Flash. La economía, las 12 bases de IA, las alianzas y la progresión de 10 niveles son la adaptación Auralis. No es una reproducción completa de la lógica, el multijugador, el catálogo o los eventos del cliente original.
 
-Adaptaciones de Auralis: selección de modelos; reducción de texturas a un máximo de 1024 píxeles; deduplicación por contenido; separación de las cabezas en pose de enlace; combinación de piezas compatibles conservando el esqueleto; accesorios y equipos propios; selección de diez animaciones y redondeo numérico de sus muestras a cinco decimales; adaptación a escala, iluminación, controles y tareas del juego. Las bases de Quaternius no son recreaciones exactas de los personajes de las láminas de Auralis.
+## Reconstrucción
 
-Three.js y sus cargadores/utilidades se distribuyen bajo MIT; se conserva `dist/assets/vendor/THREE-LICENSE.txt`. Los cargadores usan la misma versión de Three.js del proyecto, con rutas de importación locales para funcionar sin conexión.
+Python 3 con Pillow, Java 17+ y [JPEXS FFDec](https://github.com/jindrapetrik/jpexs-decompiler/releases/tag/version26.4.0). Define `FFDEC_JAR` con la ruta a ffdec.jar; opcionalmente `JAVA` con el ejecutable. Ejecuta `python scripts/prepare-sprites.py` y `node scripts/package.mjs`. Las fuentes se descargan de la revisión fija de arriba, se guardan en .reference-cache y no se ejecuta su ActionScript. Los IDs y parámetros seleccionados están en source-data/.
