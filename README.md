@@ -1,6 +1,6 @@
 # Auralis Wars
 
-Versión 0.7.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.7.1: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
 El catálogo incorpora 411 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 28 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
 
@@ -75,3 +75,13 @@ Construye rutas marítimas o aéreas desde terminales operativas, despacha carga
 - [Reglas, alcance y límites de esta entrega](docs/EXPEDITIONS.md).
 - [Análisis de la conversación aportada](docs/SOCIAL-ONLINE-REVIEW.md).
 - `scripts/qa-expeditions.mjs`: exploración, guarnición, suministros, móvil, guardado y modo sin conexión.
+
+## Corrección del archipiélago en 0.7.1
+
+Se corrigen las franjas de agua que la migración del mapa antiguo de 32 × 32 insertaba dentro de la isla. El terreno dibujado y las rutas usan la misma costa; se conservan el inventario, edificios, tropas y recursos de las partidas anteriores.
+
+La base incorpora la estación espacial, el astillero civil y el puerto avanzado neutrales, junto a los 51 objetos del primer capítulo del archipiélago: nueve enemigos y 42 estructuras o elementos. **Territorio → Localizar enemigos y preparar el rescate** permite encontrar y combatir las patrullas sobre el mapa de casa. Sus daños persisten, las bajas propias son permanentes y el premio es único. Estas instalaciones neutrales se pueden inspeccionar; no se añaden como fábricas propias.
+
+- [Fuentes, reglas y límites de la comparación](docs/HOME-MAP.md).
+- `tests/homeland.test.mjs`: costa, compatibilidad, presencia y huellas de objetos, combate, retirada y validación.
+- `scripts/qa-home-map.mjs`: píxeles del terreno, selección de patrullas, reanudación, móvil y caché sin conexión.

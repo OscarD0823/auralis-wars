@@ -120,3 +120,7 @@ La carga sigue siendo bajo demanda: no se descargan todas las unidades para abri
 ## Cambios aplicados en 0.7.0
 
 Se añade una ruta de expansión individual sin cambiar las matrices de los capítulos originales: seis biomas procedurales, rivales de defensa 1–10, desembarco terrestre/naval, niebla, estaciones visuales y hasta tres colonias propias. Los puestos tienen mejoras, guarniciones con población y bajas reales, producción, transporte marítimo/aéreo, ataques de IA y reconquista. Se conserva el guardado previo y se añade recuperación local. El multijugador y las funciones sociales quedan pausados por petición del usuario. [Reglas y límites](EXPEDITIONS.md).
+
+## Corrección del archipiélago en 0.7.1
+
+La migración deja de superponer el mar del antiguo campo de 32 × 32 sobre tierra de `MAP_PLAYER_1`. Se restauran los tres hitos neutrales de casa y los 51 objetos de `Chapter01Key`: nueve enemigos y 42 estructuras o elementos, incluidas tres defensas armadas. El motor respeta huellas rectangulares y permite combatir ese primer sector sobre el mismo mapa, con bajas y daños persistentes y recompensa única. Se verificó contra las fuentes fijadas; no se pudo acceder al progreso actualizado de la cuenta del sitio de referencia. [Datos, alcance y comprobaciones](HOME-MAP.md).
