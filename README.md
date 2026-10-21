@@ -1,6 +1,6 @@
 # Auralis Wars
 
-Versión 0.7.1: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.8.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
 El catálogo incorpora 411 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 28 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
 
@@ -85,3 +85,15 @@ La base incorpora la estación espacial, el astillero civil y el puerto avanzado
 - [Fuentes, reglas y límites de la comparación](docs/HOME-MAP.md).
 - `tests/homeland.test.mjs`: costa, compatibilidad, presencia y huellas de objetos, combate, retirada y validación.
 - `scripts/qa-home-map.mjs`: píxeles del terreno, selección de patrullas, reanudación, móvil y caché sin conexión.
+
+## Rescate, patrullas y bases en 0.8
+
+La llave y la prisión ya tienen interacciones por proximidad. Liberar a cuatro soldados inicia un contador real de tres horas, que continúa al cerrar el juego. Después aparece un asentamiento sobre otro plano original, con un mando que destruir u ocupar. Las patrullas independientes recorren sectores desocupados y pueden combatirse durante la espera sin reiniciarla. Las pérdidas y daños persisten; los rescatados sin alojamiento esperan plaza.
+
+La IA patrulla, concentra fuego, flanquea y se repliega. Academias, mando, depósitos y casas tienen efectos en el reclutamiento con reservas limitadas. Los muros y torres protegen accesos. Las misiones con guion conservan sus objetivos. La caché antigua se actualiza guardando la partida, incluida una operación en curso; no hace falta borrar el guardado para corregir la franja de agua.
+
+- [Reglas, fuentes y límites](docs/HOME-MAP.md).
+- [Inventario por plano, edificio, enemigo y puente](docs/HOME-MAP-INVENTORY.md).
+- `scripts/prepare-home-map.py`, `scripts/audit-home-map.mjs`: extracción estática y auditoría reproducible de cuatro planos.
+- `scripts/qa-home-cycle.mjs`: actualización desde caché 0.6, interacciones, reloj real, soldados, siguiente base, móvil y recarga sin conexión.
+- `tests/home-strategy.test.mjs`: ciclo completo, patrullas y decisiones tácticas/logísticas.

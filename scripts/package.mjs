@@ -7,7 +7,7 @@ fs.writeFileSync(new URL('sw.js',root),`const CACHE=${JSON.stringify(game.id+'-v
 const CORE=${JSON.stringify(core)};
 const pathOf=f=>new URL(f,self.registration.scope).pathname,ALLOWED=new Set(FILES.map(pathOf));
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE.map(f=>new Request(new URL(f,self.registration.scope),{cache:'reload'})))));self.skipWaiting();});
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('activate',e=>e.waitUntil((async()=>{const keys=await caches.keys(),old=keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE);await Promise.all(old.map(k=>caches.delete(k)));await self.clients.claim();if(old.length){const clients=await self.clients.matchAll({type:'window'});for(const client of clients){const u=new URL(client.url),scope=new URL(self.registration.scope);if(u.origin!==scope.origin||![scope.pathname,scope.pathname+'index.html'].includes(u.pathname))continue;u.searchParams.set('v',${JSON.stringify(game.version)});client.navigate(u.href).catch(()=>{});}}})()));
 self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==self.location.origin||!ALLOWED.has(u.pathname))return;
  const key=new Request(u.origin+u.pathname);e.respondWith(caches.open(CACHE).then(async cache=>{const cached=await cache.match(key);if(cached)return cached;try{const r=await fetch(e.request);if(r.ok)await cache.put(key,r.clone());return r;}catch{return new Response('Este recurso todavía no está descargado. Abre el juego en línea o usa Descargar juego sin conexión en Ajustes.',{status:503});}}));});
 let downloading=false;

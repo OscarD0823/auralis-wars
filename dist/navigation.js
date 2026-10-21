@@ -13,7 +13,9 @@ export function createCombatNavigation({size:configuredSize,terrain,water,buildi
  const fields=new WeakMap(),routes=new WeakMap();let revision=0;
  function prepare(b,cleared=[]){const size=typeof configuredSize==='function'?configuredSize(b):configuredSize,key=b.seed+'|'+(b.world?.revision||0)+'|'+(b.units?.length||0)+'|'+cleared.join(',')+'|'+b.buildings.map(v=>[v.id,v.x,v.y,v.hp>0].join(':')).join(',');let field=fields.get(b);if(field?.key===key)return field;
   const occupied=new Uint8Array(size*size);for(const v of b.buildings.filter(v=>v.hp>0)){const n=v.size||buildings[v.type].size;for(let y=v.y;y<v.y+(v.height||n);y++)for(let x=v.x;x<v.x+(v.width||n);x++)if(x>=0&&y>=0&&x<size&&y<size)occupied[y*size+x]=1;}
-  const open=new Set(cleared),grid=obstacleGrid(size,(x,y)=>x<1||y<1||x>=size-1||y>=size-1||occupied[y*size+x]||(!(b.kind==='attack'&&!b.world&&x>=2&&x<=9&&y>=4&&y<=28)&&!open.has(x+':'+y)&&terrain(x,y,b.seed,b)!=='grass')),naval=obstacleGrid(size,(x,y)=>x<1||y<1||x>=size-1||y>=size-1||occupied[y*size+x]||(water?!water(x,y,b):terrain(x,y,b.seed,b)!=='water'));
+  const open=new Set(cleared);
+  if(['home','homeland'].includes(b.kind))for(const v of b.buildings.filter(v=>v.sourceId&&v.hp<=0)){const n=v.size||buildings[v.type].size;for(let y=v.y;y<v.y+(v.height||n);y++)for(let x=v.x;x<v.x+(v.width||n);x++)if(!water||!water(x,y,b))open.add(x+':'+y);}
+  const grid=obstacleGrid(size,(x,y)=>x<1||y<1||x>=size-1||y>=size-1||occupied[y*size+x]||(!(b.kind==='attack'&&!b.world&&x>=2&&x<=9&&y>=4&&y<=28)&&!open.has(x+':'+y)&&terrain(x,y,b.seed,b)!=='grass')),naval=obstacleGrid(size,(x,y)=>x<1||y<1||x>=size-1||y>=size-1||occupied[y*size+x]||(water?!water(x,y,b):terrain(x,y,b.seed,b)!=='water'));
   // Old saves and raid formations can start inside an obstacle. Resolve only
   // those invalid positions to the closest free cell when topology changes.
   const taken=new Set((b.units||[]).filter(u=>u.hp>0&&!units[u.type].flying).map(u=>Math.floor(u.y)*size+Math.floor(u.x)));

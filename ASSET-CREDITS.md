@@ -35,3 +35,7 @@ Las animaciones estándar utilizan cinco orientaciones por acción. Se mantienen
 ## Escenario de casa en 0.7.1
 
 `prepare-home-map.py RUTA_REFERENCIAS` extrae los tres hitos neutrales del mapa inicial y los 51 objetos estáticos de `chapters.chapters.Chapter01Key` de la misma revisión fijada. `source-data/social-wars/home-map.json` conserva el SHA-256 de la clase exportada. Se reutilizan los gráficos ya convertidos; no se incorporan datos privados de cuentas ni se ejecuta el cliente del sitio de referencia. Las reglas de rescate son una adaptación Auralis descrita en [HOME-MAP.md](docs/HOME-MAP.md).
+
+## Planos y patrullas en 0.8
+
+Se añaden las coordenadas y áreas estáticas de `Chapter02Guille`, `Chapter03Bazooka` y `Chapter04Jeeps`, junto al primer plano. El archivo fija la revisión y el SHA-256 de cada clase. Los sectores y la fórmula inicial de las patrullas proceden de `MapInitializer.spawnIdleEnemies`; la colocación y el equilibrio se adaptan al motor Auralis. Se reutilizan los gráficos ya convertidos, sin nuevas descargas del sitio ni nuevos datos de cuentas. `audit-home-map.mjs` documenta cada instancia, origen de huella, tamaño, bando y función. Las posiciones no se presentan como una implementación de todas las cinemáticas y delegados de los capítulos.
