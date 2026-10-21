@@ -1,7 +1,7 @@
 """Reproducible SWF -> transparent animated WebP atlases (no game code copied)."""
 from pathlib import Path
 import concurrent.futures as cf
-import json, subprocess, urllib.request, os, xml.etree.ElementTree as ET
+import json, subprocess, urllib.request, urllib.parse, os, xml.etree.ElementTree as ET
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent/'.reference-cache'
@@ -12,13 +12,13 @@ REPO = Path(__file__).resolve().parent.parent
 SPECS = json.loads((REPO/'source-data/classic-import.json').read_text(encoding='utf8'))
 
 def cli(*args):
- p=subprocess.run([JAVA,'-Djava.awt.headless=true','-Xmx512m','-jar',str(JAR),*map(str,args)],capture_output=True,text=True,encoding='utf8',errors='replace',timeout=150)
+ p=subprocess.run([JAVA,'-Djava.awt.headless=true','-Xmx1024m','-jar',str(JAR),'-onerror','ignore',*map(str,args)],capture_output=True,text=True,encoding='utf8',errors='replace',timeout=600)
  if p.returncode: raise RuntimeError(p.stdout[-1000:]+p.stderr[-1000:])
 
 def download(url,path):
  if not path.exists():
   path.parent.mkdir(parents=True,exist_ok=True)
-  with urllib.request.urlopen(url,timeout=60) as r: path.write_bytes(r.read())
+  with urllib.request.urlopen(urllib.parse.quote(url,safe=':/'),timeout=60) as r: path.write_bytes(r.read())
 
 def extract(game, item):
  spec=SPECS[game]; tree={'sha':spec['commit']}
@@ -40,8 +40,12 @@ def extract(game, item):
    if typ=='FrameLabelTag': state={'QUIETO':'idle','ANDAR':'walk','ATAQUE':'attack','MUERTE':'death','PICAR':'gather','BARRIL':'carry'}.get(tag.get('name'),tag.get('name','').lower())
    if typ in ('PlaceObject2Tag','PlaceObject3Tag') and tag.get('placeFlagHasCharacter')=='true': depth[tag.get('depth')]=int(tag.get('characterId'))
    if typ=='RemoveObject2Tag': depth.pop(tag.get('depth'),None)
-   if typ=='ShowFrameTag' and (state in ('walk','attack') or (int(item['id']) in (500,1001) and state in ('gather','carry'))):
+   if typ=='ShowFrameTag' and (state in ('walk','attack','death') or (int(item['id']) in (500,1001) and state in ('gather','carry'))):
     states.setdefault(state,[]).append(depth[min(depth,key=int)] if depth else character)
+  # The standard timeline has five orientations per action. Extra frames after
+  # MUERTE can host delegate-specific transforms and attacks, not additional
+  # death directions. Do not export them as corpse animation.
+  states={state:list(dict.fromkeys(dirs))[:5] for state,dirs in states.items()}
   selected=set(sum(states.values(),[]))
   selected={i for i in selected if any(t.get('spriteId')==str(i) for t in tags)}
  else: selected={character}
@@ -80,16 +84,19 @@ def extract(game, item):
    elif len(files)>8: files=[files[round(i*(len(files)-1)/7)] for i in range(8)]
    sequence=[]
    for f in files:
-    im=Image.open(f).convert('RGBA'); sequence.append(len(images)); images.append(im)
-   sequences[state].append(sequence)
+    try:im=Image.open(f).convert('RGBA')
+    except OSError:continue  # A corrupt export frame must not hide valid poses.
+    sequence.append(len(images)); images.append(im)
+   if sequence:sequences[state].append(sequence)
  if not images: raise RuntimeError('No rendered frames for '+name)
  width=max(i.width for i in images); height=max(i.height for i in images)
  # Resampling oversized source vectors is format conversion, not invented art.
- scale=min(1,420/width,420/height); width=max(1,round(width*scale)); height=max(1,round(height*scale))
  cols=min(8,len(images)); rows=(len(images)+cols-1)//cols
+ limit=256 if unit else 420
+ scale=min(1,limit/width,limit/height,16380/(cols*width),16380/(rows*height)); width=max(1,int(width*scale)); height=max(1,int(height*scale))
  atlas=Image.new('RGBA',(width*cols,height*rows)); rects=[]
  for n,im in enumerate(images):
-  if scale<1: im=im.resize((max(1,round(im.width*scale)),max(1,round(im.height*scale))),Image.Resampling.LANCZOS)
+  if scale<1: im=im.resize((max(1,min(width,round(im.width*scale))),max(1,min(height,round(im.height*scale)))),Image.Resampling.LANCZOS)
   x=(n%cols)*width+(width-im.width)//2; y=(n//cols)*height+(height-im.height)
   atlas.alpha_composite(im,(x,y)); rects.append([(n%cols)*width,(n//cols)*height,width,height])
  target=REPO/'dist/classic'; target.mkdir(parents=True,exist_ok=True)
@@ -103,7 +110,7 @@ def extract(game, item):
  except urllib.error.HTTPError as e:
   if e.code!=404: raise
  thumbnail.save(target/f'{item["id"]}-thumb.webp','WEBP',quality=92,method=4)
- return str(item['id']),{'file':f'./classic/{item["id"]}.webp','thumb':f'./classic/{item["id"]}-thumb.webp','width':width,'height':height,'displayWidth':max(1,round(images[0].width*scale)),'frames':rects,'states':sequences,'source':f"{base}/assets/{spec['folder']}/{name}.swf",'sourceName':name,'name':item['name'],'sourceId':int(item['id'])}
+ return str(item['id']),{'file':f'./classic/{item["id"]}.webp','thumb':f'./classic/{item["id"]}-thumb.webp','width':width,'height':height,'displayWidth':max(1,round(images[0].width*scale)),'frames':rects,'states':sequences,'source':f"{base}/assets/{spec['folder']}/{name}.swf",'sourceName':name,'name':item['name'],'sourceId':int(item['id']),'formatVersion':2}
 
 def main():
  for game,spec in SPECS.items():
@@ -112,14 +119,25 @@ def main():
   ids=set(sum(spec['buildings'].values(),[])+list(spec['units'].values())+list(spec['nature'].values()))
   out=REPO/'dist/classic'; out.mkdir(parents=True,exist_ok=True)
   cachepath=out/'atlas.json'; cache=json.loads(cachepath.read_text()) if cachepath.exists() else {'assets':{}}
-  errors=[]
-  with cf.ThreadPoolExecutor(max_workers=3) as pool:
-   jobs={pool.submit(extract,game,items[i]):i for i in ids if str(i) not in cache['assets']}
+  errors=[];groups={}
+  # Variants with the same movie share an atlas. Never race two FFDec exports
+  # against the same directory or download duplicate sprite sheets to players.
+  for i in sorted(ids):groups.setdefault(items[i]['img_name'].split(',')[0],[]).append(i)
+  jobs_to_run=[];aliases=[]
+  for name,group in groups.items():
+   existing=next((key for key,a in cache['assets'].items() if not a.get('unavailable') and a.get('sourceName')==name and (items[group[0]].get('type')!='u' or a.get('formatVersion',0)>=2)),None)
+   canonical=int(existing)if existing else group[0]
+   if not existing:jobs_to_run.append(canonical)
+   aliases.extend((i,canonical)for i in group if i!=canonical)
+  with cf.ThreadPoolExecutor(max_workers=2) as pool:
+   jobs={pool.submit(extract,game,items[i]):i for i in jobs_to_run}
    for job in cf.as_completed(jobs):
     try:
      key,asset=job.result(); cache['assets'][key]=asset; print(game,key,asset['sourceName'],flush=True)
     except Exception as e: errors.append((jobs[job],str(e))); print('ERROR',game,jobs[job],str(e)[:300],flush=True)
     cachepath.write_text(json.dumps(cache,ensure_ascii=False,separators=(',',':')),encoding='utf8')
+  for i,canonical in aliases:
+   if str(canonical)in cache['assets']:cache['assets'][str(i)]={**cache['assets'][str(canonical)],'sourceId':i,'name':items[i]['name']}
   cache.update({'buildings':spec['buildings'],'units':spec['units'],'nature':spec['nature'],'repository':spec['repo']})
   cachepath.write_text(json.dumps(cache,ensure_ascii=False,separators=(',',':')),encoding='utf8')
   (ROOT/f'{game}-errors.json').write_text(json.dumps(errors,indent=2))

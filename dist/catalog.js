@@ -1,4 +1,5 @@
 import {GAME} from './config.js';
+import {ARCHIVE_CATALOG} from './archive-catalog.js';
 export const MODERN=GAME.theme==='wars';
 export const MAX_LEVEL=10,SIZE=32,RESOURCE_KEYS=['gold','wood','supply','metal'];
 const b=(id,names,kind,model,hq,cost,extra={})=>({id,name:names[MODERN?0:1],kind,model:MODERN?(Array.isArray(model)?model[0]:model):(Array.isArray(model)?model[1]:model),hq,cost,size:2,limit:3,hp:800,time:18,...extra});
@@ -120,3 +121,8 @@ for(const type of['titan','drone','orbital'])UNITS[type].factory='robotics';
 for(const type of['rocketjeep','grenadier'])UNITS[type].factory='fortress';
 UNITS.interceptor.factory='stealth';UNITS.missile.factory='missileworks';UNITS.medic.factory='hospital';UNITS.engineer.factory='builders';
 Object.assign(UNITS.engineer,{name:'Ingeniero mecánico',damage:0,heal:30,repair:true});Object.assign(UNITS.scout,{flying:true});Object.assign(UNITS.titan,{flying:true});
+Object.assign(BUILDINGS,ARCHIVE_CATALOG.buildings);Object.assign(UNITS,ARCHIVE_CATALOG.units);
+export const SOURCE_MAP=ARCHIVE_CATALOG.mapping;
+export const isBuildable=(s,b)=>b.buyable!==false||s.campaign?.blueprints?.includes(b.id);
+export const isRecruitable=u=>u.recruitable!==false;
+export const industrialBonus=s=>1+Math.min(.1,s.buildings.filter(b=>b.hp>0&&!b.job).reduce((v,b)=>v+(BUILDINGS[b.type].industrialBonus||0),0));

@@ -1,8 +1,8 @@
 import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
-const root=new URL('../dist/',import.meta.url),game=(await import('../dist/config.js')).GAME,files=[];
-function walk(dir,base=''){for(const item of fs.readdirSync(dir,{withFileTypes:true})){const rel=base+item.name;if(item.name==='assets'||item.name==='scene.js')continue;if(item.isDirectory())walk(path.join(dir,item.name),rel+'/');else if(item.name!=='sw.js')files.push('./'+rel);}}walk(fileURLToPath(root));files.push('./');
-const atlas=JSON.parse(fs.readFileSync(new URL('classic/atlas.json',root))),starting=[...['hq','house','goldmine','lumber','supply','storage','infantry','tower'].map(type=>atlas.buildings[type][0]),atlas.units.settler,atlas.units.rifle,...Object.values(atlas.nature)],essential=new Set(starting.map(id=>atlas.assets[id].file));
-const core=files.filter(f=>(!f.startsWith('./classic/')&&!f.startsWith('./reference-data/'))||essential.has(f)||['./classic/atlas.json','./classic/terrain/00.webp','./classic/terrain/01.webp'].includes(f));
+const root=new URL('../dist/',import.meta.url),game=(await import('../dist/config.js')).GAME,files=[],atlas=JSON.parse(fs.readFileSync(new URL('classic/atlas.json',root))),wholeMovies=new Set(Object.values(atlas.assets).filter(a=>a.clips).map(a=>a.file));
+function walk(dir,base=''){for(const item of fs.readdirSync(dir,{withFileTypes:true})){const rel=base+item.name;if(item.name==='assets'||item.name==='scene.js')continue;if(item.isDirectory())walk(path.join(dir,item.name),rel+'/');else if(item.name!=='sw.js'&&!wholeMovies.has('./'+rel))files.push('./'+rel);}}walk(fileURLToPath(root));files.push('./');
+const starting=[...['hq','house','goldmine','lumber','supply','storage','infantry','tower'].map(type=>atlas.buildings[type][0]),atlas.units.settler,atlas.units.rifle,...Object.values(atlas.nature)],essential=new Set(starting.flatMap(id=>{const a=atlas.assets[id];return a.clips?Object.values(a.clips).flat().map(c=>c.file):[a.file];}));
+const core=files.filter(f=>(!f.startsWith('./classic/')&&!f.startsWith('./reference-data/')&&!f.startsWith('./missions/'))||essential.has(f)||['./classic/atlas.json','./classic/terrain/00.webp','./classic/terrain/01.webp'].includes(f));
 fs.writeFileSync(new URL('sw.js',root),`const CACHE=${JSON.stringify(game.id+'-v'+game.version)},PREFIX=${JSON.stringify(game.id+'-')},FILES=${JSON.stringify(files)};
 const CORE=${JSON.stringify(core)};
 const pathOf=f=>new URL(f,self.registration.scope).pathname,ALLOWED=new Set(FILES.map(pathOf));

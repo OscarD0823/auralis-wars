@@ -1,8 +1,10 @@
 # Auralis Wars
 
-Versión 0.5.0: adaptación web isométrica con los dibujos y las animaciones del archivo de preservación de Social Wars. Amplía tu base por sectores en un archipiélago de 100 × 100, programa producción, mejora instalaciones, entrena tropas y combate contra IA. Partida local independiente e instalación PWA.
+Versión 0.6.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y duelos reales entre dos navegadores. Partida local independiente e instalación PWA.
 
-**No es el cliente original completo.** Se conserva la simulación Auralis (28 familias de edificios e infraestructura, 33 tropas, mejoras de diez niveles, 12 bases de IA y tres dificultades). Sus costes, desbloqueos, misiones y diplomacia son adaptados. Los aspectos originales evolucionan por etapas; no hay diez dibujos distintos para cada edificio.
+El catálogo incorpora 411 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 28 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
+
+El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis. Se utilizan posiciones y matrices originales de las misiones disponibles, con reglas de objetivos implementadas en el nuevo motor. No se ejecuta el ActionScript ni se reproduce íntegramente cada delegado, cinemática o servicio social del cliente original.
 
 - Juego: https://oscard0823.github.io/auralis-wars/
 - Fuente gráfica: https://github.com/AcidCaos/socialwarriors/tree/c3fceeb1f8e93734a293b9bc25ae6025656f6822
@@ -30,7 +32,7 @@ Las partidas 0.1 y 0.2 se migran sin reemplazar recursos, edificios o tropas. `s
 
 ## Mapa original, revisión y rendimiento
 
-El [atlas y códice](https://oscard0823.github.io/auralis-wars/archive.html) permite consultar 24 mapas de 100 × 100 y 778 fichas del archivo. La base jugable ya usa el archipiélago original de 100 × 100, con ampliación por sectores y puentes. Los doce ataques de campaña mantienen sus escenarios Auralis de 32 × 32. No se incorpora automáticamente todo el catálogo. El índice incluye 3.199 archivos de recursos, 1.387 archivos AS3 y 63 comandos. Las estadísticas públicas de 166 edificios y 303 unidades del sitio actual se conservan separadas.
+El [atlas y códice](https://oscard0823.github.io/auralis-wars/archive.html) permite consultar 24 mapas de 100 × 100 y 778 fichas del archivo. La base y las operaciones originales usan mapas de 100 × 100; las doce escaramuzas Auralis conservan sus campos de 32 × 32. El adaptador relaciona 777 objetos del catálogo fuente con funciones y gráficos; el registro restante describe el terreno. El índice incluye 3.199 archivos de recursos, 1.387 archivos AS3 y 63 comandos. Las estadísticas públicas del sitio actual se conservan separadas.
 
 - [Revisión del motor y comportamiento del mapa](docs/SOCIAL-WARS-ANATOMY.md)
 - [Mediciones de rendimiento](docs/PERFORMANCE.md)
@@ -51,4 +53,15 @@ Las bases anteriores se trasladan conservando edificios, recursos, trabajadores 
 - `tests/world.test.mjs`: 17 comprobaciones nuevas, incluidas migración, expansión, lotes, mercado, puente transitable y combate naval.
 - `scripts/qa-islands.mjs`: producción con temporizador real, compra de sector, demostración aislada, importación, cachés, móvil y modo sin conexión.
 
-El catálogo adaptado todavía no equivale a los 778 objetos, capítulos, eventos y habilidades completos del original. Las alianzas y adversarios son IA local; no hay multijugador.
+## Operaciones, habilidades y eventos en 0.6
+
+Abre **Campaña → Operaciones de Social Wars**. Cada misión carga sus datos bajo demanda, conserva la exploración y ofrece tres rangos sucesivos. Hay convoyes, intercepción, centrales que protegen al mando, piezas de un supertanque, radios con apoyo aéreo, captura de barcos, rescates e infiltración con extracción. Perder tropas propias exige reentrenarlas; los aliados prestados y las invocaciones no pasan al ejército permanente. Los premios de cada rango son únicos y las reservas sin espacio se conservan para recogerlas después.
+
+Selecciona tropas durante el combate para usar sus habilidades. Hay 15 habilidades activas y efectos de veneno, fuego, regeneración, camuflaje y ataque suicida, según el actor. **Encargos** presenta ocho eventos de isla con decisiones, recursos, apoyo y bonificaciones. Sus plazos se pausan al cerrar el juego.
+
+**Campaña → Jugar con otra persona** abre un duelo WebRTC real. El anfitrión comparte una invitación, la otra persona devuelve una respuesta y el anfitrión pulsa Conectar. Usa una copia del ejército: no arriesga ni modifica los recursos o las tropas de la campaña. Algunas redes requieren configurar un servidor TURN; GitHub Pages no proporciona matchmaking, cuentas, clasificación ni un servidor persistente.
+
+- [Reglas de operaciones, eventos y conexión](docs/OPERATIONS-MULTIPLAYER.md).
+- `tests/campaign.test.mjs` y `tests/operations.test.mjs`: objetivos, transporte, habilidades, recompensas, guardados y protocolo de duelo.
+- `scripts/qa-operations.mjs`: campaña real desde la interfaz, niebla, habilidad, reanudación, catálogos, evento y móvil.
+- `scripts/qa-multiplayer.mjs`: conexión WebRTC real entre dos contextos, órdenes remotas y conservación del guardado.

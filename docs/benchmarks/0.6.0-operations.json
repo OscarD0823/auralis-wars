@@ -1,0 +1,91 @@
+{
+  "samples": [
+    {
+      "name": "home",
+      "mean": 0.30416666666666664,
+      "p95": 0.5,
+      "simulationMean": null,
+      "before": {
+        "groundBuilds": 1,
+        "natureBuilds": 1,
+        "visibleNature": 99,
+        "totalNature": 677,
+        "worldSize": 100,
+        "terrainImages": 39,
+        "residentBytes": 19401168,
+        "alphaMasks": 0
+      },
+      "after": {
+        "groundBuilds": 1,
+        "natureBuilds": 1,
+        "visibleNature": 99,
+        "totalNature": 677,
+        "worldSize": 100,
+        "terrainImages": 39,
+        "residentBytes": 19401168,
+        "alphaMasks": 0
+      }
+    },
+    {
+      "name": "advanced-33",
+      "mean": 1.5024999996026358,
+      "p95": 2.100000023841858,
+      "simulationMean": null,
+      "before": {
+        "groundBuilds": 5,
+        "natureBuilds": 2,
+        "visibleNature": 0,
+        "totalNature": 506,
+        "worldSize": 100,
+        "terrainImages": 96,
+        "residentBytes": 68238264,
+        "alphaMasks": 0
+      },
+      "after": {
+        "groundBuilds": 5,
+        "natureBuilds": 2,
+        "visibleNature": 0,
+        "totalNature": 506,
+        "worldSize": 100,
+        "terrainImages": 96,
+        "residentBytes": 68238264,
+        "alphaMasks": 0
+      }
+    },
+    {
+      "name": "mission",
+      "mean": 0.276666667064031,
+      "p95": 0.5,
+      "simulationMean": 0.6066666642824808,
+      "before": {
+        "groundBuilds": 7,
+        "natureBuilds": 3,
+        "visibleNature": 0,
+        "totalNature": 0,
+        "worldSize": 100,
+        "terrainImages": 97,
+        "residentBytes": 68486664,
+        "alphaMasks": 0
+      },
+      "after": {
+        "groundBuilds": 7,
+        "natureBuilds": 3,
+        "visibleNature": 0,
+        "totalNature": 0,
+        "worldSize": 100,
+        "terrainImages": 97,
+        "residentBytes": 68486664,
+        "alphaMasks": 0
+      }
+    }
+  ],
+  "dpr": 1,
+  "version": "0.6.0",
+  "package": {
+    "coreRoutes": 99,
+    "coreBytes": 3977743,
+    "optionalRoutes": 5431,
+    "allBytes": 275009215
+  },
+  "errors": []
+}

@@ -25,7 +25,7 @@ El crecimiento ocurre dentro de un archipiélago de 100 × 100 casillas. La base
 
 La migración conserva terreno y espacio construible de una partida antigua mediante un parche de 32 × 32 dentro del archipiélago. Traslada edificios, trabajadores, cargas, órdenes y depósitos sin cobrar ampliaciones. El navegador conserva además la copia anterior en `auralis-wars-campaign-v1-pre-islands-v04`. Una batalla antigua mantiene su campo de 32 × 32 hasta terminar. Las fábricas antiguas conservan su producción continua hasta que el jugador programa un ciclo.
 
-Los doce ataques de campaña conservan sus escenarios Auralis de 32 × 32; todavía no son los capítulos completos del original. El atlas sigue ofreciendo los otros 23 diseños como referencia. No se ha portado íntegramente el catálogo de 778 objetos, todas sus habilidades y eventos, ni el backend social y multijugador. Las costas usan las superficies lógicas del motor Auralis; no se afirma haber reproducido cada regla de borde de `IsoTerrain`.
+En 0.5 los doce ataques de campaña conservaban sus escenarios Auralis de 32 × 32 y los otros diseños se consultaban en el atlas. La versión 0.6 añade operaciones jugables, catálogo ampliado, habilidades, eventos y duelo entre personas; sus reglas y límites se describen en [OPERATIONS-MULTIPLAYER.md](OPERATIONS-MULTIPLAYER.md). No se ejecuta el backend social original ni todos sus delegados. El agua utiliza el código de superficie 0; las variantes de costa se representan con sus texturas.
 
 ## Reconstrucción y comprobación
 

@@ -95,7 +95,7 @@ Para regenerar los índices, disponer de `wars-tree.json`, `wars-config.json` y 
 - Caché inicial reducida, recursos cargados al usarse y descarga completa opcional con tres transferencias simultáneas. Las partidas previas conservan su clave y formato.
 - Atlas y códice consultables, separados explícitamente de los objetos ya jugables.
 
-La medición y sus límites están en [PERFORMANCE.md](PERFORMANCE.md). El sistema de islas/sectores ya se aplica a la base desde 0.5. Portar todas las recetas y habilidades, reproducir capítulos completos y ofrecer multijugador siguen siendo trabajo pendiente. No se presentan como funciones terminadas por haber encontrado sus datos.
+La medición y sus límites están en [PERFORMANCE.md](PERFORMANCE.md). El sistema de islas/sectores se aplica a la base desde 0.5. La campaña, el catálogo y el duelo incorporados posteriormente se describen en la sección 0.6; encontrar los datos no equivale a ejecutar todos los delegados originales.
 
 ## Cambios aplicados en 0.5.0
 
@@ -103,4 +103,16 @@ La [investigación de bases avanzadas](ADVANCED-BASES.md) documenta la comparaci
 
 Las coordenadas de los puentes se normalizan desde la última casilla ocupada del cliente Flash al origen de huella Auralis. La migración traslada trabajadores, materiales, rutas y edificios; conserva el terreno y las batallas antiguas. Las texturas del terreno se cargan según la vista y la naturaleza se consulta mediante sectores espaciales. Las cachés conservan el suelo mientras sólo se animan actores.
 
-Los requisitos sociales de vecinos/cash y el cierre por capítulos se adaptaron a la partida local. Cantidades, tiempos de construcción, costes de puentes y estadísticas militares siguen siendo Auralis. El resto de mapas, capítulos, objetos de evento, habilidades y servidor social no se considera portado por estar indexado.
+Los requisitos sociales de vecinos/cash se adaptaron a la partida local. Cantidades, tiempos de construcción, costes de puentes y estadísticas militares siguen siendo Auralis. El servidor social original no forma parte de esa versión.
+
+## Cambios aplicados en 0.6.0
+
+Se implementaron 22 operaciones de historia y un asedio semanal, utilizando las matrices, entradas y 9.662 objetos de los archivos de misión disponibles. La fábrica de misiones y sus clases proporcionan las reglas de convoy, intercepción, reactor, radio, transporte, rescate e infiltración; el motor Auralis las adapta con tres rangos, bajas permanentes, planos y recompensas únicas. Las islas se exploran bajo niebla; transportar tropas requiere capturar un barco y embarcar/desembarcar en una costa accesible. Se conserva el progreso al guardar y volver.
+
+El catálogo relaciona 469 objetos y 308 actores fuente con 411 familias de edificios/objetos y 307 tipos de unidades más el civil. Las variantes nativas mantienen sus equivalencias. Los nuevos objetos tienen producción, entrenamiento, almacenamiento, población, defensa o bonificaciones según sus propiedades, con adaptación logística cuando su delegado original no tiene equivalente. Los objetos de misión no se convierten indiscriminadamente en compras. Las diez películas ausentes del árbol preservado se señalan con un marcador explícito; `graphics-missing.json` documenta sus IDs y URLs.
+
+Se añadieron 15 habilidades activas, daño continuo, regeneración, camuflaje, apoyo, invocaciones temporales y muerte animada. Ocho eventos de isla ofrecen decisiones, recursos, rescates, defensa y bonificaciones. Son implementaciones adaptadas: no se afirma haber portado cada habilidad especial de todos los delegados AS3, sus cinemáticas o su backend.
+
+El multijugador funciona mediante un canal WebRTC real entre dos navegadores, con invitación y respuesta manuales. El anfitrión simula las órdenes de ambos jugadores y comparte el estado. Utiliza copias amistosas del ejército y no escribe el guardado principal. GitHub Pages sirve la página estática; redes restrictivas pueden necesitar TURN. No hay cuentas, matchmaking global, mercado entre jugadores ni clasificación persistente. Véase [OPERATIONS-MULTIPLAYER.md](OPERATIONS-MULTIPLAYER.md).
+
+La carga sigue siendo bajo demanda: no se descargan todas las unidades para abrir la base. La vista descarta sprites antes de pedir su imagen, limita la retención de texturas inactivas y reutiliza terreno, máscaras y niebla. La conversión separa las cinco orientaciones normales de los clips especiales y reduce las celdas animadas a un máximo de 256 píxeles conservando la escala visual.

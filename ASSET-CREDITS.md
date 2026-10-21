@@ -2,15 +2,15 @@
 
 Social Wars: https://github.com/AcidCaos/socialwarriors/tree/c3fceeb1f8e93734a293b9bc25ae6025656f6822
 
-Se extrajeron 123 recursos y 2584 fotogramas de sus archivos SWF con JPEXS FFDec 26.4.0. Los atlas WebP mantienen transparencia y secuencias de marcha/ataque por dirección. No contienen un fondo rectangular añadido. `dist/classic/atlas.json` identifica URL, nombre, ID, fotogramas y familia de cada recurso.
+La versión 0.6 contiene 734 películas compartidas convertidas y 32.148 fotogramas únicos, con 767 correspondencias del catálogo que disponen de gráfico y diez películas fuente ausentes. JPEXS FFDec 26.4.0 convierte estáticamente los SWF. Los WebP mantienen transparencia, orientación y secuencias; no contienen un fondo rectangular añadido. `dist/classic/atlas.json` identifica URL, nombre, ID, fotogramas y familia. `source-data/social-wars/graphics-missing.json` documenta los diez recursos no conservados; su marcador es un SVG propio identificado expresamente, no arte atribuido al original.
 
 El código del proyecto de preservación está publicado bajo GPL-3.0. Se conserva su licencia en LICENSE. El arte de Social Wars pertenece a Social Point y a sus titulares originales; la licencia del código no se presenta como una cesión de las marcas o del arte comercial. Esta adaptación no está afiliada al juego original. El aviso MIT del código previo de Auralis se conserva en LICENSE-AURALIS-MIT.
 
-La versión web usa un motor Canvas propio; no distribuye ni requiere un reproductor Flash. La economía, las 12 bases de IA, las alianzas y la progresión de 10 niveles son la adaptación Auralis. No es una reproducción completa de la lógica, el multijugador, el catálogo o los eventos del cliente original.
+La versión web usa un motor Canvas propio; no distribuye ni requiere un reproductor Flash. La economía, las 12 escaramuzas, las alianzas de IA y la progresión son Auralis. Las 23 operaciones utilizan escenarios y objetos de misión preservados, con objetivos adaptados al nuevo motor. Habilidades, eventos y duelo WebRTC tienen implementaciones propias; no son una reproducción íntegra de todos los delegados o servicios del cliente original.
 
 ## Reconstrucción
 
-Python 3 con Pillow, Java 17+ y [JPEXS FFDec](https://github.com/jindrapetrik/jpexs-decompiler/releases/tag/version26.4.0). Define `FFDEC_JAR` con la ruta a ffdec.jar; opcionalmente `JAVA` con el ejecutable. Ejecuta `python scripts/prepare-sprites.py` y `node scripts/package.mjs`. Las fuentes se descargan de la revisión fija de arriba, se guardan en .reference-cache y no se ejecuta su ActionScript. Los IDs y parámetros seleccionados están en source-data/.
+Python 3 con Pillow, Java 17+ y [JPEXS FFDec](https://github.com/jindrapetrik/jpexs-decompiler/releases/tag/version26.4.0). Define `FFDEC_JAR` con la ruta a ffdec.jar; opcionalmente `JAVA` con el ejecutable. Ejecuta, en orden, `prepare-archive.py`, `prepare-sprites.py`, `optimize-atlases.py`, `finalize-archive.py`, `split-animations.py` y `node scripts/package.mjs`. Los primeros cinco son scripts Python de `scripts/`. Las fuentes se descargan de la revisión fija de arriba y no se ejecuta su ActionScript. La conversión completa requiere varios GB temporales; los fotogramas de `.reference-cache` son regenerables. Los IDs y parámetros están en `source-data/`.
 
 La versión 0.3 añade PICAR para los civiles y BARRIL para los trabajadores de Wars, extraídos de las mismas películas. progression-data.js deriva los umbrales y requisitos de la configuración de esa revisión.
 
@@ -25,3 +25,9 @@ Se convirtieron los 30 fotogramas del símbolo `TerrainTiles` (ID 50) de `assets
 Se añadieron 39 recursos gráficos y 664 fotogramas para academias de blindados, hangares de helicópteros, búnkeres, fortalezas, centro robótico, mercado, instalación furtiva, fábrica de misiles, hospital avanzado, mecánicos, astilleros, puentes y nueve unidades. La correspondencia por nivel se conserva en `source-data/classic-import.json`. `scripts/prepare-content.py` reproduce los metadatos de entrenamiento y producción sin sustituir las estadísticas de combate Auralis.
 
 `scripts/prepare-world-data.py RUTA_REFERENCIAS` prepara la matriz del archipiélago, precios, ciclos y puentes a partir de los índices y `wars-initial.json` del mismo archivo fijado. Convierte las posiciones de los puentes desde su casilla final a su origen de huella. No se distribuyen identidades ni inventarios de las partidas de ejemplo. Véase [la investigación de bases avanzadas](docs/ADVANCED-BASES.md).
+
+## Operaciones y animaciones en 0.6
+
+`prepare-campaign.py RUTA_REFERENCIAS` genera las 22 misiones de historia y la semanal desde la fábrica AS3 y los JSON de misión del mismo archivo. Se conservan 9.662 objetos y sus referencias fuente. `prepare-archive.py` compila relaciones de entrenamiento y propiedades; sus funciones y equilibrio adaptados se distinguen del catálogo fuente.
+
+Las animaciones estándar utilizan cinco orientaciones por acción. Se mantienen marcha, ataque y muerte, además de extracción/transporte del civil. Los clips especiales posteriores a MUERTE no se interpretan como direcciones adicionales de muerte. Las celdas tienen un máximo de 256 píxeles; se conserva su proporción y escala sobre el mapa. `split-animations.py` genera 4.138 tiras por acción/dirección y reutiliza las de marcha para la pose de reposo. El juego carga esas tiras, no películas completas en memoria. Las películas completas permanecen como resultado de conversión y se excluyen de la descarga sin conexión para evitar duplicados.

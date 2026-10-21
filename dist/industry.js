@@ -1,8 +1,10 @@
 import {productionOptions,owns,surface} from './world.js';
+import {BUILDINGS,industrialBonus}from'./catalog.js';
+import {eventBonus}from'./events.js';
 import {CONTENT_DATA} from './content-data.js';
 const factories=new Set(['goldmine','lumber','supply','metal']);
-export const isFactory=type=>factories.has(type);
-export function productionQuote(s,b,index){const option=productionOptions[index],source=CONTENT_DATA.buildings[b?.type]?.[0];if(!b||!option||!factories.has(b.type)||!source)return{ok:false,message:'Elige una fábrica y un ciclo válido.'};const speed=s.difficulty==='easy'?10:s.difficulty==='hard'?3:1,amount=Math.max(1,Math.floor(source.collect*option.multiplier*(1+(b.level-1)*.4)));return{ok:true,index,minutes:option.minutes,multiplier:option.multiplier,duration:option.minutes*60/speed,amount,speed};}
+export const isFactory=type=>factories.has(type)||(BUILDINGS[type]?.kind==='production'&&!!BUILDINGS[type].resource);
+export function productionQuote(s,b,index){const option=productionOptions[index],source=CONTENT_DATA.buildings[b?.type]?.[0];if(!b||!option||!isFactory(b.type)||!source)return{ok:false,message:'Elige una fábrica y un ciclo válido.'};const speed=s.difficulty==='easy'?10:s.difficulty==='hard'?3:1,amount=Math.max(1,Math.floor(source.collect*option.multiplier*(1+(b.level-1)*.4)*industrialBonus(s)*eventBonus(s,'industry')));return{ok:true,index,minutes:option.minutes,multiplier:option.multiplier,duration:option.minutes*60/speed,amount,speed};}
 export function createIndustry({BUILDINGS,storageCap,builders,usedBuilders,log}){
  const result=(ok,message)=>({ok,message}),canPay=(s,cost)=>Object.entries(cost).every(([k,v])=>s.resources[k]>=v),pay=(s,cost)=>{for(const[k,v]of Object.entries(cost))s.resources[k]-=v;};
  function startProduction(s,id,index){const b=s.buildings.find(b=>b.id===id),q=productionQuote(s,b,index);if(!q.ok)return q;if(s.battle||b.hp<=0||b.job)return result(false,'La fábrica debe estar operativa.');if(b.production?.status==='working')return result(false,'Espera a que termine el ciclo actual.');if(b.stored>=1)return result(false,'Recoge primero la producción que queda almacenada.');b.productionMode='cycles';b.production={index,started:s.time,ends:s.time+q.duration,amount:q.amount,status:'working'};return result(true,'Producción encargada: '+q.amount+' materiales en '+Math.ceil(q.duration)+' segundos.');}

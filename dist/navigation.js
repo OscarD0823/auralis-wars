@@ -12,7 +12,7 @@ export function clearSegment(grid,a,b){const d=Math.hypot(b.x-a.x,b.y-a.y),steps
 export function createCombatNavigation({size:configuredSize,terrain,water,buildings,units}){
  const fields=new WeakMap(),routes=new WeakMap();let revision=0;
  function prepare(b,cleared=[]){const size=typeof configuredSize==='function'?configuredSize(b):configuredSize,key=b.seed+'|'+(b.world?.revision||0)+'|'+(b.units?.length||0)+'|'+cleared.join(',')+'|'+b.buildings.map(v=>[v.id,v.x,v.y,v.hp>0].join(':')).join(',');let field=fields.get(b);if(field?.key===key)return field;
-  const occupied=new Uint8Array(size*size);for(const v of b.buildings.filter(v=>v.hp>0)){const n=buildings[v.type].size;for(let y=v.y;y<v.y+n;y++)for(let x=v.x;x<v.x+n;x++)if(x>=0&&y>=0&&x<size&&y<size)occupied[y*size+x]=1;}
+  const occupied=new Uint8Array(size*size);for(const v of b.buildings.filter(v=>v.hp>0)){const n=v.size||buildings[v.type].size;for(let y=v.y;y<v.y+n;y++)for(let x=v.x;x<v.x+n;x++)if(x>=0&&y>=0&&x<size&&y<size)occupied[y*size+x]=1;}
   const open=new Set(cleared),grid=obstacleGrid(size,(x,y)=>x<1||y<1||x>=size-1||y>=size-1||occupied[y*size+x]||(!(b.kind==='attack'&&!b.world&&x>=2&&x<=9&&y>=4&&y<=28)&&!open.has(x+':'+y)&&terrain(x,y,b.seed,b)!=='grass')),naval=obstacleGrid(size,(x,y)=>x<1||y<1||x>=size-1||y>=size-1||occupied[y*size+x]||(water?!water(x,y,b):terrain(x,y,b.seed,b)!=='water'));
   // Old saves and raid formations can start inside an obstacle. Resolve only
   // those invalid positions to the closest free cell when topology changes.
@@ -24,7 +24,7 @@ export function createCombatNavigation({size:configuredSize,terrain,water,buildi
   const dx=target.x-u.x,dy=target.y-u.y,d=Math.hypot(dx,dy);if(d<.06)return false;
   if(units[u.type].flying){const step=Math.min(d,speed*dt);u.x+=dx/d*step;u.y+=dy/d*step;u.facing=Math.atan2(dx,dy);return step>0;}
   const field=fields.get(b)||prepare(b),grid=units[u.type].waterborne?field.naval:field.grid,isDestination=u.order?.kind==='move'||(u.order?.kind==='attack'&&target===u.order);
-  const radius=isDestination?0:Math.max(.75,(buildings[target.type]?.size||0)*.48+units[u.type].range-.15),tx=Math.floor(target.x),ty=Math.floor(target.y),key=field.revision+':'+tx+':'+ty+':'+radius+':'+isDestination;
+  const radius=isDestination?0:Math.max(.75,(target.size||buildings[target.type]?.size||0)*.48+units[u.type].range-.15),tx=Math.floor(target.x),ty=Math.floor(target.y),key=field.revision+':'+tx+':'+ty+':'+radius+':'+isDestination;
   let route=routes.get(u);if(!route||route.key!==key){const goals=[];if(!radius){if(!gridBlocked(grid,tx,ty))goals.push({x:tx,y:ty});else for(let y=ty-1;y<=ty+1;y++)for(let x=tx-1;x<=tx+1;x++)goals.push({x,y});}else for(let y=Math.floor(target.y-radius);y<=Math.ceil(target.y+radius);y++)for(let x=Math.floor(target.x-radius);x<=Math.ceil(target.x+radius);x++)if(Math.hypot(x+.5-target.x,y+.5-target.y)<=radius)goals.push({x,y});const points=findGridPath(grid,u,goals);route={key,points};routes.set(u,route);}
   if(!route.points)return false;while(route.points.length&&Math.hypot(u.x-route.points[0].x,u.y-route.points[0].y)<.06)route.points.shift();
   // Smooth a valid grid route only across segments that remain unobstructed.

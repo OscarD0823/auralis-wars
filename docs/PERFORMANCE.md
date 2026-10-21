@@ -48,3 +48,21 @@ La navegación terrestre nueva considera edificios y terreno; los aviones conser
 La vista dibujó 99 de 677 objetos naturales. Los índices se agrupan en bloques de 10 × 10 para consultar sólo los que intersectan la cámara. Durante los 120 dibujos el terreno y el índice natural se prepararon una sola vez; al desplazar la cámara se recompuso el terreno sin reconstruir el índice. Las superficies originales se solicitan cuando entran en la vista.
 
 La instalación inicial prepara 47 rutas, aproximadamente 1,17 MB; el paquete opcional contiene 311 rutas, aproximadamente 18,78 MB. Los 39 recursos gráficos nuevos no se precargan todos al iniciar una base. El paquete completo sigue siendo una descarga explícita desde Ajustes. Los datos de tamaño excluyen el contenido duplicado de la ruta raíz y no son una predicción de transferencia comprimida por la red.
+
+## Catálogo completo y operaciones en 0.6
+
+Las películas animadas se redujeron de 399,98 a 223,82 MiB al limitar celdas y retirar clips especiales interpretados incorrectamente como orientaciones de muerte. El juego utiliza 4.138 tiras más pequeñas por acción y dirección, con reposo compartiendo la primera pose de marcha. Descarta un sprite fuera de pantalla antes de pedir su imagen. Una caché de 96 MiB retira imágenes inactivas; es un presupuesto blando y puede superarse si todas las imágenes grandes siguen visibles. El terreno y las máscaras conservan sus cachés y la niebla tiene otra superficie limitada a la vista.
+
+La instalación inicial prepara 99 rutas, 3.977.743 bytes sin compresión de transporte. El catálogo ampliado incrementa los metadatos iniciales frente a 0.5, pero no obliga a descargar sus animaciones completas. La descarga opcional prepara 5.431 rutas y 275.009.215 bytes; las películas completas se excluyen de la caché para evitar duplicar las tiras. La prueba de navegador descargó todo el paquete, recargó sin internet y abrió el catálogo y los 24 mapas. No se presupone que esa descarga sea inmediata en una conexión móvil.
+
+`scripts/qa-operations-performance.mjs` mide 120 dibujos por escena, tras cargar los gráficos visibles, en una vista de 1000 × 700 y DPR 1. El resultado está en [benchmarks/0.6.0-operations.json](benchmarks/0.6.0-operations.json).
+
+| Escena | Dibujo medio | p95 | Imágenes retenidas |
+| --- | ---: | ---: | ---: |
+| Base inicial | 0,30 ms | 0,50 ms | 18,5 MiB |
+| Demostración de 33 tipos militares | 1,50 ms | 2,10 ms | 65,1 MiB |
+| Operación original, entrada explorada | 0,28 ms | 0,50 ms | 65,3 MiB |
+
+Las escenas se midieron secuencialmente en una misma instancia, por lo que la última cifra conserva parte de la caché anterior. No son cifras aisladas de memoria total del navegador ni garantías de FPS. La simulación de la primera operación dio 0,61 ms por paso en 30 pasos de prueba. La medición no espera a la GPU ni incluye toda la interfaz. Ninguna escena recompuso su terreno durante los 120 dibujos; la operación no dibujó naturaleza procedural ajena a los objetos de su archivo.
+
+La validación actual incluye 117 pruebas de simulación y pruebas reales de interfaz para objetivos, habilidades, eventos, guardado, retirada, búsqueda, móvil y conexión WebRTC. Las comprobaciones por píxeles ejercitan marcha, extracción, carga, ataque y muerte, incluidas dos unidades grandes recuperadas del archivo. Las pruebas de duelo usan dos contextos con guardados independientes, órdenes y habilidades del invitado procesadas por el anfitrión, desconexión y conservación de las dos campañas.

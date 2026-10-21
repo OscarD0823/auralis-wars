@@ -1,0 +1,75 @@
+{
+  "commit": "c3fceeb1f8e93734a293b9bc25ae6025656f6822",
+  "missing": [
+    {
+      "sourceId": 137,
+      "name": "Spy Academy",
+      "sourceName": "0137_spy_academy_m",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/0137_spy_academy_m.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    },
+    {
+      "sourceId": 921,
+      "name": "Treasure Chest",
+      "sourceName": "treasure",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/treasure.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    },
+    {
+      "sourceId": 922,
+      "name": "Dummy 9-91",
+      "sourceName": "vacaPerdida",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/vacaPerdida.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    },
+    {
+      "sourceId": 924,
+      "name": "Dummy 12-121",
+      "sourceName": "casachina",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/casachina.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    },
+    {
+      "sourceId": 927,
+      "name": "Prison",
+      "sourceName": "10027_prision",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/10027_prision.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    },
+    {
+      "sourceId": 982,
+      "name": "Chained Red Spinner",
+      "sourceName": "982_chained_red_spinner",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/982_chained_red_spinner.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    },
+    {
+      "sourceId": 1011,
+      "name": "Ms. Evilia",
+      "sourceName": "1011_bad_girl_m",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/1011_bad_girl_m.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    },
+    {
+      "sourceId": 10000,
+      "name": "Chained Bonus + Giant Walker",
+      "sourceName": "10000_chained_bonus_giant_walker",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/10000_chained_bonus_giant_walker.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    },
+    {
+      "sourceId": 10034,
+      "name": "Chained Hercules Mech",
+      "sourceName": "10034_chained_hercules_mech",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/10034_chained_hercules_mech.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    },
+    {
+      "sourceId": 10048,
+      "name": "Play Dragon City",
+      "sourceName": "10048_cross_dc",
+      "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/10048_cross_dc.swf",
+      "reason": "The configured movie is absent from the pinned preservation tree (HTTP 404)."
+    }
+  ]
+}
