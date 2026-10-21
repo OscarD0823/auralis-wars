@@ -116,3 +116,7 @@ Se añadieron 15 habilidades activas, daño continuo, regeneración, camuflaje, 
 El multijugador funciona mediante un canal WebRTC real entre dos navegadores, con invitación y respuesta manuales. El anfitrión simula las órdenes de ambos jugadores y comparte el estado. Utiliza copias amistosas del ejército y no escribe el guardado principal. GitHub Pages sirve la página estática; redes restrictivas pueden necesitar TURN. No hay cuentas, matchmaking global, mercado entre jugadores ni clasificación persistente. Véase [OPERATIONS-MULTIPLAYER.md](OPERATIONS-MULTIPLAYER.md).
 
 La carga sigue siendo bajo demanda: no se descargan todas las unidades para abrir la base. La vista descarta sprites antes de pedir su imagen, limita la retención de texturas inactivas y reutiliza terreno, máscaras y niebla. La conversión separa las cinco orientaciones normales de los clips especiales y reduce las celdas animadas a un máximo de 256 píxeles conservando la escala visual.
+
+## Cambios aplicados en 0.7.0
+
+Se añade una ruta de expansión individual sin cambiar las matrices de los capítulos originales: seis biomas procedurales, rivales de defensa 1–10, desembarco terrestre/naval, niebla, estaciones visuales y hasta tres colonias propias. Los puestos tienen mejoras, guarniciones con población y bajas reales, producción, transporte marítimo/aéreo, ataques de IA y reconquista. Se conserva el guardado previo y se añade recuperación local. El multijugador y las funciones sociales quedan pausados por petición del usuario. [Reglas y límites](EXPEDITIONS.md).

@@ -1,3 +1,5 @@
+> Estado 0.7.0: multijugador pausado por petición del usuario. La página no carga la conexión. Las instrucciones de duelo siguientes quedan como documentación para una futura reactivación.
+
 # Operaciones y duelos en 0.6
 
 ## Fuente y adaptación

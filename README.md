@@ -1,6 +1,6 @@
 # Auralis Wars
 
-Versión 0.6.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y duelos reales entre dos navegadores. Partida local independiente e instalación PWA.
+Versión 0.7.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
 El catálogo incorpora 411 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 28 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
 
@@ -59,9 +59,19 @@ Abre **Campaña → Operaciones de Social Wars**. Cada misión carga sus datos b
 
 Selecciona tropas durante el combate para usar sus habilidades. Hay 15 habilidades activas y efectos de veneno, fuego, regeneración, camuflaje y ataque suicida, según el actor. **Encargos** presenta ocho eventos de isla con decisiones, recursos, apoyo y bonificaciones. Sus plazos se pausan al cerrar el juego.
 
-**Campaña → Jugar con otra persona** abre un duelo WebRTC real. El anfitrión comparte una invitación, la otra persona devuelve una respuesta y el anfitrión pulsa Conectar. Usa una copia del ejército: no arriesga ni modifica los recursos o las tropas de la campaña. Algunas redes requieren configurar un servidor TURN; GitHub Pages no proporciona matchmaking, cuentas, clasificación ni un servidor persistente.
+**Pausado desde 0.7.0 por petición del usuario.** El código del duelo WebRTC se conserva para retomarlo. Su página muestra una pausa y no inicia conexiones. Antes se accedía desde Campaña → Jugar con otra persona. El anfitrión comparte una invitación, la otra persona devuelve una respuesta y el anfitrión pulsa Conectar. Usa una copia del ejército: no arriesga ni modifica los recursos o las tropas de la campaña. Algunas redes requieren configurar un servidor TURN; GitHub Pages no proporciona matchmaking, cuentas, clasificación ni un servidor persistente.
 
 - [Reglas de operaciones, eventos y conexión](docs/OPERATIONS-MULTIPLAYER.md).
 - `tests/campaign.test.mjs` y `tests/operations.test.mjs`: objetivos, transporte, habilidades, recompensas, guardados y protocolo de duelo.
 - `scripts/qa-operations.mjs`: campaña real desde la interfaz, niebla, habilidad, reanudación, catálogos, evento y móvil.
-- `scripts/qa-multiplayer.mjs`: conexión WebRTC real entre dos contextos, órdenes remotas y conservación del guardado.
+- `scripts/qa-multiplayer.mjs`: comprobación histórica de conexión WebRTC; requiere reactivar expresamente la interfaz antes de usarla.
+
+## Expediciones y colonias en 0.7
+
+Abre **Territorio → Explorar islas y colonias**. Busca rivales de IA con defensa 1–10 y seis biomas, desembarca bajo la niebla y elige saquear o conquistar. Puedes mantener tres puestos con guarniciones propias, diez niveles de mejora, producción y depósitos. La IA anuncia sus ataques; puedes dirigir la defensa y recuperar un puesto perdido. Las tropas coloniales siguen ocupando población y sus bajas son permanentes.
+
+Construye rutas marítimas o aéreas desde terminales operativas, despacha carga y recógela al llegar. Los excedentes se conservan. Las estaciones cambian la paleta del terreno siguiendo el calendario de la partida. Ajustes ofrece una copia local de recuperación sin reemplazar el guardado rápido. El multijugador, cuentas, chat, visitas sociales y conquista PvP quedan pausados; los anuncios requieren un proveedor aprobado.
+
+- [Reglas, alcance y límites de esta entrega](docs/EXPEDITIONS.md).
+- [Análisis de la conversación aportada](docs/SOCIAL-ONLINE-REVIEW.md).
+- `scripts/qa-expeditions.mjs`: exploración, guarnición, suministros, móvil, guardado y modo sin conexión.

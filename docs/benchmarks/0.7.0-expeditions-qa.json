@@ -1,0 +1,22 @@
+{
+  "search": true,
+  "biomes": 6,
+  "landing": true,
+  "fog": true,
+  "resume": true,
+  "retreat": true,
+  "garrison": true,
+  "population": true,
+  "shipment": true,
+  "colonyVisit": true,
+  "fullStorageKeepsCargo": true,
+  "mobile": [
+    320,
+    390,
+    768
+  ],
+  "offline": true,
+  "recoveryReviewAndRestore": true,
+  "multiplayerPaused": true,
+  "errors": []
+}

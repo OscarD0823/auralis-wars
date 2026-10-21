@@ -1,0 +1,117 @@
+{
+  "samples": [
+    {
+      "name": "home",
+      "mean": 0.33666666646798454,
+      "p95": 0.6000000238418579,
+      "simulationMean": null,
+      "before": {
+        "groundBuilds": 1,
+        "natureBuilds": 1,
+        "visibleNature": 99,
+        "totalNature": 677,
+        "worldSize": 100,
+        "terrainImages": 39,
+        "residentBytes": 19401168,
+        "alphaMasks": 0
+      },
+      "after": {
+        "groundBuilds": 1,
+        "natureBuilds": 1,
+        "visibleNature": 99,
+        "totalNature": 677,
+        "worldSize": 100,
+        "terrainImages": 39,
+        "residentBytes": 19401168,
+        "alphaMasks": 0
+      }
+    },
+    {
+      "name": "advanced-33",
+      "mean": 1.3166666661699613,
+      "p95": 2,
+      "simulationMean": null,
+      "before": {
+        "groundBuilds": 5,
+        "natureBuilds": 2,
+        "visibleNature": 0,
+        "totalNature": 506,
+        "worldSize": 100,
+        "terrainImages": 96,
+        "residentBytes": 68238264,
+        "alphaMasks": 0
+      },
+      "after": {
+        "groundBuilds": 5,
+        "natureBuilds": 2,
+        "visibleNature": 0,
+        "totalNature": 506,
+        "worldSize": 100,
+        "terrainImages": 96,
+        "residentBytes": 68238264,
+        "alphaMasks": 0
+      }
+    },
+    {
+      "name": "mission",
+      "mean": 0.2591666673620542,
+      "p95": 0.6000000238418579,
+      "simulationMean": 0.5666666666666667,
+      "before": {
+        "groundBuilds": 7,
+        "natureBuilds": 3,
+        "visibleNature": 0,
+        "totalNature": 0,
+        "worldSize": 100,
+        "terrainImages": 97,
+        "residentBytes": 68486664,
+        "alphaMasks": 0
+      },
+      "after": {
+        "groundBuilds": 7,
+        "natureBuilds": 3,
+        "visibleNature": 0,
+        "totalNature": 0,
+        "worldSize": 100,
+        "terrainImages": 97,
+        "residentBytes": 68486664,
+        "alphaMasks": 0
+      }
+    },
+    {
+      "name": "expedition-tundra",
+      "mean": 0.19250000019868216,
+      "p95": 0.30000001192092896,
+      "simulationMean": 0.4166666666666667,
+      "before": {
+        "groundBuilds": 8,
+        "natureBuilds": 4,
+        "visibleNature": 56,
+        "totalNature": 380,
+        "worldSize": 100,
+        "terrainImages": 97,
+        "residentBytes": 68486664,
+        "alphaMasks": 0
+      },
+      "after": {
+        "groundBuilds": 8,
+        "natureBuilds": 4,
+        "visibleNature": 56,
+        "totalNature": 380,
+        "worldSize": 100,
+        "terrainImages": 97,
+        "residentBytes": 68486664,
+        "alphaMasks": 0
+      }
+    }
+  ],
+  "dpr": 1,
+  "version": "0.7.0",
+  "package": {
+    "coreRoutes": 103,
+    "coreBytes": 4018403,
+    "optionalRoutes": 5435,
+    "allBytes": 275049875
+  },
+  "errors": []
+}

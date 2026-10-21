@@ -66,3 +66,18 @@ La instalación inicial prepara 99 rutas, 3.977.743 bytes sin compresión de tra
 Las escenas se midieron secuencialmente en una misma instancia, por lo que la última cifra conserva parte de la caché anterior. No son cifras aisladas de memoria total del navegador ni garantías de FPS. La simulación de la primera operación dio 0,61 ms por paso en 30 pasos de prueba. La medición no espera a la GPU ni incluye toda la interfaz. Ninguna escena recompuso su terreno durante los 120 dibujos; la operación no dibujó naturaleza procedural ajena a los objetos de su archivo.
 
 La validación actual incluye 117 pruebas de simulación y pruebas reales de interfaz para objetivos, habilidades, eventos, guardado, retirada, búsqueda, móvil y conexión WebRTC. Las comprobaciones por píxeles ejercitan marcha, extracción, carga, ataque y muerte, incluidas dos unidades grandes recuperadas del archivo. Las pruebas de duelo usan dos contextos con guardados independientes, órdenes y habilidades del invitado procesadas por el anfitrión, desconexión y conservación de las dos campañas.
+
+## Expediciones en 0.7
+
+Medición local del 21 de octubre de 2026, Edge sin interfaz, vista de 1000 × 700 y DPR 1, 120 dibujos tras calentar las imágenes. El detalle queda en `benchmarks/0.7.0-operations.json`.
+
+| Escenario | Dibujo medio | p95 | Paso de combate medio |
+| --- | ---: | ---: | ---: |
+| Base inicial | 0,34 ms | 0,60 ms | — |
+| Base avanzada, 33 tipos | 1,32 ms | 2,00 ms | — |
+| Primera operación clásica | 0,26 ms | 0,60 ms | 0,57 ms |
+| Expedición tundra, defensa 4 | 0,19 ms | 0,30 ms | 0,42 ms |
+
+Son tiempos de CPU de estas escenas con caché caliente, no FPS garantizados ni una medición de toda la GPU/red. En la expedición se dibujaron 56 de 380 elementos naturales. Los 120 dibujos no reconstruyeron ni el terreno ni el índice natural; las operaciones clásicas conservaron cero naturaleza procedural añadida. El generador conserva hasta 24 matrices compactas, no mapas de todas las colonias en pantalla.
+
+La instalación inicial registra 103 rutas y 4.018.403 bytes; la descarga completa opcional contiene 5.435 rutas y 275.049.875 bytes, excluyendo duplicación de la raíz y sin estimar compresión HTTP. La suite tiene 141 pruebas de simulación/guardado. El navegador comprueba expediciones, reanudación, guarniciones, cargas con almacenes llenos, visitas, recuperación local, móvil y recarga sin red. El multijugador permanece pausado.
