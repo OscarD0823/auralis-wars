@@ -39,3 +39,7 @@ Las animaciones estándar utilizan cinco orientaciones por acción. Se mantienen
 ## Planos y patrullas en 0.8
 
 Se añaden las coordenadas y áreas estáticas de `Chapter02Guille`, `Chapter03Bazooka` y `Chapter04Jeeps`, junto al primer plano. El archivo fija la revisión y el SHA-256 de cada clase. Los sectores y la fórmula inicial de las patrullas proceden de `MapInitializer.spawnIdleEnemies`; la colocación y el equilibrio se adaptan al motor Auralis. Se reutilizan los gráficos ya convertidos, sin nuevas descargas del sitio ni nuevos datos de cuentas. `audit-home-map.mjs` documenta cada instancia, origen de huella, tamaño, bando y función. Las posiciones no se presentan como una implementación de todas las cinemáticas y delegados de los capítulos.
+
+## Interfaz en 0.9
+
+Se incorporan 31 bitmaps de la GUI de `Basesec_1.5.4.swf`, exportados estáticamente desde la misma revisión fija de Social Warriors. No se alteran sus píxeles. `source-data/social-wars/interface.json` identifica el SWF, cada ID exportado y su SHA-256; `prepare-hud.py RUTA_REFERENCIAS` reproduce la copia. Los marcos adaptables, disposición DOM, órdenes de guarnición y control de zoom son código Auralis. Véase [CLASSIC-INTERFACE.md](docs/CLASSIC-INTERFACE.md). Se mantiene la atribución y el alcance de derechos del arte indicados al principio.

@@ -1,4 +1,4 @@
-import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import{createHash}from'node:crypto';
 import {BUILDINGS,UNITS} from '../dist/catalog.js';
 const root=path.resolve('dist'),atlas=JSON.parse(fs.readFileSync(path.join(root,'classic/atlas.json'),'utf8'));
 const resolveLocal=url=>{const p=path.resolve(root,url);assert.ok(p.startsWith(root+path.sep),'Asset outside package');return p;};
@@ -21,4 +21,7 @@ for(const id of Object.values(atlas.units)){const actor=atlas.assets[id];if(acto
 const sw=fs.readFileSync(path.join(root,'sw.js'),'utf8'),files=new Set(JSON.parse(sw.match(/FILES=(\[.*?\]);/)[1]));
 for(const a of Object.values(atlas.assets)){const required=[a.thumb,...(a.clips?Object.values(a.clips).flat().map(c=>c.file):[a.file])];for(const url of required)assert.ok(files.has(url),'Offline cache misses '+url);if(a.clips)assert.equal(files.has(a.file),false,'Whole animation movie must not duplicate directional download');}
 const missing=JSON.parse(fs.readFileSync('source-data/social-wars/graphics-missing.json','utf8'));assert.deepEqual(atlas.unavailable,missing.missing.map(m=>m.sourceId));
+const hud=JSON.parse(fs.readFileSync('source-data/social-wars/interface.json','utf8'));
+for(const item of hud.assets){const data=fs.readFileSync(resolveLocal(item.file));assert.equal(createHash('sha256').update(data).digest('hex'),item.sha256,'Changed preserved UI bitmap '+item.name);assert.ok(files.has(item.file),'Offline cache misses UI bitmap '+item.name);}
+console.log('PASS: '+hud.assets.length+' preserved UI bitmaps match their source hashes and offline manifest.');
 console.log('PASS: source provenance, '+counted.size+' shared movies, '+frames+' frames, '+Object.keys(atlas.units).length+' actor mappings, directional clips, offline assets and '+atlas.unavailable.length+' explicitly absent source movies.');

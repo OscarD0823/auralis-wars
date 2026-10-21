@@ -1,0 +1,194 @@
+{
+  "source": "https://github.com/AcidCaos/socialwarriors/tree/c3fceeb1f8e93734a293b9bc25ae6025656f6822",
+  "movie": "Basesec_1.5.4.swf",
+  "movieSha256": "e4ce0218920a30fceee85ba750df3eedffa3f90e977bd117655704e297e0dc77",
+  "conversion": "JPEXS FFDec static PNG bitmap export; copied without pixel changes",
+  "assets": [
+    {
+      "name": "gold",
+      "file": "./interface/gold.png",
+      "exportedBitmapId": 23,
+      "sha256": "a58235190defe9f321f708b4585b1510280e5bd884a3edae4110586404e8f698"
+    },
+    {
+      "name": "wood",
+      "file": "./interface/wood.png",
+      "exportedBitmapId": 27,
+      "sha256": "89568a95fc8fc0d2e55d396beff8723c4a524dc03b529e37eafc16916460129c"
+    },
+    {
+      "name": "supply",
+      "file": "./interface/supply.png",
+      "exportedBitmapId": 25,
+      "sha256": "4dd66cbbabed7e67f809e93cba1fdc4962e8226e61d9a207ee1d72c71258c1ef"
+    },
+    {
+      "name": "metal",
+      "file": "./interface/metal.png",
+      "exportedBitmapId": 29,
+      "sha256": "4556d74bb4396c1f2c9bc6acb8bfd06f5647e272df08756a6c5bd94494f88340"
+    },
+    {
+      "name": "rank",
+      "file": "./interface/rank.png",
+      "exportedBitmapId": 33,
+      "sha256": "f0bc75452c9a7321deb0c55ab8714f604adaf9b007e72ee1ec49ff9eba02f424"
+    },
+    {
+      "name": "population",
+      "file": "./interface/population.png",
+      "exportedBitmapId": 3101,
+      "sha256": "dccaf8ea51ac4f95bbfb4ed1e931b1e197facbe1c96e0f8bec434c7d1e7cee9a"
+    },
+    {
+      "name": "select",
+      "file": "./interface/select.png",
+      "exportedBitmapId": 102,
+      "sha256": "443d192d7a7793690a63ccedbe72fc767656148f2c5de017adb9d4fdc67be10c"
+    },
+    {
+      "name": "build",
+      "file": "./interface/build.png",
+      "exportedBitmapId": 110,
+      "sha256": "6a80c4bdf8013b9e6d457cf499cde05b272557b78979a754eacae60821aacb1b"
+    },
+    {
+      "name": "world",
+      "file": "./interface/world.png",
+      "exportedBitmapId": 123,
+      "sha256": "8356af307c4b3f718bfc1a84f2fec853c8929a10f8d311dc21ba988adea72c63"
+    },
+    {
+      "name": "army",
+      "file": "./interface/army.png",
+      "exportedBitmapId": 1015,
+      "sha256": "b7b1f6c96891a081488337aa2a4d688aa136a6da8fb0d632f5fdfffd7705fa72"
+    },
+    {
+      "name": "worker",
+      "file": "./interface/worker.png",
+      "exportedBitmapId": 1145,
+      "sha256": "c7971a3735ec3ae1f7946471a7ad5e48b5b0a9bd4df36e7591a7162aa65ca4a1"
+    },
+    {
+      "name": "rescue",
+      "file": "./interface/rescue.png",
+      "exportedBitmapId": 187,
+      "sha256": "933b3f7bb20faead2f89732de8c37f59a1ab430236a7e1af02c206e32562e1e7"
+    },
+    {
+      "name": "campaign",
+      "file": "./interface/campaign.png",
+      "exportedBitmapId": 2142,
+      "sha256": "31b1802abee90380727d50d6ae688ed7b55ca9129a5bf4b29765ccecbd84ea6c"
+    },
+    {
+      "name": "tasks",
+      "file": "./interface/tasks.png",
+      "exportedBitmapId": 335,
+      "sha256": "87a88ea39ccf081cc83bfdb5ed8c7bf7362c1b19f74b9f9a41c99c0d0fe5dcc7"
+    },
+    {
+      "name": "settings",
+      "file": "./interface/settings.png",
+      "exportedBitmapId": 303,
+      "sha256": "06fcf1645bb2d8698413d5c8dffa8f05f60de03a6b0f89d3a1558dc3e0eacebb"
+    },
+    {
+      "name": "target",
+      "file": "./interface/target.png",
+      "exportedBitmapId": 181,
+      "sha256": "a81aeb4053f6e51817ab78a486b0c1592d7bbfff31c731ff53291d62fa8e5385"
+    },
+    {
+      "name": "all",
+      "file": "./interface/all.png",
+      "exportedBitmapId": 1027,
+      "sha256": "a9588814929e4290dd2d47a2f86c92dd7509f92e92bab306cf4240fd5e38c012"
+    },
+    {
+      "name": "production",
+      "file": "./interface/production.png",
+      "exportedBitmapId": 1025,
+      "sha256": "4700bfde98ae17d99a3f3d691aa8e94db653a58fa4ebac2be5199b403582cd44"
+    },
+    {
+      "name": "military",
+      "file": "./interface/military.png",
+      "exportedBitmapId": 1015,
+      "sha256": "b7b1f6c96891a081488337aa2a4d688aa136a6da8fb0d632f5fdfffd7705fa72"
+    },
+    {
+      "name": "defense",
+      "file": "./interface/defense.png",
+      "exportedBitmapId": 1012,
+      "sha256": "eca0ac6c96f56457a89516ec1152110ae05e2829a87d5ef9807fe252f0ba47b7"
+    },
+    {
+      "name": "economy",
+      "file": "./interface/economy.png",
+      "exportedBitmapId": 1001,
+      "sha256": "fca417ead384e9f0d208390e7c099be81d8751b572ff68d5aca03be7a35c1876"
+    },
+    {
+      "name": "support",
+      "file": "./interface/support.png",
+      "exportedBitmapId": 1145,
+      "sha256": "c7971a3735ec3ae1f7946471a7ad5e48b5b0a9bd4df36e7591a7162aa65ca4a1"
+    },
+    {
+      "name": "science",
+      "file": "./interface/science.png",
+      "exportedBitmapId": 3564,
+      "sha256": "ea58730f89407e941804c6a30ed683bcf0ac21d279e5eb896cd2c26f72d6f838"
+    },
+    {
+      "name": "infrastructure",
+      "file": "./interface/infrastructure.png",
+      "exportedBitmapId": 1018,
+      "sha256": "7d00ff582ec8be85da587e16d67f4f3e8c3f006ca7a1f4c9582a0eabff33206a"
+    },
+    {
+      "name": "decoration",
+      "file": "./interface/decoration.png",
+      "exportedBitmapId": 1009,
+      "sha256": "6c6f38cb9f3784913f9d6436fee448f1c86f63549bb015069208bc888be6fce5"
+    },
+    {
+      "name": "storage",
+      "file": "./interface/storage.png",
+      "exportedBitmapId": 118,
+      "sha256": "8ef0bd922e8460b2c4afe8662d89125099c65418f78ac6166fd1a975dce0c361"
+    },
+    {
+      "name": "panel-texture",
+      "file": "./interface/panel-texture.png",
+      "exportedBitmapId": 1047,
+      "sha256": "b19ce85b1dde40eb34eaf2c733e8bab6e5faa1127b9847eb5b6b050dec33b792"
+    },
+    {
+      "name": "toolbar-texture",
+      "file": "./interface/toolbar-texture.png",
+      "exportedBitmapId": 248,
+      "sha256": "9bbab340d79e04e20d68c8790afb6fd31b2999409979470916c313a6e953e272"
+    },
+    {
+      "name": "blue-button",
+      "file": "./interface/blue-button.png",
+      "exportedBitmapId": 284,
+      "sha256": "ff6eebd8897cbfb90dad8f69b7b0adc1b3c6c65994242d6e55d751a882e1105f"
+    },
+    {
+      "name": "selection",
+      "file": "./interface/selection.png",
+      "exportedBitmapId": 137,
+      "sha256": "95c1c868659c75fdc7bfe467636f4db6f41ddbd7a069dc60975994e349246bb4"
+    },
+    {
+      "name": "close",
+      "file": "./interface/close.png",
+      "exportedBitmapId": 1974,
+      "sha256": "95b27bf501fad2503620c5c1119faeb695479511aaea2af385638d55d7d2c0bd"
+    }
+  ]
+}

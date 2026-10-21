@@ -1,6 +1,6 @@
 # Auralis Wars
 
-Versión 0.8.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.9.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
 El catálogo incorpora 411 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 28 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
 
@@ -11,10 +11,15 @@ El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis.
 - [Procedencia, licencia y reconstrucción](ASSET-CREDITS.md)
 - npm test: simulación y compatibilidad de guardado.
 - npm run check: módulos, rutas y caché.
+- scripts/qa-classic-hud.mjs: interfaz original, selección de tropas, zoom, móvil, actualización de caché y recursos sin conexión.
 - scripts/qa-ui.mjs: construcción, tropas, combate, móvil, guardado y modo sin conexión.
 - scripts/qa-upgrades.mjs: selección y mejora de edificios en la interfaz.
 
 La vista isométrica usa Canvas 2D y atlas WebP. Los archivos 3D anteriores permanecen como fuente histórica y no se cargan ni se almacenan en la caché del juego actual. Las partidas de 0.1.0 conservan su clave y sus IDs.
+
+## Interfaz original
+
+Barra compacta de recursos y experiencia, iconos ilustrados de misiones, textura militar, herramientas inferiores y tienda con categorías e imágenes originales. Los retratos de la guarnición seleccionan tropas reales; el zoom dispone de deslizador vertical. Se conservan la partida y las operaciones. [Implementación, fuentes y validación](docs/CLASSIC-INTERFACE.md).
 
 ## Desarrollo
 
