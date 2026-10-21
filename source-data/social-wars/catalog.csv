@@ -1,0 +1,779 @@
+﻿id,name,type,group_type,min_level,img_name,trains_ids,upgrades_to,life,attack,attack_range,population,collect,collect_type,hasSprite,hasThumbnail
+1,House I,b,HOUSING,1,0001_house_1_m,-1,47,180,0,0,3,0,g,True,True
+2,Wood Factory I,b,WOOD_FACTORY,1,0002_depot_wood_1_m,-1,6,200,0,0,0,150,w,True,True
+3,Oil Factory I,b,OIL_FACTORY,5,0003_depot_oil_1_m,-1,7,200,0,0,0,150,o,True,True
+4,Steel Factory I,b,STEEL_FACTORY,4,0004_depot_steel_1_m,-1,8,200,0,0,0,150,s,True,True
+5,Gold Factory I,b,GOLD_FACTORY,2,0005_depot_gold_1_m,-1,9,200,0,0,0,150,g,True,True
+6,Wood Factory II,b,WOOD_FACTORY,11,0006_depot_wood_2_m,-1,10,240,0,0,0,250,w,True,True
+7,Oil Factory II,b,OIL_FACTORY,17,0007_depot_oil_2_m,-1,11,240,0,0,0,250,o,True,True
+8,Steel Factory II,b,STEEL_FACTORY,16,0008_depot_steel_2_m,-1,12,250,0,0,0,250,s,True,True
+9,Gold Factory II,b,GOLD_FACTORY,13,0009_depot_gold_2_m,-1,13,240,0,0,0,250,g,True,True
+10,Wood Factory III,b,WOOD_FACTORY,21,0010_depot_wood_3_m,-1,14,300,0,0,0,350,w,True,True
+11,Oil Factory III,b,OIL_FACTORY,30,0011_depot_oil_3_m,-1,15,300,0,0,0,350,o,True,True
+12,Steel Factory III,b,STEEL_FACTORY,27,0012_depot_steel_3_m,-1,16,300,0,0,0,350,s,True,True
+13,Gold Factory III,b,GOLD_FACTORY,24,0013_depot_gold_3_m,-1,17,300,0,0,0,350,g,True,True
+14,Wood Factory IV,b,WOOD_FACTORY,34,0014_depot_wood_4_m,-1,-1,450,0,0,0,500,w,True,True
+15,Oil Factory IV,b,OIL_FACTORY,42,0015_depot_oil_4_m,-1,-1,450,0,0,0,500,o,True,True
+16,Steel Factory IV,b,STEEL_FACTORY,39,0016_depot_steel_4_m,-1,-1,450,0,0,0,500,s,True,True
+17,Gold Factory IV,b,GOLD_FACTORY,37,0017_depot_gold_4_m,-1,-1,450,0,0,0,500,g,True,True
+18,Market I,b,MARKET,5,0018_market_1_m,-1,90,500,0,0,0,0,g,True,True
+19,Prison,b,CHAPTER ITEM,1,0019_prision_m,-1,-1,1000,0,0,0,0,g,True,True
+22,Turret I,b,TURRET,3,0022_tower_1_m,-1,57,300,5,8,0,0,g,True,True
+23,Wall I,b,WALL,2,0023_wall_1_m,-1,24,150,0,0,0,0,g,True,True
+24,Wall II,b,WALL,9,0024_wall_2_m,-1,25,400,0,0,0,0,g,True,True
+25,Wall III,b,WALL,17,0025_wall_3_m,-1,78,600,0,0,0,0,g,True,True
+26,Command Center,b,COMMAND_CENTER,1,0026_command_center_1_m,1001,58,1000,0,0,0,0,g,True,True
+28,Hospital,b,HOSPITAL,9,0028_hospital_1_m,-1,-1,800,0,0,0,0,g,True,True
+30,Academy I,b,ACADEMY,1,0030_academy_1_m,1007,41,300,0,0,0,0,g,True,True
+31,Bazooka Academy I,b,BAZOOKA,3,0031_bazooka_academy_1_m,1008,43,300,0,0,0,0,g,True,True
+37,Hangar I,b,HANGAR,25,0037_hangar_1_m,1015,76,400,0,0,0,0,g,True,True
+38,Tank Academy I,b,CANNON,12,0038_cannon_academy_1_m,1016,62,300,0,0,0,0,g,True,True
+39,Turret IV,b,TURRET,16,0039_tower_2_m,-1,88,900,14,11,0,0,g,True,True
+40,Jeep garage I,b,JEEP,5,0040_workshop_1_m,1014,64,300,0,0,0,0,g,True,True
+41,Academy II,b,ACADEMY,7,0041_academy_2_m,1020,42,350,0,0,0,0,g,True,True
+42,Academy III,b,ACADEMY,21,0042_academy_3_m,1021,143,400,0,0,0,0,g,True,True
+43,Bazooka Academy II,b,BAZOOKA,10,0043_bazooka_academy_2_m,1022,44,350,0,0,0,0,g,True,True
+44,Bazooka Academy III,b,BAZOOKA,23,0044_bazooka_academy_3_m,1023,141,400,0,0,0,0,g,True,True
+45,Dual-Rocket Turret,b,TURRET,8,0045_tower_3_m,-1,-1,1600,20,12,0,0,g,True,True
+46,Cannon Turret,b,TURRET,13,0046_tower_4_m,-1,-1,1500,18,12,0,0,g,True,True
+47,House II,b,HOUSING,6,0047_house_2_m,-1,48,200,0,0,4,0,g,True,True
+48,House III,b,HOUSING,19,0048_house_3_m,-1,-1,220,0,0,5,0,g,True,True
+49,Turret III,b,TURRET,8,0049_torreta_horacio_m,-1,39,700,12,10,0,0,g,True,True
+50,Bunker I,b,BUNKER,4,0050_bunker_1_m,-1,51,600,8,7,0,0,g,True,True
+51,Bunker II,b,BUNKER,13,0051_bunker_2_m,-1,52,1300,10,8,0,0,g,True,True
+52,Bunker III,b,BUNKER,19,0052_bunker_3_m,-1,-1,800,14,9,0,0,g,True,True
+53,Mega Bunker,b,BUNKER,10,0053_bunker_4_m,-1,-1,2000,18,10,0,0,g,True,True
+54,Helicopter Hangar I,b,HELICOPTER,18,0054_copter_hangar_1_m,1027,55,400,0,0,0,0,g,True,True
+55,Helicopter Hangar II,b,HELICOPTER,29,0055_copter_hangar_2_m,1028,56,800,0,0,0,0,g,True,True
+56,Helicopter Hangar III,b,HELICOPTER,38,0056_copter_hangar_3_m,1029,146,1000,0,0,0,0,g,True,True
+57,Turret II,b,TURRET,5,0057_torreta_ruben_m,-1,49,500,8,9,0,0,g,True,True
+58,Command Center II,b,COMMAND_CENTER,14,0058_command_center_2_m,1039,59,2000,0,0,5,0,g,True,True
+59,Command Center III,b,COMMAND_CENTER,26,0059_command_center_3_m,1040,60,4000,0,0,5,0,g,True,True
+60,Command Center IV,b,COMMAND_CENTER,35,0060_command_center_4_m,1041,-1,8000,0,0,5,0,g,True,True
+61,Allies Building,b,ALLIES,10,0061_allies_building_m,-1,-1,500,0,0,0,0,g,True,True
+62,Tank Academy II,b,CANNON,27,0062_cannon_academy_2_m,1003,63,350,0,0,0,0,g,True,True
+63,Tank Academy III,b,CANNON,36,0063_cannon_academy_3_m,1004,150,500,0,0,0,0,g,True,True
+64,Jeep garage II,b,JEEP,15,0064_workshop_2_m,1030,65,350,0,0,0,0,g,True,True
+65,Jeep garage III,b,JEEP,31,0065_workshop_3_m,1031,-1,400,0,0,0,0,g,True,True
+66,Stoneage,b,WONDER,1,0066_stoneage_marvel_m,-1,-1,3000,0,0,0,1800,s,True,True
+67,Machu Picchu,b,WONDER,10,0067_machupichu_m,-1,-1,3000,0,0,0,3600,s,True,True
+68,Iguazu,b,WONDER,1,0068_iguazu_m,-1,-1,3000,0,0,0,1800,o,True,True
+69,Sphynx,b,WONDER,1,0069_sfinx_m,-1,-1,3000,0,0,0,1800,g,True,True
+70,Inca God,b,WONDER,8,0070_inca_god_m,-1,-1,3000,0,0,0,3600,g,True,True
+71,Chichenitza,b,WONDER,6,0071_chichenitza_m,-1,-1,3000,0,0,0,3600,w,True,True
+72,Babilonia,b,WONDER,12,0072_babilonia_m,-1,-1,2000,0,0,50,3600,o,True,True
+73,Ankor,b,WONDER,1,0073_Ankor_m,-1,-1,2000,0,0,0,1800,w,True,True
+74,Allies Market,b,ALLIES,12,0074_Allies_market_m,-1,-1,500,0,0,0,0,g,True,True
+75,Recon center,b,ALLIES,7,0075_Spy_center_m,-1,-1,500,0,0,0,0,g,True,True
+76,Hangar II,b,HANGAR,33,0076_hangar_2_m,1025,77,8000,0,0,0,0,g,True,True
+77,Hangar III,b,HANGAR,40,0077_hangar_3_m,1026,-1,1000,0,0,0,0,g,True,True
+78,Wall IV,b,WALL,24,0078_wall_4_m,-1,79,800,0,0,0,0,g,True,True
+79,Wall V,b,WALL,32,0079_wall_5_m,-1,-1,1000,0,0,0,0,g,True,True
+80,Fortress I,b,FORTRESS,20,0080_fortress_1_m,-1,-1,4000,18,10,0,0,g,True,True
+81,Fortress II,b,FORTRESS,28,0081_fortress_2_m,-1,-1,8000,22,11,0,0,g,True,True
+82,Rocket Fortress,b,FORTRESS,9,0082_fortress_3_m,1044,-1,8000,26,12,0,0,g,True,True
+83,Fortress III,b,FORTRESS,35,0083_fortress_4_m,-1,-1,10000,26,12,0,0,g,True,True
+84,Special Fortress,b,FORTRESS,1,0084_fortress_5_m,1045,-1,5000,22,11,0,0,g,True,True
+85,Mega Fortress,b,FORTRESS,24,0085_fortress_6_m,1010,-1,12000,30,13,0,0,g,True,True
+86,Robotic Center,b,ACADEMY,8,0086_robotics_center,-1,-1,400,0,0,0,0,g,True,True
+87,Turret VI,b,TURRET,30,0087_tower_7_m,-1,-1,1200,18,13,0,0,g,True,True
+88,Turret V,b,TURRET,22,0088_tower_8_m,-1,87,1100,16,12,0,0,g,True,True
+89,Nuclear Plant,b,CHAPTER ITEM,1,0089_nuclear_plant_m,-1,-1,500,0,0,0,0,g,True,True
+90,Market II,b,MARKET,11,0090_market_2_m,-1,91,500,0,0,0,0,g,True,True
+91,Market III,b,MARKET,25,0091_market_3_m,-1,-1,500,0,0,0,0,g,True,True
+92,Apple tree,b,DECO,14,0092_apple_tree_m,-1,-1,5,0,0,0,0,g,True,True
+93,Pear tree,b,DECO,3,0093_pear_tree_m,-1,-1,400,0,0,0,0,g,True,True
+94,Sponge bush,b,DECO,2,0094_sponge_bush_m,-1,-1,400,0,0,0,0,g,True,True
+95,Little fountain,b,DECO,5,0095_little_fountain_m,-1,-1,150,0,0,0,0,g,True,True
+96,White Flowers,b,DECO,4,0096_white_flowers_m,-1,-1,5,0,0,0,0,g,True,True
+97,Red flowers,b,DECO,6,0097_red_flowers_m,-1,-1,400,0,0,0,0,g,True,True
+98,Blue flowers,b,DECO,13,0098_blue_flowers_m,-1,-1,5,0,0,0,0,g,True,True
+100,Red Leaf flowers,b,DECO,9,0100_red_leaf_flowers_m,-1,-1,400,0,0,0,0,g,True,True
+101,Pink Leaf flowers,b,DECO,11,0101_pink_leaf_flowers_m,-1,-1,400,0,0,0,0,g,True,True
+102,Blue Leaf flowers,b,DECO,12,0102_blue_leaf_flowers_m,-1,-1,5,0,0,0,0,g,True,True
+103,Bush,b,DECO,8,0103_bush_m,-1,-1,400,0,0,0,0,g,True,True
+104,Lamp,b,DECO,10,0104_bancos_farolas_m,-1,-1,5,0,0,0,0,g,True,True
+105,Victory Arch,b,DECO,1,0105_victory_arch_m,-1,-1,400,0,0,0,0,g,True,True
+106,Fountain,b,DECO,1,0106_fountain_m,-1,-1,400,0,0,0,0,g,True,True
+107,Sculpture,b,DECO,1,0107_sculpture_m,-1,-1,400,0,0,0,0,g,True,True
+108,Grape field,b,SPECIAL_FACTORY,8,0108_grape_field_m,-1,-1,100,0,0,0,100,g,True,True
+109,Corn field,b,SPECIAL_FACTORY,2,0109_corn_field_m,-1,-1,100,0,0,5,100,g,True,True
+110,Cow farm,b,SPECIAL_FACTORY,14,0110_cow_farm_m,-1,-1,140,0,0,0,100,g,True,True
+111,Max Security Prison,b,CHAPTER ITEM,1,0111_prisoner_guile_m,-1,-1,1000,0,0,0,0,g,True,True
+112,Stolen Bazookas,b,CHAPTER ITEM,1,0112_stolen_bazookas_m,-1,-1,1000,0,0,0,0,g,True,True
+113,Disabled Jeeps,b,CHAPTER ITEM,1,0113_disabled_jeeps_m,-1,-1,1000,0,0,0,0,g,True,True
+114,Jeep wheels,b,CHAPTER ITEM,1,0114_jeep_weels_m,-1,-1,1000,0,0,0,0,g,True,True
+115,Supertank ammo,b,CHAPTER ITEM,1,0115_supertank_ammo_1_m,-1,-1,1000,0,0,0,0,g,True,True
+116,Supertank ammo,b,CHAPTER ITEM,1,0116_supertank_ammo_2_m,-1,-1,1000,0,0,0,0,g,True,True
+117,Disabled Supertank,b,CHAPTER ITEM,1,0117_disabled_supertank_m,-1,-1,1000,0,0,0,0,g,True,True
+118,Mind Control Laboratory,b,CHAPTER ITEM,1,0118_laboratory_m,-1,-1,5000,26,15,0,0,g,True,True
+119,Tank wheels,b,CHAPTER ITEM,1,0119_tank_wheels_m,-1,-1,1000,0,0,0,0,g,True,True
+120,Stolen missiles,b,CHAPTER ITEM,1,0120_stolen_missiles_m,-1,-1,1000,0,0,0,0,g,True,True
+121,Radio,b,CHAPTER ITEM,1,0121_radio_m,-1,-1,1000,0,0,0,0,g,True,True
+122,Heliport,b,CHAPTER ITEM,1,0122_helipuerto_m,-1,-1,1000,0,0,0,0,g,True,True
+123,Red Fortress,b,CHAPTER ITEM,1,0123_red_fortress_m,-1,-1,10000,0,0,0,0,g,True,True
+124,Disabled Tanks,b,CHAPTER ITEM,1,0124_disabled_tanks_m,-1,-1,1000,0,0,0,0,g,True,True
+125,Laboratory,b,CHAPTER ITEM,1,0125_laboratory_m,-1,-1,1000,0,0,0,0,g,True,True
+126,Enemy's airport,b,CHAPTER ITEM,1,0126_enemy_airport_m,-1,-1,1000,0,0,0,0,g,True,True
+127,Enemy's harbour,b,CHAPTER ITEM,1,0127_enemy_harbour_m,-1,-1,1000,0,0,0,0,g,True,False
+128,Rocket launcher,b,CHAPTER ITEM,1,0128_rocket_launcher_m,-1,-1,1000,0,0,0,0,g,True,True
+129,Flamethrower Academy,b,ACADEMY,10,0129_fire_academy_m,1046,-1,400,0,0,0,0,g,True,True
+130,Dominion Tank Academy,b,CANNON,10,0130_black_tank_academy_m,1047,-1,400,0,0,0,0,g,True,True
+131,Stealth Fighter Hangar,b,HANGAR,10,0131_black_aircraft_academy_m,1048,-1,1000,0,0,0,0,g,True,True
+132,Troubled Traveller,b,DECO,1,0132_troubled_traveller_m,-1,-1,400,0,0,0,0,g,True,False
+133,Injured Soldier,b,DECO,1,0133_injured_soldier_m,-1,-1,400,0,0,0,0,g,True,False
+134,Field Hospital,b,ACADEMY,15,0134_field_hospital_m,1050,-1,500,0,0,0,0,g,True,True
+135,Mechanical Garage,b,ACADEMY,20,0135_engineer_barrack_m,1051,-1,1000,0,0,0,0,g,True,True
+136,General Sculpture,b,DECO,2,0136_general_sculpture_m,-1,-1,400,0,0,0,0,g,True,True
+137,Spy Academy,b,ACADEMY,10,0137_spy_academy_m,1052,-1,400,0,0,0,0,g,False,False
+138,Mr T. Academy,b,ACADEMY,10,0138_mr_t_academy_m,1055,-1,400,0,0,0,0,g,True,True
+139,Area 51,b,ACADEMY,30,0139_area_51_m,-1,-1,400,0,0,0,0,g,True,True
+140,Recruitment Prize,b,ACADEMY,8,0140_recruitment_m,-1,-1,750,0,0,0,0,g,True,True
+141,Bazooka Academy IV,b,BAZOOKA,30,0141_bazooka_academy_4_m,1063,142,600,0,0,0,0,g,True,True
+142,Bazooka Academy V,b,BAZOOKA,37,0142_bazooka_academy_5_m,1064,-1,1000,0,0,0,0,g,True,True
+143,Academy IV,b,ACADEMY,28,0143_academy_4_m,1058,144,600,0,0,0,0,g,True,True
+144,Academy V,b,ACADEMY,34,0144_academy_5_m,1059,-1,1000,0,0,0,0,g,True,True
+145,Mortar Academy,b,ACADEMY,17,0145_mortar_academy_m,1060,-1,400,0,0,0,0,g,True,True
+146,Helicopter Hangar IV,b,HELICOPTER,44,0146_copter_hangar_4_m,1066,147,1250,0,0,0,0,g,True,True
+147,Helicopter Hangar V,b,HELICOPTER,48,0147_copter_hangar_5_m,1067,-1,1500,0,0,0,0,g,True,True
+148,Demolition Tank Academy,b,CANNON,50,0148_artillery_garage_m,1069,-1,1500,0,0,0,0,g,True,True
+149,Antiaircraft garage,b,CANNON,22,0149_antiaircraft_garage_m,1065,-1,500,0,0,0,0,g,True,True
+150,Tank Academy IV,b,CANNON,46,0150_tank_academy_4_m,1070,151,800,0,0,0,0,g,True,True
+151,Tank Academy V,b,CANNON,54,0151_tank_academy_5_m,1071,-1,1150,0,0,0,0,g,True,True
+152,Robo flag,b,DECO,2,0152_robo_flag_m,-1,-1,400,0,0,0,0,g,True,True
+153,Robo statue,b,DECO,2,0153_robo_statue_m,-1,-1,400,0,0,0,0,g,True,True
+154,Crusader Soldier Academy,b,ACADEMY,8,0154_robo_soldier_academy_m,1076,-1,1000,0,0,0,0,g,True,True
+155,Crusader Swordsman Academy,b,ACADEMY,8,0155_robo_swordsman_academy_m,1077,-1,1000,0,0,0,0,g,True,True
+156,Crusader Bazooka Academy,b,ACADEMY,8,0156_robo_bazooka_academy_m,1078,-1,1000,0,0,0,0,g,True,True
+157,Jet Soldier Academy,b,ACADEMY,8,0157_jet_robosoldier_academy_m,1079,-1,1000,0,0,0,0,g,True,True
+158,Motorized Soldier Academy,b,ACADEMY,8,0158_motorized_robosoldier_academy_m,1080,-1,1000,0,0,0,0,g,True,True
+159,Retaliator Academy,b,ACADEMY,8,0159_retaliator_academy_m,1081,-1,1000,0,0,0,0,g,True,True
+160,Megalancer Academy,b,ACADEMY,8,0160_robo_lancer_academy_m,1082,-1,1000,0,0,0,0,g,True,True
+161,Crusader Tank Academy,b,ACADEMY,8,0161_demolisher_tank_academy_m,1083,-1,1000,0,0,0,0,g,True,True
+162,Dreadnought Academy,b,ACADEMY,8,0162_dreadnought_academy_m,1084,-1,1000,0,0,0,0,g,True,True
+163,House,b,HOUSING,8,0163_robo_house_m,-1,-1,200,0,0,4,0,g,True,True
+164,Laser Turret,b,TURRET,8,0164_robo_turret_1_m,-1,-1,1700,21,12,0,0,g,True,True
+165,Tesla Turret,b,TURRET,8,0165_robo_turret_2_m,-1,-1,1550,20,10,0,0,g,True,True
+166,Wall,b,WALL,8,0166_robo_wall_m,-1,-1,1000,0,0,0,0,g,True,True
+167,Field,b,SPECIAL_FACTORY,8,0167_robo_farm_m,-1,-1,100,0,0,5,100,g,True,True
+168,Crusader Skylander Hangar,b,ACADEMY,8,0168_skylander_hangar_m,1088,-1,1000,0,0,0,0,g,True,True
+169,Mega-Axe Academy,b,ACADEMY,8,0169_roboaxe_academy_m,1089,-1,1000,0,0,0,0,g,True,True
+170,Giant Walker Factory,b,ACADEMY,8,0170_giant_walker_factory_m,1090,-1,1000,0,0,0,0,g,True,True
+171,Missile Tank Academy,b,ACADEMY,8,0171_missile_tank_academy_m,1091,-1,1000,0,0,0,0,g,True,True
+172,Steel Claws Academy,b,ACADEMY,8,0172_steel_claws_academy_m,1092,-1,1000,0,0,0,0,g,True,True
+173,Development Wall,b,ACADEMY,8,0166_robo_wall_m,1092,-1,1000,0,0,0,0,g,True,True
+174,Fireman Academy,b,ACADEMY,8,0174_fireman_academy_m,1104,-1,1000,0,0,0,0,g,True,True
+175,Babilonian Temple,b,WONDER,1,0175_alejandria_m,-1,-1,3000,0,0,75,0,o,True,True
+176,Cash Wonder,b,WONDER,1,0176_maravilla_m,-1,-1,3000,0,0,100,1,c,True,True
+177,Axe Zoldier Academy,b,ACADEMY,8,0177_orc_soldier_academy_1_m,1106,-1,1000,0,0,0,0,g,True,True
+178,Gun Zoldier Academy,b,ACADEMY,8,0178_orc_soldier_academy_2_m,1107,-1,1000,0,0,0,0,g,True,True
+179,Xplosive Ork Academy,b,ACADEMY,8,0179_orc_boss_academy_m,1108,-1,1000,0,0,0,0,g,True,True
+180,Bear Ridda Academy,b,ACADEMY,8,0180_orc_rider_academy_m,1109,-1,1000,0,0,0,0,g,True,True
+181,Horned Badass Factory,b,ACADEMY,8,0181_orc_robot_factory_m,1111,-1,1000,0,0,0,0,g,True,True
+182,Flamethrowa Academy,b,ACADEMY,8,0182_orc_flamethrower_academy_m,1113,-1,1000,0,0,0,0,g,True,True
+183,Ork House,b,HOUSING,8,0183_orc_house_m,-1,-1,200,0,0,4,0,g,True,True
+184,Ork Farm,b,SPECIAL_FACTORY,8,0184_orc_farm_m,-1,-1,100,0,0,5,100,g,True,True
+185,Ork Turret II,b,TURRET,8,0185_orc_turret_m,-1,-1,1750,23,12,0,0,g,True,True
+186,Ork Wall,b,WALL,8,0186_orc_wall_m,-1,-1,1000,0,0,0,0,g,True,True
+187,Krazy Monsta Statue,b,DECO,8,0187_orc_deco_1_m,-1,-1,400,0,0,0,0,g,True,True
+188,Powa Banna,b,DECO,8,0188_orc_deco_2_m,-1,-1,400,0,0,0,0,g,True,True
+189,Ork Turret I,b,TURRET,8,0189_orc_turret_2_m,-1,-1,1650,22,11,0,0,g,True,True
+190,Molotov Kopta Hangar,b,ACADEMY,8,0190_helicopter_hangar2_m,1110,-1,1000,0,0,0,0,g,True,True
+191,Ork Tank Academy,b,CANNON,50,0191_camion_orco_academy_m,1116,-1,1500,0,0,0,0,g,True,True
+192,Knife Throwa Academy,b,ACADEMY,8,0192_orc_lanzamachetes_academy_m,1114,-1,1000,0,0,0,0,g,True,True
+193,Kamikaze Bros Academy,b,ACADEMY,8,0193_orc_mascota_kamikaze_academy_m,1117,-1,1000,0,0,0,0,g,True,True
+194,Big Handsaw Ork Factory,b,ACADEMY,8,0194_orc_robot_2_factory_m,1115,-1,1000,0,0,0,0,g,True,True
+195,Orc Headquarters,b,COMMAND_CENTER,14,0195_orc_headquarters,-1,59,2000,0,0,5,0,g,True,True
+196,Orc Sponge Bush,b,DECO,2,0196_orc_sponge_bush,-1,-1,400,0,0,0,0,g,True,True
+197,Orc Lamp,b,DECO,2,0197_orc_lamp,-1,-1,400,0,0,0,0,g,True,True
+198,Orc Bush,b,DECO,2,0198_orc_bush,-1,-1,400,0,0,0,0,g,True,True
+200,Silo II,b,,15,0200_orc_silo,-1,10042,180,0,0,25000,0,w,True,True
+201,Orc Bunker ,b,BUNKER,4,0201_orc_bunker,-1,51,600,8,7,0,0,g,True,True
+202,Orc Resource Building,b,WOOD_FACTORY,1,0202_orc_resource_building,-1,6,200,0,0,0,150,w,True,True
+203,Orc Harbour,b,,1,0203_orc_harbour,-1,-1,180,0,0,500,0,w,True,True
+204,Disabled Orc Supertank,b,CHAPTER ITEM,1,0204_disabled_orc_supertank,-1,-1,1000,0,0,0,0,g,True,True
+205,Orc Fortress,b,FORTRESS,1,0205_orc_fortress,1045,-1,5000,22,11,0,0,g,True,True
+206,Enemy Ork Wall,b,WALL,8,0186_orc_wall_m,-1,-1,150,0,0,0,0,g,True,True
+207,Enemy Ork Turret I,b,TURRET,8,0189_orc_turret_2_m,-1,-1,300,5,8,0,0,g,True,True
+208,Enemy Ork Turret II,b,TURRET,8,0185_orc_turret_m,-1,-1,800,23,12,0,0,g,True,True
+209,Crusader Priest Academy,b,ACADEMY,8,209_crusader_priest_academy,1151,-1,1500,0,0,0,0,g,True,True
+210,Crusader Bot Factory,b,ACADEMY,8,210_crusader_bot_factory,1150,-1,2500,0,0,0,0,g,True,True
+211,Viking Axe Academy,b,ACADEMY,8,211_axeman_academy,1154,-1,1000,0,0,0,0,g,True,True
+212,Viking Soldier Academy,b,ACADEMY,8,212_dwarf_soldier_academy,1155,-1,1000,0,0,0,0,g,True,True
+213,Bear Knight Academy,b,ACADEMY,8,213_bear_knight_academy,1156,-1,1000,0,0,0,0,g,True,True
+214,Viking Tank Academy,b,CANNON,8,214_dwarf_tank_academy,1157,-1,1500,0,0,0,0,g,True,True
+215,Viking Airship Hangar,b,ACADEMY,8,215_viking_copter_II_hangar,1158,-1,1500,0,0,0,0,g,True,True
+216,Viking Hammerer Factory,b,ACADEMY,8,216_megahammer_dwarf_factory,1159,-1,1000,0,0,0,0,g,True,True
+217,Viking Core Factory,b,ACADEMY,8,217_dwarf_armored_core_factory,1160,-1,1000,0,0,0,0,g,True,True
+218,Viking House,b,HOUSING,8,218_dwarf_house,-1,-1,200,0,0,4,0,g,True,True
+219,Viking Field,b,SPECIAL_FACTORY,8,219_dwarf_farm,-1,-1,100,0,0,5,100,g,True,True
+220,Viking Turret I,b,TURRET,8,220_dwarf_turret_1,-1,-1,1600,22,11,0,0,g,True,True
+221,Viking Turret II,b,TURRET,8,221_dwarf_turret_2,-1,-1,1750,23,12,0,0,g,True,True
+222,Viking Wall,b,WALL,8,222_dwarf_wall,-1,-1,1000,0,0,0,0,g,True,True
+223,Hammerer Statue,b,DECO,8,223_dwarf_deco_1,-1,-1,400,0,0,0,0,g,True,True
+224,Viking Fountain,b,DECO,8,224_dwarf_deco_2,-1,-1,400,0,0,0,0,g,True,True
+225,Alien Wall,b,WALL,8,225_alien_wall,-1,-1,1000,0,0,0,0,g,True,True
+226,Alien Turret I,b,TURRET,8,226_alien_turret_1,-1,-1,300,21,11,0,0,g,True,True
+227,Alien Turret II,b,TURRET,8,227_alien_turret_2,-1,-1,600,20,12,0,0,g,True,True
+228,Spider Wall,b,WALL,8,228_spider_wall,-1,-1,1000,0,0,0,0,g,True,True
+229,Spider Turret I,b,TURRET,8,229_spider_turret_1,-1,-1,300,21,11,0,0,g,True,True
+230,Spider Turret II,b,TURRET,8,230_spider_turret_2,-1,-1,600,20,12,0,0,g,True,True
+231,War Tree,b,DECO,8,231_dwarf_deco_3,-1,-1,400,0,0,0,0,g,True,True
+232,Magic Lake,b,DECO,8,232_dwarf_deco_4,-1,-1,400,0,0,0,0,g,True,True
+233,Viking Bazooka Academy,b,ACADEMY,8,233_viking_bazooka_academy,1165,-1,1000,0,0,0,0,g,True,True
+234,Viking MotoSquad Academy,b,ACADEMY,8,234_viking_motosquad_academy,1166,-1,1000,0,0,0,0,g,True,True
+235,Rune Golem Academy,b,ACADEMY,8,235_viking_rune_golem_academy,1161,-1,2500,0,0,0,0,g,True,True
+236,Viking Sniper Academy,b,ACADEMY,8,236_viking_sniper_academy,1174,-1,2500,0,0,0,0,g,True,True
+237,Viking Butcher Academy,b,ACADEMY,8,237_viking_butcher_academy,1175,-1,2500,0,0,0,0,g,True,True
+238,Kamikaze Academy,b,ACADEMY,8,238_kamikaze_academy,1176,-1,2500,0,0,0,0,g,True,True
+239,Laser Viking Academy,b,ACADEMY,8,239_laser_viking_academy,1183,-1,2500,0,0,0,0,g,True,True
+240,Nebular Spearman Academy,b,ACADEMY,8,240_avatar_soldado_academy,1186,-1,1000,0,0,0,0,g,True,True
+241,Nebular Archer Academy,b,ACADEMY,8,241_avatar_arquero_academy,1187,-1,1000,0,0,0,0,g,True,True
+242,Greatsword Warrior Academy,b,ACADEMY,8,242_avatar_great_warrior_academy,1188,-1,1000,0,0,0,0,g,True,True
+243,Nebular Rider Academy,b,ACADEMY,8,243_avatar_jinete_academy,1189,-1,1000,0,0,0,0,g,True,True
+244,Nebular Wall,b,WALL,8,244_avatar_wall,-1,-1,1000,0,0,0,0,g,True,True
+245,Nebular Turret,b,TURRET,8,245_avatar_turret,-1,-1,1600,23,11,0,0,g,True,True
+246,Nebular House,b,HOUSING,8,246_avatar_house,-1,-1,200,0,0,4,0,g,True,True
+247,Nebular Field,b,SPECIAL_FACTORY,8,247_avatar_farm,-1,-1,100,0,0,5,100,g,True,True
+248,Ancient Nebular Tree,b,DECO,8,248_avatar_deco,-1,-1,400,0,0,0,0,g,True,True
+249,Nebular Knight Academy,b,ACADEMY,8,249_nebula_horse_rider_academy,1198,-1,1500,0,0,0,0,g,True,True
+250,Nebular Dragon Rider Academy,b,ACADEMY,8,250_nebula_dragon_nest,1199,-1,1500,0,0,0,0,g,True,True
+251,Nebular Assault Quad Academy,b,ACADEMY,8,251_nebula_motorized_academy,1200,-1,1000,0,0,0,0,g,True,True
+252,Skyscraper,b,DECO,8,252_skyscraper,-1,-1,400,0,0,0,0,g,True,True
+253,Parliament,b,WONDER,1,253_parliament,-1,-1,3000,0,0,75,0,c,True,True
+254,Nebular Priest Academy,b,ACADEMY,8,254_nebula_priest_academy,1208,-1,1500,0,0,0,0,g,True,True
+255,Nebular Bicopter Hangar,b,ACADEMY,8,255_nebula_blue_bicopter_hangar,1209,-1,1500,0,0,0,0,g,True,True
+256,Research Lab,b,ACADEMY,35,256_laboratory_tech,-1,-1,3000,0,0,0,0,g,True,True
+257,Blazing Beast Rider Academy,b,ACADEMY,8,257_nebula_monster_rider_academy,1213,-1,1500,0,0,0,0,g,True,True
+258,Nebular Maze Warrior Academy,b,ACADEMY,8,258_nebula_muze_warrior_academy,1214,-1,1500,0,0,0,0,g,True,True
+259,Nebular Sniper Academy,b,ACADEMY,8,259_nebula_sniper_academy,1220,-1,1500,0,0,0,0,g,True,True
+260,Nebular Dragon Knight Academy,b,ACADEMY,8,260_dragon_rider_2_academy,1219,-1,1500,0,0,0,0,g,True,True
+261,Auction House,b,ACADEMY,8,261_marketplace,-1,-1,3000,0,0,0,0,g,True,True
+262,Poison Spider Hive,b,ACADEMY,8,262_venom_spider_academy,1229,-1,1500,0,0,0,0,g,True,True
+263,Shredder Alien Nest,b,ACADEMY,8,266_tusk_alien_academy,1230,-1,1500,0,0,0,0,g,True,True
+264,Acid Alien Nest,b,ACADEMY,8,264_small_alien_academy,1234,-1,1500,0,0,0,0,g,True,True
+265,Huge Spider Hive,b,ACADEMY,8,265_big_spider_academy,1233,-1,1500,0,0,0,0,g,True,True
+266,Horned Alien Nest,b,ACADEMY,8,263_claw_alien_academy,1235,-1,1500,0,0,0,0,g,True,True
+267,Claw Spider Hive,b,ACADEMY,8,267_melee_spider_academy,1232,-1,1500,0,0,0,0,g,True,True
+268,Swamp Monster Academy,b,ACADEMY,8,268_nebula_monster_academy,1228,-1,1500,0,0,0,0,g,True,True
+269,S.W.A.T. Soldier Academy,b,ACADEMY,8,269_swat_soldier_academy,1258,-1,1500,0,0,0,0,g,True,True
+270,Hercules Mech Academy,b,ACADEMY,8,270_hercules_mech_academy,1242,-1,1500,0,0,0,0,g,True,True
+271,Space Elf Wall,b,WALL,8,271_spatial_wall,-1,-1,1000,0,0,0,0,g,True,True
+272,Space Elf Turret,b,TURRET,8,272_spatial_turret,-1,-1,1700,25,11,0,0,g,True,True
+273,Space Elf House,b,HOUSING,8,273_spatial_house,-1,-1,200,0,0,4,0,g,True,True
+274,Space Elf Field,b,SPECIAL_FACTORY,8,274_spatial_farm,-1,-1,100,0,0,5,100,g,True,True
+275,Elf Eagle Deco,b,DECO,8,275_spatial_deco,-1,-1,400,0,0,0,0,g,True,True
+276,Space Sword Elf Academy,b,ACADEMY,8,276_spatial_sward_academy,1259,-1,1000,0,0,0,0,g,True,True
+277,Space Archer Elf Academy,b,ACADEMY,8,277_spatial_archer_academy,1260,-1,1000,0,0,0,0,g,True,True
+278,Space Knight Elf Academy,b,ACADEMY,8,278_spatial_horseman_academy,1261,-1,1500,0,0,0,0,g,True,True
+279,Elf Airship Hangar,b,ACADEMY,8,279_spatial_airship_hangar,1262,-1,1500,0,0,0,0,g,True,True
+280,Paladin Elf Academy,b,ACADEMY,8,280_spatial_paladin_academy,1266,-1,1000,0,0,0,0,g,True,True
+281,Priest Elf Academy,b,ACADEMY,8,281_spatial_priest_academy,1265,-1,1500,0,0,0,0,g,True,True
+282,Elven Cruiser Hangar,b,ACADEMY,8,282_spatial_space_ship_hangar,1267,-1,1500,0,0,0,0,g,True,True
+283,Reptile Gun Academy,b,ACADEMY,8,283_reptile_gun_hangar,1245,-1,1500,0,0,0,0,g,True,True
+284,MegaBot Academy,b,ACADEMY,8,284_mega_bot_academy,1278,-1,1500,0,0,0,0,g,True,True
+285,Space Healer Elf Academy,b,ACADEMY,8,285_spatial_healer_academy,1275,-1,1000,0,0,0,0,g,True,True
+286,Space Elf Scouter Hangar,b,ACADEMY,8,286_spatial_exploration_module_hangar,1276,-1,1500,0,0,0,0,g,True,True
+287,GunBot Academy,b,ACADEMY,8,287_gun_bot_academy,1061,-1,1500,0,0,0,0,g,True,True
+288,Silver Gunner Elf Academy,b,ACADEMY,8,288_silver_elf_gunner_academy,1281,-1,1000,0,0,0,0,g,True,True
+289,Dino Rider Elf Academy,b,ACADEMY,8,289_elf_dino_rider_academy,1282,-1,1000,0,0,0,0,g,True,True
+290,Destruction Wizard Elf Academy,b,ACADEMY,8,290_destruction_wizard_academy,1288,-1,1000,0,0,0,0,g,True,True
+291,Elf Siege Striker Academy,b,ACADEMY,8,291_plasma_striker_academy,1285,-1,1000,0,0,0,0,g,True,True
+292,Winged Paladin Academy,b,ACADEMY,8,292_winged_paladin_academy,1291,-1,1000,0,0,0,0,g,True,True
+293,Andromeda Wall,b,WALL,8,293_andromedaWall,-1,-1,1000,0,0,0,0,g,True,True
+294,Andromeda Turret,b,TURRET,8,294_andromedaTurret,-1,-1,1750,26,11,0,0,g,True,True
+295,Andromeda House,b,HOUSING,8,295_andromedaHouse,-1,-1,200,0,0,4,0,g,True,True
+296,Andromeda Farm,b,SPECIAL_FACTORY,8,296_andromedaFarm,-1,-1,100,0,0,5,100,g,True,True
+297,Andromeda Statue,b,DECO,8,297_andromedaDeco,-1,-1,400,0,0,0,0,g,True,True
+298,Andromeda Private Academy,b,ACADEMY,8,298_andromedaPrivateAcademy,1292,-1,1000,0,0,0,0,g,True,True
+299,Andromeda Droid Factory,b,ACADEMY,8,299_andromedaDroidFactory,1295,-1,1000,0,0,0,0,g,True,True
+300,Andromeda Spaceship Hangar,b,ACADEMY,8,300_andromedaSpaceshipHangar,1296,-1,1000,0,0,0,0,g,True,True
+301,Punisher Bot Factory,b,ACADEMY,8,301_punisherBot_Factory,1074,-1,1000,0,0,0,0,g,True,True
+901,Oil,b,,0,10001_resource_oil_1,-1,-1,1,2,1,0,10,o,True,True
+902,Oil,b,,0,10002_resource_oil_2,-1,-1,1,2,1,0,10,o,True,True
+903,Oil,b,,0,10003_resource_oil_3,-1,-1,1,2,1,0,10,o,True,True
+904,Oil,b,,0,10004_resource_oil_4,-1,-1,1,2,1,0,10,o,True,True
+905,Tree,b,,0,10005_arbol1x1,-1,-1,1,2,1,0,20,w,True,True
+907,Small Harbour,b,,1,10007_port_1,-1,-1,180,0,0,500,0,w,True,True
+908,Harbour,b,,1,10008_harbour,-1,-1,180,0,0,500,0,w,True,True
+909,Space Station,b,,1,0199_space_station,-1,-1,180,0,0,500,0,w,True,True
+910,Steel,b,,0,10010_resource_steel_1,-1,-1,1,0,0,0,10,s,True,True
+911,Steel,b,,0,10011_resource_steel_2,-1,-1,1,0,0,0,10,s,True,True
+912,Steel,b,,0,10012_resource_steel_3,-1,-1,1,0,0,0,10,s,True,True
+913,Steel,b,,0,10013_resource_steel_4,-1,-1,1,0,0,0,10,s,True,True
+914,Gold,b,,0,10014_resource_gold_1,-1,-1,1,0,0,0,10,g,True,True
+915,Gold,b,,0,10015_resource_gold_2,-1,-1,1,0,0,0,10,g,True,True
+916,Gold,b,,0,10016_resource_gold_3,-1,-1,1,0,0,0,10,g,True,True
+917,Gold,b,,0,10017_resource_gold_4,-1,-1,1,0,0,0,10,g,True,True
+918,Regenerating oil..,b,,0,10018_resource_oil_regen,-1,-1,1,0,0,0,0,g,True,True
+919,Regenerating steel..,b,,0,10019_resource_steel_regen,-1,-1,1,0,0,0,0,s,True,True
+920,Regenerating gold..,b,,0,10020_resource_gold_regen,-1,-1,1,0,0,0,0,g,True,True
+921,Treasure Chest,b,,0,treasure,-1,-1,100,0,0,0,250,g,False,False
+922,Dummy 9-91,b,,0,vacaPerdida,-1,-1,100,0,0,0,0,g,False,False
+923,Gorilla,u,,0,10023_gorilla,-1,-1,100,10,1,0,0,w,True,True
+924,Dummy 12-121,b,,8,casachina,-1,-1,210,0,0,6,0,g,False,False
+925,Expandable Land,l,,1,terreno,-1,-1,0,0,0,0,0,g,True,False
+926,Key,b,,1,10026_key,-1,-1,100,0,0,0,0,g,True,True
+927,Prison,b,,1,10027_prision,-1,-1,1000,0,0,0,0,g,False,False
+928,Broken Bridge,b,,8,10028_broken_bridge,-1,-1,210,0,0,0,0,g,True,False
+929,Bridge,b,,8,10029_bridge,-1,-1,210,0,0,0,0,g,True,False
+930,Trees,b,,0,10030_arbol2x2,-1,-1,50,2,1,0,20,w,True,True
+931,Small forest,b,,0,10031_arbol3x3,-1,-1,50,2,1,0,20,w,True,True
+932,Silo,b,,3,10032_silo_1,-1,941,180,0,0,20000,0,w,True,True
+933,Wild Elephant,u,,0,10033_wild_elephant,-1,-1,100,10,1,0,0,w,True,True
+941,Silo II,b,,15,10041_silo_2,-1,942,180,0,0,25000,0,w,True,True
+942,Silo III,b,,28,10042_silo_3,-1,-1,180,0,0,30000,0,w,True,True
+943,Destroyed building 1,b,,8,10043_destroyed_building_1,-1,-1,221,0,0,0,0,g,True,True
+944,Destroyed building 2,b,,8,10044_destroyed_building_2,-1,-1,221,0,0,0,0,g,True,True
+945,Destroyed building 3,b,,8,10045_destroyed_building_3,-1,-1,221,0,0,0,0,g,True,True
+946,Destroyed building 4,b,,8,10046_destroyed_building_4,-1,-1,221,0,0,0,0,g,True,True
+947,Destroyed building 5,b,,8,10047_destroyed_building_5_b,-1,-1,221,0,0,0,0,g,True,True
+948,Oil barrel,b,,1,10048_oil_barrel,-1,-1,10,0,4,0,0,g,True,True
+949,Atrezzo Harbour,b,,1,10049_harbour,-1,-1,180,0,0,500,0,w,True,False
+950,Nice fountain,b,LOSTITEM,1,10050_nice_fountain,0,0,180,0,400,0,0,g,True,False
+951,Orange Tree,b,LOSTITEM,1,10051_orange_tree,0,0,180,0,400,0,0,g,True,False
+952,Chickens,b,LOSTITEM,1,10052_chickens,0,0,180,0,400,0,0,g,True,False
+953,Lost Rocket,b,LOSTITEM,1,10053_lost_rocket,0,0,180,0,400,0,0,g,True,False
+954,Astronaut Pack,b,LOSTITEM,1,10054_astronaut_pack,0,0,180,0,400,0,0,g,True,False
+955,Destroyed Tank,b,LOSTITEM,1,10055_destroyed_tank,0,0,180,0,400,0,0,g,True,False
+956,Lost Puppies,b,LOSTITEM,1,10056_lost_puppies,0,0,180,0,400,0,0,g,True,False
+957,Lost Oil Barrels,b,LOSTITEM,1,1005_oil_barrels,0,0,180,0,400,0,0,g,True,False
+958,Green T-Rex Cage,b,,1,10058_trex_cage,-1,-1,180,0,0,500,0,w,True,True
+959,Red T-Rex Cage,b,,1,10059_trex_cage,-1,-1,180,0,0,500,0,w,True,True
+960,Chest,b,,1,10060_chest,-1,-1,10,0,4,0,0,g,True,False
+961,Chained Red Baron,b,OFFERBUILDING,1,10061_chained_red_baron,-1,0,180,0,400,0,0,g,True,True
+962,Chained Metallic Dragon,b,OFFERBUILDING,1,10062_chained_metallic_dragon,-1,0,180,0,400,0,0,g,True,True
+963,Chained Celestial Megamech,b,OFFERBUILDING,1,10063_chained_celestial_megamech,-1,0,180,0,400,0,0,g,True,True
+964,Chained Metallic Dragon II,b,OFFERBUILDING,1,10064_chained_metallic_dragon2,-1,0,180,0,400,0,0,g,True,True
+965,Chained Armored Core Alpha,b,OFFERBUILDING,1,965_chained_armored_core_alpha,-1,0,180,0,400,0,0,g,True,True
+966,Chained Ultra-Mech,b,OFFERBUILDING,1,966_chained_transformer_gigante,-1,0,180,0,400,0,0,g,True,True
+967,Chained Nemesis Core,b,OFFERBUILDING,1,967_chained_ultra_robot,-1,0,180,0,400,0,0,g,True,True
+968,Chained F117,b,OFFERBUILDING,1,968_chained_f117,-1,0,180,0,400,0,0,g,True,True
+969,Chained Mega Tank,b,OFFERBUILDING,1,969_chained_mega_tank,-1,0,180,0,400,0,0,g,True,True
+970,Chained Blue Steel Bahamut,b,OFFERBUILDING,1,970_chained_bahamut_metalico,-1,0,180,0,400,0,0,g,True,True
+971,Chained Alien Instigator,b,OFFERBUILDING,1,971_chained_alien_instigator,-1,0,180,0,400,0,0,g,True,True
+972,Chained Hyper Blazer ,b,OFFERBUILDING,1,972_chained_mega_fire_bot,-1,0,180,0,400,0,0,g,True,True
+973,Chained Ether Messiah,b,OFFERBUILDING,1,973_chained_ether_messiah,-1,0,180,0,400,0,0,g,True,True
+974,Chained Combo Dragons,b,OFFERBUILDING,1,974_chained_combo_dragons,-1,0,180,0,400,0,0,g,True,True
+975,Chained Golem Boss,b,OFFERBUILDING,1,975_chained_golem_boss,-1,0,180,0,400,0,0,g,True,True
+976,Chained Crusader Bot,b,OFFERBUILDING,1,976_chained_crusader_bot,-1,0,180,0,400,0,0,g,True,True
+977,Chained Samurai Bot,b,OFFERBUILDING,1,977_chained_samurai_bot,-1,0,180,0,400,0,0,g,True,True
+978,Chained Magic Chest,b,OFFERBUILDING,1,978_chained_corfe_1,-1,0,180,0,400,0,0,g,True,True
+979,Chained Mega Chest,b,OFFERBUILDING,1,979_chained_corfe_2,-1,0,180,0,400,0,0,g,True,True
+980,Chained Camu Dragon,b,OFFERBUILDING,1,980_chained_camu_dragon,-1,0,180,0,400,0,0,g,True,True
+981,Chained Skater,b,OFFERBUILDING,1,981_chained_skater,-1,0,180,0,400,0,0,g,True,True
+982,Chained Red Spinner,b,OFFERBUILDING,1,982_chained_red_spinner,-1,0,180,0,400,0,0,g,False,False
+983,Chained Golden Slayer,b,OFFERBUILDING,1,983_chained_transformer_sword,-1,0,180,0,400,0,0,g,True,True
+984,Chained Gun Bot,b,OFFERBUILDING,1,984_chained_gun_bot_2,-1,0,180,0,400,0,0,g,True,True
+985,Chained Robo Hunter,b,OFFERBUILDING,1,985_chained_robo_hunter,-1,0,180,0,400,0,0,g,True,True
+986,Chained 50% Off,b,OFFERBUILDING,1,986_chained_50_off,-1,0,180,0,400,0,0,g,True,True
+987,Chained Ufo,b,OFFERBUILDING,1,987_chained_ufo,-1,0,180,0,400,0,0,g,True,True
+988,Chained MegaAxe&MegaLancer,b,OFFERBUILDING,1,988_chained_axe_lancer,-1,0,180,0,400,0,0,g,True,True
+989,Chained Megafire T-Rex,b,OFFERBUILDING,1,989_chained_trex,-1,0,180,0,400,0,0,g,True,True
+990,Chained Double Cash Offer,b,OFFERBUILDING,1,990_chained_double,-1,0,180,0,400,0,0,g,True,True
+991,Chained Fire Karateka,b,OFFERBUILDING,1,991_chained_karateka,-1,0,180,0,400,0,0,g,True,True
+992,Chained Gold Golem,b,OFFERBUILDING,1,992_chained_gold_golem,-1,0,180,0,400,0,0,g,True,True
+993,Chained Double Cash Offer + F117,b,OFFERBUILDING,1,993_chained_double_f117,-1,0,180,0,400,0,0,g,True,True
+994,Chained Black Dragon,b,OFFERBUILDING,1,994_chained_black_dragon,-1,0,180,0,400,0,0,g,True,True
+995,Chained Electric Dragon,b,OFFERBUILDING,1,995_chained_electric_dragon,-1,0,180,0,400,0,0,g,True,True
+996,Chained Dragonborn Mech,b,OFFERBUILDING,1,996_chained_dragon_mech,-1,0,180,0,400,0,0,g,True,True
+997,Chained Silver Hercules,b,OFFERBUILDING,1,997_chained_herkules_matrix,-1,0,180,0,400,0,0,g,True,True
+998,Chained Rune Golem,b,OFFERBUILDING,1,998_chained_rune_golem,-1,0,180,0,400,0,0,g,True,True
+999,Chained Supreme Chest,b,OFFERBUILDING,1,999_chained_supreme_chest,-1,0,180,0,400,0,0,g,True,True
+1001,Worker I,u,WORKER,0,"1001_worker_m,1001_worker_w",-1,-1,25,6,1,1,0,g,False,False
+1002,Red Tank,u,LAND_VEHICLE,11,1002_Red_Tank_m,-1,-1,150,18,8,2,0,g,True,True
+1003,Tank II,u,LAND_VEHICLE,5,1003_cannon_2_m,-1,-1,375,22,10,2,0,g,True,True
+1004,Tank III,u,LAND_VEHICLE,8,1004_cannon_3_m,-1,-1,450,26,12,2,0,g,True,True
+1005,Special Spy,u,LONG_RANGE,4,1005_special_spy_m,-1,-1,50,10,5,1,0,g,True,True
+1006,Killer Bazooka Jeep,u,LAND_VEHICLE,12,1006_red_bazooka_jeep_m,-1,-1,600,15,8,2,0,g,True,True
+1007,Soldier,u,SHORT_RANGE,1,"1007_soldier_1_m,1007_soldier_1_m,1007_soldier_1_m,1007_soldier_1_m,1007_soldier_1_w",-1,-1,50,8,5,1,0,g,False,False
+1008,Bazooka,u,LONG_RANGE,2,"1008_bazooka_1_m,1008_bazooka_1_m,1008_bazooka_1_m,1008_bazooka_1_m,1008_bazooka_1_w",-1,-1,50,10,8,1,0,g,False,False
+1009,General Scarlett,u,SHORT_RANGE,2,1009_good_girl_m,-1,-1,250,15,5,1,0,g,True,True
+1010,APC,u,LAND_VEHICLE,7,1010_apc_m,-1,-1,425,26,11,3,0,g,True,True
+1011,Ms. Evilia,u,SHORT_RANGE,3,1011_bad_girl_m,-1,-1,150,15,7,1,0,g,False,False
+1012,Evil Hannibal,u,SHORT_RANGE,3,1012_bad_boy,-1,-1,150,15,7,1,0,g,True,True
+1013,Truck,u,LAND_VEHICLE,6,1013_truck_1_m,-1,-1,200,5,5,3,0,g,True,True
+1014,Machine Gun Jeep,u,LAND_VEHICLE,10,"1014_machinegunjeep_1_m,1014_machinegunjeep_1_m,1014_machinegunjeep_1_m,1014_machinegunjeep_1_m,1014_machinegunjeep_1_w",-1,-1,150,12,7,2,0,g,False,False
+1015,Aircraft,u,AIR_VEHICLE,5,1015_aircraft_1_m,-1,-1,350,18,9,2,0,g,True,True
+1016,Tank,u,LAND_VEHICLE,3,1016_cannon_1_m,-1,-1,300,18,8,2,0,g,True,True
+1017,General Mike,u,SHORT_RANGE,2,1017_good_boy,-1,-1,250,30,5,1,0,g,True,True
+1018,Zodiac,u,WATER_VEHICLE,10,1018_zodiac_m,-1,-1,300,7,6,2,0,g,True,True
+1019,Ship,u,WATER_VEHICLE,5,1019_ship_m2,-1,-1,500,14,7,2,0,g,True,True
+1020,Soldier II,u,SHORT_RANGE,2,1020_soldier_2_m,-1,-1,55,12,6,1,0,g,True,True
+1021,Soldier III,u,SHORT_RANGE,3,1021_soldier_3_m,-1,-1,60,16,7,1,0,g,True,True
+1022,Bazooka II,u,LONG_RANGE,4,1022_bazooka_2_m,-1,-1,55,14,9,1,0,g,True,True
+1023,Bazooka III,u,LONG_RANGE,5,1023_bazooka_3_m,-1,-1,60,18,10,1,0,g,True,True
+1024,Sergeant Megan,u,SHORT_RANGE,2,1024_good_guillerma,-1,-1,200,13,7,1,0,g,True,True
+1025,Aircraft II,u,AIR_VEHICLE,10,1025_aircraft_2_m,-1,-1,450,22,10,2,0,g,True,True
+1026,Aircraft III,u,AIR_VEHICLE,12,1026_aircraft_3_m,-1,-1,600,25,11,2,0,g,True,True
+1027,Helicopter,u,AIR_VEHICLE,4,1027_helicopter_1_m,-1,-1,200,14,7,2,0,g,True,True
+1028,Helicopter II,u,AIR_VEHICLE,8,1028_helicopter_2_m,-1,-1,300,18,8,2,0,g,True,True
+1029,Helicopter III,u,AIR_VEHICLE,10,1029_helicopter_3_m,-1,-1,350,22,9,2,0,g,True,True
+1030,Machine Gun Jeep II,u,LAND_VEHICLE,10,1030_machinegunjeep_2_m,-1,-1,200,16,8,2,0,g,True,True
+1031,Machine Gun Jeep III,u,LAND_VEHICLE,10,1031_machinegunjeep_3_m,-1,-1,250,20,9,2,0,g,True,True
+1032,Truck 3,u,LAND_VEHICLE,9,1032_truck_3_m,-1,-1,250,5,5,3,0,g,True,True
+1033,Mr. Cigar,u,SHORT_RANGE,3,1033_mr_cigar,-1,-1,400,20,7,1,0,g,True,True
+1034,UN Allied,u,SHORT_RANGE,2,"1034_un_allied_1_m,1034_un_allied_1_m,1034_un_allied_1_m,1034_un_allied_1_m,1034_un_allied_1_w",-1,-1,100,12,8,1,0,g,False,False
+1035,Truck II,u,LAND_VEHICLE,9,1035_truck_2_m,-1,-1,250,5,5,3,0,g,True,True
+1036,Double Bazooka,u,LONG_RANGE,6,1036_double_bazooka_m,-1,-1,400,15,9,2,0,g,True,True
+1037,MegaTank,u,LAND_VEHICLE,6,1037_megatank,-1,-1,1000,20,13,2,0,g,True,True
+1038,Red chopper,u,AIR_VEHICLE,14,1038_red_helicopter_m,-1,-1,400,25,8,2,0,g,True,True
+1039,Worker II,u,WORKER,12,1001_worker_m,-1,-1,30,6,1,1,0,g,True,True
+1040,Worker III,u,WORKER,25,1001_worker_m,-1,-1,35,6,1,1,0,g,True,True
+1041,Worker IV,u,WORKER,35,1001_worker_m,-1,-1,40,6,1,1,0,g,True,True
+1042,Sergeant Jack,u,SHORT_RANGE,2,1042_good_guile,-1,-1,200,13,7,1,0,g,True,True
+1043,Air Strike,u,AIR_VEHICLE,10,1043_air_strike_m,-1,-1,450,22,10,2,0,g,True,True
+1044,Double Bazooka Jeep,u,LAND_VEHICLE,10,1044_double_bazooka_jeep_m,-1,-1,275,24,9,2,0,g,True,True
+1045,Double Gun Soldier,u,LONG_RANGE,5,1045_double_gun_soldier_m,-1,-1,110,18,7,1,0,g,True,True
+1046,Flamethrower,u,SHORT_RANGE,1,1046_flamethrower_m,-1,-1,120,19,5,1,0,g,True,True
+1047,Dominion Tank,u,LAND_VEHICLE,8,1047_black_tank_2_m,-1,-1,475,27,12,2,0,g,True,True
+1048,Stealth Fighter,u,AIR_VEHICLE,12,1048_black_aircraft_2_m,-1,-1,650,26,11,2,0,g,True,True
+1049,TankBoss,u,LAND_VEHICLE,6,1053_golem_boss_m,-1,-1,15000,20,2,2,0,g,True,True
+1050,Medic,u,HEALER,1,1050_medic_m,-1,-1,110,8,1,1,0,g,True,True
+1051,Engineer,u,HEALER,1,1051_mechanic_m,-1,-1,120,10,2,1,0,g,True,True
+1052,Special Ops.,u,SHORT_RANGE,2,1052_special_ops_2_m,-1,-1,120,10,8,1,0,g,True,True
+1053,GolemBoss,u,ROBOT,6,1053_golem_boss_m,-1,-1,15000,20,2,2,0,g,True,True
+1054,Scarface girl,u,SHORT_RANGE,3,1054_scarface_girl,-1,-1,400,20,7,1,0,g,True,True
+1055,Mr. Treat,u,SHORT_RANGE,3,1055_mr_t_m,-1,-1,200,20,9,2,0,g,True,True
+1056,Elephant rider,u,SHORT_RANGE,10,1056_elephant_rider_m,-1,-1,90,16,9,2,0,g,True,True
+1057,T-Rex Green,u,SHORT_RANGE,10,1057_t-rex_m,-1,-1,3000,22,2,2,0,g,True,True
+1058,Soldier IV,u,SHORT_RANGE,28,1058_soldier_4_m,-1,-1,100,20,8,1,0,g,True,True
+1059,Soldier V,u,SHORT_RANGE,37,1059_soldier_5_m,-1,-1,110,24,9,2,0,g,True,True
+1060,Mortar Thrower,u,LONG_RANGE,1,1060_mortar_m,-1,-1,50,15,10,2,0,g,True,True
+1061,GunBot,u,LONG_RANGE,6,1061_baby_robot_m,-1,-1,1200,30,7,3,0,g,True,True
+1062,MegaBot,u,ROBOT,6,1062_bumblebee_m,-1,-1,1600,40,7,3,0,g,True,True
+1063,Bazooka IV,u,LONG_RANGE,30,1063_bazooka_4_m,-1,-1,115,22,11,1,0,g,True,True
+1064,Bazooka V,u,LONG_RANGE,42,1064_bazooka_5_m,-1,-1,125,26,12,2,0,g,True,True
+1065,Antiaircraft battery,u,LAND_VEHICLE,8,1065_antiaircraft_battery_m,-1,-1,475,10,12,3,0,g,True,True
+1066,Helicopter IV,u,AIR_VEHICLE,10,1066_helicopter_4_m,-1,-1,400,26,10,3,0,g,True,True
+1067,Helicopter V,u,AIR_VEHICLE,10,1067_helicopter_5_m,-1,-1,450,30,11,3,0,g,True,True
+1068,B52,u,AIR_VEHICLE,10,1068_b52_m,-1,-1,450,22,1,2,0,g,True,True
+1069,Demolition Tank,u,LAND_VEHICLE,23,1069_bigheaded_tank_m,-1,-1,575,20,12,2,0,g,True,True
+1070,Tank IV,u,LAND_VEHICLE,8,1070_cannon_4_m,-1,-1,525,30,12,2,0,g,True,True
+1071,Tank V,u,LAND_VEHICLE,8,1071_cannon_5_m,-1,-1,600,34,13,3,0,g,True,True
+1072,Ranbo,u,SHORT_RANGE,3,1072_rambo_m,-1,-1,500,23,8,2,0,g,True,True
+1073,Erradicator,u,LONG_RANGE,3,1073_erradicator_m,-1,-1,550,25,7,2,0,g,True,True
+1074,Punisher Bot,u,ROBOT,6,1074_punisher_m,-1,-1,1600,41,7,3,0,g,True,True
+1075,Supreme Bot,u,ROBOT,6,1075_supreme_m,-1,-1,1625,42,2,3,0,g,True,True
+1076,Crusader Soldier,u,SHORT_RANGE,8,1076_robo_soldier_m,-1,-1,90,18,7,1,0,g,True,True
+1077,Swordsman Soldier,u,SHORT_RANGE,8,1077_robo_swordsman_m,-1,-1,170,19,1,1,0,g,True,True
+1078,Bazooka Soldier,u,SHORT_RANGE,8,1078_robo_bazooka_m,-1,-1,100,21,10,1,0,g,True,True
+1079,Jet Soldier,u,AIR_VEHICLE,8,1079_robo_jumper_m,-1,-1,160,22,8,1,0,g,True,True
+1080,Motorized Soldier,u,LAND_VEHICLE,8,1080_robo_biker_m,-1,-1,300,25,9,2,0,g,True,True
+1081,Xtreme Retaliator,u,AIR_VEHICLE,8,1081_xtreme_retaliator_m,-1,-1,650,27,11,2,0,g,True,True
+1082,Megalancer,u,SHORT_RANGE,8,1082_robo_lancer_m,-1,-1,575,32,9,3,0,g,True,True
+1083,Crusader Tank,u,LAND_VEHICLE,8,1083_demlisher_tank_m,-1,-1,620,35,12,2,0,g,True,True
+1084,Dreadnought,u,ROBOT,8,1084_dreadnought_m,-1,-1,1200,44,8,3,0,g,True,True
+1085,Metal Draggy,u,AIR_VEHICLE,8,1085_metal_draggy_m,-1,-1,410,25,11,2,0,g,True,True
+1086,Mechanical Golem,u,ROBOT,8,1053_golem_boss_m,-1,-1,1650,43,2,3,0,g,True,True
+1087,T-Rex,u,SHORT_RANGE,8,1057_t-rex_m,-1,-1,1200,40,2,2,0,g,True,True
+1088,Skylander,u,AIR_VEHICLE,8,1088_skylander_m,-1,-1,675,28,10,2,0,g,True,True
+1089,Mega-Axe,u,SHORT_RANGE,8,1089_robo_axe_m,-1,-1,600,34,9,3,0,g,True,True
+1090,Giant Walker,u,LONG_RANGE,8,1090_giant_walker_m,-1,-1,700,29,7,3,0,g,True,True
+1091,Missile Tank,u,LAND_VEHICLE,8,1091_missile_tank_m,-1,-1,630,36,12,2,0,g,True,True
+1092,Steel Claws,u,MELEE,8,1092_steel_claws_m,-1,-1,190,20,1,1,0,g,True,True
+1093,Fire T-Rex,u,SHORT_RANGE,10,1093_trex_m,-1,-1,3000,22,2,2,0,g,True,True
+1094,Aircraft IV,u,AIR_VEHICLE,12,1094_aircraft_4_m,-1,-1,600,25,11,3,0,g,True,True
+1095,Aircraft V,u,AIR_VEHICLE,12,1095_aircraft_5_m,-1,-1,600,25,11,3,0,g,True,True
+1096,F-117,u,AIR_VEHICLE,6,1096_f117_m,-1,-1,700,28,11,3,0,g,True,True
+1097,Red Draggy,u,AIR_VEHICLE,6,1097_red_draggy_m,-1,-1,390,22,11,2,0,g,True,True
+1098,Blue Draggy,u,AIR_VEHICLE,6,1098_blue_draggy_m,-1,-1,400,24,11,2,0,g,True,True
+1099,Red Dragon,u,DRAGON,6,1099_red_dragon2_m,-1,-1,1700,42,12,3,0,g,True,True
+1100,Blue Dragon,u,DRAGON,6,1100_blue_dragon2_m,-1,-1,1750,44,12,3,0,g,True,True
+1101,Celestial Megamech,u,ROBOT,8,1101_celestial_megamech_m,-1,-1,1700,45,11,3,0,g,True,True
+1102,Red Baron,u,AIR_VEHICLE,6,1102_red_baron_m,-1,-1,675,29,11,3,0,g,True,True
+1103,Zeppelin,u,AIR_VEHICLE,6,1103_zeppelin_m,-1,-1,700,28,11,3,0,g,True,True
+1104,Fireman,u,WORKER,8,1104_fireman_1_m,-1,-1,40,3,3,1,0,g,True,True
+1105,Metal Dragon,u,DRAGON,6,1105_metalico_dragon3_m,-1,-1,1800,45,12,3,0,g,True,True
+1106,Axe Zoldier,u,SHORT_RANGE,8,1106_hacha_m_2,-1,-1,180,20,1,1,0,g,True,True
+1107,Gun Zoldier,u,SHORT_RANGE,8,1107_metralleta_m_2,-1,-1,100,19,7,1,0,g,True,True
+1108,Xplosive Ork,u,SHORT_RANGE,8,1108_orc_boss_m_2,-1,-1,650,34,9,3,0,g,True,True
+1109,Bear Ridda,u,SHORT_RANGE,8,1109_orco_jinete_m_2,-1,-1,450,26,1,2,0,g,True,True
+1110,Molotov Kopta,u,AIR_VEHICLE,8,1110_helicoptero_orco_m2,-1,-1,675,28,11,3,0,g,True,True
+1111,Horned Badass,u,LONG_RANGE,8,1111_robot_orco_1_m,-1,-1,650,45,8,3,0,g,True,True
+1112,Red Spinner,u,ROBOT,6,1112_optimus_m,-1,-1,1650,43,8,3,0,g,True,True
+1113,Flamethrowa Ork,u,SHORT_RANGE,8,1113_orc_flamethrower_m,-1,-1,275,21,7,2,0,g,True,True
+1114,Knife Throwa,u,SHORT_RANGE,8,1114_orc_knivethrower_m,-1,-1,200,21,7,1,0,g,True,True
+1115,Big Handsaw Ork,u,LONG_RANGE,8,1115_orc_robot_22_m,-1,-1,1250,45,8,3,0,g,True,True
+1116,Orc Tank,u,LAND_VEHICLE,8,1116_orc_tank_m,-1,-1,650,37,12,2,0,g,True,True
+1117,Kamikaze team,u,LONG_RANGE,8,1117_orc_kamikaze_team,-1,-1,600,13,11,3,0,g,True,True
+1118,Kamikaze critter,u,SHORT_RANGE,8,1118_squig_kamikaze,-1,-1,90,14,1,0,0,g,True,True
+1119,Camu Metal Dragon,u,DRAGON,6,1119_metal_dragon2_m,-1,-1,1850,46,12,3,0,g,True,True
+1120,Camu Draggy,u,AIR_VEHICLE,8,1120_metal_draggy_2_m,-1,-1,425,26,11,2,0,g,True,True
+1121,War Buggy,u,LAND_VEHICLE,10,1121_buggy_2_m,-1,-1,750,30,9,2,0,g,True,True
+1122,Orc Zoldier,u,LONG_RANGE,2,1122_orc_basic_gun_2,-1,-1,40,8,5,1,0,g,True,True
+1123,Orc Swordsman,u,LONG_RANGE,2,1123_orc_basic_knife_2,-1,-1,90,8,2,1,0,g,True,True
+1124,Basic Ork Tank,u,LAND_VEHICLE,3,1124_ork_tank_1,-1,-1,300,18,8,2,0,g,True,True
+1125,Orc Worker,u,WORKER,0,1125_orc_worker,-1,-1,25,6,1,1,0,g,True,True
+1126,Samurai Bot,u,LONG_RANGE,6,1126_samurai_bot_m,-1,-1,1650,43,3,3,0,g,True,True
+1127,Armored Core Alpha,u,ROBOT,6,1127_huge_robot_m,-1,-1,1800,46,3,3,0,g,True,True
+1128,Alpha Drone,u,AIR_VEHICLE,6,1128_huge_draggy_m,-1,-1,400,24,11,2,0,g,True,True
+1129,Samurai Minibot,u,SHORT_RANGE,6,1129_samurai_minibot,-1,-1,1650,43,2,3,0,g,True,False
+1130,Xplosive Beast Boss,u,SHORT_RANGE,8,1130_xplosive_boss_2,-1,-1,400,20,9,3,0,g,True,True
+1131,Xplosive Beast ATP,u,LAND_VEHICLE,12,1116_orc_tank_m_2,-1,-1,275,24,9,2,0,g,True,True
+1132,Xplosive Beast,u,SHORT_RANGE,8,1108_orc_boss_m_2,-1,-1,300,18,9,3,0,g,True,True
+1133,Ork Bear Knight,u,SHORT_RANGE,8,1109_orco_jinete_m_2,-1,-1,150,12,1,2,0,g,True,True
+1134,Ork Kopta,u,AIR_VEHICLE,8,1110_helicoptero_orco_m2,-1,-1,250,14,7,2,0,g,True,True
+1135,Horned Beast Ork,u,LONG_RANGE,8,1111_robot_orco_1_m,-1,-1,300,22,10,3,0,g,True,True
+1136,Red Flamethrowa Ork,u,SHORT_RANGE,8,1113_orc_flamethrower_m,-1,-1,125,12,7,2,0,g,True,True
+1137,Orc Knifethrower,u,SHORT_RANGE,8,1114_orc_knivethrower_m,-1,-1,100,12,6,1,0,g,True,True
+1138,Red Handsaw Ork,u,LONG_RANGE,8,1115_orc_robot_22_m,-1,-1,350,22,12,3,0,g,True,True
+1139,Kamikaze Bros,u,LONG_RANGE,8,1117_orc_kamikaze_team,-1,-1,600,13,11,3,0,g,True,True
+1140,Kamikaze Pet,u,SHORT_RANGE,8,1118_squig_kamikaze,-1,-1,90,14,1,0,0,g,True,True
+1141,Samurai Bot,u,ROBOT,6,1126_samurai_bot_m,-1,-1,1700,44,3,3,0,g,True,True
+1142,Samurai Minibot,u,SHORT_RANGE,6,1129_samurai_minibot_m,-1,-1,180,20,2,3,0,g,True,True
+1143,Melee Spider,u,SHORT_RANGE,2,1143_melee_spider_s,-1,-1,110,8,2,1,0,g,True,True
+1144,Venom Spider,u,LONG_RANGE,8,1144_ranged_spider_s,-1,-1,200,14,5,1,0,g,True,True
+1145,Big Spider,u,SHORT_RANGE,8,1145_spider_semi_boss_s_2,-1,-1,350,20,1,3,0,g,True,True
+1146,Small Alien,u,SHORT_RANGE,8,1146_basic_alien_s,-1,-1,110,8,5,1,0,g,True,True
+1147,Tusk Alien,u,SHORT_RANGE,2,1147_alien_bull_s,-1,-1,350,20,1,1,0,g,True,True
+1148,Claw Alien,u,SHORT_RANGE,2,1148_alien_claws_s,-1,-1,200,14,2,1,0,g,True,True
+1149,Orc Big Tank,u,LAND_VEHICLE,8,1116_orc_tank_m,-1,-1,350,16,10,2,0,g,True,True
+1150,Crusader Bot,u,ROBOT,8,1150_crusader_bot,-1,-1,1250,45,3,3,0,g,True,True
+1151,Crusader Priest,u,SHORT_RANGE,8,1151_crusader_priest,-1,-1,275,22,8,2,0,g,True,True
+1152,Ultra-Mech,u,ROBOT,6,1152_transformer_gigante,-1,-1,1800,46,8,3,0,g,True,True
+1153,Ultra-Mech Drone,u,AIR_VEHICLE,6,1153_transformer_gigante_drone,-1,-1,400,24,11,2,0,g,True,True
+1154,Viking Axeman,u,SHORT_RANGE,8,1154_axeman,-1,-1,200,21,1,1,0,g,True,True
+1155,Viking Soldier,u,SHORT_RANGE,8,1155_dwarf_soldier,-1,-1,100,19,7,1,0,g,True,True
+1156,Viking Bear Knight,u,SHORT_RANGE,8,1156_bear_knight,-1,-1,550,27,2,2,0,g,True,True
+1157,Viking Tank,u,LAND_VEHICLE,8,1157_dwarf_tank,-1,-1,650,37,12,3,0,g,True,True
+1158,Viking Airship,u,AIR_VEHICLE,8,1158_viking_copter_II,-1,-1,700,29,10,3,0,g,True,True
+1159,Viking Hammerer,u,SHORT_RANGE,8,1159_megahammer_dwarf,-1,-1,650,33,2,3,0,g,True,True
+1160,Viking Core Bot,u,ROBOT,8,1160_dwarf_armored_core,-1,-1,1275,46,3,3,0,g,True,True
+1161,Rune Golem,u,ROBOT,8,1161_viking_rune_golem,-1,-1,1300,47,2,3,0,g,True,False
+1162,Nemesis Core,u,ROBOT,6,1162_ultra_robot,-1,-1,1800,46,8,3,0,g,True,True
+1163,Nemesis Drone,u,AIR_VEHICLE,6,1163_ultra_robot_drone,-1,-1,400,24,11,2,0,g,True,True
+1164,Viking Core Bot Drone,u,AIR_VEHICLE,6,1164_dwarf_armored_core_drone,-1,-1,400,24,11,2,0,g,True,True
+1165,Viking Bazooka,u,SHORT_RANGE,8,1165_bazooka_viking,-1,-1,150,22,10,1,0,g,True,True
+1166,Viking MotoSquad,u,LAND_VEHICLE,8,1166_viking_motosquad,-1,-1,600,38,12,3,0,g,True,True
+1167,Blue Steel Bahamut,u,DRAGON,6,1167_bahamut_metalico,-1,-1,1900,48,12,3,0,g,True,True
+1168,Blue Steel Draggy,u,AIR_VEHICLE,8,1168_bahamut_metalico_draggy,-1,-1,450,27,11,2,0,g,True,True
+1169,Roller Skater,u,ROBOT,6,1169_transformer_skater,-1,-1,1750,45,8,3,0,g,True,True
+1170,Alien Instigator,u,LONG_RANGE,2,1170_alien_instigator,-1,-1,1700,45,1,1,0,g,True,True
+1171,Rune Golem Drone,u,AIR_VEHICLE,6,1171_viking_rune_golem_drone,-1,-1,425,24,11,2,0,g,True,True
+1172,Hyper Blazer,u,ROBOT,6,1172_mega_fire_bot,-1,-1,1850,47,8,3,0,g,True,True
+1173,Hyper Blazer Drone,u,AIR_VEHICLE,6,1173_mega_fire_bot_drone,-1,-1,425,24,11,2,0,g,True,True
+1174,Viking Sniper,u,LONG_RANGE,2,1174_viking_sniper,-1,-1,500,75,15,2,0,g,True,True
+1175,Chainsaw Butcher,u,SHORT_RANGE,8,1175_viking_butcher,-1,-1,700,35,2,2,0,g,True,True
+1176,Kamikaze,u,SHORT_RANGE,8,1176_kamikaze,-1,-1,100,500,1,1,0,g,True,True
+1177,UFO,u,AIR_VEHICLE,8,1177_ufo,-1,-1,900,38,8,2,0,g,True,True
+1178,Ether Messiah,u,ROBOT,6,1178_ether_messiah,-1,-1,1900,48,3,3,0,g,True,True
+1179,Ether Messiah Drone,u,AIR_VEHICLE,6,1179_ether_messiah_drone,-1,-1,450,24,11,2,0,g,True,True
+1180,Robot Hunter,u,SHORT_RANGE,8,1180_robot_hunter,-1,-1,1400,42,10,3,0,g,True,True
+1181,Golden Slayer,u,ROBOT,6,1181_transformer_sword,-1,-1,1900,49,3,3,0,g,True,True
+1182,Golden Slayer Drone,u,AIR_VEHICLE,6,1182_transformer_sword_drone,-1,-1,475,24,11,2,0,g,True,True
+1183,Big Laser Viking,u,LONG_RANGE,2,1183_laser_viking,-1,-1,800,35,9,2,0,g,True,True
+1184,Fire Karateka,u,ROBOT,6,1184_karateka,-1,-1,1800,48,2,3,0,g,True,True
+1185,MegaFire T-Rex,u,SHORT_RANGE,10,1093_trex_m,-1,-1,1950,48,2,2,0,g,True,True
+1186,Nebular Spearman,u,SHORT_RANGE,8,1186_avatar_soldado,-1,-1,210,22,2,1,0,g,True,True
+1187,Nebular Archer,u,LONG_RANGE,2,1187_avatar_arquero,-1,-1,120,20,7,1,0,g,True,True
+1188,Greatsword Warrior,u,SHORT_RANGE,8,1188_avatar_great_warrior,-1,-1,700,34,2,1,0,g,True,True
+1189,Nebular Rider,u,SHORT_RANGE,8,1189_avatar_jinete,-1,-1,650,36,2,2,0,g,True,True
+1190,Golden Golem,u,SHORT_RANGE,8,1190_gold_golem,-1,-1,1950,50,3,3,0,g,True,True
+1191,Black Dragon,u,DRAGON,6,1191_black_dragon,-1,-1,1950,51,12,3,0,g,True,True
+1192,Dragonborn Mech,u,ROBOT,6,1192_dragon_mech,-1,-1,1950,50,12,3,0,g,True,True
+1193,Dragonborn Drone,u,AIR_VEHICLE,6,1193_dragon_mech_drone,-1,-1,425,24,11,2,0,g,True,True
+1194,Electric Dragon,u,DRAGON,6,1194_electric_dragon_2,-1,-1,2000,52,12,3,0,g,True,True
+1195,Electric Draggy,u,AIR_VEHICLE,6,1195_electric_draggy,-1,-1,475,24,11,2,0,g,True,True
+1196,Black Draggy,u,AIR_VEHICLE,6,1196_black_draggy,-1,-1,450,27,11,2,0,g,True,True
+1197,Silver Hercules,u,ROBOT,6,1197_herkules_matrix,-1,-1,1900,53,12,3,0,g,True,True
+1198,Nebular Knight,u,SHORT_RANGE,8,1198_nebular_horse_rider,-1,-1,280,23,7,2,0,g,True,True
+1199,Nebular Dragon Rider,u,AIR_VEHICLE,6,1199_nebular_dragon_rider,-1,-1,725,30,10,2,0,g,True,True
+1200,Nebular Assault Quad,u,LAND_VEHICLE,8,1200_nebular_motorized,-1,-1,700,38,12,2,0,g,True,True
+1201,Steel Collector,u,ROBOT,6,1201_junk_bot,-1,-1,1500,30,8,2,0,g,True,True
+1202,Nebular Dragon Rider Draggy,u,AIR_VEHICLE,6,1202_nebular_dragon_rider_draggy,-1,-1,200,16,10,2,0,g,True,True
+1203,Viking Airship Outsider,u,AIR_VEHICLE,8,1158_viking_copter_II,-1,-1,275,15,9,3,0,g,True,True
+1204,Viking Hammerer Outsider,u,SHORT_RANGE,8,1159_megahammer_dwarf,-1,-1,350,22,2,3,0,g,True,True
+1205,Dual Blade Automech,u,ROBOT,6,1205_dual_blade_automech,-1,-1,2000,51,2,3,0,g,True,True
+1206,Dual Blade Automech Drone,u,AIR_VEHICLE,6,1206_dual_blade_automech_drone,-1,-1,425,24,11,2,0,g,True,True
+1207,Black Belt Archer,u,ROBOT,6,1207_transformer_archer,-1,-1,1750,45,10,3,0,g,True,True
+1208,Nebular Priest,u,LONG_RANGE,6,1208_nebula_priest,-1,-1,800,32,8,2,0,g,True,True
+1209,Nebular Bicopter,u,AIR_VEHICLE,6,1209_nebular_blue_bicopter,-1,-1,750,31,10,2,0,g,True,True
+1210,Great Shogun Mech,u,ROBOT,6,1210_samurai_mech,-1,-1,2050,52,2,3,0,g,True,True
+1211,Great Shogun Mech Drone,u,AIR_VEHICLE,6,1211_samurai_mech_drone,-1,-1,450,25,11,2,0,g,True,True
+1212,ATP Mech,u,ROBOT,6,1212_tetrapod_mech,-1,-1,1800,45,10,3,0,g,True,True
+1213,Blazing Beast Rider,u,LONG_RANGE,6,1213_nebular_monster_rider,-1,-1,1200,40,7,3,0,g,True,True
+1214,Nebular Maze Warrior,u,SHORT_RANGE,8,1214_nebular_maze_warrior,-1,-1,750,35,2,2,0,g,True,True
+1215,Massive Cannon Mech,u,ROBOT,6,1215_massive_cannon_mech,-1,-1,2100,52,9,3,0,g,True,True
+1216,Massive Cannon Drone,u,AIR_VEHICLE,6,1216_massive_cannon_drone,-1,-1,450,26,11,2,0,g,True,True
+1217,Brutus Mech,u,ROBOT,6,1217_brutus_mech,-1,-1,1900,47,3,3,0,g,True,True
+1218,S.W.A.T. Soldier,u,ROBOT,6,1218_swat_soldier,-1,-1,1850,46,10,3,0,g,True,True
+1219,Nebular Dragon Knight,u,SHORT_RANGE,8,1219_nebular_rider,-1,-1,800,32,10,2,0,g,True,True
+1220,Nebular Sniper,u,SHORT_RANGE,8,1220_nebular_sniper,-1,-1,500,80,15,3,0,g,True,True
+1221,Nebular Dragon Knight Draggy,u,AIR_VEHICLE,6,1221_nebular_rider_draggy,-1,-1,250,18,10,2,0,g,True,True
+1222,Liquid Mech ,u,ROBOT,6,1222_liquid_mech,-1,-1,2150,53,3,3,0,g,True,True
+1223,Killer Driller,u,ROBOT,6,1223_drill,-1,-1,1950,48,3,3,0,g,True,True
+1224,Liquid Mech  Drone,u,AIR_VEHICLE,6,1224_liquid_mech _drone,-1,-1,450,26,11,2,0,g,True,True
+1225,Doctor Shock,u,ROBOT,6,1225_doctor_shock,-1,-1,1850,49,10,3,0,g,True,True
+1226,Red Mercury Dragon,u,ROBOT,6,1226_dragon_metalic,-1,-1,2200,54,12,4,0,g,True,True
+1227,Red Mercury Draggy,u,AIR_VEHICLE,6,1227_dragon_metalic_draggy,-1,-1,450,26,11,2,0,g,True,True
+1228,Swamp Monster,u,SHORT_RANGE,8,1228_nebula_monster,-1,-1,2000,50,2,3,0,g,True,True
+1229,Poison Spider,u,LONG_RANGE,8,1144_ranged_spider_s,-1,-1,150,21,6,1,0,g,True,True
+1230,Shredder Alien,u,SHORT_RANGE,8,1148_alien_claws_s,-1,-1,750,35,2,1,0,g,True,True
+1231,Swamp Minion,u,SHORT_RANGE,6,1231_nebula_monster_mini,-1,-1,250,18,1,1,0,g,True,True
+1232,Claw Spider,u,SHORT_RANGE,8,1143_melee_spider_s,-1,-1,200,22,2,1,0,g,True,True
+1233,Huge Spider,u,SHORT_RANGE,8,1145_spider_semi_boss_s_2,-1,-1,800,36,2,2,0,g,True,True
+1234,Acid Alien,u,SHORT_RANGE,8,1146_basic_alien_s,-1,-1,200,20,6,1,0,g,True,True
+1235,Horned Alien,u,SHORT_RANGE,2,1147_alien_bull_s,-1,-1,800,37,2,1,0,g,True,True
+1236,2-Gun Exobot,u,ROBOT,6,1236_2gun_exobot,-1,-1,1900,49,10,3,0,g,True,True
+1237,Cyber Samurai Mech,u,ROBOT,6,1237_cyber_samurai_mech,-1,-1,2200,54,4,3,0,g,True,True
+1238,Cyber Samurai  Drone,u,AIR_VEHICLE,6,1238_cyber_samurai_mech_drone,-1,-1,450,26,11,2,0,g,True,True
+1239,Dark Ether Messiah,u,ROBOT,6,1239_dark_ether_messiah,-1,-1,2250,55,3,3,0,g,True,True
+1240,Dark Ether Messiah Drone,u,AIR_VEHICLE,6,1240_dark_ether_messiah_drone,-1,-1,450,26,11,2,0,g,True,True
+1241,Converter Wizard,u,SHORT_RANGE,6,1241_enemy_converter_priest,-1,-1,1500,45,6,3,0,g,True,True
+1242,Hercules Mech,u,ROBOT,6,1242_herkules_mech,-1,-1,1900,53,12,3,0,g,True,True
+1243,Forge Dragon,u,ROBOT,6,1243_forge_dragon,-1,-1,2300,56,12,4,0,g,True,True
+1244,Forge Dragon Draggy,u,AIR_VEHICLE,6,1244_forge_draggy,-1,-1,450,26,11,2,0,g,True,True
+1245,Reptile Gun,u,ROBOT,6,1245_reptile_gun,-1,-1,1200,42,12,4,0,g,True,True
+1246,Double Cannon Mech,u,ROBOT,6,1246_double_cannon_mech,-1,-1,2300,56,9,3,0,g,True,True
+1247,Double Cannon Drone,u,AIR_VEHICLE,6,1247_double_cannon_drone,-1,-1,450,26,11,2,0,g,True,True
+1248,Laser Blade Automech,u,ROBOT,6,1248_laser_blade_automech,-1,-1,2600,59,2,3,0,g,True,True
+1249,Laser Blade Automech Drone,u,AIR_VEHICLE,6,1249_laser_blade_automech_drone,-1,-1,425,24,11,2,0,g,True,True
+1250,Burning Slayer,u,ROBOT,6,1250_red_slayer,-1,-1,2500,58,3,3,0,g,True,True
+1251,Burning Slayer Drone,u,AIR_VEHICLE,6,1251_red_slayer_drone,-1,-1,450,25,11,2,0,g,True,True
+1252,Karateka Gunner,u,ROBOT,6,1252_karateka_gunner,-1,-1,2600,60,10,3,0,g,True,True
+1253,Swamp Monster,u,SHORT_RANGE,8,1228_nebula_monster,-1,-1,2000,50,2,3,0,g,True,True
+1254,Prime Automech,u,ROBOT,6,1254_optimus_prime,-1,-1,2400,57,10,3,0,g,True,True
+1255,Prime Automech Drone,u,AIR_VEHICLE,6,1255_optimus_prime_drone,-1,-1,450,25,11,2,0,g,True,True
+1256,Big Razor Mech,u,ROBOT,6,1256_big_razor_mech,-1,-1,2700,62,2,3,0,g,True,True
+1257,Big Razor Mech Drone,u,AIR_VEHICLE,6,1257_big_razor_mech_drone,-1,-1,450,25,11,2,0,g,True,True
+1258,S.W.A.T. Soldier,u,ROBOT,6,1218_swat_soldier,-1,-1,1850,46,10,3,0,g,True,True
+1259,Space Sword Elf,u,SHORT_RANGE,8,1259_spatial_sward,-1,-1,230,23,2,1,0,g,True,True
+1260,Space Archer Elf,u,LONG_RANGE,2,1260_spatial_archer,-1,-1,140,22,7,1,0,g,True,True
+1261,Space Knight Elf,u,SHORT_RANGE,8,1261_spatial_horseman,-1,-1,700,30,8,2,0,g,True,True
+1262,Space Airship Elf,u,AIR_VEHICLE,6,1262_spatial_airship,-1,-1,750,32,10,3,0,g,True,True
+1263,Spartan Warrior Mech,u,ROBOT,6,1263_spartan_warrior_mech,-1,-1,2800,64,3,4,0,g,True,True
+1264,Spartan Warrior Drone,u,AIR_VEHICLE,6,1264_spartan_warrior_drone,-1,-1,450,25,11,2,0,g,True,True
+1265,Space Priest Elf,u,LONG_RANGE,6,1265_spatial_priest,-1,-1,900,34,9,2,0,g,True,True
+1266,Space Paladin Elf,u,SHORT_RANGE,8,1266_spatial_paladin,-1,-1,800,36,2,1,0,g,True,True
+1267,Space Elf Cruiser,u,AIR_VEHICLE,6,1267_spatial_space_ship,-1,-1,1000,35,10,3,0,g,True,True
+1268,Proto Winged Mech,u,ROBOT,6,1268_winged_transformer,-1,-1,2900,65,10,4,0,g,True,True
+1269,Proto Winged Drone,u,AIR_VEHICLE,6,1269_winged_transformer_drone,-1,-1,475,26,11,2,0,g,True,True
+1270,Spider Bot,u,ROBOT,6,1270_spider_bot,-1,-1,2000,50,10,3,0,g,True,True
+1271,Pharaoh Warrior Mech,u,ROBOT,6,1271_egyptian_warrior_mech,-1,-1,2850,65,3,3,0,g,True,True
+1272,Arachnid Mech,u,ROBOT,6,1272_transformer_aracnid,-1,-1,2900,66,11,3,0,g,True,True
+1273,Arachnid Drone,u,AIR_VEHICLE,6,1273_transformer_aracnid_drone,-1,-1,475,26,11,2,0,g,True,True
+1274,Multi Morpher,u,ROBOT,6,1274_multi_morph,-1,-1,2200,54,10,3,0,g,True,True
+1275,Space Healer Elf,u,LONG_RANGE,2,1275_spatial_elf_healer,-1,-1,650,25,7,2,0,g,True,True
+1276,Space Scouter Elf,u,LONG_RANGE,2,1276_spatial_exploration_module,-1,-1,750,38,10,2,0,g,True,True
+1277,Pharaoh Mech Drone,u,AIR_VEHICLE,6,1277_egyptian_warrior_drone,-1,-1,450,25,11,2,0,g,True,True
+1278,MegaBot,u,ROBOT,6,1062_bumblebee_m,-1,-1,1600,40,7,3,0,g,True,True
+1279,Black Brutus Mech,u,ROBOT,6,1279_black_brutus_mech,-1,-1,2100,52,3,3,0,g,True,True
+1280,2-Head Frostfire Dragon,u,ROBOT,6,1280_frost_fire_dragon,-1,-1,3000,68,12,4,0,g,True,True
+1281,Silver Gunner Elf,u,LONG_RANGE,6,1281_silver_elf_gunner,-1,-1,800,32,10,2,0,g,True,True
+1282,Dino Rider Elf,u,LONG_RANGE,8,1282_elf_dino_rider,-1,-1,1300,42,10,2,0,g,True,True
+1283,2-Head Frostfire Draggy,u,AIR_VEHICLE,6,1283_frost_fire_draggy,-1,-1,475,26,11,2,0,g,True,True
+1284,Watcher Hero,u,LONG_RANGE,6,1284_cyclop_soldier,-1,-1,2300,56,10,3,0,g,True,True
+1285,Siege Striker,u,AIR_VEHICLE,6,1285_plasma_striker,-1,-1,1500,400,15,4,0,g,True,True
+1286,Avenger Mech Drone,u,AIR_VEHICLE,6,1286_avenger_mech_draggy,-1,-1,500,27,11,2,0,g,True,True
+1287,Avenger Mech ,u,ROBOT,6,1287_avenger_mech,-1,-1,3100,70,10,4,0,g,True,True
+1288,Destruction Wizard,u,LONG_RANGE,6,1288_destruction_wizard,-1,-1,750,36,9,2,0,g,True,True
+1289,Executioner Mech Drone,u,AIR_VEHICLE,6,1289_executioner_mech_draggy,-1,-1,500,27,11,2,0,g,True,True
+1290,Executioner Mech ,u,ROBOT,6,1290_executioner_mech,-1,-1,3200,72,10,4,0,g,True,True
+1291,Winged Paladin,u,LONG_RANGE,8,1291_winged_paladin,-1,-1,850,39,10,1,0,g,True,True
+1292,Andromeda Private,u,LONG_RANGE,8,1292_andromeda_private,-1,-1,160,23,7,1,0,g,True,True
+1293,Godzilla Mech,u,ROBOT,6,1293_godzilla_mech,-1,-1,3300,74,10,4,0,g,True,True
+1294,Godzilla Mech Drone,u,AIR_VEHICLE,6,1294_godzilla_mech_drone,-1,-1,525,27,11,2,0,g,True,True
+1295,Andromeda Combat Droid,u,LONG_RANGE,8,1295_andromeda_combat_droid,-1,-1,750,31,8,2,0,g,True,True
+1296,Andromeda Spaceship,u,LONG_RANGE,8,1296_andromeda_combat_spaceship,-1,-1,900,34,10,3,0,g,True,True
+1297,King Kong Mech,u,ROBOT,6,1297_kingKongMech,-1,-1,3400,76,3,4,0,g,True,True
+1298,King Kong Drone,u,AIR_VEHICLE,6,1298_kingKongDrone,-1,-1,550,28,11,2,0,g,True,True
+1299,Gamera Mech,u,ROBOT,6,1299_gameraMech,-1,-1,3500,78,10,4,0,g,True,True
+1300,Gamera Drone,u,AIR_VEHICLE,6,1300_gameraDrone,-1,-1,550,28,11,2,0,g,True,True
+1301,Z Project Mech,u,ROBOT,6,1301_zProjectMech,-1,-1,3600,80,10,4,0,g,True,True
+1302,Z Project Drone,u,AIR_VEHICLE,6,1302_zProjectDrone,-1,-1,550,28,11,2,0,g,True,True
+1303,Massive Gunner Mech,u,ROBOT,6,1303_massiveGunnerMech,-1,-1,3700,82,10,4,0,g,True,True
+1304,Massive Gunner Drone,u,AIR_VEHICLE,6,1304_massiveGunnerDrone,-1,-1,550,28,11,2,0,g,True,True
+1305,Fire Godzilla Mech,u,ROBOT,6,1305_blackGodzilla_mech,-1,-1,3800,84,10,4,0,g,True,True
+1306,Fire Godzilla Drone,u,AIR_VEHICLE,6,1306_blackGodzilla_drone,-1,-1,550,29,11,2,0,g,True,True
+10000,Chained Bonus + Giant Walker,b,OFFERBUILDING,1,10000_chained_bonus_giant_walker,-1,0,180,0,400,0,0,g,False,False
+10001,Chained Bonus + Red Baron,b,OFFERBUILDING,1,10001_chained_bonus_red_barron,-1,0,180,0,400,0,0,g,True,True
+10002,Chained Steel Collector,b,OFFERBUILDING,1,10002_chained_junk_bot,-1,0,180,0,400,0,0,g,True,True
+10003,Chained Dual Blade Automech,b,OFFERBUILDING,1,10003_chained_dual_blade_automech,-1,0,180,0,400,0,0,g,True,True
+10004,Chained Black Belt Archer,b,OFFERBUILDING,1,10004_chained_transformer_archer,-1,0,180,0,400,0,0,g,True,True
+10005,Chained 30% Off,b,OFFERBUILDING,1,10005_chained_30_off,-1,0,180,0,400,0,0,g,True,True
+10006,Chained Great Shogun Mech,b,OFFERBUILDING,1,10006_chained_samurai_mech,-1,0,180,0,400,0,0,g,True,True
+10007,Chained ATP Mech,b,OFFERBUILDING,1,10007_chained_tetrapod_mech,-1,0,180,0,400,0,0,g,True,True
+10008,Chained Bonus + Electric Draggy,b,OFFERBUILDING,1,10008_chained_bonus_electric_draggy,-1,0,180,0,400,0,0,g,True,True
+10009,Chained Stealth Chest,b,OFFERBUILDING,1,10009_chained_stealth_chest,-1,0,180,0,400,0,0,g,True,True
+10010,Chained 35% Off,b,OFFERBUILDING,1,10010_chained_35_off,-1,0,180,0,400,0,0,g,True,True
+10011,Chained Cannon Mech,b,OFFERBUILDING,1,10011_chained_cannon_mech,-1,0,180,0,400,0,0,g,True,True
+10012,Chained Brutus Mech,b,OFFERBUILDING,1,10012_chained_brutus_mech,-1,0,180,0,400,0,0,g,True,True
+10013,Chained S.W.A.T. Soldier,b,OFFERBUILDING,1,10013_chained_caballero_zodiac,-1,0,180,0,400,0,0,g,True,True
+10014,Chained Bonus +  Ether Messiah Drone,b,OFFERBUILDING,1,10014_chained_bonus_ether_messiah_drone,-1,0,180,0,400,0,0,g,True,True
+10015,Chained Advanced Chest,b,OFFERBUILDING,1,10015_chained_advance_chest,-1,0,180,0,400,0,0,g,True,True
+10016,Chained 60% Off,b,OFFERBUILDING,1,10016_chained_60_off,-1,0,180,0,400,0,0,g,True,True
+10017,Chained Liquid Mech,b,OFFERBUILDING,1,10017_chained_liquid_mech,-1,0,180,0,400,0,0,g,True,True
+10018,Chained Killer Driller,b,OFFERBUILDING,1,10018_chained_drill,-1,0,180,0,400,0,0,g,True,True
+10019,Chained Doctor Shock,b,OFFERBUILDING,1,10019_chained_doctor_shock,-1,0,180,0,400,0,0,g,True,True
+10020,Play Social Empires,b,CROSSPROMOTION,1,10020_cross_se,-1,0,180,0,400,0,0,g,True,True
+10021,Chained Professional Chest,b,OFFERBUILDING,1,10021_chained_professional_pack,-1,0,180,0,400,0,0,g,True,True
+10022,Chained Red Mercury Dragon,b,OFFERBUILDING,1,10022_chained_dragon_metalic_red,-1,0,180,0,400,0,0,g,True,True
+10023,Chained 90% Bonus,b,OFFERBUILDING,1,10023_chained_90_bonus,-1,0,180,0,400,0,0,g,True,True
+10024,Chained Super Pack,b,OFFERBUILDING,1,10024_chained_super_pack,-1,0,180,0,400,0,0,g,True,True
+10025,Chained Cyber Samurai Mech,b,OFFERBUILDING,1,10025_chained_cyber_samurai_mech,-1,0,180,0,400,0,0,g,True,True
+10026,Chained 2-Gun Exobot,b,OFFERBUILDING,1,10026_chained_2_gun_exobot,-1,0,180,0,400,0,0,g,True,True
+10027,Chained Dark Ether Messiah,b,OFFERBUILDING,1,10027_chained_darck_ether_messiah,-1,0,180,0,400,0,0,g,True,True
+10028,Chained 95% Bonus,b,OFFERBUILDING,1,10028_chained_95_bonus,-1,0,180,0,400,0,0,g,True,True
+10029,Chained Attack Pack,b,OFFERBUILDING,1,10029_chained_attack_pack,-1,0,180,0,400,0,0,g,True,True
+10030,Chained Forge Dragon,b,OFFERBUILDING,1,10030_chained_forge_dragon,-1,0,180,0,400,0,0,g,True,True
+10031,Chained Converter Wizard,b,OFFERBUILDING,1,10031_chained_enemy_converter,-1,0,180,0,400,0,0,g,True,True
+10032,Chained Bonus + Red Mercury Draggy,b,OFFERBUILDING,1,10032_chained_bonus_red_mercury_draggy,-1,0,180,0,400,0,0,g,True,True
+10033,Chained Swamp Monster,b,OFFERBUILDING,1,10033_chained_nebula_monster,-1,0,180,0,400,0,0,g,True,True
+10034,Chained Hercules Mech,b,OFFERBUILDING,1,10034_chained_hercules_mech,-1,0,180,0,400,0,0,g,False,False
+10035,Chained Double Cannon Mech,b,OFFERBUILDING,1,10035_chained_double_cannon_mech,-1,0,180,0,400,0,0,g,True,True
+10036,Chained Laser Blade Automech,b,OFFERBUILDING,1,10036_chained_laser_blade_automech,-1,0,180,0,400,0,0,g,True,True
+10037,Chained Burning Slayer,b,OFFERBUILDING,1,10037_chained_red_slayer,-1,0,180,0,400,0,0,g,True,True
+10038,Chained Karateka Gunner,b,OFFERBUILDING,1,10038_chained_karateka_gunner,-1,0,180,0,400,0,0,g,True,True
+10039,Chained Demolition Pack,b,OFFERBUILDING,1,10039_chained_demolition_pack,-1,0,180,0,400,0,0,g,True,True
+10040,Chained Half Price Party Weekend,b,OFFERBUILDING,1,10040_chained_half_party_price_party_weekend,-1,0,180,0,400,0,0,g,True,False
+10041,Chained Prime Automech,b,OFFERBUILDING,1,10041_chained_optimus_prime,-1,0,180,0,400,0,0,g,True,True
+10042,Chained Revolution Bonus 99,b,OFFERBUILDING,1,10042_chained_revolution_bonus_99,-1,0,180,0,400,0,0,g,True,True
+10043,Chained Retaliator Pack,b,OFFERBUILDING,1,10043_chained_retaliator_pack,-1,0,180,0,400,0,0,g,True,True
+10044,Chained Big Razor Mech,b,OFFERBUILDING,1,10044_chained_big_razor_mech,-1,0,180,0,400,0,0,g,True,True
+10045,Chained 150% Extra Cash,b,OFFERBUILDING,1,10045_chained_150_extra_cash,-1,0,180,0,400,0,0,g,True,True
+10046,Chained 40% Off,b,OFFERBUILDING,1,10046_chained_40_off,-1,0,180,0,400,0,0,g,True,True
+10047,Chained Destruction Pack,b,OFFERBUILDING,1,10047_chained_destruction_pack,-1,0,180,0,400,0,0,g,True,True
+10048,Play Dragon City,b,CROSSPROMOTION,1,10048_cross_dc,-1,0,180,0,400,0,0,g,False,False
+10049,Chained Dark Ether Messiah + Dual Blade Automech ,b,OFFERBUILDING,1,10049_chained_dark_ether_messiah_dual_blade_automech,-1,0,180,0,400,0,0,g,True,True
+10050,Chained Spartan Warrior,b,OFFERBUILDING,1,10050_chained_spartan_warrior,-1,0,180,0,400,0,0,g,True,True
+10051,Chained Assault Pack,b,OFFERBUILDING,1,10051_chained_assault_pack,-1,0,180,0,400,0,0,g,True,True
+10052,Chained Proto Winged Mech,b,OFFERBUILDING,1,10052_chained_widged_transformer,-1,0,180,0,400,0,0,g,True,True
+10053,Chained Spider Bot,b,OFFERBUILDING,1,10053_chained_spider_bot,-1,0,180,0,400,0,0,g,True,True
+10054,Chained 100% Bonus + Draggy,b,OFFERBUILDING,1,10054_100_bonus_draggy,-1,0,180,0,400,0,0,g,True,True
+10055,Chained Ambush Chest,b,OFFERBUILDING,1,10055_chained_ambush_chest,-1,0,180,0,400,0,0,g,True,True
+10056,Chained Pharaoh Warrior Mech ,b,OFFERBUILDING,1,10056_chained_egyptian_warrior_mech,-1,0,180,0,400,0,0,g,True,True
+10057,Chained Arachnid Mech,b,OFFERBUILDING,1,10057_chained_transformer_aracnid,-1,0,180,0,400,0,0,g,True,True
+10058,Chained 95% Bonus Cash + Fire Karateka,b,OFFERBUILDING,1,10058_chained_95bonus_fire_karateka,-1,0,180,0,400,0,0,g,True,True
+10059,Chained 35% Bonus Cash + Blue Steel Draggy,b,OFFERBUILDING,1,10059_chained_35bonus_blue_steel_draggy,-1,0,180,0,400,0,0,g,True,True
+10060,Chained Storm Pack,b,OFFERBUILDING,1,10060_chained_storm_pack,-1,0,180,0,400,0,0,g,True,True
+10061,Chained Black Brutus Mech,b,OFFERBUILDING,1,10061_chained_black_brutus_mech,-1,0,180,0,400,0,0,g,True,True
+10062,Chained 2-Head Frostfire Dragon,b,OFFERBUILDING,1,10062_chained_2head_frostfire_dragon,-1,0,180,0,400,0,0,g,True,True
+10063,Chained Multi Morpher,b,OFFERBUILDING,1,10063_chained_multi_morph,-1,0,180,0,400,0,0,g,True,True
+10064,Chained Watcher Hero,b,OFFERBUILDING,1,10064_chained_cyclop_soldier,-1,0,180,0,400,0,0,g,True,True
+10065,Chained Combat Chest,b,OFFERBUILDING,1,10065_chained_combat_chest,-1,0,180,0,400,0,0,g,True,True
+10066,Chained Avenger Mech,b,OFFERBUILDING,1,10066_chained_avenger_mech,-1,0,180,0,400,0,0,g,True,True
+10067,Chained 60% OFF + Electric Draggy,b,OFFERBUILDING,1,10067_chained_60off_electric_draggy,-1,0,180,0,400,0,0,g,True,True
+10068,Chained 125% Bonus + Dark Ether Drone,b,OFFERBUILDING,1,10068_chained_125off_dark_messiah_drone,-1,0,180,0,400,0,0,g,True,True
+10069,Chained Golden Slayer + M. Cannon Mech,b,OFFERBUILDING,1,10069_chained_goldenslayer_cannonmech,-1,0,180,0,400,0,0,g,True,True
+10070,Chained 75% Bonus,b,OFFERBUILDING,1,10070_chained_75bonus,-1,0,180,0,400,0,0,g,True,True
+10071,Chained Executioner Mech,b,OFFERBUILDING,1,10071_chained_executioner_mech,-1,0,180,0,400,0,0,g,True,True
+10072,Chained Battle Chest,b,OFFERBUILDING,1,10072_chained_battle_chest,-1,0,180,0,400,0,0,g,True,True
+10073,Chained 125% Extra Cash,b,OFFERBUILDING,1,10073_chained_125_extra_cash,-1,0,180,0,400,0,0,g,True,True
+10074,Chained Killer Chest,b,OFFERBUILDING,1,10074_chained_killer_chest,-1,0,180,0,400,0,0,g,True,True
+10075,Chained Godzilla Mech,b,OFFERBUILDING,1,10075_chained_godzillaMech,-1,0,180,0,400,0,0,g,True,True
+10076,Chained 110% Bonus,b,OFFERBUILDING,1,10076_chained_110Bonus,-1,0,180,0,400,0,0,g,True,True
+10077,Chained King Kong Mech,b,OFFERBUILDING,1,10077_chained_kingKongMech,-1,0,180,0,400,0,0,g,True,True
+10078,Dragon City,b,CROSSPROMOTION,1,10078_dragonCity_cross,-1,0,180,0,400,0,0,g,True,True
+10079,Chained Power Bot Chest,b,OFFERBUILDING,1,10079_chained_powerBotChest,-1,0,180,0,400,0,0,g,True,True
+10080,Chained Dark Ether M. + Laser B. Automech,b,OFFERBUILDING,1,10080_chained_darkEtherM_LaserBAutomech,-1,0,180,0,400,0,0,g,True,True
+10081,Chained Gamera Mech,b,OFFERBUILDING,1,10081_chained_gameraMech,-1,0,180,0,400,0,0,g,True,True
+10082,Chained Mecha Dragons Chest,b,OFFERBUILDING,1,10082_chained_mechaDragonsChest,-1,0,180,0,400,0,0,g,True,True
+10083,Chained Double Cannon M. + Big Razor M.,b,OFFERBUILDING,1,10083_chained_doubleCannonM_bigRazorM,-1,0,180,0,400,0,0,g,True,True
+10084,Chained 60% Bonus,b,OFFERBUILDING,1,10084_chained_60bonus,-1,0,180,0,400,0,0,g,True,True
+10085,Chained Z Project Mech,b,OFFERBUILDING,1,10085_chained_zProjectMech,-1,0,180,0,400,0,0,g,True,True
+10086,Chained Full Metal Chest,b,OFFERBUILDING,1,10086_chained_fullMetalChest,-1,0,180,0,400,0,0,g,True,True
+10087,Chained Great Shogun Mech + Brutus Mech,b,OFFERBUILDING,1,10087_chained_greatShogunMech_brutusMech,-1,0,180,0,400,0,0,g,True,True
+10088,Chained Massive Gunner Mech,b,OFFERBUILDING,1,10088_chained_massiveGunnerMech,-1,0,180,0,400,0,0,g,True,True
+10089,"Chained x2,5 Cash Offer",b,OFFERBUILDING,1,10089_chained_x2_5CashOffer,-1,0,180,0,400,0,0,g,True,True
+10090,Chained Fire Godzilla Mech,b,OFFERBUILDING,1,10090_chained_fireGodzillaMech,-1,0,180,0,400,0,0,g,True,True

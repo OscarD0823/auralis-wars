@@ -1,0 +1,98 @@
+# Social Wars: motor, mapa y catálogo
+
+Revisión: 20 de octubre de 2026. Esta revisión distingue la partida observada, la inspección estática del cliente y las funciones implementadas en Auralis. Indexar una función o una película no significa haberla ejecutado ni reproducido.
+
+## Fuentes y alcance
+
+- Sitio observado: https://wars.fbgamesweb.com/. Se revisaron la base, el desplazamiento del mapa, la tienda, defensas, ampliación, menús de mundo y bloqueos por nivel, además del códice público completo. La cuenta de prueba estaba en nivel 1. El acceso a combates contra otros jugadores mostró el requisito de nivel 8: no se eludió. No se probaron todos los eventos ni misiones de niveles superiores.
+- Guía pública: https://wars.fbgamesweb.com/como-jugar. Se extrajeron del DOM las estadísticas de sus 166 edificios y 303 unidades; `source-data/social-wars/live-codex.json` conserva únicamente ese catálogo público, sin información de cuentas o conversaciones.
+- Archivo fijado: [AcidCaos/socialwarriors, c3fceeb1f8e93734a293b9bc25ae6025656f6822](https://github.com/AcidCaos/socialwarriors/tree/c3fceeb1f8e93734a293b9bc25ae6025656f6822).
+- Cliente estático analizado: `assets/flash/Basesec_1.5.4.swf`, 4.542.821 bytes. Se exportaron e indexaron 1.387 archivos AS3 y 8.768 métodos. La inspección detallada se concentró en Config, Base, MapManager, MapInitializer, IsoTerrain, IsoEngine, IsoBuilding, IsoUnit, AStar y los delegados principales. No es una revisión manual línea por línea de los 1.387 archivos.
+- Backend del archivo: `server.py`, `engine.py`, `command.py`, `get_game_config.py`, `get_player_info.py` y `constants.py`. Se indexaron 63 comandos.
+
+Los archivos del servidor preservado y sus fuentes AS3 se analizaron localmente en `Social-References/wars-analysis/`. El repositorio Auralis incorpora índices reproducibles y los datos necesarios; no incluye contraseñas, sesiones, partidas ajenas ni una copia del JavaScript del sitio en funcionamiento.
+
+## Las tres capas del motor
+
+| Capa | Evidencia | Función |
+| --- | --- | --- |
+| Cliente preservado | Config, Base, IsoEngine, IsoElement, IsoBuilding, IsoUnit | Cuadrícula, selección, cámara, órdenes, combate, producción y estados visuales |
+| Datos y guardado | config/main.json; partida inicial; servidor Flask | Catálogo, requisitos, recursos, expansión, inventario, colas y persistencia |
+| Sitio actual | Bundle público observado de 4,75 MB | Contiene clases del cliente, una capa compatible con objetos de visualización Flash, bibliotecas JSON y paquetes de imágenes/formas |
+
+El cliente del sitio actual arranca con `scaleMode: "showAll"`, `preloadVectors: false`, un límite de concurrencia de 32 y `/extracted_src/assets/main/library.json`. Su bundle referencia `images.pack`, `shapes.pack` y `/api/game/`. Esto es evidencia del código público, no prueba de que su backend sea idéntico al Flask del archivo. La solicitud externa de `library.json` devolvió 403; no se intentó sortear ese control. Para convertir el arte se empleó el archivo público fijado.
+
+El servidor preservado ofrece configuración, información del jugador y lotes de comandos. Sus comandos incluyen comprar, mover, orientar, recoger, entrenar, mejorar, ampliar, almacenar, investigar, terminar misiones y ataques. También existen rutas sociales, ofertas y administración. Su mera presencia no confirma que todas las funciones estén completas o sean adecuadas para exponerlas en Auralis.
+
+## Cómo es y cómo se comporta el mapa
+
+`core/Config.as` fija 100 × 100 casillas y rombos de 108 × 54 píxeles. `IsoTerrain` dibuja texturas que cubren 5 × 5 casillas; `MapManager` utiliza matrices de 20 × 20 códigos gráficos. Las expansiones son sectores de 10 × 10 casillas. La partida inicial posee los sectores 35, 36, 45 y 46; su centro de mando está en (51, 41).
+
+No es un mapa continuo de dimensiones GTA ni un generador procedural ilimitado. Es una cuadrícula finita con diseños de islas y escenarios, sobre la que aparecen elementos y amenazas. Se extrajeron 24 diseños definidos en MapManager y los 30 fotogramas de `TerrainTiles` de `assets/sprites/terreno.swf`: mar, césped, costas, esquinas y playas.
+
+Los tipos de terreno registrados son tierra, puente, playa y agua. La inicialización del mapa marca las superficies de agua y sus bordes. La textura de una costa no basta por sí sola para decidir todos los permisos de una unidad: intervienen el terreno lógico y las propiedades del actor.
+
+- La cámara transforma coordenadas de casilla a píxel, admite desplazamiento y zoom. No mueve las entidades al cambiar la vista.
+- Un edificio ocupa su anchura y altura completas. La colocación, el paso y las posiciones de interacción dependen de esa huella.
+- `AStar` mantiene ocupación, terreno permitido y regiones conectadas. Las tropas terrestres admiten tierra, playa y puente; las propiedades acuáticas y aéreas cambian las reglas. El cliente limita una búsqueda a 50 ms.
+- Los sectores propios se dibujan con color normal; los disponibles se oscurecen. La expansión comprueba la contigüidad y puede bloquearse por capítulos. La tienda observada pedía 2.500 de oro y un vecino, o cinco cash, para la siguiente expansión.
+- `MapInitializer` genera recursos, objetos perdidos, animales y enemigos según las zonas. El entorno puede cambiar por extracción, construcción, destrucción y avance de capítulos.
+- El mapa de misión y el selector de mundos tienen progresión y restricciones; no son sinónimos de la base del jugador. Un menú de misión bloqueado no se consideró probado.
+
+El [atlas web](../dist/archive.html) permite recorrer esos diseños originales y probar conectividad. Sus rutas de demostración utilizan BFS sin edificios ni enemigos; no son una ejecución del A* original. La campaña jugable de Auralis conserva su mapa de 32 × 32 y sus doce objetivos. Los mapas de 100 × 100 del visor todavía no sustituyen esa campaña ni incorporan su sistema completo de expansión.
+
+## Para qué sirve cada familia
+
+| Familia original | Función comprobable en datos o código | Diferencia actual en Auralis |
+| --- | --- | --- |
+| Centro de mando | Desarrollo de la base, entrenamiento civil y progresión | Diez niveles propios y requisitos de campaña |
+| Casas | Alojamiento y capacidad de población | Capacidad y producción adaptadas; no son valores originales |
+| Fábricas de oro, madera, acero y petróleo | Ciclos de producción, recogida y límites por recurso | Producción acumulada por segundo y recogida manual propias |
+| Silos | Aumento de reservas máximas | Capacidad inicial y curva de mejora adaptadas |
+| Academias y cuarteles especializados | `trains_ids`, tiempos, costes y colas por edificio | Cuatro familias agrupan 24 unidades militares |
+| Garajes, talleres y hangares | Entrenamiento de vehículos, máquinas y aeronaves concretos | Familias gráficas originales; recetas Auralis |
+| Muros, torres, búnkeres y fortalezas | Obstáculos y defensas; algunas fortalezas también entrenan | Muros, torres y cañón con reglas de combate locales |
+| Hospital, mecánicos y curadores | Reglas de curación/reparación según el actor | Hospital para supervivientes y unidades de apoyo |
+| Laboratorio, centro robótico y Área 51 | Investigación o creación especial con delegados propios | Investigación de cinco grados; no se han portado todas las especialidades |
+| Mercados y edificio de aliados | Comercio, aportaciones y acciones sociales | Diplomacia local de IA; no mercado multijugador |
+| Maravillas, ofertas, decoraciones y objetos perdidos | Bonificaciones, eventos, ambientación o misiones particulares | Catalogados; gran parte aún no es jugable |
+
+Cada una de las 778 fichas conserva requisitos, coste, huella, vida, ataque, alcance, población, producción, propiedades, entrenamiento y evolución cuando existen. `type=b` reúne 469 edificios, decoraciones, recursos y otros objetos; no significa que haya 469 edificios comprables. Hay 308 unidades y un registro de terreno. `in_store=1` selecciona 166 objetos en esa configuración.
+
+El códice público actual enumera 303 unidades. No se mezclaron automáticamente sus cifras con las del archivo: hay revisiones diferentes y varias variantes comparten miniatura. Las fábricas del original permiten elegir duración y multiplicador de recogida; la configuración incluye 5, 60, 240 y 480 minutos. Esto no equivale a la tasa continua de producción de Auralis.
+
+## Unidades, trabajadores y animación
+
+`IsoUnit` comprueba si un obrero puede extraer un recurso y si queda espacio en el almacén. Selección, llegada, extracción, interacción, ataque y muerte son estados distintos. `IsoBuilding` valida coste y población antes de entrenar, actualiza las colas y delega las funciones particulares. Las unidades tienen vida, velocidad, alcance, intervalo de ataque, ocupación y propiedades como vuelo, blindaje, curación o navegación acuática.
+
+El arte original es vectorial 2D con proyección isométrica, no una biblioteca de modelos 3D. Las películas contienen jerarquías, formas, clips y secuencias. En los personajes analizados se identificaron QUIETO, ANDAR, ATAQUE, MUERTE y PICAR; el obrero de Wars también dispone de BARRIL. Hay cinco vistas fuente y reflejos para completar orientaciones. Exportar su primer fotograma como imagen fija pierde el comportamiento.
+
+Auralis reproduce 1.920 fotogramas de 84 recursos de edificios/personajes/naturaleza, más las 30 superficies añadidas en 0.4.0. No todas las habilidades ni todas las animaciones de muerte están portadas. Las diez mejoras Auralis distribuyen las variantes gráficas existentes; no existen diez películas originales diferentes para cada edificio.
+
+## Material extraído y cómo reconstruirlo
+
+| Archivo | Contenido |
+| --- | --- |
+| source-data/social-wars/items.json | 778 registros normalizados, categorías, globales y precios de expansión |
+| source-data/social-wars/catalog.csv | Tabla consultable de objetos y relaciones |
+| source-data/social-wars/live-codex.json | 469 fichas públicas observadas del sitio actual |
+| source-data/social-wars/assets.json | 3.199 archivos de recursos con ruta, tamaño, SHA Git y URL fijada |
+| source-data/social-wars/engine-index.json | Índice de archivos AS3/métodos, hash del cliente y 63 comandos del servidor |
+| source-data/social-wars/maps.json | 24 matrices originales, dimensión lógica y tamaños de sector/textura |
+| dist/classic/terrain/manifest.json | Procedencia y metadatos de los 30 fotogramas del terreno |
+
+El inventario de recursos contiene 862 películas de sprites, 1.314 miniaturas, 578 imágenes, 205 efectos, 140 sonidos, 60 clientes/versiones Flash y otros archivos auxiliares. Es un inventario verificable de todo lo localizado en el árbol fijado; no se descargaron ni incorporaron indiscriminadamente los 3.199 archivos al juego.
+
+Para regenerar los índices, disponer de `wars-tree.json`, `wars-config.json` y la exportación estática FFDec en el directorio de referencias y ejecutar `python scripts/audit-social-wars.py RUTA_REFERENCIAS`. Convertir TerrainTiles con `python scripts/prepare-terrain.py DIRECTORIO_FOTOGRAMAS` y preparar el visor con `python scripts/package-reference.py`. El cliente original, su servidor y el bundle del sitio no se ejecutan durante este proceso.
+
+## Cambios aplicados en 0.4.0
+
+- Suelo y agua con texturas originales; una superficie de caché limitada al tamaño de la pantalla. Se recompone al desplazar, acercar o redimensionar.
+- Índice de obstáculos naturales invalidado al despejar o mover edificios; descarte de elementos fuera de pantalla.
+- Máscaras alfa reutilizadas para seleccionar por la silueta, con un máximo de 128 fotogramas cacheados.
+- Navegación terrestre de combate mediante cuadrícula y rutas, con suavizado sólo si el segmento está libre. El agua y los edificios bloquean el paso; los edificios destruidos abren rutas. Los aviones conservan desplazamiento aéreo. La zona de despliegue se mantiene libre. La defensa respeta las casillas despejadas de la base y recoloca las posiciones antiguas que estaban dentro de obstáculos.
+- Menús estables: el refresco periódico no reemplaza nodos cuyo contenido sigue igual.
+- Caché inicial reducida, recursos cargados al usarse y descarga completa opcional con tres transferencias simultáneas. Las partidas previas conservan su clave y formato.
+- Atlas y códice consultables, separados explícitamente de los objetos ya jugables.
+
+La medición y sus límites están en [PERFORMANCE.md](PERFORMANCE.md). Migrar el mapa jugable al sistema original de islas/sectores, portar todas las recetas y habilidades, reproducir capítulos completos y ofrecer multijugador siguen siendo trabajo pendiente. No se presentan como funciones terminadas por haber encontrado sus datos.

@@ -1,0 +1,7411 @@
+{
+  "source": "https://wars.fbgamesweb.com/como-jugar",
+  "observed": "2026-10-20",
+  "buildings": [
+    {
+      "costs": {
+        "wood": "60"
+      },
+      "group": "Campos y granjas",
+      "image": "/assets/thumbs/0109_corn_field_m.jpg",
+      "name": "Campo de maíz",
+      "relations": "",
+      "stats": {
+        "level": "2",
+        "life": "100",
+        "population": "5",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "120"
+      },
+      "group": "Campos y granjas",
+      "image": "/assets/thumbs/0108_grape_field_m.jpg",
+      "name": "Campo de uvas",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "100",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "200"
+      },
+      "group": "Campos y granjas",
+      "image": "/assets/thumbs/0110_cow_farm_m.jpg",
+      "name": "Granja de vacas",
+      "relations": "",
+      "stats": {
+        "level": "14",
+        "life": "140",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "wood": "30"
+      },
+      "group": "Casas",
+      "image": "/assets/thumbs/0001_house_1_m.jpg",
+      "name": "Casa I",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "180",
+        "population": "3",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "60"
+      },
+      "group": "Casas",
+      "image": "/assets/thumbs/0047_house_2_m.jpg",
+      "name": "Casa II",
+      "relations": "",
+      "stats": {
+        "level": "6",
+        "life": "200",
+        "population": "4",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "120"
+      },
+      "group": "Casas",
+      "image": "/assets/thumbs/0048_house_3_m.jpg",
+      "name": "Casa III",
+      "relations": "",
+      "stats": {
+        "level": "19",
+        "life": "220",
+        "population": "5",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "50"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0002_depot_wood_1_m.jpg",
+      "name": "Fábrica de madera I",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "200",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "100"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0005_depot_gold_1_m.jpg",
+      "name": "Fábrica de oro I",
+      "relations": "",
+      "stats": {
+        "level": "2",
+        "life": "200",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "100"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0004_depot_steel_1_m.jpg",
+      "name": "Fábrica de acero I",
+      "relations": "",
+      "stats": {
+        "level": "4",
+        "life": "200",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "100"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0003_depot_oil_1_m.jpg",
+      "name": "Fábrica de petróleo I",
+      "relations": "",
+      "stats": {
+        "level": "5",
+        "life": "200",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "200"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0006_depot_wood_2_m.jpg",
+      "name": "Fábrica de madera II",
+      "relations": "",
+      "stats": {
+        "level": "11",
+        "life": "240",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "200"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0009_depot_gold_2_m.jpg",
+      "name": "Fábrica de oro II",
+      "relations": "",
+      "stats": {
+        "level": "13",
+        "life": "240",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "200"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0008_depot_steel_2_m.jpg",
+      "name": "Fábrica de acero II",
+      "relations": "",
+      "stats": {
+        "level": "16",
+        "life": "250",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "wood": "200"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0007_depot_oil_2_m.jpg",
+      "name": "Fábrica de petróleo II",
+      "relations": "",
+      "stats": {
+        "level": "17",
+        "life": "240",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "gold": "6,000"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0010_depot_wood_3_m.jpg",
+      "name": "Fábrica de madera III",
+      "relations": "",
+      "stats": {
+        "level": "21",
+        "life": "300",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "4,500"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0013_depot_gold_3_m.jpg",
+      "name": "Fábrica de oro III",
+      "relations": "",
+      "stats": {
+        "level": "24",
+        "life": "300",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,500"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0012_depot_steel_3_m.jpg",
+      "name": "Fábrica de acero III",
+      "relations": "",
+      "stats": {
+        "level": "27",
+        "life": "300",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "7,500"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0011_depot_oil_3_m.jpg",
+      "name": "Fábrica de petróleo III",
+      "relations": "",
+      "stats": {
+        "level": "30",
+        "life": "300",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "15,000"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0014_depot_wood_4_m.jpg",
+      "name": "Fábrica de madera IV",
+      "relations": "",
+      "stats": {
+        "level": "34",
+        "life": "450",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "20,000"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0017_depot_gold_4_m.jpg",
+      "name": "Fábrica de oro IV",
+      "relations": "",
+      "stats": {
+        "level": "37",
+        "life": "450",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "10,000"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0016_depot_steel_4_m.jpg",
+      "name": "Fábrica de acero IV",
+      "relations": "",
+      "stats": {
+        "level": "39",
+        "life": "450",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "24,000"
+      },
+      "group": "Nuevo",
+      "image": "/assets/thumbs/0015_depot_oil_4_m.jpg",
+      "name": "Fábrica de petróleo IV",
+      "relations": "",
+      "stats": {
+        "level": "42",
+        "life": "450",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "wood": "150"
+      },
+      "group": "Silos",
+      "image": "/assets/thumbs/10032_silo_1.jpg",
+      "name": "Silo",
+      "relations": "",
+      "stats": {
+        "level": "3",
+        "life": "180",
+        "population": "20000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "steel": "500"
+      },
+      "group": "Silos",
+      "image": "/assets/thumbs/10041_silo_2.jpg",
+      "name": "Silo II",
+      "relations": "",
+      "stats": {
+        "level": "15",
+        "life": "180",
+        "population": "25000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "steel": "5,000"
+      },
+      "group": "Silos",
+      "image": "/assets/thumbs/10042_silo_3.jpg",
+      "name": "Silo III",
+      "relations": "",
+      "stats": {
+        "level": "28",
+        "life": "180",
+        "population": "30000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "350"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0018_market_1_m.jpg",
+      "name": "Mercado I",
+      "relations": "",
+      "stats": {
+        "level": "5",
+        "life": "500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "steel": "100"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0075_Spy_center_m.jpg",
+      "name": "Centro de espionaje",
+      "relations": "",
+      "stats": {
+        "level": "7",
+        "life": "500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/261_marketplace.jpg",
+      "name": "Casa de subastas",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "3,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "3,000"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0086_robotics_center.jpg",
+      "name": "Centro robótico",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "400",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "wood": "50"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0140_recruitment_m.jpg",
+      "name": "Premio de reclutamiento",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "750",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "2,000"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0028_hospital_1_m.jpg",
+      "name": "Hospital",
+      "relations": "",
+      "stats": {
+        "level": "9",
+        "life": "800",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "150"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0061_allies_building_m.jpg",
+      "name": "Edificio de aliados",
+      "relations": "",
+      "stats": {
+        "level": "10",
+        "life": "500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0090_market_2_m.jpg",
+      "name": "Mercado II",
+      "relations": "",
+      "stats": {
+        "level": "11",
+        "life": "500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "350"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0074_Allies_market_m.jpg",
+      "name": "Mercado de aliados",
+      "relations": "",
+      "stats": {
+        "level": "12",
+        "life": "500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "10,000"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0091_market_3_m.jpg",
+      "name": "Mercado III",
+      "relations": "",
+      "stats": {
+        "level": "25",
+        "life": "500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "3,000"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/0139_area_51_m.jpg",
+      "name": "Area 51",
+      "relations": "",
+      "stats": {
+        "level": "30",
+        "life": "400",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500"
+      },
+      "group": "Varios",
+      "image": "/assets/thumbs/256_laboratory_tech.jpg",
+      "name": "Laboratorio de investigación",
+      "relations": "",
+      "stats": {
+        "level": "35",
+        "life": "3,000",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "250"
+      },
+      "group": "Búnkeres",
+      "image": "/assets/thumbs/0050_bunker_1_m.jpg",
+      "name": "Búnker I",
+      "relations": "",
+      "stats": {
+        "attack": "8",
+        "level": "4",
+        "life": "600",
+        "range": "7",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "cash": "12"
+      },
+      "group": "Búnkeres",
+      "image": "/assets/thumbs/0053_bunker_4_m.jpg",
+      "name": "Megabúnker",
+      "relations": "",
+      "stats": {
+        "attack": "18",
+        "level": "10",
+        "life": "2,000",
+        "range": "10",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500"
+      },
+      "group": "Búnkeres",
+      "image": "/assets/thumbs/0051_bunker_2_m.jpg",
+      "name": "Búnker II",
+      "relations": "",
+      "stats": {
+        "attack": "10",
+        "level": "13",
+        "life": "1,300",
+        "range": "8",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000"
+      },
+      "group": "Búnkeres",
+      "image": "/assets/thumbs/0052_bunker_3_m.jpg",
+      "name": "Búnker III",
+      "relations": "",
+      "stats": {
+        "attack": "14",
+        "level": "19",
+        "life": "800",
+        "range": "9",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "15"
+      },
+      "group": "Fortalezas",
+      "image": "/assets/thumbs/0084_fortress_5_m.jpg",
+      "name": "Fortaleza especial",
+      "relations": "Entrena: Soldado de arma doble",
+      "stats": {
+        "attack": "22",
+        "level": "1",
+        "life": "5,000",
+        "range": "11",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "25"
+      },
+      "group": "Fortalezas",
+      "image": "/assets/thumbs/0082_fortress_3_m.jpg",
+      "name": "Fortaleza de cohetes",
+      "relations": "Entrena: Jeep con bazuca doble",
+      "stats": {
+        "attack": "26",
+        "level": "9",
+        "life": "8,000",
+        "range": "12",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "20,000"
+      },
+      "group": "Fortalezas",
+      "image": "/assets/thumbs/0080_fortress_1_m.jpg",
+      "name": "Fortaleza I",
+      "relations": "",
+      "stats": {
+        "attack": "18",
+        "level": "20",
+        "life": "4,000",
+        "range": "10",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "30"
+      },
+      "group": "Fortalezas",
+      "image": "/assets/thumbs/0085_fortress_6_m.jpg",
+      "name": "Megafortaleza",
+      "relations": "Entrena: APC",
+      "stats": {
+        "attack": "30",
+        "level": "24",
+        "life": "12,000",
+        "range": "13",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "wood": "5"
+      },
+      "group": "Muros",
+      "image": "/assets/thumbs/0023_wall_1_m.jpg",
+      "name": "Muro I",
+      "relations": "",
+      "stats": {
+        "level": "2",
+        "life": "150",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "15"
+      },
+      "group": "Muros",
+      "image": "/assets/thumbs/0024_wall_2_m.jpg",
+      "name": "Muro II",
+      "relations": "",
+      "stats": {
+        "level": "9",
+        "life": "400",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "30"
+      },
+      "group": "Muros",
+      "image": "/assets/thumbs/0025_wall_3_m.jpg",
+      "name": "Muro III",
+      "relations": "",
+      "stats": {
+        "level": "17",
+        "life": "600",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "100"
+      },
+      "group": "Muros",
+      "image": "/assets/thumbs/0078_wall_4_m.jpg",
+      "name": "Muro IV",
+      "relations": "",
+      "stats": {
+        "level": "24",
+        "life": "800",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "225"
+      },
+      "group": "Muros",
+      "image": "/assets/thumbs/0079_wall_5_m.jpg",
+      "name": "Muro V",
+      "relations": "",
+      "stats": {
+        "level": "32",
+        "life": "1,000",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "125"
+      },
+      "group": "Torretas",
+      "image": "/assets/thumbs/0022_tower_1_m.jpg",
+      "name": "Torreta I",
+      "relations": "",
+      "stats": {
+        "attack": "5",
+        "level": "3",
+        "life": "300",
+        "range": "8",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "250"
+      },
+      "group": "Torretas",
+      "image": "/assets/thumbs/0057_torreta_ruben_m.jpg",
+      "name": "Torreta II",
+      "relations": "",
+      "stats": {
+        "attack": "8",
+        "level": "5",
+        "life": "500",
+        "range": "9",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "cash": "9"
+      },
+      "group": "Torretas",
+      "image": "/assets/thumbs/0045_tower_3_m.jpg",
+      "name": "Torreta de doble cohete",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "level": "8",
+        "life": "1,600",
+        "range": "12",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "375"
+      },
+      "group": "Torretas",
+      "image": "/assets/thumbs/0049_torreta_horacio_m.jpg",
+      "name": "Torreta III",
+      "relations": "",
+      "stats": {
+        "attack": "12",
+        "level": "8",
+        "life": "700",
+        "range": "10",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "cash": "7"
+      },
+      "group": "Torretas",
+      "image": "/assets/thumbs/0046_tower_4_m.jpg",
+      "name": "Torreta de cañón",
+      "relations": "",
+      "stats": {
+        "attack": "18",
+        "level": "13",
+        "life": "1,500",
+        "range": "12",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "500"
+      },
+      "group": "Torretas",
+      "image": "/assets/thumbs/0039_tower_2_m.jpg",
+      "name": "Torreta IV",
+      "relations": "",
+      "stats": {
+        "attack": "14",
+        "level": "16",
+        "life": "900",
+        "range": "11",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "625"
+      },
+      "group": "Torretas",
+      "image": "/assets/thumbs/0088_tower_8_m.jpg",
+      "name": "Torreta V",
+      "relations": "",
+      "stats": {
+        "attack": "16",
+        "level": "22",
+        "life": "1,100",
+        "range": "12",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "750"
+      },
+      "group": "Torretas",
+      "image": "/assets/thumbs/0087_tower_7_m.jpg",
+      "name": "Torreta VI",
+      "relations": "",
+      "stats": {
+        "attack": "18",
+        "level": "30",
+        "life": "1,200",
+        "range": "13",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "steel": "600"
+      },
+      "group": "Asedio",
+      "image": "/assets/thumbs/0145_mortar_academy_m.jpg",
+      "name": "Academia de mortero",
+      "relations": "Entrena: Lanzamorteros",
+      "stats": {
+        "level": "17",
+        "life": "400",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "800"
+      },
+      "group": "Asedio",
+      "image": "/assets/thumbs/0148_artillery_garage_m.jpg",
+      "name": "Academia de tanque de demolición",
+      "relations": "Entrena: Tanque de demolición",
+      "stats": {
+        "level": "50",
+        "life": "1,500",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300"
+      },
+      "group": "Aviones",
+      "image": "/assets/thumbs/0054_copter_hangar_1_m.jpg",
+      "name": "Hangar de helicóptero I",
+      "relations": "Entrena: Helicóptero",
+      "stats": {
+        "level": "18",
+        "life": "400",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,500"
+      },
+      "group": "Aviones",
+      "image": "/assets/thumbs/0037_hangar_1_m.jpg",
+      "name": "Hangar I",
+      "relations": "Entrena: Avión",
+      "stats": {
+        "level": "25",
+        "life": "400",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "450"
+      },
+      "group": "Aviones",
+      "image": "/assets/thumbs/0055_copter_hangar_2_m.jpg",
+      "name": "Hangar de helicóptero II",
+      "relations": "Entrena: Helicóptero II",
+      "stats": {
+        "level": "29",
+        "life": "800",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "2,000"
+      },
+      "group": "Aviones",
+      "image": "/assets/thumbs/0076_hangar_2_m.jpg",
+      "name": "Hangar II",
+      "relations": "Entrena: Avión II",
+      "stats": {
+        "level": "33",
+        "life": "8,000",
+        "size": "6x6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500"
+      },
+      "group": "Aviones",
+      "image": "/assets/thumbs/0056_copter_hangar_3_m.jpg",
+      "name": "Hangar de helicóptero III",
+      "relations": "Entrena: Helicóptero III",
+      "stats": {
+        "level": "38",
+        "life": "1,000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "3,000"
+      },
+      "group": "Aviones",
+      "image": "/assets/thumbs/0077_hangar_3_m.jpg",
+      "name": "Hangar III",
+      "relations": "Entrena: Avión III",
+      "stats": {
+        "level": "40",
+        "life": "1,000",
+        "size": "6x6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,200"
+      },
+      "group": "Aviones",
+      "image": "/assets/thumbs/0146_copter_hangar_4_m.jpg",
+      "name": "Hangar de helicóptero IV",
+      "relations": "Entrena: Helicóptero IV",
+      "stats": {
+        "level": "44",
+        "life": "1,250",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,500"
+      },
+      "group": "Aviones",
+      "image": "/assets/thumbs/0147_copter_hangar_5_m.jpg",
+      "name": "Hangar de helicóptero V",
+      "relations": "Entrena: Helicóptero V",
+      "stats": {
+        "level": "48",
+        "life": "1,500",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "400"
+      },
+      "group": "Especiales",
+      "image": "/assets/thumbs/0174_fireman_academy_m.jpg",
+      "name": "Academia de bombero",
+      "relations": "Entrena: Bombero",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "14"
+      },
+      "group": "Especiales",
+      "image": "/assets/thumbs/0129_fire_academy_m.jpg",
+      "name": "Academia de lanzallamas",
+      "relations": "Entrena: Lanzallamas",
+      "stats": {
+        "level": "10",
+        "life": "400",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "18"
+      },
+      "group": "Especiales",
+      "image": "/assets/thumbs/0130_black_tank_academy_m.jpg",
+      "name": "Academia de tanque Dominion",
+      "relations": "Entrena: Tanque Dominion",
+      "stats": {
+        "level": "10",
+        "life": "400",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "22"
+      },
+      "group": "Especiales",
+      "image": "/assets/thumbs/0131_black_aircraft_academy_m.jpg",
+      "name": "Hangar de cazas furtivos",
+      "relations": "Entrena: Caza furtivo",
+      "stats": {
+        "level": "10",
+        "life": "1,000",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "wood": "400"
+      },
+      "group": "Especiales",
+      "image": "/assets/thumbs/0134_field_hospital_m.jpg",
+      "name": "Hospital de campaña",
+      "relations": "Entrena: Médico",
+      "stats": {
+        "level": "15",
+        "life": "500",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "steel": "1,200"
+      },
+      "group": "Especiales",
+      "image": "/assets/thumbs/0135_engineer_barrack_m.jpg",
+      "name": "Garaje mecánico",
+      "relations": "Entrena: Ingeniero",
+      "stats": {
+        "level": "20",
+        "life": "1,000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,100"
+      },
+      "group": "Especiales",
+      "image": "/assets/thumbs/0149_antiaircraft_garage_m.jpg",
+      "name": "Garaje antiaéreo",
+      "relations": "Entrena: Batería antiaérea",
+      "stats": {
+        "level": "22",
+        "life": "500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "125"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0030_academy_1_m.jpg",
+      "name": "Academia I",
+      "relations": "Entrena: Soldado",
+      "stats": {
+        "level": "1",
+        "life": "300",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "wood": "150"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0031_bazooka_academy_1_m.jpg",
+      "name": "Academia de bazuca I",
+      "relations": "Entrena: Bazuca",
+      "stats": {
+        "level": "3",
+        "life": "300",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "wood": "250"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0041_academy_2_m.jpg",
+      "name": "Academia II",
+      "relations": "Entrena: Soldado II",
+      "stats": {
+        "level": "7",
+        "life": "350",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "300"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0043_bazooka_academy_2_m.jpg",
+      "name": "Academia de bazuca II",
+      "relations": "Entrena: Bazuca II",
+      "stats": {
+        "level": "10",
+        "life": "350",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "375"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0042_academy_3_m.jpg",
+      "name": "Academia III",
+      "relations": "Entrena: Soldado III",
+      "stats": {
+        "level": "21",
+        "life": "400",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "wood": "450"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0044_bazooka_academy_3_m.jpg",
+      "name": "Academia de bazuca III",
+      "relations": "Entrena: Bazuca III",
+      "stats": {
+        "level": "23",
+        "life": "400",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "wood": "600"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0143_academy_4_m.jpg",
+      "name": "Academia IV",
+      "relations": "Entrena: Soldado IV",
+      "stats": {
+        "level": "28",
+        "life": "600",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "600"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0141_bazooka_academy_4_m.jpg",
+      "name": "Academia de bazuca IV",
+      "relations": "Entrena: Bazuca IV",
+      "stats": {
+        "level": "30",
+        "life": "600",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "1,000"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0144_academy_5_m.jpg",
+      "name": "Academia V",
+      "relations": "Entrena: Soldado V",
+      "stats": {
+        "level": "34",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "1,000"
+      },
+      "group": "Soldados",
+      "image": "/assets/thumbs/0142_bazooka_academy_5_m.jpg",
+      "name": "Academia de bazuca V",
+      "relations": "Entrena: Bazuca V",
+      "stats": {
+        "level": "37",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "150"
+      },
+      "group": "Vehículos",
+      "image": "/assets/thumbs/0040_workshop_1_m.jpg",
+      "name": "Garaje de jeeps I",
+      "relations": "Entrena: Jeep con ametralladora",
+      "stats": {
+        "level": "5",
+        "life": "300",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300"
+      },
+      "group": "Vehículos",
+      "image": "/assets/thumbs/0038_cannon_academy_1_m.jpg",
+      "name": "Academia de tanques I",
+      "relations": "Entrena: Tanque",
+      "stats": {
+        "level": "12",
+        "life": "300",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "wood": "300"
+      },
+      "group": "Vehículos",
+      "image": "/assets/thumbs/0064_workshop_2_m.jpg",
+      "name": "Garaje de jeeps II",
+      "relations": "Entrena: Jeep con ametralladora II",
+      "stats": {
+        "level": "15",
+        "life": "350",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "350"
+      },
+      "group": "Vehículos",
+      "image": "/assets/thumbs/0062_cannon_academy_2_m.jpg",
+      "name": "Academia de tanques II",
+      "relations": "Entrena: Tanque II",
+      "stats": {
+        "level": "27",
+        "life": "350",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "450"
+      },
+      "group": "Vehículos",
+      "image": "/assets/thumbs/0065_workshop_3_m.jpg",
+      "name": "Garaje de jeeps III",
+      "relations": "Entrena: Jeep con ametralladora III",
+      "stats": {
+        "level": "31",
+        "life": "400",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "400"
+      },
+      "group": "Vehículos",
+      "image": "/assets/thumbs/0063_cannon_academy_3_m.jpg",
+      "name": "Academia de tanques III",
+      "relations": "Entrena: Tanque III",
+      "stats": {
+        "level": "36",
+        "life": "500",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000"
+      },
+      "group": "Vehículos",
+      "image": "/assets/thumbs/0150_tank_academy_4_m.jpg",
+      "name": "Academia de tanques IV",
+      "relations": "Entrena: Tanque IV",
+      "stats": {
+        "level": "46",
+        "life": "800",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "400"
+      },
+      "group": "Vehículos",
+      "image": "/assets/thumbs/0151_tank_academy_5_m.jpg",
+      "name": "Academia de tanques V",
+      "relations": "Entrena: Tanque V",
+      "stats": {
+        "level": "54",
+        "life": "1,150",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "7"
+      },
+      "group": "Estatuas",
+      "image": "/assets/thumbs/0107_sculpture_m.jpg",
+      "name": "Escultura",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "400",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "wood": "30"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/0094_sponge_bush_m.jpg",
+      "name": "Arbusto esponja",
+      "relations": "",
+      "stats": {
+        "level": "2",
+        "life": "400",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/0136_general_sculpture_m.jpg",
+      "name": "Escultura de general",
+      "relations": "",
+      "stats": {
+        "level": "2",
+        "life": "400",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "gold": "20"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/0096_white_flowers_m.jpg",
+      "name": "Flores blancas",
+      "relations": "",
+      "stats": {
+        "level": "4",
+        "life": "5",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "wood": "30"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/0097_red_flowers_m.jpg",
+      "name": "Flores rojas",
+      "relations": "",
+      "stats": {
+        "level": "6",
+        "life": "400",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "gold": "250,000"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/252_skyscraper.jpg",
+      "name": "Rascacielos",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "400",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "wood": "30"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/0103_bush_m.jpg",
+      "name": "Arbusto",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "400",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "wood": "30"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/0100_red_leaf_flowers_m.jpg",
+      "name": "Flores de hoja roja",
+      "relations": "",
+      "stats": {
+        "level": "9",
+        "life": "400",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "wood": "30"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/0101_pink_leaf_flowers_m.jpg",
+      "name": "Flores de hoja rosa",
+      "relations": "",
+      "stats": {
+        "level": "11",
+        "life": "400",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "gold": "275"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/0102_blue_leaf_flowers_m.jpg",
+      "name": "Flores de hoja azul",
+      "relations": "",
+      "stats": {
+        "level": "12",
+        "life": "5",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "gold": "225"
+      },
+      "group": "Flores",
+      "image": "/assets/thumbs/0098_blue_flowers_m.jpg",
+      "name": "Flores azules",
+      "relations": "",
+      "stats": {
+        "level": "13",
+        "life": "5",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "cash": "5"
+      },
+      "group": "Otros",
+      "image": "/assets/thumbs/0105_victory_arch_m.jpg",
+      "name": "Arco de la victoria",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "400",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "group": "Otros",
+      "image": "/assets/thumbs/0106_fountain_m.jpg",
+      "name": "Fuente",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "400",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "1"
+      },
+      "group": "Otros",
+      "image": "/assets/thumbs/0095_little_fountain_m.jpg",
+      "name": "Fuente pequeña",
+      "relations": "",
+      "stats": {
+        "level": "5",
+        "life": "150",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "gold": "50"
+      },
+      "group": "Otros",
+      "image": "/assets/thumbs/0104_bancos_farolas_m.jpg",
+      "name": "Lámpara",
+      "relations": "",
+      "stats": {
+        "level": "10",
+        "life": "5",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "wood": "30"
+      },
+      "group": "Árboles",
+      "image": "/assets/thumbs/0093_pear_tree_m.jpg",
+      "name": "Peral",
+      "relations": "",
+      "stats": {
+        "level": "3",
+        "life": "400",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "gold": "50"
+      },
+      "group": "Árboles",
+      "image": "/assets/thumbs/0092_apple_tree_m.jpg",
+      "name": "Manzano",
+      "relations": "",
+      "stats": {
+        "level": "14",
+        "life": "5",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "cash": "50"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0176_maravilla_m.jpg",
+      "name": "Maravilla de cash",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "3,000",
+        "population": "100",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "70"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/253_parliament.jpg",
+      "name": "Parlamento",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "3,000",
+        "population": "75",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "70"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0175_alejandria_m.jpg",
+      "name": "Templo babilónico",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "3,000",
+        "population": "75",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "20"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0066_stoneage_marvel_m.jpg",
+      "name": "Edad de piedra",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "3,000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "20"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0068_iguazu_m.jpg",
+      "name": "Iguazú",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "3,000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "20"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0069_sfinx_m.jpg",
+      "name": "Esfinge",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "3,000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "20"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0073_Ankor_m.jpg",
+      "name": "Ankor",
+      "relations": "",
+      "stats": {
+        "level": "1",
+        "life": "2,000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "40"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0071_chichenitza_m.jpg",
+      "name": "Chichén Itzá",
+      "relations": "",
+      "stats": {
+        "level": "6",
+        "life": "3,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "40"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0070_inca_god_m.jpg",
+      "name": "Dios inca",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "3,000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "40"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0067_machupichu_m.jpg",
+      "name": "Machu Picchu",
+      "relations": "",
+      "stats": {
+        "level": "10",
+        "life": "3,000",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "40"
+      },
+      "group": "Maravillas",
+      "image": "/assets/thumbs/0072_babilonia_m.jpg",
+      "name": "Babilonia",
+      "relations": "",
+      "stats": {
+        "level": "12",
+        "life": "2,000",
+        "population": "50",
+        "size": "5x5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "32"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/254_nebula_priest_academy.jpg",
+      "name": "Academia de sacerdote nebular",
+      "relations": "Entrena: Sacerdote nebular",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "30"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/215_viking_copter_II_hangar.jpg",
+      "name": "Hangar de aeronaves vikingas",
+      "relations": "Entrena: Aeronave vikinga",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "28"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/279_spatial_airship_hangar.jpg",
+      "name": "Hangar de dirigible élfico",
+      "relations": "Entrena: Elfo dirigible espacial",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "34"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/260_dragon_rider_2_academy.jpg",
+      "name": "Academia de caballero dragón nebular",
+      "relations": "Entrena: Caballero dragón nebular",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "32"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/289_elf_dino_rider_academy.jpg",
+      "name": "Academia de elfo jinete de dinosaurio",
+      "relations": "Entrena: Elfo jinete de dinosaurio",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "32"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/255_nebula_blue_bicopter_hangar.jpg",
+      "name": "Hangar de bicóptero nebular",
+      "relations": "Entrena: Bicóptero nebular",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "28"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/234_viking_motosquad_academy.jpg",
+      "name": "Academia de motoescuadrón vikingo",
+      "relations": "Entrena: Motoescuadrón vikingo",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "40"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/291_plasma_striker_academy.jpg",
+      "name": "Academia de elfo atacante de asedio",
+      "relations": "Entrena: Siege Striker",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "34"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/259_nebula_sniper_academy.jpg",
+      "name": "Academia de francotirador nebular",
+      "relations": "Entrena: Francotirador nebular",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "34"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/250_nebula_dragon_nest.jpg",
+      "name": "Academia de jinete dragón nebular",
+      "relations": "Entrena: Jinete dragón nebular",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "32"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/263_claw_alien_academy.jpg",
+      "name": "Nido de alien cornudo",
+      "relations": "Entrena: Alien cornudo",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "28"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/214_dwarf_tank_academy.jpg",
+      "name": "Academia de tanque vikingo",
+      "relations": "Entrena: Tanque vikingo",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "38"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/238_kamikaze_academy.jpg",
+      "name": "Academia de Kamikaze",
+      "relations": "Entrena: Kamikaze",
+      "stats": {
+        "level": "8",
+        "life": "2,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "30"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/242_avatar_great_warrior_academy.jpg",
+      "name": "Academia de guerrero de espadón",
+      "relations": "Entrena: Guerrero de espadón",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "24"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/213_bear_knight_academy.jpg",
+      "name": "Academia de caballero oso",
+      "relations": "Entrena: Caballero oso vikingo",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "22"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/216_megahammer_dwarf_factory.jpg",
+      "name": "Fábrica de martilleros vikingos",
+      "relations": "Entrena: Martillero vikingo",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "34"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/217_dwarf_armored_core_factory.jpg",
+      "name": "Fábrica de núcleos vikinga",
+      "relations": "Entrena: Bot núcleo vikingo",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "34"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/235_viking_rune_golem_academy.jpg",
+      "name": "Academia de gólem de runas",
+      "relations": "Entrena: Gólem de runas",
+      "stats": {
+        "level": "8",
+        "life": "2,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "34"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/257_nebula_monster_rider_academy.jpg",
+      "name": "Academia de jinete de bestia ardiente",
+      "relations": "Entrena: Jinete de bestia ardiente",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "32"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/266_tusk_alien_academy.jpg",
+      "name": "Nido de aliens Shredder",
+      "relations": "Entrena: Alien Shredder",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "30"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/243_avatar_jinete_academy.jpg",
+      "name": "Academia de jinete nebular",
+      "relations": "Entrena: Jinete nebular",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "28"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/236_viking_sniper_academy.jpg",
+      "name": "Academia de francotirador vikingo",
+      "relations": "Entrena: Francotirador vikingo",
+      "stats": {
+        "level": "8",
+        "life": "2,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "28"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/286_spatial_exploration_module_hangar.jpg",
+      "name": "Hangar de exploradores élficos espaciales",
+      "relations": "Entrena: Elfo explorador espacial",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "35"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/283_reptile_gun_hangar.jpg",
+      "name": "Academia de reptil artillero",
+      "relations": "Entrena: Reptil artillero",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "32"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/301_punisherBot_Factory.jpg",
+      "name": "Fábrica de bots Punisher",
+      "relations": "Entrena: Bot Punisher",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "32"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/284_mega_bot_academy.jpg",
+      "name": "Academia de megabot",
+      "relations": "Entrena: Megabot",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "30"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/287_gun_bot_academy.jpg",
+      "name": "Academia de bot pistolero",
+      "relations": "Entrena: Bot pistolero",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/221_dwarf_turret_2.jpg",
+      "name": "Torreta vikinga II",
+      "relations": "",
+      "stats": {
+        "attack": "23",
+        "level": "8",
+        "life": "1,750",
+        "range": "12",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "gold": "9,000"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/267_melee_spider_academy.jpg",
+      "name": "Colmena de araña con garras",
+      "relations": "Entrena: Araña con garras",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "7,500"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/241_avatar_arquero_academy.jpg",
+      "name": "Academia de arquero nebular",
+      "relations": "Entrena: Arquero nebular",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "7,500"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/277_spatial_archer_academy.jpg",
+      "name": "Academia de elfo arquero espacial",
+      "relations": "Entrena: Elfo arquero espacial",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "6,500"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/212_dwarf_soldier_academy.jpg",
+      "name": "Academia de soldado vikingo",
+      "relations": "Entrena: Soldado vikingo",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "50,000"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/281_spatial_priest_academy.jpg",
+      "name": "Academia de elfo sacerdote",
+      "relations": "Entrena: Elfo sacerdote espacial",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "8,500"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/262_venom_spider_academy.jpg",
+      "name": "Colmena de arañas ponzoñosas",
+      "relations": "Entrena: Araña ponzoñosa",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "7,200"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/240_avatar_soldado_academy.jpg",
+      "name": "Academia de lancero nebular",
+      "relations": "Entrena: Lancero nebular",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "9,000"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/264_small_alien_academy.jpg",
+      "name": "Nido de alien ácido",
+      "relations": "Entrena: Alien ácido",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "8,000"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/249_nebula_horse_rider_academy.jpg",
+      "name": "Academia de caballero nebular",
+      "relations": "Entrena: Caballero nebular",
+      "stats": {
+        "level": "8",
+        "life": "1,500",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "7,000"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/233_viking_bazooka_academy.jpg",
+      "name": "Academia de bazuca vikinga",
+      "relations": "Entrena: Bazuca vikinga",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "1"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/244_avatar_wall.jpg",
+      "name": "Muro nebular",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/0185_orc_turret_m.jpg",
+      "name": "Torreta ork II",
+      "relations": "",
+      "stats": {
+        "attack": "23",
+        "level": "8",
+        "life": "1,750",
+        "range": "12",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "wood": "60"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/0183_orc_house_m.jpg",
+      "name": "Casa ork",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "200",
+        "population": "4",
+        "size": "2x2"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/232_dwarf_deco_4.jpg",
+      "name": "Lago mágico",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "400",
+        "size": "3x3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "1"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/0186_orc_wall_m.jpg",
+      "name": "Muro ork",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "1,000",
+        "size": "1x1"
+      }
+    },
+    {
+      "costs": {
+        "gold": "200"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/219_dwarf_farm.jpg",
+      "name": "Campo vikingo",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "100",
+        "population": "5",
+        "size": "4x4"
+      }
+    },
+    {
+      "costs": {
+        "wood": "60"
+      },
+      "group": "Edición limitada",
+      "image": "/assets/thumbs/246_avatar_house.jpg",
+      "name": "Casa nebular",
+      "relations": "",
+      "stats": {
+        "level": "8",
+        "life": "200",
+        "population": "4",
+        "size": "2x2"
+      }
+    }
+  ],
+  "units": [
+    {
+      "costs": {
+        "gold": "800",
+        "oil": "1,400"
+      },
+      "image": "/assets/thumbs/1158_viking_copter_II.jpg",
+      "name": "Aeronave vikinga",
+      "relations": "Se entrena en: Hangar de aeronaves vikingas",
+      "stats": {
+        "attack": "29",
+        "defense": "1",
+        "life": "700",
+        "population": "3",
+        "range": "10",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "800",
+        "oil": "1,400"
+      },
+      "image": "/assets/thumbs/1158_viking_copter_II.jpg",
+      "name": "Aeronave vikinga Outsider",
+      "relations": "",
+      "stats": {
+        "attack": "15",
+        "defense": "1",
+        "life": "275",
+        "population": "3",
+        "range": "9",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "80",
+        "wood": "160"
+      },
+      "image": "/assets/thumbs/1034_un_allied_1_m.jpg",
+      "name": "Aliado de la ONU",
+      "relations": "",
+      "stats": {
+        "attack": "12",
+        "defense": "1",
+        "life": "100",
+        "population": "1",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "75",
+        "steel": "150"
+      },
+      "image": "/assets/thumbs/1147_alien_bull_s.jpg",
+      "name": "Alien colmilludo",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "350",
+        "population": "1",
+        "range": "1",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "75",
+        "steel": "150"
+      },
+      "image": "/assets/thumbs/1148_alien_claws_s.jpg",
+      "name": "Alien con garras",
+      "relations": "",
+      "stats": {
+        "attack": "14",
+        "defense": "1",
+        "life": "200",
+        "population": "1",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "950",
+        "oil": "800"
+      },
+      "image": "/assets/thumbs/1147_alien_bull_s.jpg",
+      "name": "Alien cornudo",
+      "relations": "Se entrena en: Nido de alien cornudo",
+      "stats": {
+        "attack": "37",
+        "defense": "1",
+        "life": "800",
+        "population": "1",
+        "range": "2",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "75",
+        "steel": "150"
+      },
+      "image": "/assets/thumbs/1170_alien_instigator.jpg",
+      "name": "Alien instigador",
+      "relations": "",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "1,700",
+        "population": "1",
+        "range": "1",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "170",
+        "steel": "325"
+      },
+      "image": "/assets/thumbs/1146_basic_alien_s.jpg",
+      "name": "Alien pequeño",
+      "relations": "",
+      "stats": {
+        "attack": "8",
+        "defense": "1",
+        "life": "110",
+        "population": "1",
+        "range": "5",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "700",
+        "oil": "600"
+      },
+      "image": "/assets/thumbs/1148_alien_claws_s.jpg",
+      "name": "Alien Shredder",
+      "relations": "Se entrena en: Nido de aliens Shredder",
+      "stats": {
+        "attack": "35",
+        "defense": "1",
+        "life": "750",
+        "population": "1",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "oil": "400"
+      },
+      "image": "/assets/thumbs/1146_basic_alien_s.jpg",
+      "name": "Alien ácido",
+      "relations": "Se entrena en: Nido de alien ácido",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "200",
+        "population": "1",
+        "range": "6",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "steel": "1,200"
+      },
+      "image": "/assets/thumbs/1010_apc_m.jpg",
+      "name": "APC",
+      "relations": "Se entrena en: Megafortaleza",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "425",
+        "population": "3",
+        "range": "11",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "oil": "400"
+      },
+      "image": "/assets/thumbs/1143_melee_spider_s.jpg",
+      "name": "Araña con garras",
+      "relations": "Se entrena en: Colmena de araña con garras",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "200",
+        "population": "1",
+        "range": "2",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "75",
+        "steel": "150"
+      },
+      "image": "/assets/thumbs/1143_melee_spider_s.jpg",
+      "name": "Araña cuerpo a cuerpo",
+      "relations": "",
+      "stats": {
+        "attack": "8",
+        "defense": "1",
+        "life": "110",
+        "population": "1",
+        "range": "2",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "900",
+        "oil": "800"
+      },
+      "image": "/assets/thumbs/1145_spider_semi_boss_s_2.jpg",
+      "name": "Araña enorme",
+      "relations": "Se entrena en: Colmena de araña enorme",
+      "stats": {
+        "attack": "36",
+        "defense": "1",
+        "life": "800",
+        "population": "2",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,100",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1145_spider_semi_boss_s_2.jpg",
+      "name": "Araña grande",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "350",
+        "population": "3",
+        "range": "1",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "oil": "300"
+      },
+      "image": "/assets/thumbs/1144_ranged_spider_s.jpg",
+      "name": "Araña ponzoñosa",
+      "relations": "Se entrena en: Colmena de arañas ponzoñosas",
+      "stats": {
+        "attack": "21",
+        "defense": "1",
+        "life": "150",
+        "population": "1",
+        "range": "6",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "170",
+        "steel": "325"
+      },
+      "image": "/assets/thumbs/1144_ranged_spider_s.jpg",
+      "name": "Araña venenosa",
+      "relations": "",
+      "stats": {
+        "attack": "14",
+        "defense": "1",
+        "life": "200",
+        "population": "1",
+        "range": "5",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1207_transformer_archer.jpg",
+      "name": "Arquero cinturón negro",
+      "relations": "",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "1,750",
+        "population": "3",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "wood": "1,600"
+      },
+      "image": "/assets/thumbs/1187_avatar_arquero.jpg",
+      "name": "Arquero nebular",
+      "relations": "Se entrena en: Academia de arquero nebular",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "120",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "oil": "600"
+      },
+      "image": "/assets/thumbs/1043_air_strike_m.jpg",
+      "name": "Ataque aéreo",
+      "relations": "",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "10",
+        "speed": "15"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1205_dual_blade_automech.jpg",
+      "name": "Automech de doble hoja",
+      "relations": "",
+      "stats": {
+        "attack": "51",
+        "defense": "1",
+        "life": "2,000",
+        "population": "3",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1248_laser_blade_automech.jpg",
+      "name": "Automech de hoja láser",
+      "relations": "",
+      "stats": {
+        "attack": "59",
+        "defense": "1",
+        "life": "2,600",
+        "population": "3",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1254_optimus_prime.jpg",
+      "name": "Automech Prime",
+      "relations": "",
+      "stats": {
+        "attack": "57",
+        "defense": "1",
+        "life": "2,400",
+        "population": "3",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "150",
+        "oil": "300"
+      },
+      "image": "/assets/thumbs/1015_aircraft_1_m.jpg",
+      "name": "Avión",
+      "relations": "Se entrena en: Hangar I",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "350",
+        "population": "2",
+        "range": "9",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "oil": "600"
+      },
+      "image": "/assets/thumbs/1025_aircraft_2_m.jpg",
+      "name": "Avión II",
+      "relations": "Se entrena en: Hangar II",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "10",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "oil": "1,200"
+      },
+      "image": "/assets/thumbs/1026_aircraft_3_m.jpg",
+      "name": "Avión III",
+      "relations": "Se entrena en: Hangar III",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "600",
+        "population": "2",
+        "range": "11",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "oil": "1,200"
+      },
+      "image": "/assets/thumbs/1094_aircraft_4_m.jpg",
+      "name": "Avión IV",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "600",
+        "population": "3",
+        "range": "11",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "oil": "1,200"
+      },
+      "image": "/assets/thumbs/1095_aircraft_5_m.jpg",
+      "name": "Avión V",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "600",
+        "population": "3",
+        "range": "11",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "oil": "600"
+      },
+      "image": "/assets/thumbs/1068_b52_m.jpg",
+      "name": "B52",
+      "relations": "",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "1",
+        "speed": "15"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1167_bahamut_metalico.jpg",
+      "name": "Bahamut de acero azul",
+      "relations": "",
+      "stats": {
+        "attack": "48",
+        "defense": "1",
+        "life": "1,900",
+        "population": "3",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "250",
+        "oil": "500"
+      },
+      "image": "/assets/thumbs/1019_ship_m2.jpg",
+      "name": "Barco",
+      "relations": "",
+      "stats": {
+        "attack": "14",
+        "defense": "1",
+        "life": "500",
+        "population": "2",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "6"
+      },
+      "image": "/assets/thumbs/1102_red_baron_m.jpg",
+      "name": "Barón Rojo",
+      "relations": "",
+      "stats": {
+        "attack": "29",
+        "defense": "1",
+        "life": "675",
+        "population": "3",
+        "range": "11",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "steel": "1,200"
+      },
+      "image": "/assets/thumbs/1065_antiaircraft_battery_m.jpg",
+      "name": "Batería antiaérea",
+      "relations": "Se entrena en: Garaje antiaéreo",
+      "stats": {
+        "attack": "10",
+        "defense": "1",
+        "life": "475",
+        "population": "3",
+        "range": "12",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "75",
+        "steel": "150"
+      },
+      "image": "/assets/thumbs/1008_bazooka_1_m.jpg",
+      "name": "Bazuca",
+      "relations": "Se entrena en: Academia de bazuca I",
+      "stats": {
+        "attack": "10",
+        "defense": "1",
+        "life": "50",
+        "population": "1",
+        "range": "8",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "250",
+        "wood": "500"
+      },
+      "image": "/assets/thumbs/1036_double_bazooka_m.jpg",
+      "name": "Bazuca doble",
+      "relations": "",
+      "stats": {
+        "attack": "15",
+        "defense": "1",
+        "life": "400",
+        "population": "2",
+        "range": "9",
+        "speed": "3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "150",
+        "steel": "300"
+      },
+      "image": "/assets/thumbs/1022_bazooka_2_m.jpg",
+      "name": "Bazuca II",
+      "relations": "Se entrena en: Academia de bazuca II",
+      "stats": {
+        "attack": "14",
+        "defense": "1",
+        "life": "55",
+        "population": "1",
+        "range": "9",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "225",
+        "steel": "450"
+      },
+      "image": "/assets/thumbs/1023_bazooka_3_m.jpg",
+      "name": "Bazuca III",
+      "relations": "Se entrena en: Academia de bazuca III",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "60",
+        "population": "1",
+        "range": "10",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "steel": "500"
+      },
+      "image": "/assets/thumbs/1063_bazooka_4_m.jpg",
+      "name": "Bazuca IV",
+      "relations": "Se entrena en: Academia de bazuca IV",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "115",
+        "population": "1",
+        "range": "11",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "675",
+        "steel": "550"
+      },
+      "image": "/assets/thumbs/1064_bazooka_5_m.jpg",
+      "name": "Bazuca V",
+      "relations": "Se entrena en: Academia de bazuca V",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "125",
+        "population": "2",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "800",
+        "steel": "800"
+      },
+      "image": "/assets/thumbs/1165_bazooka_viking.jpg",
+      "name": "Bazuca vikinga",
+      "relations": "Se entrena en: Academia de bazuca vikinga",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "150",
+        "population": "1",
+        "range": "10",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,100",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1108_orc_boss_m_2.jpg",
+      "name": "Bestia explosiva",
+      "relations": "",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "300",
+        "population": "3",
+        "range": "9",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1116_orc_tank_m_2.jpg",
+      "name": "Bestia explosiva ATP",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "275",
+        "population": "2",
+        "range": "9",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,100",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1130_xplosive_boss_2.jpg",
+      "name": "Bestia explosiva jefe",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "400",
+        "population": "3",
+        "range": "9",
+        "speed": "3"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,250",
+        "oil": "950"
+      },
+      "image": "/assets/thumbs/1118_squig_kamikaze.jpg",
+      "name": "Bicho kamikaze",
+      "relations": "",
+      "stats": {
+        "attack": "14",
+        "defense": "1",
+        "life": "90",
+        "population": "0",
+        "range": "1",
+        "speed": "12"
+      }
+    },
+    {
+      "costs": {
+        "gold": "900",
+        "oil": "1,500"
+      },
+      "image": "/assets/thumbs/1209_nebular_blue_bicopter.jpg",
+      "name": "Bicóptero nebular",
+      "relations": "Se entrena en: Hangar de bicóptero nebular",
+      "stats": {
+        "attack": "31",
+        "defense": "1",
+        "life": "750",
+        "population": "2",
+        "range": "10",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "100"
+      },
+      "image": "/assets/thumbs/1104_fireman_1_m.jpg",
+      "name": "Bombero",
+      "relations": "Se entrena en: Academia de bombero",
+      "stats": {
+        "attack": "3",
+        "defense": "1",
+        "life": "40",
+        "population": "1",
+        "range": "3",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1270_spider_bot.jpg",
+      "name": "Bot araña",
+      "relations": "",
+      "stats": {
+        "attack": "50",
+        "defense": "1",
+        "life": "2,000",
+        "population": "3",
+        "range": "10",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "3,000",
+        "steel": "2,500"
+      },
+      "image": "/assets/thumbs/1150_crusader_bot.jpg",
+      "name": "Bot cruzado",
+      "relations": "Se entrena en: Fábrica de bot cruzado",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "1,250",
+        "population": "3",
+        "range": "3",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "3,100",
+        "steel": "2,550"
+      },
+      "image": "/assets/thumbs/1160_dwarf_armored_core.jpg",
+      "name": "Bot núcleo vikingo",
+      "relations": "Se entrena en: Fábrica de núcleos vikinga",
+      "stats": {
+        "attack": "46",
+        "defense": "1",
+        "life": "1,275",
+        "population": "3",
+        "range": "3",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "steel": "500"
+      },
+      "image": "/assets/thumbs/1061_baby_robot_m.jpg",
+      "name": "Bot pistolero",
+      "relations": "Se entrena en: Academia de bot pistolero",
+      "stats": {
+        "attack": "30",
+        "defense": "1",
+        "life": "1,200",
+        "population": "3",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "5,100",
+        "oil": "1,400"
+      },
+      "image": "/assets/thumbs/1074_punisher_m.jpg",
+      "name": "Bot Punisher",
+      "relations": "Se entrena en: Fábrica de bots Punisher",
+      "stats": {
+        "attack": "41",
+        "defense": "1",
+        "life": "1,600",
+        "population": "3",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1126_samurai_bot_m.jpg",
+      "name": "Bot samurái",
+      "relations": "",
+      "stats": {
+        "attack": "43",
+        "defense": "1",
+        "life": "1,650",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1126_samurai_bot_m.jpg",
+      "name": "Bot samurái",
+      "relations": "",
+      "stats": {
+        "attack": "44",
+        "defense": "1",
+        "life": "1,700",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "steel": "1,200"
+      },
+      "image": "/assets/thumbs/1075_supreme_m.jpg",
+      "name": "Bot supremo",
+      "relations": "",
+      "stats": {
+        "attack": "42",
+        "defense": "1",
+        "life": "1,625",
+        "population": "3",
+        "range": "2",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "6"
+      },
+      "image": "/assets/thumbs/1121_buggy_2_m.jpg",
+      "name": "Buggy de guerra",
+      "relations": "",
+      "stats": {
+        "attack": "30",
+        "defense": "1",
+        "life": "750",
+        "population": "2",
+        "range": "9",
+        "speed": "9"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,200",
+        "wood": "13,000"
+      },
+      "image": "/assets/thumbs/1219_nebular_rider.jpg",
+      "name": "Caballero dragón nebular",
+      "relations": "Se entrena en: Academia de caballero dragón nebular",
+      "stats": {
+        "attack": "32",
+        "defense": "1",
+        "life": "800",
+        "population": "2",
+        "range": "10",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "wood": "2,000"
+      },
+      "image": "/assets/thumbs/1198_nebular_horse_rider.jpg",
+      "name": "Caballero nebular",
+      "relations": "Se entrena en: Academia de caballero nebular",
+      "stats": {
+        "attack": "23",
+        "defense": "1",
+        "life": "280",
+        "population": "2",
+        "range": "7",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "450",
+        "wood": "300"
+      },
+      "image": "/assets/thumbs/1109_orco_jinete_m_2.jpg",
+      "name": "Caballero oso ork",
+      "relations": "",
+      "stats": {
+        "attack": "12",
+        "defense": "1",
+        "life": "150",
+        "population": "2",
+        "range": "1",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "450",
+        "wood": "1,000"
+      },
+      "image": "/assets/thumbs/1156_bear_knight.jpg",
+      "name": "Caballero oso vikingo",
+      "relations": "Se entrena en: Academia de caballero oso",
+      "stats": {
+        "attack": "27",
+        "defense": "1",
+        "life": "550",
+        "population": "2",
+        "range": "2",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "750",
+        "steel": "650"
+      },
+      "image": "/assets/thumbs/1090_giant_walker_m.jpg",
+      "name": "Caminante gigante",
+      "relations": "Se entrena en: Fábrica de caminante gigante",
+      "stats": {
+        "attack": "29",
+        "defense": "1",
+        "life": "700",
+        "population": "3",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "100",
+        "steel": "200"
+      },
+      "image": "/assets/thumbs/1013_truck_1_m.jpg",
+      "name": "Camión",
+      "relations": "",
+      "stats": {
+        "attack": "5",
+        "defense": "1",
+        "life": "200",
+        "population": "3",
+        "range": "5",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "steel": "600"
+      },
+      "image": "/assets/thumbs/1032_truck_3_m.jpg",
+      "name": "Camión 3",
+      "relations": "",
+      "stats": {
+        "attack": "5",
+        "defense": "1",
+        "life": "250",
+        "population": "3",
+        "range": "5",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "steel": "600"
+      },
+      "image": "/assets/thumbs/1035_truck_2_m.jpg",
+      "name": "Camión II",
+      "relations": "",
+      "stats": {
+        "attack": "5",
+        "defense": "1",
+        "life": "250",
+        "population": "3",
+        "range": "5",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,200",
+        "oil": "1,500"
+      },
+      "image": "/assets/thumbs/1175_viking_butcher.jpg",
+      "name": "Carnicero de motosierra",
+      "relations": "Se entrena en: Academia de carniceros vikingos",
+      "stats": {
+        "attack": "35",
+        "defense": "1",
+        "life": "700",
+        "population": "2",
+        "range": "2",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "oil": "1,200"
+      },
+      "image": "/assets/thumbs/1048_black_aircraft_2_m.jpg",
+      "name": "Caza furtivo",
+      "relations": "Se entrena en: Hangar de cazas furtivos",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "650",
+        "population": "2",
+        "range": "11",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "800",
+        "steel": "800"
+      },
+      "image": "/assets/thumbs/1180_robot_hunter.jpg",
+      "name": "Cazador de robots",
+      "relations": "",
+      "stats": {
+        "attack": "42",
+        "defense": "1",
+        "life": "1,400",
+        "population": "3",
+        "range": "10",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "80",
+        "wood": "160"
+      },
+      "image": "/assets/thumbs/1054_scarface_girl.jpg",
+      "name": "Chica cara cortada",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "400",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "2,500",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1267_spatial_space_ship.jpg",
+      "name": "Crucero élfico espacial",
+      "relations": "Se entrena en: Hangar de crucero élfico",
+      "stats": {
+        "attack": "35",
+        "defense": "1",
+        "life": "1,000",
+        "population": "3",
+        "range": "10",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1200_nebular_motorized.jpg",
+      "name": "Cuatriciclo de asalto nebular",
+      "relations": "Se entrena en: Academia de cuatriciclo de asalto nebular",
+      "stats": {
+        "attack": "38",
+        "defense": "1",
+        "life": "700",
+        "population": "2",
+        "range": "12",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1225_doctor_shock.jpg",
+      "name": "Doctor Shock",
+      "relations": "",
+      "stats": {
+        "attack": "49",
+        "defense": "1",
+        "life": "1,850",
+        "population": "3",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1098_blue_draggy_m.jpg",
+      "name": "Draggy azul",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "400",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1120_metal_draggy_2_m.jpg",
+      "name": "Draggy camuflado",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "425",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1283_frost_fire_draggy.jpg",
+      "name": "Draggy de 2 cabezas de fuego helado",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "475",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1168_bahamut_metalico_draggy.jpg",
+      "name": "Draggy de acero azul",
+      "relations": "",
+      "stats": {
+        "attack": "27",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1221_nebular_rider_draggy.jpg",
+      "name": "Draggy de caballero dragón nebular",
+      "relations": "",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "250",
+        "population": "2",
+        "range": "10",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1202_nebular_dragon_rider_draggy.jpg",
+      "name": "Draggy de jinete dragón nebular",
+      "relations": "",
+      "stats": {
+        "attack": "16",
+        "defense": "1",
+        "life": "200",
+        "population": "2",
+        "range": "10",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1244_forge_draggy.jpg",
+      "name": "Draggy dragón de forja",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1195_electric_draggy.jpg",
+      "name": "Draggy eléctrico",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "475",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1227_dragon_metalic_draggy.jpg",
+      "name": "Draggy mercurio rojo",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1085_metal_draggy_m.jpg",
+      "name": "Draggy metálico",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "410",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1196_black_draggy.jpg",
+      "name": "Draggy negro",
+      "relations": "",
+      "stats": {
+        "attack": "27",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1097_red_draggy_m.jpg",
+      "name": "Draggy rojo",
+      "relations": "",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "390",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1100_blue_dragon2_m.jpg",
+      "name": "Dragón azul",
+      "relations": "",
+      "stats": {
+        "attack": "44",
+        "defense": "1",
+        "life": "1,750",
+        "population": "3",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1280_frost_fire_dragon.jpg",
+      "name": "Dragón de 2 cabezas de fuego helado",
+      "relations": "",
+      "stats": {
+        "attack": "68",
+        "defense": "1",
+        "life": "3,000",
+        "population": "4",
+        "range": "12",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1243_forge_dragon.jpg",
+      "name": "Dragón de forja",
+      "relations": "",
+      "stats": {
+        "attack": "56",
+        "defense": "1",
+        "life": "2,300",
+        "population": "4",
+        "range": "12",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1194_electric_dragon_2.jpg",
+      "name": "Dragón eléctrico",
+      "relations": "",
+      "stats": {
+        "attack": "52",
+        "defense": "1",
+        "life": "2,000",
+        "population": "3",
+        "range": "12",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1226_dragon_metalic.jpg",
+      "name": "Dragón mercurio rojo",
+      "relations": "",
+      "stats": {
+        "attack": "54",
+        "defense": "1",
+        "life": "2,200",
+        "population": "4",
+        "range": "12",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1105_metalico_dragon3_m.jpg",
+      "name": "Dragón metálico",
+      "relations": "",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "1,800",
+        "population": "3",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1119_metal_dragon2_m.jpg",
+      "name": "Dragón metálico camuflado",
+      "relations": "",
+      "stats": {
+        "attack": "46",
+        "defense": "1",
+        "life": "1,850",
+        "population": "3",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1191_black_dragon.jpg",
+      "name": "Dragón negro",
+      "relations": "",
+      "stats": {
+        "attack": "51",
+        "defense": "1",
+        "life": "1,950",
+        "population": "3",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1099_red_dragon2_m.jpg",
+      "name": "Dragón rojo",
+      "relations": "",
+      "stats": {
+        "attack": "42",
+        "defense": "1",
+        "life": "1,700",
+        "population": "3",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,200",
+        "oil": "900"
+      },
+      "image": "/assets/thumbs/1084_dreadnought_m.jpg",
+      "name": "Dreadnought",
+      "relations": "Se entrena en: Academia de Dreadnought",
+      "stats": {
+        "attack": "44",
+        "defense": "1",
+        "life": "1,200",
+        "population": "3",
+        "range": "8",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "steel": "1,200"
+      },
+      "image": "/assets/thumbs/1295_andromeda_combat_droid.jpg",
+      "name": "Droide de combate Andrómeda",
+      "relations": "Se entrena en: Fábrica de droides Andrómeda",
+      "stats": {
+        "attack": "31",
+        "defense": "1",
+        "life": "750",
+        "population": "2",
+        "range": "8",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1128_huge_draggy_m.jpg",
+      "name": "Dron Alfa",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "400",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1304_massiveGunnerDrone.jpg",
+      "name": "Dron artillero masivo",
+      "relations": "",
+      "stats": {
+        "attack": "28",
+        "defense": "1",
+        "life": "550",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1273_transformer_aracnid_drone.jpg",
+      "name": "Dron arácnido",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "475",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1206_dual_blade_automech_drone.jpg",
+      "name": "Dron automech de doble hoja",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "425",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1249_laser_blade_automech_drone.jpg",
+      "name": "Dron automech de hoja láser",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "425",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1255_optimus_prime_drone.jpg",
+      "name": "Dron Automech Prime",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1164_dwarf_armored_core_drone.jpg",
+      "name": "Dron bot núcleo vikingo",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "400",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1247_double_cannon_drone.jpg",
+      "name": "Dron de cañón doble",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1216_massive_cannon_drone.jpg",
+      "name": "Dron de cañón masivo",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1193_dragon_mech_drone.jpg",
+      "name": "Dron Dragonborn",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "425",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1251_red_slayer_drone.jpg",
+      "name": "Dron exterminador ardiente",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1182_transformer_sword_drone.jpg",
+      "name": "Dron exterminador dorado",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "475",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1300_gameraDrone.jpg",
+      "name": "Dron Gamera",
+      "relations": "",
+      "stats": {
+        "attack": "28",
+        "defense": "1",
+        "life": "550",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1306_blackGodzilla_drone.jpg",
+      "name": "Dron Godzilla de fuego",
+      "relations": "",
+      "stats": {
+        "attack": "29",
+        "defense": "1",
+        "life": "550",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1264_spartan_warrior_drone.jpg",
+      "name": "Dron guerrero espartano",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1171_viking_rune_golem_drone.jpg",
+      "name": "Dron gólem de runas",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "425",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1173_mega_fire_bot_drone.jpg",
+      "name": "Dron Hyper Blazer",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "425",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1298_kingKongDrone.jpg",
+      "name": "Dron King Kong",
+      "relations": "",
+      "stats": {
+        "attack": "28",
+        "defense": "1",
+        "life": "550",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1286_avenger_mech_draggy.jpg",
+      "name": "Dron mech Avenger",
+      "relations": "",
+      "stats": {
+        "attack": "27",
+        "defense": "1",
+        "life": "500",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1257_big_razor_mech_drone.jpg",
+      "name": "Dron mech de cuchilla grande",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1277_egyptian_warrior_drone.jpg",
+      "name": "Dron Mech Faraón",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1294_godzilla_mech_drone.jpg",
+      "name": "Dron mech Godzilla",
+      "relations": "",
+      "stats": {
+        "attack": "27",
+        "defense": "1",
+        "life": "525",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1211_samurai_mech_drone.jpg",
+      "name": "Dron mech Gran Shogun",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1224_liquid_mech _drone.jpg",
+      "name": "Dron mech líquido",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1289_executioner_mech_draggy.jpg",
+      "name": "Dron mech verdugo",
+      "relations": "",
+      "stats": {
+        "attack": "27",
+        "defense": "1",
+        "life": "500",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1179_ether_messiah_drone.jpg",
+      "name": "Dron Mesías de éter",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1240_dark_ether_messiah_drone.jpg",
+      "name": "Dron Mesías de éter oscuro",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1163_ultra_robot_drone.jpg",
+      "name": "Dron Némesis",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "400",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1269_winged_transformer_drone.jpg",
+      "name": "Dron Proto alado",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "475",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1302_zProjectDrone.jpg",
+      "name": "Dron Proyecto Z",
+      "relations": "",
+      "stats": {
+        "attack": "28",
+        "defense": "1",
+        "life": "550",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1238_cyber_samurai_mech_drone.jpg",
+      "name": "Dron samurái cibernético",
+      "relations": "",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1153_transformer_gigante_drone.jpg",
+      "name": "Dron Ultra-Mech",
+      "relations": "",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "400",
+        "population": "2",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "wood": "1,800"
+      },
+      "image": "/assets/thumbs/1260_spatial_archer.jpg",
+      "name": "Elfo arquero espacial",
+      "relations": "Se entrena en: Academia de elfo arquero espacial",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "140",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "800",
+        "oil": "400"
+      },
+      "image": "/assets/thumbs/1281_silver_elf_gunner.jpg",
+      "name": "Elfo artillero plateado",
+      "relations": "Se entrena en: Academia de elfo artillero plateado",
+      "stats": {
+        "attack": "32",
+        "defense": "1",
+        "life": "800",
+        "population": "2",
+        "range": "10",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,500",
+        "steel": "800"
+      },
+      "image": "/assets/thumbs/1261_spatial_horseman.jpg",
+      "name": "Elfo caballero espacial",
+      "relations": "Se entrena en: Academia de elfo caballero espacial",
+      "stats": {
+        "attack": "30",
+        "defense": "1",
+        "life": "700",
+        "population": "2",
+        "range": "8",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "2,200",
+        "oil": "900"
+      },
+      "image": "/assets/thumbs/1262_spatial_airship.jpg",
+      "name": "Elfo dirigible espacial",
+      "relations": "Se entrena en: Hangar de dirigible élfico",
+      "stats": {
+        "attack": "32",
+        "defense": "1",
+        "life": "750",
+        "population": "3",
+        "range": "10",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "wood": "1,800"
+      },
+      "image": "/assets/thumbs/1259_spatial_sward.jpg",
+      "name": "Elfo espadachín espacial",
+      "relations": "Se entrena en: Academia de elfo espadachín espacial",
+      "stats": {
+        "attack": "23",
+        "defense": "1",
+        "life": "230",
+        "population": "1",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "2,000",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1276_spatial_exploration_module.jpg",
+      "name": "Elfo explorador espacial",
+      "relations": "Se entrena en: Hangar de exploradores élficos espaciales",
+      "stats": {
+        "attack": "38",
+        "defense": "1",
+        "life": "750",
+        "population": "2",
+        "range": "10",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,600",
+        "wood": "10,000"
+      },
+      "image": "/assets/thumbs/1282_elf_dino_rider.jpg",
+      "name": "Elfo jinete de dinosaurio",
+      "relations": "Se entrena en: Academia de elfo jinete de dinosaurio",
+      "stats": {
+        "attack": "42",
+        "defense": "1",
+        "life": "1,300",
+        "population": "2",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "750",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1266_spatial_paladin.jpg",
+      "name": "Elfo paladín espacial",
+      "relations": "Se entrena en: Academia de elfo paladín",
+      "stats": {
+        "attack": "36",
+        "defense": "1",
+        "life": "800",
+        "population": "1",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "800",
+        "steel": "1,000"
+      },
+      "image": "/assets/thumbs/1265_spatial_priest.jpg",
+      "name": "Elfo sacerdote espacial",
+      "relations": "Se entrena en: Academia de elfo sacerdote",
+      "stats": {
+        "attack": "34",
+        "defense": "1",
+        "life": "900",
+        "population": "2",
+        "range": "9",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "wood": "5,000"
+      },
+      "image": "/assets/thumbs/1275_spatial_elf_healer.jpg",
+      "name": "Elfo sanador espacial",
+      "relations": "Se entrena en: Academia de elfo sanador espacial",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "650",
+        "population": "2",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,250",
+        "oil": "950"
+      },
+      "image": "/assets/thumbs/1117_orc_kamikaze_team.jpg",
+      "name": "Equipo kamikaze",
+      "relations": "Se entrena en: Academia de hermanos Kamikaze",
+      "stats": {
+        "attack": "13",
+        "defense": "1",
+        "life": "600",
+        "population": "3",
+        "range": "11",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1073_erradicator_m.jpg",
+      "name": "Erradicador",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "550",
+        "population": "2",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1231_nebula_monster_mini.jpg",
+      "name": "Esbirro del pantano",
+      "relations": "",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "250",
+        "population": "1",
+        "range": "1",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "50",
+        "wood": "100"
+      },
+      "image": "/assets/thumbs/1005_special_spy_m.jpg",
+      "name": "Espía especial",
+      "relations": "",
+      "stats": {
+        "attack": "10",
+        "defense": "1",
+        "life": "50",
+        "population": "1",
+        "range": "5",
+        "speed": "3"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1236_2gun_exobot.jpg",
+      "name": "Exobot de 2 armas",
+      "relations": "",
+      "stats": {
+        "attack": "49",
+        "defense": "1",
+        "life": "1,900",
+        "population": "3",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1250_red_slayer.jpg",
+      "name": "Exterminador ardiente",
+      "relations": "",
+      "stats": {
+        "attack": "58",
+        "defense": "1",
+        "life": "2,500",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1181_transformer_sword.jpg",
+      "name": "Exterminador dorado",
+      "relations": "",
+      "stats": {
+        "attack": "49",
+        "defense": "1",
+        "life": "1,900",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "2"
+      },
+      "image": "/assets/thumbs/1096_f117_m.jpg",
+      "name": "F-117",
+      "relations": "",
+      "stats": {
+        "attack": "28",
+        "defense": "1",
+        "life": "700",
+        "population": "3",
+        "range": "11",
+        "speed": "11"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,500",
+        "steel": "1,500"
+      },
+      "image": "/assets/thumbs/1220_nebular_sniper.jpg",
+      "name": "Francotirador nebular",
+      "relations": "Se entrena en: Academia de francotirador nebular",
+      "stats": {
+        "attack": "80",
+        "defense": "1",
+        "life": "500",
+        "population": "3",
+        "range": "15",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "650",
+        "steel": "1,000"
+      },
+      "image": "/assets/thumbs/1174_viking_sniper.jpg",
+      "name": "Francotirador vikingo",
+      "relations": "Se entrena en: Academia de francotirador vikingo",
+      "stats": {
+        "attack": "75",
+        "defense": "1",
+        "life": "500",
+        "population": "2",
+        "range": "15",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "steel": "600"
+      },
+      "image": "/assets/thumbs/1092_steel_claws_m.jpg",
+      "name": "Garras de acero",
+      "relations": "Se entrena en: Academia de garras de acero, Muro de desarrollo",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "190",
+        "population": "1",
+        "range": "1",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "80",
+        "wood": "160"
+      },
+      "image": "/assets/thumbs/1017_good_boy.jpg",
+      "name": "General Mike",
+      "relations": "",
+      "stats": {
+        "attack": "30",
+        "defense": "1",
+        "life": "250",
+        "population": "1",
+        "range": "5",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "80",
+        "wood": "160"
+      },
+      "image": "/assets/thumbs/1009_good_girl_m.jpg",
+      "name": "General Scarlett",
+      "relations": "",
+      "stats": {
+        "attack": "15",
+        "defense": "1",
+        "life": "250",
+        "population": "1",
+        "range": "5",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "700",
+        "wood": "3,500"
+      },
+      "image": "/assets/thumbs/1188_avatar_great_warrior.jpg",
+      "name": "Guerrero de espadón",
+      "relations": "Se entrena en: Academia de guerrero de espadón",
+      "stats": {
+        "attack": "34",
+        "defense": "1",
+        "life": "700",
+        "population": "1",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "900",
+        "wood": "3,800"
+      },
+      "image": "/assets/thumbs/1214_nebular_maze_warrior.jpg",
+      "name": "Guerrero del laberinto nebular",
+      "relations": "Se entrena en: Academia de guerrero del laberinto nebular",
+      "stats": {
+        "attack": "35",
+        "defense": "1",
+        "life": "750",
+        "population": "2",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "8"
+      },
+      "image": "/assets/thumbs/1190_gold_golem.jpg",
+      "name": "Gólem dorado",
+      "relations": "",
+      "stats": {
+        "attack": "50",
+        "defense": "1",
+        "life": "1,950",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "6"
+      },
+      "image": "/assets/thumbs/1053_golem_boss_m.jpg",
+      "name": "Gólem mecánico",
+      "relations": "",
+      "stats": {
+        "attack": "43",
+        "defense": "1",
+        "life": "1,650",
+        "population": "3",
+        "range": "2",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "200",
+        "steel": "325"
+      },
+      "image": "/assets/thumbs/1154_axeman.jpg",
+      "name": "Hachero vikingo",
+      "relations": "Se entrena en: Academia de hacha vikinga",
+      "stats": {
+        "attack": "21",
+        "defense": "1",
+        "life": "200",
+        "population": "1",
+        "range": "1",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "80",
+        "wood": "160"
+      },
+      "image": "/assets/thumbs/1012_bad_boy.jpg",
+      "name": "Hannibal malvado",
+      "relations": "",
+      "stats": {
+        "attack": "15",
+        "defense": "1",
+        "life": "150",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "125",
+        "oil": "250"
+      },
+      "image": "/assets/thumbs/1027_helicopter_1_m.jpg",
+      "name": "Helicóptero",
+      "relations": "Se entrena en: Hangar de helicóptero I",
+      "stats": {
+        "attack": "14",
+        "defense": "1",
+        "life": "200",
+        "population": "2",
+        "range": "7",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "250",
+        "oil": "500"
+      },
+      "image": "/assets/thumbs/1028_helicopter_2_m.jpg",
+      "name": "Helicóptero II",
+      "relations": "Se entrena en: Hangar de helicóptero II",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "300",
+        "population": "2",
+        "range": "8",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1029_helicopter_3_m.jpg",
+      "name": "Helicóptero III",
+      "relations": "Se entrena en: Hangar de helicóptero III",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "350",
+        "population": "2",
+        "range": "9",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "750",
+        "oil": "1,500"
+      },
+      "image": "/assets/thumbs/1066_helicopter_4_m.jpg",
+      "name": "Helicóptero IV",
+      "relations": "Se entrena en: Hangar de helicóptero IV",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "400",
+        "population": "3",
+        "range": "10",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "700",
+        "oil": "1,300"
+      },
+      "image": "/assets/thumbs/1110_helicoptero_orco_m2.jpg",
+      "name": "Helicóptero molotov",
+      "relations": "Se entrena en: Hangar de helicóptero molotov",
+      "stats": {
+        "attack": "28",
+        "defense": "1",
+        "life": "675",
+        "population": "3",
+        "range": "11",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "oil": "2,000"
+      },
+      "image": "/assets/thumbs/1038_red_helicopter_m.jpg",
+      "name": "Helicóptero rojo",
+      "relations": "",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "400",
+        "population": "2",
+        "range": "8",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "oil": "2,000"
+      },
+      "image": "/assets/thumbs/1067_helicopter_5_m.jpg",
+      "name": "Helicóptero V",
+      "relations": "Se entrena en: Hangar de helicóptero V",
+      "stats": {
+        "attack": "30",
+        "defense": "1",
+        "life": "450",
+        "population": "3",
+        "range": "11",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,250",
+        "oil": "950"
+      },
+      "image": "/assets/thumbs/1117_orc_kamikaze_team.jpg",
+      "name": "Hermanos Kamikaze",
+      "relations": "",
+      "stats": {
+        "attack": "13",
+        "defense": "1",
+        "life": "600",
+        "population": "3",
+        "range": "11",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1172_mega_fire_bot.jpg",
+      "name": "Hyper Blazer",
+      "relations": "",
+      "stats": {
+        "attack": "47",
+        "defense": "1",
+        "life": "1,850",
+        "population": "3",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1197_herkules_matrix.jpg",
+      "name": "Hércules plateado",
+      "relations": "",
+      "stats": {
+        "attack": "53",
+        "defense": "1",
+        "life": "1,900",
+        "population": "3",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "800",
+        "oil": "400"
+      },
+      "image": "/assets/thumbs/1284_cyclop_soldier.jpg",
+      "name": "Héroe vigía",
+      "relations": "",
+      "stats": {
+        "attack": "56",
+        "defense": "1",
+        "life": "2,300",
+        "population": "3",
+        "range": "10",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "350",
+        "steel": "500"
+      },
+      "image": "/assets/thumbs/1051_mechanic_m.jpg",
+      "name": "Ingeniero",
+      "relations": "Se entrena en: Garaje mecánico",
+      "stats": {
+        "attack": "10",
+        "defense": "1",
+        "life": "120",
+        "population": "1",
+        "range": "2",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1006_red_bazooka_jeep_m.jpg",
+      "name": "Jeep asesino con bazuca",
+      "relations": "",
+      "stats": {
+        "attack": "15",
+        "defense": "1",
+        "life": "600",
+        "population": "2",
+        "range": "8",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "150",
+        "oil": "300"
+      },
+      "image": "/assets/thumbs/1014_machinegunjeep_1_m.jpg",
+      "name": "Jeep con ametralladora",
+      "relations": "Se entrena en: Garaje de jeeps I",
+      "stats": {
+        "attack": "12",
+        "defense": "1",
+        "life": "150",
+        "population": "2",
+        "range": "7",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "225",
+        "oil": "450"
+      },
+      "image": "/assets/thumbs/1030_machinegunjeep_2_m.jpg",
+      "name": "Jeep con ametralladora II",
+      "relations": "Se entrena en: Garaje de jeeps II",
+      "stats": {
+        "attack": "16",
+        "defense": "1",
+        "life": "200",
+        "population": "2",
+        "range": "8",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "oil": "600"
+      },
+      "image": "/assets/thumbs/1031_machinegunjeep_3_m.jpg",
+      "name": "Jeep con ametralladora III",
+      "relations": "Se entrena en: Garaje de jeeps III",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "250",
+        "population": "2",
+        "range": "9",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1044_double_bazooka_jeep_m.jpg",
+      "name": "Jeep con bazuca doble",
+      "relations": "Se entrena en: Fortaleza de cohetes",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "275",
+        "population": "2",
+        "range": "9",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "175",
+        "steel": "350"
+      },
+      "image": "/assets/thumbs/1053_golem_boss_m.jpg",
+      "name": "Jefe gólem",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "15,000",
+        "population": "2",
+        "range": "2",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "wood": "12,000"
+      },
+      "image": "/assets/thumbs/1213_nebular_monster_rider.jpg",
+      "name": "Jinete de bestia ardiente",
+      "relations": "Se entrena en: Academia de jinete de bestia ardiente",
+      "stats": {
+        "attack": "40",
+        "defense": "1",
+        "life": "1,200",
+        "population": "3",
+        "range": "7",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1056_elephant_rider_m.jpg",
+      "name": "Jinete de elefante",
+      "relations": "",
+      "stats": {
+        "attack": "16",
+        "defense": "1",
+        "life": "90",
+        "population": "2",
+        "range": "9",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "450",
+        "wood": "300"
+      },
+      "image": "/assets/thumbs/1109_orco_jinete_m_2.jpg",
+      "name": "Jinete de oso",
+      "relations": "Se entrena en: Academia de jinete de oso",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "1",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "wood": "12,000"
+      },
+      "image": "/assets/thumbs/1199_nebular_dragon_rider.jpg",
+      "name": "Jinete dragón nebular",
+      "relations": "Se entrena en: Academia de jinete dragón nebular",
+      "stats": {
+        "attack": "30",
+        "defense": "1",
+        "life": "725",
+        "population": "2",
+        "range": "10",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "450",
+        "wood": "10,000"
+      },
+      "image": "/assets/thumbs/1189_avatar_jinete.jpg",
+      "name": "Jinete nebular",
+      "relations": "Se entrena en: Academia de jinete nebular",
+      "stats": {
+        "attack": "36",
+        "defense": "1",
+        "life": "650",
+        "population": "2",
+        "range": "2",
+        "speed": "9"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "steel": "1,000"
+      },
+      "image": "/assets/thumbs/1176_kamikaze.jpg",
+      "name": "Kamikaze",
+      "relations": "Se entrena en: Academia de Kamikaze",
+      "stats": {
+        "attack": "500",
+        "defense": "1",
+        "life": "100",
+        "population": "1",
+        "range": "1",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1252_karateka_gunner.jpg",
+      "name": "Karateka artillero",
+      "relations": "",
+      "stats": {
+        "attack": "60",
+        "defense": "1",
+        "life": "2,600",
+        "population": "3",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1184_karateka.jpg",
+      "name": "Karateka de fuego",
+      "relations": "",
+      "stats": {
+        "attack": "48",
+        "defense": "1",
+        "life": "1,800",
+        "population": "3",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "700",
+        "oil": "1,300"
+      },
+      "image": "/assets/thumbs/1110_helicoptero_orco_m2.jpg",
+      "name": "Kopta ork",
+      "relations": "",
+      "stats": {
+        "attack": "14",
+        "defense": "1",
+        "life": "250",
+        "population": "2",
+        "range": "7",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "wood": "1,500"
+      },
+      "image": "/assets/thumbs/1186_avatar_soldado.jpg",
+      "name": "Lancero nebular",
+      "relations": "Se entrena en: Academia de lancero nebular",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "210",
+        "population": "1",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "oil": "500"
+      },
+      "image": "/assets/thumbs/1114_orc_knivethrower_m.jpg",
+      "name": "Lanzacuchillos",
+      "relations": "Se entrena en: Academia de lanzacuchillos",
+      "stats": {
+        "attack": "21",
+        "defense": "1",
+        "life": "200",
+        "population": "1",
+        "range": "7",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "oil": "500"
+      },
+      "image": "/assets/thumbs/1046_flamethrower_m.jpg",
+      "name": "Lanzallamas",
+      "relations": "Se entrena en: Academia de lanzallamas",
+      "stats": {
+        "attack": "19",
+        "defense": "1",
+        "life": "120",
+        "population": "1",
+        "range": "5",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "80",
+        "steel": "120"
+      },
+      "image": "/assets/thumbs/1060_mortar_m.jpg",
+      "name": "Lanzamorteros",
+      "relations": "Se entrena en: Academia de mortero",
+      "stats": {
+        "attack": "15",
+        "defense": "1",
+        "life": "50",
+        "population": "2",
+        "range": "10",
+        "speed": "4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "8"
+      },
+      "image": "/assets/thumbs/1241_enemy_converter_priest.jpg",
+      "name": "Mago convertidor",
+      "relations": "",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "1,500",
+        "population": "3",
+        "range": "6",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "900",
+        "wood": "3,000"
+      },
+      "image": "/assets/thumbs/1288_destruction_wizard.jpg",
+      "name": "Mago de destrucción",
+      "relations": "Se entrena en: Academia de elfo mago de destrucción",
+      "stats": {
+        "attack": "36",
+        "defense": "1",
+        "life": "750",
+        "population": "2",
+        "range": "9",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,100",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1159_megahammer_dwarf.jpg",
+      "name": "Martillero vikingo",
+      "relations": "Se entrena en: Fábrica de martilleros vikingos",
+      "stats": {
+        "attack": "33",
+        "defense": "1",
+        "life": "650",
+        "population": "3",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,100",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1159_megahammer_dwarf.jpg",
+      "name": "Martillero vikingo Outsider",
+      "relations": "",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "350",
+        "population": "3",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,250",
+        "oil": "950"
+      },
+      "image": "/assets/thumbs/1118_squig_kamikaze.jpg",
+      "name": "Mascota kamikaze",
+      "relations": "",
+      "stats": {
+        "attack": "14",
+        "defense": "1",
+        "life": "90",
+        "population": "0",
+        "range": "1",
+        "speed": "12"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1303_massiveGunnerMech.jpg",
+      "name": "Mech artillero masivo",
+      "relations": "",
+      "stats": {
+        "attack": "82",
+        "defense": "1",
+        "life": "3,700",
+        "population": "4",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1272_transformer_aracnid.jpg",
+      "name": "Mech arácnido",
+      "relations": "",
+      "stats": {
+        "attack": "66",
+        "defense": "1",
+        "life": "2,900",
+        "population": "3",
+        "range": "11",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1212_tetrapod_mech.jpg",
+      "name": "Mech ATP",
+      "relations": "",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "1,800",
+        "population": "3",
+        "range": "10",
+        "speed": "4"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1287_avenger_mech.jpg",
+      "name": "Mech Avenger",
+      "relations": "",
+      "stats": {
+        "attack": "70",
+        "defense": "1",
+        "life": "3,100",
+        "population": "4",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1217_brutus_mech.jpg",
+      "name": "Mech Brutus",
+      "relations": "",
+      "stats": {
+        "attack": "47",
+        "defense": "1",
+        "life": "1,900",
+        "population": "3",
+        "range": "3",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1279_black_brutus_mech.jpg",
+      "name": "Mech Brutus negro",
+      "relations": "",
+      "stats": {
+        "attack": "52",
+        "defense": "1",
+        "life": "2,100",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1246_double_cannon_mech.jpg",
+      "name": "Mech de cañón doble",
+      "relations": "",
+      "stats": {
+        "attack": "56",
+        "defense": "1",
+        "life": "2,300",
+        "population": "3",
+        "range": "9",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1215_massive_cannon_mech.jpg",
+      "name": "Mech de cañón masivo",
+      "relations": "",
+      "stats": {
+        "attack": "52",
+        "defense": "1",
+        "life": "2,100",
+        "population": "3",
+        "range": "9",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1256_big_razor_mech.jpg",
+      "name": "Mech de cuchilla grande",
+      "relations": "",
+      "stats": {
+        "attack": "62",
+        "defense": "1",
+        "life": "2,700",
+        "population": "3",
+        "range": "2",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1192_dragon_mech.jpg",
+      "name": "Mech Dragonborn",
+      "relations": "",
+      "stats": {
+        "attack": "50",
+        "defense": "1",
+        "life": "1,950",
+        "population": "3",
+        "range": "12",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1299_gameraMech.jpg",
+      "name": "Mech Gamera",
+      "relations": "",
+      "stats": {
+        "attack": "78",
+        "defense": "1",
+        "life": "3,500",
+        "population": "4",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1293_godzilla_mech.jpg",
+      "name": "Mech Godzilla",
+      "relations": "",
+      "stats": {
+        "attack": "74",
+        "defense": "1",
+        "life": "3,300",
+        "population": "4",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1305_blackGodzilla_mech.jpg",
+      "name": "Mech Godzilla de fuego",
+      "relations": "",
+      "stats": {
+        "attack": "84",
+        "defense": "1",
+        "life": "3,800",
+        "population": "4",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1210_samurai_mech.jpg",
+      "name": "Mech Gran Shogun",
+      "relations": "",
+      "stats": {
+        "attack": "52",
+        "defense": "1",
+        "life": "2,050",
+        "population": "3",
+        "range": "2",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1263_spartan_warrior_mech.jpg",
+      "name": "Mech guerrero espartano",
+      "relations": "",
+      "stats": {
+        "attack": "64",
+        "defense": "1",
+        "life": "2,800",
+        "population": "4",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1271_egyptian_warrior_mech.jpg",
+      "name": "Mech guerrero faraón",
+      "relations": "",
+      "stats": {
+        "attack": "65",
+        "defense": "1",
+        "life": "2,850",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "10,000",
+        "steel": "12,000"
+      },
+      "image": "/assets/thumbs/1242_herkules_mech.jpg",
+      "name": "Mech Hércules",
+      "relations": "Se entrena en: Academia de mech Hércules",
+      "stats": {
+        "attack": "53",
+        "defense": "1",
+        "life": "1,900",
+        "population": "3",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1297_kingKongMech.jpg",
+      "name": "Mech King Kong",
+      "relations": "",
+      "stats": {
+        "attack": "76",
+        "defense": "1",
+        "life": "3,400",
+        "population": "4",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1222_liquid_mech.jpg",
+      "name": "Mech líquido",
+      "relations": "",
+      "stats": {
+        "attack": "53",
+        "defense": "1",
+        "life": "2,150",
+        "population": "3",
+        "range": "3",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1268_winged_transformer.jpg",
+      "name": "Mech Proto alado",
+      "relations": "",
+      "stats": {
+        "attack": "65",
+        "defense": "1",
+        "life": "2,900",
+        "population": "4",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1301_zProjectMech.jpg",
+      "name": "Mech Proyecto Z",
+      "relations": "",
+      "stats": {
+        "attack": "80",
+        "defense": "1",
+        "life": "3,600",
+        "population": "4",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1237_cyber_samurai_mech.jpg",
+      "name": "Mech samurái cibernético",
+      "relations": "",
+      "stats": {
+        "attack": "54",
+        "defense": "1",
+        "life": "2,200",
+        "population": "3",
+        "range": "4",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1290_executioner_mech.jpg",
+      "name": "Mech verdugo",
+      "relations": "",
+      "stats": {
+        "attack": "72",
+        "defense": "1",
+        "life": "3,200",
+        "population": "4",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "6"
+      },
+      "image": "/assets/thumbs/1062_bumblebee_m.jpg",
+      "name": "Megabot",
+      "relations": "",
+      "stats": {
+        "attack": "40",
+        "defense": "1",
+        "life": "1,600",
+        "population": "3",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "5,000",
+        "steel": "1,400"
+      },
+      "image": "/assets/thumbs/1062_bumblebee_m.jpg",
+      "name": "Megabot",
+      "relations": "Se entrena en: Academia de megabot",
+      "stats": {
+        "attack": "40",
+        "defense": "1",
+        "life": "1,600",
+        "population": "3",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,100",
+        "steel": "825"
+      },
+      "image": "/assets/thumbs/1089_robo_axe_m.jpg",
+      "name": "Megahacha",
+      "relations": "Se entrena en: Academia de megahacha",
+      "stats": {
+        "attack": "34",
+        "defense": "1",
+        "life": "600",
+        "population": "3",
+        "range": "9",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "steel": "800"
+      },
+      "image": "/assets/thumbs/1082_robo_lancer_m.jpg",
+      "name": "Megalancero",
+      "relations": "Se entrena en: Academia de megalancero",
+      "stats": {
+        "attack": "32",
+        "defense": "1",
+        "life": "575",
+        "population": "3",
+        "range": "9",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1101_celestial_megamech_m.jpg",
+      "name": "Megamech celestial",
+      "relations": "",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "1,700",
+        "population": "3",
+        "range": "11",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "175",
+        "steel": "350"
+      },
+      "image": "/assets/thumbs/1037_megatank.jpg",
+      "name": "Megatanque",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "1,000",
+        "population": "2",
+        "range": "13",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1178_ether_messiah.jpg",
+      "name": "Mesías de éter",
+      "relations": "",
+      "stats": {
+        "attack": "48",
+        "defense": "1",
+        "life": "1,900",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1239_dark_ether_messiah.jpg",
+      "name": "Mesías de éter oscuro",
+      "relations": "",
+      "stats": {
+        "attack": "55",
+        "defense": "1",
+        "life": "2,250",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1129_samurai_minibot_m.jpg",
+      "name": "Minibot samurái",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "180",
+        "population": "3",
+        "range": "2",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,200",
+        "wood": "14,000"
+      },
+      "image": "/assets/thumbs/1228_nebula_monster.jpg",
+      "name": "Monstruo del pantano",
+      "relations": "Se entrena en: Academia de monstruo del pantano",
+      "stats": {
+        "attack": "50",
+        "defense": "1",
+        "life": "2,000",
+        "population": "3",
+        "range": "2",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,200",
+        "wood": "14,000"
+      },
+      "image": "/assets/thumbs/1228_nebula_monster.jpg",
+      "name": "Monstruo del pantano",
+      "relations": "",
+      "stats": {
+        "attack": "50",
+        "defense": "1",
+        "life": "2,000",
+        "population": "3",
+        "range": "2",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "550",
+        "oil": "800"
+      },
+      "image": "/assets/thumbs/1166_viking_motosquad.jpg",
+      "name": "Motoescuadrón vikingo",
+      "relations": "Se entrena en: Academia de motoescuadrón vikingo",
+      "stats": {
+        "attack": "38",
+        "defense": "1",
+        "life": "600",
+        "population": "3",
+        "range": "12",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1274_multi_morph.jpg",
+      "name": "Multimorfo",
+      "relations": "",
+      "stats": {
+        "attack": "54",
+        "defense": "1",
+        "life": "2,200",
+        "population": "3",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "250",
+        "wood": "500"
+      },
+      "image": "/assets/thumbs/1050_medic_m.jpg",
+      "name": "Médico",
+      "relations": "Se entrena en: Hospital de campaña",
+      "stats": {
+        "attack": "8",
+        "defense": "1",
+        "life": "110",
+        "population": "1",
+        "range": "1",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "2,200",
+        "oil": "900"
+      },
+      "image": "/assets/thumbs/1296_andromeda_combat_spaceship.jpg",
+      "name": "Nave espacial Andrómeda",
+      "relations": "Se entrena en: Hangar de nave espacial Andrómeda",
+      "stats": {
+        "attack": "34",
+        "defense": "1",
+        "life": "900",
+        "population": "3",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1127_huge_robot_m.jpg",
+      "name": "Núcleo blindado Alfa",
+      "relations": "",
+      "stats": {
+        "attack": "46",
+        "defense": "1",
+        "life": "1,800",
+        "population": "3",
+        "range": "3",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1162_ultra_robot.jpg",
+      "name": "Núcleo Némesis",
+      "relations": "",
+      "stats": {
+        "attack": "46",
+        "defense": "1",
+        "life": "1,800",
+        "population": "3",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "60",
+        "steel": "120"
+      },
+      "image": "/assets/thumbs/1052_special_ops_2_m.jpg",
+      "name": "Operaciones especiales",
+      "relations": "Se entrena en: Academia de espías",
+      "stats": {
+        "attack": "10",
+        "defense": "1",
+        "life": "120",
+        "population": "1",
+        "range": "8",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "75",
+        "steel": "150"
+      },
+      "image": "/assets/thumbs/1123_orc_basic_knife_2.jpg",
+      "name": "Orco espadachín",
+      "relations": "",
+      "stats": {
+        "attack": "8",
+        "defense": "1",
+        "life": "90",
+        "population": "1",
+        "range": "2",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "oil": "500"
+      },
+      "image": "/assets/thumbs/1114_orc_knivethrower_m.jpg",
+      "name": "Orco lanzacuchillos",
+      "relations": "",
+      "stats": {
+        "attack": "12",
+        "defense": "1",
+        "life": "100",
+        "population": "1",
+        "range": "6",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,250",
+        "oil": "950"
+      },
+      "image": "/assets/thumbs/1111_robot_orco_1_m.jpg",
+      "name": "Ork bestia cornuda",
+      "relations": "",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "300",
+        "population": "3",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "steel": "1,200"
+      },
+      "image": "/assets/thumbs/1115_orc_robot_22_m.jpg",
+      "name": "Ork con serrucho grande",
+      "relations": "Se entrena en: Fábrica de ork con serrucho grande",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "1,250",
+        "population": "3",
+        "range": "8",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,100",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1108_orc_boss_m_2.jpg",
+      "name": "Ork explosivo",
+      "relations": "Se entrena en: Academia de ork explosivo",
+      "stats": {
+        "attack": "34",
+        "defense": "1",
+        "life": "650",
+        "population": "3",
+        "range": "9",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "400",
+        "oil": "600"
+      },
+      "image": "/assets/thumbs/1113_orc_flamethrower_m.jpg",
+      "name": "Ork lanzallamas",
+      "relations": "Se entrena en: Academia de lanzallamas ork",
+      "stats": {
+        "attack": "21",
+        "defense": "1",
+        "life": "275",
+        "population": "2",
+        "range": "7",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "400",
+        "oil": "600"
+      },
+      "image": "/assets/thumbs/1113_orc_flamethrower_m.jpg",
+      "name": "Ork lanzallamas rojo",
+      "relations": "",
+      "stats": {
+        "attack": "12",
+        "defense": "1",
+        "life": "125",
+        "population": "2",
+        "range": "7",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,000",
+        "steel": "1,200"
+      },
+      "image": "/assets/thumbs/1115_orc_robot_22_m.jpg",
+      "name": "Ork sierra de mano rojo",
+      "relations": "",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "350",
+        "population": "3",
+        "range": "12",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "800",
+        "steel": "800"
+      },
+      "image": "/assets/thumbs/1177_ufo.jpg",
+      "name": "OVNI",
+      "relations": "",
+      "stats": {
+        "attack": "38",
+        "defense": "1",
+        "life": "900",
+        "population": "2",
+        "range": "8",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "900",
+        "steel": "3,000"
+      },
+      "image": "/assets/thumbs/1291_winged_paladin.jpg",
+      "name": "Paladín alado",
+      "relations": "Se entrena en: Academia de paladín alado",
+      "stats": {
+        "attack": "39",
+        "defense": "1",
+        "life": "850",
+        "population": "1",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1169_transformer_skater.jpg",
+      "name": "Patinador",
+      "relations": "",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "1,750",
+        "population": "3",
+        "range": "8",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1223_drill.jpg",
+      "name": "Perforador asesino",
+      "relations": "",
+      "stats": {
+        "attack": "48",
+        "defense": "1",
+        "life": "1,950",
+        "population": "3",
+        "range": "3",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "4"
+      },
+      "image": "/assets/thumbs/1072_rambo_m.jpg",
+      "name": "Ranbo",
+      "relations": "",
+      "stats": {
+        "attack": "23",
+        "defense": "1",
+        "life": "500",
+        "population": "2",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "cash": "6"
+      },
+      "image": "/assets/thumbs/1201_junk_bot.jpg",
+      "name": "Recolector de acero",
+      "relations": "",
+      "stats": {
+        "attack": "30",
+        "defense": "1",
+        "life": "1,500",
+        "population": "2",
+        "range": "8",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "6,000",
+        "steel": "8,000"
+      },
+      "image": "/assets/thumbs/1245_reptile_gun.jpg",
+      "name": "Reptil artillero",
+      "relations": "Se entrena en: Academia de reptil artillero",
+      "stats": {
+        "attack": "42",
+        "defense": "1",
+        "life": "1,200",
+        "population": "4",
+        "range": "12",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "650",
+        "oil": "1,250"
+      },
+      "image": "/assets/thumbs/1081_xtreme_retaliator_m.jpg",
+      "name": "Retaliator extremo",
+      "relations": "Se entrena en: Academia Retaliator",
+      "stats": {
+        "attack": "27",
+        "defense": "1",
+        "life": "650",
+        "population": "2",
+        "range": "11",
+        "speed": "10"
+      }
+    },
+    {
+      "costs": {
+        "gold": "1,250",
+        "oil": "950"
+      },
+      "image": "/assets/thumbs/1111_robot_orco_1_m.jpg",
+      "name": "Rudo cornudo",
+      "relations": "Se entrena en: Fábrica de rudo cornudo",
+      "stats": {
+        "attack": "45",
+        "defense": "1",
+        "life": "650",
+        "population": "3",
+        "range": "8",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "wood": "5,000"
+      },
+      "image": "/assets/thumbs/1151_crusader_priest.jpg",
+      "name": "Sacerdote cruzado",
+      "relations": "Se entrena en: Academia de sacerdote cruzado",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "275",
+        "population": "2",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "800",
+        "wood": "3,600"
+      },
+      "image": "/assets/thumbs/1208_nebula_priest.jpg",
+      "name": "Sacerdote nebular",
+      "relations": "Se entrena en: Academia de sacerdote nebular",
+      "stats": {
+        "attack": "32",
+        "defense": "1",
+        "life": "800",
+        "population": "2",
+        "range": "8",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "80",
+        "wood": "160"
+      },
+      "image": "/assets/thumbs/1042_good_guile.jpg",
+      "name": "Sargento Jack",
+      "relations": "",
+      "stats": {
+        "attack": "13",
+        "defense": "1",
+        "life": "200",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "80",
+        "wood": "160"
+      },
+      "image": "/assets/thumbs/1024_good_guillerma.jpg",
+      "name": "Sargento Megan",
+      "relations": "",
+      "stats": {
+        "attack": "13",
+        "defense": "1",
+        "life": "200",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "10,000",
+        "oil": "10,000"
+      },
+      "image": "/assets/thumbs/1285_plasma_striker.jpg",
+      "name": "Siege Striker",
+      "relations": "Se entrena en: Academia de elfo atacante de asedio",
+      "stats": {
+        "attack": "400",
+        "defense": "1",
+        "life": "1,500",
+        "population": "4",
+        "range": "15",
+        "speed": "4"
+      }
+    },
+    {
+      "costs": {
+        "gold": "700",
+        "oil": "1,300"
+      },
+      "image": "/assets/thumbs/1088_skylander_m.jpg",
+      "name": "Skylander",
+      "relations": "Se entrena en: Hangar de Skylander cruzado",
+      "stats": {
+        "attack": "28",
+        "defense": "1",
+        "life": "675",
+        "population": "2",
+        "range": "10",
+        "speed": "9"
+      }
+    },
+    {
+      "costs": {
+        "gold": "30",
+        "steel": "60"
+      },
+      "image": "/assets/thumbs/1007_soldier_1_m.jpg",
+      "name": "Soldado",
+      "relations": "Se entrena en: Academia I",
+      "stats": {
+        "attack": "8",
+        "defense": "1",
+        "life": "50",
+        "population": "1",
+        "range": "5",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "steel": "600"
+      },
+      "image": "/assets/thumbs/1078_robo_bazooka_m.jpg",
+      "name": "Soldado con bazuca",
+      "relations": "Se entrena en: Academia de bazuca cruzada",
+      "stats": {
+        "attack": "21",
+        "defense": "1",
+        "life": "100",
+        "population": "1",
+        "range": "10",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "150",
+        "steel": "300"
+      },
+      "image": "/assets/thumbs/1076_robo_soldier_m.jpg",
+      "name": "Soldado cruzado",
+      "relations": "Se entrena en: Academia de soldado cruzado",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "90",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "250",
+        "steel": "500"
+      },
+      "image": "/assets/thumbs/1045_double_gun_soldier_m.jpg",
+      "name": "Soldado de arma doble",
+      "relations": "Se entrena en: Fortaleza especial, Fortaleza de orcos",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "110",
+        "population": "1",
+        "range": "7",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "170",
+        "steel": "300"
+      },
+      "image": "/assets/thumbs/1077_robo_swordsman_m.jpg",
+      "name": "Soldado espadachín",
+      "relations": "Se entrena en: Academia de espadachín cruzado",
+      "stats": {
+        "attack": "19",
+        "defense": "1",
+        "life": "170",
+        "population": "1",
+        "range": "1",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "60",
+        "steel": "120"
+      },
+      "image": "/assets/thumbs/1020_soldier_2_m.jpg",
+      "name": "Soldado II",
+      "relations": "Se entrena en: Academia II",
+      "stats": {
+        "attack": "12",
+        "defense": "1",
+        "life": "55",
+        "population": "1",
+        "range": "6",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "90",
+        "steel": "180"
+      },
+      "image": "/assets/thumbs/1021_soldier_3_m.jpg",
+      "name": "Soldado III",
+      "relations": "Se entrena en: Academia III",
+      "stats": {
+        "attack": "16",
+        "defense": "1",
+        "life": "60",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "120",
+        "steel": "240"
+      },
+      "image": "/assets/thumbs/1058_soldier_4_m.jpg",
+      "name": "Soldado IV",
+      "relations": "Se entrena en: Academia IV",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "100",
+        "population": "1",
+        "range": "8",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "225",
+        "steel": "350"
+      },
+      "image": "/assets/thumbs/1079_robo_jumper_m.jpg",
+      "name": "Soldado jet",
+      "relations": "Se entrena en: Academia de soldado jet",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "160",
+        "population": "1",
+        "range": "8",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "425",
+        "oil": "450"
+      },
+      "image": "/assets/thumbs/1080_robo_biker_m.jpg",
+      "name": "Soldado motorizado",
+      "relations": "Se entrena en: Academia de soldado motorizado",
+      "stats": {
+        "attack": "25",
+        "defense": "1",
+        "life": "300",
+        "population": "2",
+        "range": "9",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "steel": "800"
+      },
+      "image": "/assets/thumbs/1292_andromeda_private.jpg",
+      "name": "Soldado raso Andrómeda",
+      "relations": "Se entrena en: Academia de soldado raso Andrómeda",
+      "stats": {
+        "attack": "23",
+        "defense": "1",
+        "life": "160",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1218_swat_soldier.jpg",
+      "name": "Soldado S.W.A.T.",
+      "relations": "",
+      "stats": {
+        "attack": "46",
+        "defense": "1",
+        "life": "1,850",
+        "population": "3",
+        "range": "10",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "8,000",
+        "steel": "10,000"
+      },
+      "image": "/assets/thumbs/1218_swat_soldier.jpg",
+      "name": "Soldado S.W.A.T.",
+      "relations": "Se entrena en: Academia de soldado S.W.A.T.",
+      "stats": {
+        "attack": "46",
+        "defense": "1",
+        "life": "1,850",
+        "population": "3",
+        "range": "10",
+        "speed": "8"
+      }
+    },
+    {
+      "costs": {
+        "gold": "150",
+        "steel": "300"
+      },
+      "image": "/assets/thumbs/1059_soldier_5_m.jpg",
+      "name": "Soldado V",
+      "relations": "Se entrena en: Academia V",
+      "stats": {
+        "attack": "24",
+        "defense": "1",
+        "life": "110",
+        "population": "2",
+        "range": "9",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "200",
+        "oil": "325"
+      },
+      "image": "/assets/thumbs/1155_dwarf_soldier.jpg",
+      "name": "Soldado vikingo",
+      "relations": "Se entrena en: Academia de soldado vikingo",
+      "stats": {
+        "attack": "19",
+        "defense": "1",
+        "life": "100",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1112_optimus_m.jpg",
+      "name": "Spinner rojo",
+      "relations": "",
+      "stats": {
+        "attack": "43",
+        "defense": "1",
+        "life": "1,650",
+        "population": "3",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "80",
+        "wood": "160"
+      },
+      "image": "/assets/thumbs/1033_mr_cigar.jpg",
+      "name": "Sr. Cigar",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "400",
+        "population": "1",
+        "range": "7",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "325",
+        "steel": "500"
+      },
+      "image": "/assets/thumbs/1055_mr_t_m.jpg",
+      "name": "Sr. Treat",
+      "relations": "Se entrena en: Academia de Mr T.",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "200",
+        "population": "2",
+        "range": "9",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1057_t-rex_m.jpg",
+      "name": "T-Rex",
+      "relations": "",
+      "stats": {
+        "attack": "40",
+        "defense": "1",
+        "life": "1,200",
+        "population": "2",
+        "range": "2",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1093_trex_m.jpg",
+      "name": "T-Rex de fuego",
+      "relations": "",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "3,000",
+        "population": "2",
+        "range": "2",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1093_trex_m.jpg",
+      "name": "T-Rex megafuego",
+      "relations": "",
+      "stats": {
+        "attack": "48",
+        "defense": "1",
+        "life": "1,950",
+        "population": "2",
+        "range": "2",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1057_t-rex_m.jpg",
+      "name": "T-Rex verde",
+      "relations": "",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "3,000",
+        "population": "2",
+        "range": "2",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "175",
+        "steel": "350"
+      },
+      "image": "/assets/thumbs/1053_golem_boss_m.jpg",
+      "name": "TankBoss",
+      "relations": "",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "15,000",
+        "population": "2",
+        "range": "2",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "175",
+        "steel": "350"
+      },
+      "image": "/assets/thumbs/1016_cannon_1_m.jpg",
+      "name": "Tanque",
+      "relations": "Se entrena en: Academia de tanques I",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "300",
+        "population": "2",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "450",
+        "steel": "850"
+      },
+      "image": "/assets/thumbs/1083_demlisher_tank_m.jpg",
+      "name": "Tanque cruzado",
+      "relations": "Se entrena en: Academia de tanque cruzado",
+      "stats": {
+        "attack": "35",
+        "defense": "1",
+        "life": "620",
+        "population": "2",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "steel": "1,000"
+      },
+      "image": "/assets/thumbs/1069_bigheaded_tank_m.jpg",
+      "name": "Tanque de demolición",
+      "relations": "Se entrena en: Academia de tanque de demolición",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "575",
+        "population": "2",
+        "range": "12",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "475",
+        "steel": "875"
+      },
+      "image": "/assets/thumbs/1091_missile_tank_m.jpg",
+      "name": "Tanque de misiles",
+      "relations": "Se entrena en: Academia de tanque de misiles",
+      "stats": {
+        "attack": "36",
+        "defense": "1",
+        "life": "630",
+        "population": "2",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "600",
+        "steel": "1,200"
+      },
+      "image": "/assets/thumbs/1047_black_tank_2_m.jpg",
+      "name": "Tanque Dominion",
+      "relations": "Se entrena en: Academia de tanque Dominion",
+      "stats": {
+        "attack": "27",
+        "defense": "1",
+        "life": "475",
+        "population": "2",
+        "range": "12",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1116_orc_tank_m.jpg",
+      "name": "Tanque grande de orcos",
+      "relations": "",
+      "stats": {
+        "attack": "16",
+        "defense": "1",
+        "life": "350",
+        "population": "2",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "250",
+        "steel": "500"
+      },
+      "image": "/assets/thumbs/1003_cannon_2_m.jpg",
+      "name": "Tanque II",
+      "relations": "Se entrena en: Academia de tanques II",
+      "stats": {
+        "attack": "22",
+        "defense": "1",
+        "life": "375",
+        "population": "2",
+        "range": "10",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "325",
+        "steel": "650"
+      },
+      "image": "/assets/thumbs/1004_cannon_3_m.jpg",
+      "name": "Tanque III",
+      "relations": "Se entrena en: Academia de tanques III",
+      "stats": {
+        "attack": "26",
+        "defense": "1",
+        "life": "450",
+        "population": "2",
+        "range": "12",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "400",
+        "steel": "800"
+      },
+      "image": "/assets/thumbs/1070_cannon_4_m.jpg",
+      "name": "Tanque IV",
+      "relations": "Se entrena en: Academia de tanques IV",
+      "stats": {
+        "attack": "30",
+        "defense": "1",
+        "life": "525",
+        "population": "2",
+        "range": "12",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1116_orc_tank_m.jpg",
+      "name": "Tanque orco",
+      "relations": "Se entrena en: Academia de tanques ork",
+      "stats": {
+        "attack": "37",
+        "defense": "1",
+        "life": "650",
+        "population": "2",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "175",
+        "steel": "350"
+      },
+      "image": "/assets/thumbs/1124_ork_tank_1.jpg",
+      "name": "Tanque ork básico",
+      "relations": "",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "300",
+        "population": "2",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "oil": "600"
+      },
+      "image": "/assets/thumbs/1002_Red_Tank_m.jpg",
+      "name": "Tanque rojo",
+      "relations": "",
+      "stats": {
+        "attack": "18",
+        "defense": "1",
+        "life": "150",
+        "population": "2",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "475",
+        "steel": "950"
+      },
+      "image": "/assets/thumbs/1071_cannon_5_m.jpg",
+      "name": "Tanque V",
+      "relations": "Se entrena en: Academia de tanques V",
+      "stats": {
+        "attack": "34",
+        "defense": "1",
+        "life": "600",
+        "population": "3",
+        "range": "13",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "500",
+        "steel": "900"
+      },
+      "image": "/assets/thumbs/1157_dwarf_tank.jpg",
+      "name": "Tanque vikingo",
+      "relations": "Se entrena en: Academia de tanque vikingo",
+      "stats": {
+        "attack": "37",
+        "defense": "1",
+        "life": "650",
+        "population": "3",
+        "range": "12",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "10"
+      },
+      "image": "/assets/thumbs/1001_worker_m.jpg",
+      "name": "Trabajador I",
+      "relations": "Se entrena en: Centro de Mando",
+      "stats": {
+        "attack": "6",
+        "defense": "1",
+        "life": "25",
+        "population": "1",
+        "range": "1",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "10"
+      },
+      "image": "/assets/thumbs/1001_worker_m.jpg",
+      "name": "Trabajador II",
+      "relations": "Se entrena en: Centro de Mando II",
+      "stats": {
+        "attack": "6",
+        "defense": "1",
+        "life": "30",
+        "population": "1",
+        "range": "1",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "10"
+      },
+      "image": "/assets/thumbs/1001_worker_m.jpg",
+      "name": "Trabajador III",
+      "relations": "Se entrena en: Centro de Mando III",
+      "stats": {
+        "attack": "6",
+        "defense": "1",
+        "life": "35",
+        "population": "1",
+        "range": "1",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "10"
+      },
+      "image": "/assets/thumbs/1001_worker_m.jpg",
+      "name": "Trabajador IV",
+      "relations": "Se entrena en: Centro de Mando IV",
+      "stats": {
+        "attack": "6",
+        "defense": "1",
+        "life": "40",
+        "population": "1",
+        "range": "1",
+        "speed": "7"
+      }
+    },
+    {
+      "costs": {
+        "gold": "10"
+      },
+      "image": "/assets/thumbs/1125_orc_worker.jpg",
+      "name": "Trabajador orco",
+      "relations": "",
+      "stats": {
+        "attack": "6",
+        "defense": "1",
+        "life": "25",
+        "population": "1",
+        "range": "1",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "10"
+      },
+      "image": "/assets/thumbs/1152_transformer_gigante.jpg",
+      "name": "Ultra-Mech",
+      "relations": "",
+      "stats": {
+        "attack": "46",
+        "defense": "1",
+        "life": "1,800",
+        "population": "3",
+        "range": "8",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "650",
+        "oil": "1,000"
+      },
+      "image": "/assets/thumbs/1183_laser_viking.jpg",
+      "name": "Vikingo láser grande",
+      "relations": "Se entrena en: Academia de vikingo láser",
+      "stats": {
+        "attack": "35",
+        "defense": "1",
+        "life": "800",
+        "population": "2",
+        "range": "9",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "cash": "6"
+      },
+      "image": "/assets/thumbs/1103_zeppelin_m.jpg",
+      "name": "Zepelín",
+      "relations": "",
+      "stats": {
+        "attack": "28",
+        "defense": "1",
+        "life": "700",
+        "population": "3",
+        "range": "11",
+        "speed": "11"
+      }
+    },
+    {
+      "costs": {
+        "gold": "300",
+        "oil": "600"
+      },
+      "image": "/assets/thumbs/1018_zodiac_m.jpg",
+      "name": "Zodiac",
+      "relations": "",
+      "stats": {
+        "attack": "7",
+        "defense": "1",
+        "life": "300",
+        "population": "2",
+        "range": "6",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "200",
+        "steel": "325"
+      },
+      "image": "/assets/thumbs/1106_hacha_m_2.jpg",
+      "name": "Zoldier con hacha",
+      "relations": "Se entrena en: Academia de Zoldier con hacha",
+      "stats": {
+        "attack": "20",
+        "defense": "1",
+        "life": "180",
+        "population": "1",
+        "range": "1",
+        "speed": "6"
+      }
+    },
+    {
+      "costs": {
+        "gold": "75",
+        "steel": "150"
+      },
+      "image": "/assets/thumbs/1122_orc_basic_gun_2.jpg",
+      "name": "Zoldier orco",
+      "relations": "",
+      "stats": {
+        "attack": "8",
+        "defense": "1",
+        "life": "40",
+        "population": "1",
+        "range": "5",
+        "speed": "5"
+      }
+    },
+    {
+      "costs": {
+        "gold": "170",
+        "steel": "325"
+      },
+      "image": "/assets/thumbs/1107_metralleta_m_2.jpg",
+      "name": "Zoldier pistolero",
+      "relations": "Se entrena en: Academia de Zoldier pistolero",
+      "stats": {
+        "attack": "19",
+        "defense": "1",
+        "life": "100",
+        "population": "1",
+        "range": "7",
+        "speed": "6"
+      }
+    }
+  ]
+}

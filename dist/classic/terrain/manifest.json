@@ -1,0 +1,188 @@
+{
+  "source": "https://raw.githubusercontent.com/AcidCaos/socialwarriors/c3fceeb1f8e93734a293b9bc25ae6025656f6822/assets/sprites/terreno.swf",
+  "symbol": "TerrainTiles",
+  "characterId": 50,
+  "cellsPerTile": 5,
+  "frames": [
+    {
+      "tileCode": 0,
+      "file": "./classic/terrain/00.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 1,
+      "file": "./classic/terrain/01.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 2,
+      "file": "./classic/terrain/02.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 3,
+      "file": "./classic/terrain/03.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 4,
+      "file": "./classic/terrain/04.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 5,
+      "file": "./classic/terrain/05.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 6,
+      "file": "./classic/terrain/06.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 7,
+      "file": "./classic/terrain/07.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 8,
+      "file": "./classic/terrain/08.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 9,
+      "file": "./classic/terrain/09.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 10,
+      "file": "./classic/terrain/10.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 11,
+      "file": "./classic/terrain/11.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 12,
+      "file": "./classic/terrain/12.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 13,
+      "file": "./classic/terrain/13.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 14,
+      "file": "./classic/terrain/14.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 15,
+      "file": "./classic/terrain/15.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 16,
+      "file": "./classic/terrain/16.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 17,
+      "file": "./classic/terrain/17.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 18,
+      "file": "./classic/terrain/18.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 19,
+      "file": "./classic/terrain/19.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 20,
+      "file": "./classic/terrain/20.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 21,
+      "file": "./classic/terrain/21.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 22,
+      "file": "./classic/terrain/22.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 23,
+      "file": "./classic/terrain/23.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 24,
+      "file": "./classic/terrain/24.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 25,
+      "file": "./classic/terrain/25.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 26,
+      "file": "./classic/terrain/26.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 27,
+      "file": "./classic/terrain/27.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 28,
+      "file": "./classic/terrain/28.webp",
+      "width": 548,
+      "height": 274
+    },
+    {
+      "tileCode": 29,
+      "file": "./classic/terrain/29.webp",
+      "width": 548,
+      "height": 274
+    }
+  ]
+}

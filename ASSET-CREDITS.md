@@ -13,3 +13,9 @@ La versión web usa un motor Canvas propio; no distribuye ni requiere un reprodu
 Python 3 con Pillow, Java 17+ y [JPEXS FFDec](https://github.com/jindrapetrik/jpexs-decompiler/releases/tag/version26.4.0). Define `FFDEC_JAR` con la ruta a ffdec.jar; opcionalmente `JAVA` con el ejecutable. Ejecuta `python scripts/prepare-sprites.py` y `node scripts/package.mjs`. Las fuentes se descargan de la revisión fija de arriba, se guardan en .reference-cache y no se ejecuta su ActionScript. Los IDs y parámetros seleccionados están en source-data/.
 
 La versión 0.3 añade PICAR para los civiles y BARRIL para los trabajadores de Wars, extraídos de las mismas películas. progression-data.js deriva los umbrales y requisitos de la configuración de esa revisión.
+
+## Terreno y análisis en 0.4
+
+Se convirtieron los 30 fotogramas del símbolo `TerrainTiles` (ID 50) de `assets/sprites/terreno.swf`, en la misma revisión fijada. `dist/classic/terrain/manifest.json` identifica cada superficie; `scripts/prepare-terrain.py` reproduce la conversión a WebP. El atlas de referencia utiliza los 24 diseños de `managers/MapManager.as` exportados estáticamente de `Basesec_1.5.4.swf`. No son modelos 3D: son películas vectoriales 2D.
+
+`source-data/social-wars/assets.json` conserva el inventario completo del árbol, sin descargarlo íntegramente al jugador. `live-codex.json` contiene sólo nombres y parámetros públicos observados en la guía de https://wars.fbgamesweb.com/como-jugar el 20 de octubre de 2026. No se copió su bundle JavaScript como motor de Auralis. Véase docs/SOCIAL-WARS-ANATOMY.md para el alcance y las diferencias.

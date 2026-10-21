@@ -1,0 +1,80 @@
+{
+  "samples": [
+    {
+      "name": "base",
+      "p50": 0.699999988079071,
+      "p95": 1.5999999642372131,
+      "mean": 0.7533333333333333,
+      "callsPerFrame": {
+        "drawImage": 148,
+        "stroke": 7,
+        "fill": 19
+      },
+      "stats": {
+        "groundBuilds": 1,
+        "natureBuilds": 1,
+        "visibleNature": 131,
+        "totalNature": 137,
+        "alphaMasks": 0
+      }
+    },
+    {
+      "name": "zoom-out",
+      "p50": 0.699999988079071,
+      "p95": 1.699999988079071,
+      "mean": 0.8326666669050853,
+      "callsPerFrame": {
+        "drawImage": 157,
+        "stroke": 7,
+        "fill": 19
+      },
+      "stats": {
+        "groundBuilds": 2,
+        "natureBuilds": 1,
+        "visibleNature": 137,
+        "totalNature": 137,
+        "alphaMasks": 0
+      }
+    },
+    {
+      "name": "mobile",
+      "p50": 0.19999998807907104,
+      "p95": 0.5,
+      "mean": 0.28266666650772093,
+      "callsPerFrame": {
+        "drawImage": 78,
+        "stroke": 7,
+        "fill": 19
+      },
+      "stats": {
+        "groundBuilds": 3,
+        "natureBuilds": 1,
+        "visibleNature": 71,
+        "totalNature": 137,
+        "alphaMasks": 0
+      }
+    },
+    {
+      "name": "army-80",
+      "p50": 0.8999999761581421,
+      "p95": 1.800000011920929,
+      "mean": 1.0206666668256124,
+      "callsPerFrame": {
+        "drawImage": 219,
+        "stroke": 81,
+        "fill": 93
+      },
+      "stats": {
+        "groundBuilds": 4,
+        "natureBuilds": 1,
+        "visibleNature": 131,
+        "totalNature": 137,
+        "alphaMasks": 0
+      }
+    }
+  ],
+  "hitMs": 0.13400000035762788,
+  "dpr": 1,
+  "initialBytes": 997035,
+  "errors": []
+}

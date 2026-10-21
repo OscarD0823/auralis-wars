@@ -1,0 +1,26 @@
+{
+  "items": 778,
+  "itemTypes": {
+    "b": 469,
+    "u": 308,
+    "l": 1
+  },
+  "assets": 3199,
+  "assetGroups": {
+    "characters_2": 26,
+    "externalized": 1,
+    "flash": 60,
+    "fonts": 2,
+    "fx": 205,
+    "images": 578,
+    "magic": 10,
+    "sounds": 140,
+    "sprites": 862,
+    "swf": 1,
+    "thumbs": 1314
+  },
+  "as3Classes": 1387,
+  "methods": 8768,
+  "commands": 63,
+  "maps": 24
+}
