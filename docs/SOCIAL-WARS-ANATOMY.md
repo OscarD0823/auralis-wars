@@ -39,7 +39,7 @@ Los tipos de terreno registrados son tierra, puente, playa y agua. La inicializa
 - `MapInitializer` genera recursos, objetos perdidos, animales y enemigos según las zonas. El entorno puede cambiar por extracción, construcción, destrucción y avance de capítulos.
 - El mapa de misión y el selector de mundos tienen progresión y restricciones; no son sinónimos de la base del jugador. Un menú de misión bloqueado no se consideró probado.
 
-El [atlas web](../dist/archive.html) permite recorrer esos diseños originales y probar conectividad. Sus rutas de demostración utilizan BFS sin edificios ni enemigos; no son una ejecución del A* original. La campaña jugable de Auralis conserva su mapa de 32 × 32 y sus doce objetivos. Los mapas de 100 × 100 del visor todavía no sustituyen esa campaña ni incorporan su sistema completo de expansión.
+El [atlas web](../dist/archive.html) permite recorrer esos diseños originales y probar conectividad. Sus rutas de demostración utilizan BFS sin edificios ni enemigos; no son una ejecución del A* original. Desde 0.5, la base jugable utiliza el archipiélago original de 100 × 100 y ampliaciones contiguas. Los doce ataques de campaña conservan escenarios Auralis de 32 × 32; los otros diseños del visor aún no sustituyen todos los capítulos.
 
 ## Para qué sirve cada familia
 
@@ -47,14 +47,14 @@ El [atlas web](../dist/archive.html) permite recorrer esos diseños originales y
 | --- | --- | --- |
 | Centro de mando | Desarrollo de la base, entrenamiento civil y progresión | Diez niveles propios y requisitos de campaña |
 | Casas | Alojamiento y capacidad de población | Capacidad y producción adaptadas; no son valores originales |
-| Fábricas de oro, madera, acero y petróleo | Ciclos de producción, recogida y límites por recurso | Producción acumulada por segundo y recogida manual propias |
+| Fábricas de oro, madera, acero y petróleo | Ciclos de producción, recogida y límites por recurso | Ciclos originales con duraciones por dificultad, cantidades por nivel adaptadas y recogida manual; partidas antiguas conservan tasa continua hasta encargar un ciclo |
 | Silos | Aumento de reservas máximas | Capacidad inicial y curva de mejora adaptadas |
-| Academias y cuarteles especializados | `trains_ids`, tiempos, costes y colas por edificio | Cuatro familias agrupan 24 unidades militares |
+| Academias y cuarteles especializados | `trains_ids`, tiempos, costes y colas por edificio | Instalaciones especializadas y 33 unidades militares; recetas y progresión Auralis |
 | Garajes, talleres y hangares | Entrenamiento de vehículos, máquinas y aeronaves concretos | Familias gráficas originales; recetas Auralis |
-| Muros, torres, búnkeres y fortalezas | Obstáculos y defensas; algunas fortalezas también entrenan | Muros, torres y cañón con reglas de combate locales |
+| Muros, torres, búnkeres y fortalezas | Obstáculos y defensas; algunas fortalezas también entrenan | Muros, torres, cañón, búnkeres y fortalezas con reglas de combate locales |
 | Hospital, mecánicos y curadores | Reglas de curación/reparación según el actor | Hospital para supervivientes y unidades de apoyo |
 | Laboratorio, centro robótico y Área 51 | Investigación o creación especial con delegados propios | Investigación de cinco grados; no se han portado todas las especialidades |
-| Mercados y edificio de aliados | Comercio, aportaciones y acciones sociales | Diplomacia local de IA; no mercado multijugador |
+| Mercados y edificio de aliados | Comercio, aportaciones y acciones sociales | Mercado con inventario y límite de operaciones, más diplomacia de IA; sin mercado multijugador |
 | Maravillas, ofertas, decoraciones y objetos perdidos | Bonificaciones, eventos, ambientación o misiones particulares | Catalogados; gran parte aún no es jugable |
 
 Cada una de las 778 fichas conserva requisitos, coste, huella, vida, ataque, alcance, población, producción, propiedades, entrenamiento y evolución cuando existen. `type=b` reúne 469 edificios, decoraciones, recursos y otros objetos; no significa que haya 469 edificios comprables. Hay 308 unidades y un registro de terreno. `in_store=1` selecciona 166 objetos en esa configuración.
@@ -67,7 +67,7 @@ El códice público actual enumera 303 unidades. No se mezclaron automáticament
 
 El arte original es vectorial 2D con proyección isométrica, no una biblioteca de modelos 3D. Las películas contienen jerarquías, formas, clips y secuencias. En los personajes analizados se identificaron QUIETO, ANDAR, ATAQUE, MUERTE y PICAR; el obrero de Wars también dispone de BARRIL. Hay cinco vistas fuente y reflejos para completar orientaciones. Exportar su primer fotograma como imagen fija pierde el comportamiento.
 
-Auralis reproduce 1.920 fotogramas de 84 recursos de edificios/personajes/naturaleza, más las 30 superficies añadidas en 0.4.0. No todas las habilidades ni todas las animaciones de muerte están portadas. Las diez mejoras Auralis distribuyen las variantes gráficas existentes; no existen diez películas originales diferentes para cada edificio.
+Auralis reproduce 2.584 fotogramas de 123 recursos de edificios/personajes/naturaleza, más las 30 superficies añadidas en 0.4.0. No todas las habilidades ni todas las animaciones de muerte están portadas. Las diez mejoras Auralis distribuyen las variantes gráficas existentes; no existen diez películas originales diferentes para cada edificio.
 
 ## Material extraído y cómo reconstruirlo
 
@@ -95,4 +95,12 @@ Para regenerar los índices, disponer de `wars-tree.json`, `wars-config.json` y 
 - Caché inicial reducida, recursos cargados al usarse y descarga completa opcional con tres transferencias simultáneas. Las partidas previas conservan su clave y formato.
 - Atlas y códice consultables, separados explícitamente de los objetos ya jugables.
 
-La medición y sus límites están en [PERFORMANCE.md](PERFORMANCE.md). Migrar el mapa jugable al sistema original de islas/sectores, portar todas las recetas y habilidades, reproducir capítulos completos y ofrecer multijugador siguen siendo trabajo pendiente. No se presentan como funciones terminadas por haber encontrado sus datos.
+La medición y sus límites están en [PERFORMANCE.md](PERFORMANCE.md). El sistema de islas/sectores ya se aplica a la base desde 0.5. Portar todas las recetas y habilidades, reproducir capítulos completos y ofrecer multijugador siguen siendo trabajo pendiente. No se presentan como funciones terminadas por haber encontrado sus datos.
+
+## Cambios aplicados en 0.5.0
+
+La [investigación de bases avanzadas](ADVANCED-BASES.md) documenta la comparación con una base pública de nivel 40 y 25 sectores. Se aplicaron el archipiélago de 100 × 100, expansión contigua con precios del archivo, nueve puentes, construcción y reparación de pasos, 28 familias de instalaciones y 33 unidades, lotes de producción, mercado, astilleros costeros, navegación acuática y órdenes de tropas en la base. La demostración avanzada funciona en una partida aislada que no reemplaza el guardado principal.
+
+Las coordenadas de los puentes se normalizan desde la última casilla ocupada del cliente Flash al origen de huella Auralis. La migración traslada trabajadores, materiales, rutas y edificios; conserva el terreno y las batallas antiguas. Las texturas del terreno se cargan según la vista y la naturaleza se consulta mediante sectores espaciales. Las cachés conservan el suelo mientras sólo se animan actores.
+
+Los requisitos sociales de vecinos/cash y el cierre por capítulos se adaptaron a la partida local. Cantidades, tiempos de construcción, costes de puentes y estadísticas militares siguen siendo Auralis. El resto de mapas, capítulos, objetos de evento, habilidades y servidor social no se considera portado por estar indexado.

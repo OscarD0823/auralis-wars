@@ -40,3 +40,11 @@ Las imágenes de la versión instalada se sirven desde su caché; un nuevo núme
 - Descarga completa de 227 rutas, recarga sin red, miniaturas del ejército y atlas/códice completos sin conexión.
 
 La navegación terrestre nueva considera edificios y terreno; los aviones conservan su desplazamiento aéreo. Las rutas y las superficies cacheadas son datos temporales y no alteran el formato de guardado.
+
+## Archipiélago jugable en 0.5
+
+`scripts/qa-islands.mjs` añade una medición separada del mapa de 100 × 100, semilla 341, en una vista de 1000 × 700. Con las imágenes ya cargadas, 120 dibujos dieron 0,44 ms de media y 1,0 ms de p95 en este equipo. No es una comparación directa con la tabla anterior: la resolución y el escenario son distintos, y la medición no incluye toda la simulación ni espera a la GPU. El detalle se conserva en `benchmarks/0.5.0-world.json`.
+
+La vista dibujó 99 de 677 objetos naturales. Los índices se agrupan en bloques de 10 × 10 para consultar sólo los que intersectan la cámara. Durante los 120 dibujos el terreno y el índice natural se prepararon una sola vez; al desplazar la cámara se recompuso el terreno sin reconstruir el índice. Las superficies originales se solicitan cuando entran en la vista.
+
+La instalación inicial prepara 47 rutas, aproximadamente 1,17 MB; el paquete opcional contiene 311 rutas, aproximadamente 18,78 MB. Los 39 recursos gráficos nuevos no se precargan todos al iniciar una base. El paquete completo sigue siendo una descarga explícita desde Ajustes. Los datos de tamaño excluyen el contenido duplicado de la ruta raíz y no son una predicción de transferencia comprimida por la red.

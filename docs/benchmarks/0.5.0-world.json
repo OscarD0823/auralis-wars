@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-20",
+  "viewport": {
+    "width": 1000,
+    "height": 700
+  },
+  "warmFrames": 120,
+  "worldSize": 100,
+  "rendering": {
+    "before": {
+      "groundBuilds": 1,
+      "natureBuilds": 1,
+      "visibleNature": 99,
+      "totalNature": 677,
+      "worldSize": 100,
+      "terrainImages": 101,
+      "alphaMasks": 1
+    },
+    "after": {
+      "groundBuilds": 1,
+      "natureBuilds": 1,
+      "visibleNature": 99,
+      "totalNature": 677,
+      "worldSize": 100,
+      "terrainImages": 101,
+      "alphaMasks": 1
+    },
+    "moved": {
+      "groundBuilds": 2,
+      "natureBuilds": 1,
+      "visibleNature": 86,
+      "totalNature": 677,
+      "worldSize": 100,
+      "terrainImages": 101,
+      "alphaMasks": 1
+    },
+    "mean": 0.4383333335320155,
+    "p95": 1
+  },
+  "core": {
+    "routes": 47,
+    "bytes": 1169010
+  },
+  "all": {
+    "routes": 311,
+    "bytes": 18781152
+  }
+}

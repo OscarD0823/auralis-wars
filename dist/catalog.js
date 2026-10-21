@@ -86,3 +86,37 @@ export function unitStats(type,level=1){const s=UNITS[type],f=1+(level-1)*.2;ret
 // Labels follow the archived artwork; stable IDs preserve saved campaigns.
 Object.entries({"house": "Casa militar", "goldmine": "Fábrica de oro", "lumber": "Fábrica de madera", "supply": "Fábrica de petróleo", "metal": "Fábrica de acero", "storage": "Silo", "infantry": "Academia militar", "range": "Academia de bazucas", "vehicle": "Garaje de jeeps", "cannon": "Torreta de cohetes"}).forEach(([id,name])=>{BUILDINGS[id].name=name;});
 Object.entries({"rifle": "Soldado", "assault": "Soldado II", "grenadier": "Soldado de doble arma", "exosoldier": "Cazador robótico", "sniper": "Soldado III", "rocket": "Bazuca", "artillery": "Tanque II", "siegetank": "Megatanque", "titan": "Ultra-Mech", "drone": "Dron Alfa", "orbital": "Dron Némesis", "captain": "General Mike"}).forEach(([id,name])=>{UNITS[id].name=name;});
+
+// Specialised late-game facilities use their own archived graphics and jobs.
+Object.assign(BUILDINGS,Object.fromEntries([
+ b('armor',['Academia de tanques'],'military','garage',3,{gold:550,wood:300,metal:200},{size:3,hp:1500,queue:true,limit:3,description:'Construye tanques, artillería y blindados avanzados. Sus niveles habilitan los modelos pesados.'}),
+ b('heliport',['Hangar de helicópteros'],'military','airfield',4,{gold:650,wood:300,supply:220,metal:180},{size:3,hp:1200,queue:true,description:'Entrena cinco generaciones de helicópteros; cada nivel industrial abre nuevos modelos.'}),
+ b('bunker',['Búnker'],'defense','tower',3,{gold:350,wood:100,metal:180},{size:2,hp:1800,attack:32,range:7,interval:1.4,air:false,limit:12,description:'Posición fortificada de defensa terrestre. Sus versiones mejoradas soportan un asedio prolongado.'}),
+ b('fortress',['Fortaleza militar'],'defense','camp',5,{gold:1300,wood:500,metal:550},{size:4,hp:5000,attack:65,range:9,interval:1.8,air:true,queue:true,limit:3,description:'Combina defensa pesada con entrenamiento de jeeps lanzacohetes y soldados de doble arma.'}),
+ b('robotics',['Centro robótico'],'science','lab',6,{gold:1700,wood:600,supply:650,metal:800},{size:3,hp:2200,queue:true,limit:2,description:'Ensambla drones y máquinas avanzadas. Requiere un laboratorio para completar su fabricación.'}),
+ b('market',['Mercado'],'economy','depot',2,{gold:350,wood:350},{size:3,hp:1000,limit:2,description:'Compra madera, petróleo y acero con oro, o vende excedentes. Admite 20 operaciones por período.'}),
+ b('stealth',['Hangar furtivo'],'military','airfield',7,{gold:1500,wood:500,supply:600,metal:600},{size:4,hp:1800,queue:true,limit:2,description:'Fabrica interceptores furtivos para proteger el cielo y escoltar a los bombarderos.'}),
+ b('missileworks',['Academia de tanques misilísticos'],'military','garage',7,{gold:1300,wood:450,supply:500,metal:650},{size:4,hp:1800,queue:true,limit:2,description:'Construye plataformas móviles de misiles de largo alcance y daño de área.'}),
+ b('shipyard',['Astillero'],'military','depot',3,{gold:650,wood:500,metal:250},{size:3,hp:1600,queue:true,limit:3,coastal:true,description:'Debe tener una salida al mar. Construye lanchas Zodiac y barcos de combate.'}),
+ b('bridge',['Puente'],'infrastructure','wall',2,{gold:300,wood:350,metal:180},{size:5,hp:1000,limit:30,time:60,description:'Une dos orillas con un paso de cinco casillas. Las tropas y los trabajadores lo utilizan al terminar la obra.'})
+].map(x=>[x.id,x])));
+Object.assign(BUILDINGS.builders,{name:'Garaje de mecánicos',description:'Entrena ingenieros que reparan máquinas y añade una cuadrilla de construcción.'});
+Object.assign(BUILDINGS.hospital,{queue:true,description:'Recupera a los supervivientes y entrena médicos de apoyo. Los caídos necesitan ser reemplazados.'});
+Object.assign(BUILDINGS.air,{description:'Entrena aviones y bombarderos. Los helicópteros, interceptores y drones tienen instalaciones especializadas.'});
+Object.assign(UNITS,Object.fromEntries([
+ u('tank3','Tanque III','armor',6,'bulwark',{gold:500,supply:300,metal:280},1900,155,6,1,6,{heavy:true,armor:15,interval:2.2}),
+ u('dominion','Tanque Dominion','armor',9,'bulwark',{gold:1100,supply:650,metal:600},3600,225,6.5,.85,9,{heavy:true,armor:28,interval:2.8,splash:1.3}),
+ u('helicopter2','Helicóptero II','heliport',5,'helicopter',{gold:600,supply:400,metal:260},1100,110,6.5,2.2,6,{flying:true,weapon:'rocket'}),
+ u('helicopter4','Helicóptero IV','heliport',8,'helicopter',{gold:1000,supply:650,metal:480},1900,190,7.5,2,8,{flying:true,splash:1.5,interval:2,weapon:'rocket'}),
+ u('helicopter5','Helicóptero V','heliport',10,'helicopter',{gold:1500,supply:900,metal:700},2700,250,8,2,10,{flying:true,splash:1.8,interval:2.3,weapon:'rocket'}),
+ u('flame','Lanzallamas','infantry',4,'ranger',{gold:180,supply:150,metal:45},340,55,2.4,1.4,3,{splash:1.5,interval:1.2}),
+ u('mortar','Mortero','range',6,'ranger',{gold:400,supply:180,metal:180},320,145,8,1,4,{splash:1.7,interval:3.1,siege:1.5,weapon:'rocket'}),
+ u('zodiac','Zodiac','shipyard',3,'jeep',{gold:250,supply:200,wood:150},650,45,6.5,2.4,3,{waterborne:true,heavy:true}),
+ u('frigate','Buque de combate','shipyard',7,'bulwark',{gold:1100,supply:600,wood:450,metal:600},2800,170,9,1.3,8,{waterborne:true,heavy:true,armor:15,splash:1.6,interval:2.8,weapon:'rocket'})
+].map(x=>[x.id,x])));
+for(const type of['tank','artillery','siegetank'])UNITS[type].factory='armor';
+for(const type of['helicopter','gunship'])UNITS[type].factory='heliport';
+for(const type of['titan','drone','orbital'])UNITS[type].factory='robotics';
+for(const type of['rocketjeep','grenadier'])UNITS[type].factory='fortress';
+UNITS.interceptor.factory='stealth';UNITS.missile.factory='missileworks';UNITS.medic.factory='hospital';UNITS.engineer.factory='builders';
+Object.assign(UNITS.engineer,{name:'Ingeniero mecánico',damage:0,heal:30,repair:true});Object.assign(UNITS.scout,{flying:true});Object.assign(UNITS.titan,{flying:true});

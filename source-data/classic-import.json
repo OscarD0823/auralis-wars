@@ -87,15 +87,64 @@
         79
       ],
       "hospital": [
-        28
+        28,
+        134
       ],
       "embassy": [
         61
       ],
       "builders": [
+        135
+      ],
+      "armor": [
         38,
         62,
-        63
+        63,
+        150,
+        151,
+        130
+      ],
+      "heliport": [
+        54,
+        55,
+        56,
+        146,
+        147
+      ],
+      "bunker": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "fortress": [
+        80,
+        81,
+        83,
+        82,
+        84,
+        85
+      ],
+      "robotics": [
+        86
+      ],
+      "market": [
+        18,
+        90,
+        91
+      ],
+      "stealth": [
+        131
+      ],
+      "missileworks": [
+        171
+      ],
+      "shipyard": [
+        907,
+        908
+      ],
+      "bridge": [
+        929
       ]
     },
     "units": {
@@ -123,11 +172,21 @@
       "bomber": 1015,
       "interceptor": 1048,
       "orbital": 1163,
-      "captain": 1017
+      "captain": 1017,
+      "tank3": 1004,
+      "helicopter2": 1028,
+      "helicopter4": 1066,
+      "helicopter5": 1067,
+      "flame": 1046,
+      "mortar": 1060,
+      "zodiac": 1018,
+      "frigate": 1019,
+      "dominion": 1047
     },
     "nature": {
       "tree": 905,
-      "rock": 914
+      "rock": 914,
+      "ruinedBridge": 928
     },
     "commit": "c3fceeb1f8e93734a293b9bc25ae6025656f6822",
     "configSource": "config/main.json"

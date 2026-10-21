@@ -2,7 +2,7 @@
 
 Social Wars: https://github.com/AcidCaos/socialwarriors/tree/c3fceeb1f8e93734a293b9bc25ae6025656f6822
 
-Se extrajeron 84 recursos y 1920 fotogramas de sus archivos SWF con JPEXS FFDec 26.4.0. Los atlas WebP mantienen transparencia y secuencias de marcha/ataque por dirección. No contienen un fondo rectangular añadido. `dist/classic/atlas.json` identifica URL, nombre, ID, fotogramas y familia de cada recurso.
+Se extrajeron 123 recursos y 2584 fotogramas de sus archivos SWF con JPEXS FFDec 26.4.0. Los atlas WebP mantienen transparencia y secuencias de marcha/ataque por dirección. No contienen un fondo rectangular añadido. `dist/classic/atlas.json` identifica URL, nombre, ID, fotogramas y familia de cada recurso.
 
 El código del proyecto de preservación está publicado bajo GPL-3.0. Se conserva su licencia en LICENSE. El arte de Social Wars pertenece a Social Point y a sus titulares originales; la licencia del código no se presenta como una cesión de las marcas o del arte comercial. Esta adaptación no está afiliada al juego original. El aviso MIT del código previo de Auralis se conserva en LICENSE-AURALIS-MIT.
 
@@ -19,3 +19,9 @@ La versión 0.3 añade PICAR para los civiles y BARRIL para los trabajadores de 
 Se convirtieron los 30 fotogramas del símbolo `TerrainTiles` (ID 50) de `assets/sprites/terreno.swf`, en la misma revisión fijada. `dist/classic/terrain/manifest.json` identifica cada superficie; `scripts/prepare-terrain.py` reproduce la conversión a WebP. El atlas de referencia utiliza los 24 diseños de `managers/MapManager.as` exportados estáticamente de `Basesec_1.5.4.swf`. No son modelos 3D: son películas vectoriales 2D.
 
 `source-data/social-wars/assets.json` conserva el inventario completo del árbol, sin descargarlo íntegramente al jugador. `live-codex.json` contiene sólo nombres y parámetros públicos observados en la guía de https://wars.fbgamesweb.com/como-jugar el 20 de octubre de 2026. No se copió su bundle JavaScript como motor de Auralis. Véase docs/SOCIAL-WARS-ANATOMY.md para el alcance y las diferencias.
+
+## Instalaciones y flota en 0.5
+
+Se añadieron 39 recursos gráficos y 664 fotogramas para academias de blindados, hangares de helicópteros, búnkeres, fortalezas, centro robótico, mercado, instalación furtiva, fábrica de misiles, hospital avanzado, mecánicos, astilleros, puentes y nueve unidades. La correspondencia por nivel se conserva en `source-data/classic-import.json`. `scripts/prepare-content.py` reproduce los metadatos de entrenamiento y producción sin sustituir las estadísticas de combate Auralis.
+
+`scripts/prepare-world-data.py RUTA_REFERENCIAS` prepara la matriz del archipiélago, precios, ciclos y puentes a partir de los índices y `wars-initial.json` del mismo archivo fijado. Convierte las posiciones de los puentes desde su casilla final a su origen de huella. No se distribuyen identidades ni inventarios de las partidas de ejemplo. Véase [la investigación de bases avanzadas](docs/ADVANCED-BASES.md).
