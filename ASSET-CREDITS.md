@@ -43,3 +43,7 @@ Se añaden las coordenadas y áreas estáticas de `Chapter02Guille`, `Chapter03B
 ## Interfaz en 0.9
 
 Se incorporan 31 bitmaps de la GUI de `Basesec_1.5.4.swf`, exportados estáticamente desde la misma revisión fija de Social Warriors. No se alteran sus píxeles. `source-data/social-wars/interface.json` identifica el SWF, cada ID exportado y su SHA-256; `prepare-hud.py RUTA_REFERENCIAS` reproduce la copia. Los marcos adaptables, disposición DOM, órdenes de guarnición y control de zoom son código Auralis. Véase [CLASSIC-INTERFACE.md](docs/CLASSIC-INTERFACE.md). Se mantiene la atribución y el alcance de derechos del arte indicados al principio.
+
+## Piezas de colecciones en 0.11
+
+`dist/interface/collectibles.png` conserva sin modificar `assets/images/collectibles3.png` de la revisión fija citada arriba. Las celdas se recortan por CSS; no se redibuja ni se atribuye su arte a Auralis. La configuración de diez colecciones y cincuenta piezas se conserva en `source-data/social-wars/collections.json`; `scripts/prepare-collections.mjs` genera los datos públicos con sus IDs y premios. Véase [implementación y límites](docs/COLLECTIONS.md).

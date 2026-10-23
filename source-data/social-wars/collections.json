@@ -1,0 +1,537 @@
+{
+  "source": "AcidCaos/socialwarriors@c3fceeb1f8e93734a293b9bc25ae6025656f6822",
+  "inventory_items": [
+    {
+      "id": "41",
+      "name": "Gun",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "42",
+      "name": "Shotgun",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "43",
+      "name": "Sniper",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "44",
+      "name": "Bazooka",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "45",
+      "name": "Machine Gun",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "46",
+      "name": "Transformer Laser",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "47",
+      "name": "Transformer Helmet",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "48",
+      "name": "Transformer Armor",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "49",
+      "name": "Transformer Hand",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "50",
+      "name": "Transformer Leg",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "51",
+      "name": "Left Aileron",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "52",
+      "name": "Cockpit",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "53",
+      "name": "Fuel Tank",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "54",
+      "name": "Right Aileron",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "55",
+      "name": "Engine",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "56",
+      "name": "Road Wheels",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "57",
+      "name": "Tank's Lights",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "58",
+      "name": "Tank Cannon",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "59",
+      "name": "Armoured Skirt",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "60",
+      "name": "Tank Cupola",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "61",
+      "name": "Gorilla",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "4",
+      "description": "You can get this item for collecting resources"
+    },
+    {
+      "id": "62",
+      "name": "Piggy",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "4",
+      "description": "You can get this item for collecting resources"
+    },
+    {
+      "id": "63",
+      "name": "Sheep",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "4",
+      "description": "You can get this item for collecting resources"
+    },
+    {
+      "id": "64",
+      "name": "Cow",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "4",
+      "description": "You can get this item for collecting resources"
+    },
+    {
+      "id": "65",
+      "name": "Elephant",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "4",
+      "description": "You can get this item for collecting resources"
+    },
+    {
+      "id": "66",
+      "name": "Draggy Capitulum",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "67",
+      "name": "Draggy Wing",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "68",
+      "name": "Draggy Head",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "69",
+      "name": "Draggy Body",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "70",
+      "name": "Draggy Canines",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "0",
+      "description": "You can get this item for killing enemies"
+    },
+    {
+      "id": "71",
+      "name": "Turret Base",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "72",
+      "name": "Turret Central Part 1",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "73",
+      "name": "Turret Central Part 2",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "74",
+      "name": "Turret Head",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "75",
+      "name": "Turret Muching Gun",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "76",
+      "name": "Rocket Launcher",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "77",
+      "name": "Launcher",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "78",
+      "name": "Launcher Base",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "79",
+      "name": "Launcher Head",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "80",
+      "name": "Launcher Holder",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "1",
+      "description": "You can get this item for distroying buildings"
+    },
+    {
+      "id": "81",
+      "name": "Flower",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    },
+    {
+      "id": "82",
+      "name": "Pink Shrub",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    },
+    {
+      "id": "83",
+      "name": "Fontain",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    },
+    {
+      "id": "84",
+      "name": "Yellow Tree",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    },
+    {
+      "id": "85",
+      "name": "Triumphal Tower",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    },
+    {
+      "id": "86",
+      "name": "Flag of Brotherhood",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    },
+    {
+      "id": "87",
+      "name": "Flag Of Glory",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "1",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    },
+    {
+      "id": "88",
+      "name": "Bazooka Man Statue",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    },
+    {
+      "id": "89",
+      "name": "Winners Statue",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "0",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    },
+    {
+      "id": "90",
+      "name": "Globe Statue",
+      "cashPrice": "2",
+      "droppable": "1",
+      "dropRate": "2",
+      "dropsFrom": "3",
+      "description": "You can get this item for helping your friends"
+    }
+  ],
+  "collections": [
+    {
+      "id": "1",
+      "name": "Draggy Collection",
+      "item_ids": "[66,67,68,69,70]",
+      "prize": "{\"1085\":1}",
+      "description": "collection description 1",
+      "cashPrice": "35"
+    },
+    {
+      "id": "2",
+      "name": "Transformer Collection",
+      "item_ids": "[46,47,48,49,50]",
+      "prize": "{\"1062\":1}",
+      "description": "collection description 2",
+      "cashPrice": "60"
+    },
+    {
+      "id": "3",
+      "name": "Plane Collection",
+      "item_ids": "[51,52,53,54,55]",
+      "prize": "{\"1096\":1}",
+      "description": "collection description 3",
+      "cashPrice": "75"
+    },
+    {
+      "id": "4",
+      "name": "Defense Collection",
+      "item_ids": "[71,72,73,74,75]",
+      "prize": "{\"164\":1}",
+      "description": "collection description 4",
+      "cashPrice": "10"
+    },
+    {
+      "id": "5",
+      "name": "Gun Collection",
+      "item_ids": "[41,42,43,44,45]",
+      "prize": "{\"1073\":1}",
+      "description": "collection description 5",
+      "cashPrice": "20"
+    },
+    {
+      "id": "6",
+      "name": "Tank Collection",
+      "item_ids": "[56,57,58,59,60]",
+      "prize": "{\"1010\":1}",
+      "description": "collection description 6",
+      "cashPrice": "30"
+    },
+    {
+      "id": "7",
+      "name": "Launcher Collection",
+      "item_ids": "[76,77,78,79,80]",
+      "prize": "{\"45\":1}",
+      "description": "collection description 6",
+      "cashPrice": "9"
+    },
+    {
+      "id": "8",
+      "name": "Soldier Awards Collection",
+      "item_ids": "[86,87,88,89,90]",
+      "prize": "{\"136\":1}",
+      "description": "collection description 6",
+      "cashPrice": "10"
+    },
+    {
+      "id": "9",
+      "name": "Relaxing Time Collection",
+      "item_ids": "[81,82,83,84,85]",
+      "prize": "{\"106\":1}",
+      "description": "collection description 6",
+      "cashPrice": "10"
+    },
+    {
+      "id": "10",
+      "name": "Animal Collection",
+      "item_ids": "[61,62,63,64,65]",
+      "prize": "{\"1056\":1}",
+      "description": "collection description 6",
+      "cashPrice": "15"
+    }
+  ]
+}

@@ -34,5 +34,7 @@ export function createAdvancedBase(){
  E.startFusion(s,camera.id,parents.map(u=>u.id));E.tickEconomy(s,q.duration,false);
  for(const type of ['robotics','swb139'])s.special.centers[type]={index:0,step:10,job:null};
  const wonder=s.buildings.find(b=>b.type==='swb70');wonder.stored=3600;wonder.wonder.remaining=1;wonder.wonder.legacy=false;
+ for(const id of [2,4])for(const item of E.COLLECTIONS.find(c=>c.id===id).items)s.inventory.items[item]=1;
+ for(const item of E.COLLECTIONS.find(c=>c.id===6).items.slice(0,3))s.inventory.items[item]=2;
  E.log(s,'Demostración: prototipos y fusión listos, y una última recogida de Inca God para probar la restauración. Tu partida principal se conserva.');return s;
 }

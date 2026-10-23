@@ -5,7 +5,7 @@ import {BUILDINGS,SIZE,MODERN} from './catalog.js';
 
 const SPEED=1.9,CARRY=20,STATES=new Set(['idle','walk','gather','return','waiting','blocked','move']);
 const key=(x,y)=>x+':'+y,inside=(s,x,y)=>Number.isInteger(x)&&Number.isInteger(y)&&x>=0&&y>=0&&x<mapSize(s)&&y<mapSize(s);
-export function createWorkforce({groundAt,storageCap,log}){
+export function createWorkforce({groundAt,storageCap,log,onHarvest=()=>{}}){
  const grids=new WeakMap();
  function grid(s){const stamp=[s.seed,s.cleared.length,s.world?.revision||0,s.buildings.map(b=>[b.type,b.x,b.y].join(',')).join(';')].join('|');let g=grids.get(s);if(g?.stamp===stamp)return g.value;const n=mapSize(s),occupied=new Uint8Array(n*n);for(const b of s.buildings){const size=BUILDINGS[b.type].size;for(let y=b.y;y<b.y+size;y++)for(let x=b.x;x<b.x+size;x++)if(inside(s,x,y))occupied[y*n+x]=1;}const value=obstacleGrid(n,(x,y)=>groundAt(s,x,y)!=='grass'||occupied[y*n+x]);grids.set(s,{stamp,value});return value;}
  const collision=(s,x,y)=>!inside(s,x,y)||gridBlocked(grid(s),x,y);
@@ -36,7 +36,7 @@ export function createWorkforce({groundAt,storageCap,log}){
     if(w.mode==='idle')break;
     if(w.mode==='waiting'||w.mode==='blocked'){const wait=Math.min(remaining,Math.max(0,w.retry));remaining-=wait;w.retry-=wait;if(w.retry>0)break;w.mode=w.cargo>0?'return':'walk';plan(s,w);if(w.mode==='blocked'){w.retry=1;continue;}}
     if(w.mode==='gather'){const n=w.order&&node(s,w.order.x,w.order.y);if(!n){w.order=null;w.mode=w.cargo>0?'return':'idle';plan(s,w);continue;}w.facing=Math.atan2(n.x+.5-w.x,n.y+.5-w.y);const amount=Math.max(0,Math.min(n.remaining,CARRY-w.cargo,remaining*rate));w.cargo=Math.min(CARRY,w.cargo+amount);w.resource=n.resource;f.deposits[key(n.x,n.y)]=Math.max(0,n.remaining-amount);remaining-=amount/rate;if(f.deposits[key(n.x,n.y)]<1e-7){f.deposits[key(n.x,n.y)]=0;if(!s.cleared.includes(key(n.x,n.y)))s.cleared.push(key(n.x,n.y));w.order=null;}if(w.cargo>=CARRY-1e-7||!w.order){w.mode='return';plan(s,w);}continue;}
-    if(!w.path.length){if(w.mode==='walk'){w.mode='gather';continue;}if(w.mode==='move'){w.order=null;w.mode='idle';break;}if(w.mode==='return'){const space=Math.max(0,storageCap(s)-s.resources[w.resource]),amount=Math.min(w.cargo,space);if(amount>0){s.resources[w.resource]+=amount;w.cargo-=amount;f.delivered+=amount;s.stats.collected+=amount;s.xp+=amount/10;}if(w.cargo>1e-7){w.mode='waiting';w.retry=1;continue;}w.cargo=0;w.resource=null;plan(s,w);continue;}plan(s,w);continue;}
+    if(!w.path.length){if(w.mode==='walk'){w.mode='gather';continue;}if(w.mode==='move'){w.order=null;w.mode='idle';break;}if(w.mode==='return'){const space=Math.max(0,storageCap(s)-s.resources[w.resource]),amount=Math.min(w.cargo,space);if(amount>0){s.resources[w.resource]+=amount;w.cargo-=amount;f.delivered+=amount;s.stats.collected+=amount;s.xp+=amount/10;onHarvest(s,amount);}if(w.cargo>1e-7){w.mode='waiting';w.retry=1;continue;}w.cargo=0;w.resource=null;plan(s,w);continue;}plan(s,w);continue;}
     const next=w.path[0];if(collision(s,Math.floor(next.x),Math.floor(next.y))){plan(s,w);continue;}const dx=next.x-w.x,dy=next.y-w.y,d=Math.hypot(dx,dy),distance=Math.min(d,SPEED*remaining);if(d>0){w.x+=dx/d*distance;w.y+=dy/d*distance;w.facing=Math.atan2(dx,dy);w.moving=true;}remaining-=distance/SPEED;if(d-distance<1e-7){w.x=next.x;w.y=next.y;w.path.shift();}else break;
    }
   }

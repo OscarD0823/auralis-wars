@@ -1,6 +1,6 @@
 # Auralis Wars
 
-Versión 0.10.1: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.11.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
 El catálogo incorpora 412 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 29 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
 
@@ -16,6 +16,12 @@ El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis.
 - scripts/qa-upgrades.mjs: selección y mejora de edificios en la interfaz.
 
 La vista isométrica usa Canvas 2D y atlas WebP. Los archivos 3D anteriores permanecen como fuente histórica y no se cargan ni se almacenan en la caché del juego actual. Las partidas de 0.1.0 conservan su clave y sus IDs.
+
+## Colecciones e inventario en 0.11
+
+Diez colecciones con cincuenta piezas e iconos originales. Ocho se consiguen combatiendo y recolectando; dos dependen de funciones sociales que siguen pausadas. Los premios conservan los tipos originales y esperan en el almacén: las tropas necesitan plazas y los edificios se colocan en suelo propio despejado. Se reclaman una vez; las piezas repetidas y los premios pendientes se guardan con la partida. La demostración incluye dos colecciones listas para probarlas.
+
+[Fuentes, probabilidades y reglas de la adaptación](docs/COLLECTIONS.md).
 
 ## Prototipos, maravillas y fusión en 0.10
 

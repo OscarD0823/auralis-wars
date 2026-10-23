@@ -1,3 +1,4 @@
+import {COLLECTIONS} from './collections-data.js';
 import {BUILDINGS,UNITS,unitStats,isRecruitable,isBuildable} from './catalog.js';
 import {SPECIAL_DATA as DATA} from './special-data.js';
 import {experience,unlockLevel,unlockMessage} from './progression.js';
@@ -43,13 +44,14 @@ export function acquisitionRoutes(s,type){
  for(const [building,types]of Object.entries(DATA.centers))if(types.includes(type))routes.push({kind:'prototype',building,required:Math.floor(types.indexOf(type)/2)+1,label:'Prototipo · diez etapas'});
  if(d?.cash>0&&d.race==='h')routes.push({kind:'cash',label:'Requisición con cash local',cost:{credits:d.cash}});
  if(fusionEligible(type)&&fusionPower(type)>10)routes.push({kind:'fusion',building:'fusion',required:1,label:'Fusión · resultado variable'});
+ for(const c of COLLECTIONS.filter(c=>c.reward.unit&&c.reward.type===type))routes.push({kind:'collection',label:'Colección '+c.name,message:c.social?'Funciones sociales pausadas.':'Reúne cinco piezas; reclama el premio en Inventario y recíbelo desde Almacén.'});
  if(type==='captain')routes.push({kind:'daily',label:'Héroe del quinto día'});
  if(!routes.length)routes.push({kind:'mission',label:'Operación o rescate',message:'Unidad de escenario: no se compra ni se entrena en un cuartel normal.'});
  return routes.map(r=>({...r,commander:unlockLevel(type,true),hq:u.hq,originalLevel:d?.level??null,
   message:r.kind==='training'?(s.buildings.find(b=>b.type==='hq')?.level<u.hq?'Necesitas mando nivel '+u.hq+'.':unlockMessage(s,type,true)||(!s.buildings.some(b=>b.type===u.factory&&b.level>=u.required&&b.hp>0&&!b.job)?(!isBuildable(s,BUILDINGS[u.factory])&&!s.buildings.some(b=>b.type===u.factory)?'Recupera en campaña el plano de '+BUILDINGS[u.factory].name+'.':'Necesitas '+BUILDINGS[u.factory].name+' nivel '+u.required+' operativo.'):'')):r.kind==='cash'?unlockMessage(s,type,true):r.message||''}));
 }
 
-export function createSpecials({makeUnit,log,hqLevel,population,populationCap,storageCap,affordable,pay,initGarrison}){
+export function createSpecials({makeUnit,log,hqLevel,population,populationCap,storageCap,affordable,pay,initGarrison,onHarvest=()=>{}}){
  const remember=(s,type)=>{const x=specialState(s);if(!x.discovered.includes(type))x.discovered.push(type);};
  const putReward=(s,values)=>{const x=specialState(s);for(const k of Object.keys(x.pending))x.pending[k]+=values[k]||0;};
  function claimRewards(s){
@@ -100,7 +102,7 @@ export function createSpecials({makeUnit,log,hqLevel,population,populationCap,st
   const take=legacy?Math.min(amount,room):amount;
   if(take<1||room<take)return result(false,'Amplía el almacén: la recogida completa permanece en la maravilla.');
   if(resource==='credits')specialState(s).credits+=take;else s.resources[resource]+=take;
-  b.stored-=take;s.stats.collected+=take;s.xp+=d.xp;
+  b.stored-=take;s.stats.collected+=take;s.xp+=d.xp;if(resource!=='credits')onHarvest(s,take);
   if(!legacy)w.remaining--;
   if(b.stored<1){b.stored=0;w.legacy=false;w.ends=s.time+d.seconds/speed(s);}
   return result(true,'Recogidos '+take+' '+({gold:'de oro',wood:'de madera',supply:'de petróleo',metal:'de acero',credits:'cash locales'}[resource])+'. Quedan '+w.remaining+' recogidas.');

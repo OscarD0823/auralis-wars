@@ -1,3 +1,5 @@
+> Actualización 0.11.0: [colecciones, piezas de botín y almacén de premios](COLLECTIONS.md). Las secciones históricas inferiores conservan la fecha de su revisión original.
+
 # Social Wars: motor, mapa y catálogo
 
 Revisión: 20 de octubre de 2026. Esta revisión distingue la partida observada, la inspección estática del cliente y las funciones implementadas en Auralis. Indexar una función o una película no significa haberla ejecutado ni reproducido.
