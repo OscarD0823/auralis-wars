@@ -1,5 +1,6 @@
 import {GAME} from './config.js';
 import {ARCHIVE_CATALOG} from './archive-catalog.js';
+import {SPECIAL_DATA} from './special-data.js';
 export const MODERN=GAME.theme==='wars';
 export const MAX_LEVEL=10,SIZE=32,RESOURCE_KEYS=['gold','wood','supply','metal'];
 const b=(id,names,kind,model,hq,cost,extra={})=>({id,name:names[MODERN?0:1],kind,model:MODERN?(Array.isArray(model)?model[0]:model):(Array.isArray(model)?model[1]:model),hq,cost,size:2,limit:3,hp:800,time:18,...extra});
@@ -122,6 +123,14 @@ for(const type of['rocketjeep','grenadier'])UNITS[type].factory='fortress';
 UNITS.interceptor.factory='stealth';UNITS.missile.factory='missileworks';UNITS.medic.factory='hospital';UNITS.engineer.factory='builders';
 Object.assign(UNITS.engineer,{name:'Ingeniero mecánico',damage:0,heal:30,repair:true});Object.assign(UNITS.scout,{flying:true});Object.assign(UNITS.titan,{flying:true});
 Object.assign(BUILDINGS,ARCHIVE_CATALOG.buildings);Object.assign(UNITS,ARCHIVE_CATALOG.units);
+BUILDINGS.fusion=b('fusion',['Fusión atómica'],'science','lab',3,{gold:1800,wood:900,metal:750},{size:3,hp:1800,time:60,limit:2,visual:'robotics',description:'Combina la potencia de dos tropas para crear una tercera. Necesita laboratorio de nivel 2. Las participantes regresan al recoger el resultado.'});
+Object.assign(BUILDINGS.swb139,{kind:'science',description:'Investiga aeronaves y dragones mecánicos en proyectos de diez etapas. Recoge el prototipo terminado antes de avanzar al siguiente.'});
+BUILDINGS.robotics.description='Entrena drones y máquinas, e investiga seis prototipos originales en proyectos de diez etapas.';
+for(const [type,d]of Object.entries(SPECIAL_DATA.wonders)){
+ const spec=BUILDINGS[type];spec.special='wonder';spec.description='Maravilla con '+d.charges+' recogidas de '+d.amount+' '+({gold:'oro',wood:'madera',metal:'acero',supply:'petróleo',credits:'cash local'}[d.resource])+'. Al agotarse, se restaura con materiales.';
+ spec.cost={gold:Math.max(1200,d.amount),wood:800,metal:600};
+ if(d.resource==='credits'){delete spec.resource;delete spec.rate;delete spec.capacity;}
+}
 export const SOURCE_MAP=ARCHIVE_CATALOG.mapping;
 export const isBuildable=(s,b)=>b.buyable!==false||s.campaign?.blueprints?.includes(b.id);
 export const isRecruitable=u=>u.recruitable!==false;

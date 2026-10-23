@@ -2,6 +2,8 @@
 
 Revisión: **23 de octubre de 2026**. Versión de Auralis contrastada: **0.9.0**. Esta revisión aporta observaciones y prioridades; no incorpora las mecánicas pendientes al motor.
 
+Las prioridades de esta revisión se implementan después en **0.10.0**. [Reglas y diferencias de la implementación](SPECIAL-PRODUCTION.md). Las observaciones siguientes conservan la comparación con 0.9.0.
+
 ## Qué se pudo comprobar
 
 Se creó una cuenta de prueba en [Social Wars de FBGames](https://wars.fbgamesweb.com/) desde Edge. Se construyó una casa, se cobró su meta y se recogió el primer bono diario. Tras recargar el juego se conservaron la sesión, la casa, los recursos y la experiencia. Las credenciales quedan exclusivamente en el archivo solicitado en el escritorio del usuario; no se incluyen aquí, en el catálogo ni en Git.

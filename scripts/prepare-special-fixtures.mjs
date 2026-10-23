@@ -1,0 +1,22 @@
+// Local UI fixtures only. Import through Settings; never changes a published save.
+import fs from 'node:fs';
+import * as E from '../dist/engine.js';
+import {createAdvancedBase} from '../dist/showcase.js';
+fs.mkdirSync('artifacts',{recursive:true});
+const base=createAdvancedBase();base.settings.sound=false;
+E.cancelFusion(base,base.buildings.find(b=>b.type==='fusion').id);base.special.centers={};
+const firstWonder=base.buildings.find(b=>b.type==='swb70');firstWonder.stored=0;firstWonder.wonder.remaining=25;firstWonder.wonder.ends=base.time+E.wonderQuote(base,firstWonder).duration;
+const write=(name,s)=>{E.decode(E.encode(s),Date.now(),false);fs.writeFileSync('artifacts/'+name+'.json',E.encode(s));};
+write('specials-start',base);
+const ready=structuredClone(base),camera=ready.buildings.find(b=>b.type==='fusion');
+const ids=['rifle','jeep'].map(type=>ready.army.find(u=>u.type===type).id);
+const q=E.fusionQuote(ready,camera.id,ids);
+if(!q.ok)throw Error(q.message);
+const r=E.startFusion(ready,camera.id,ids);if(!r.ok)throw Error(r.message);
+E.tickEconomy(ready,q.duration,false);
+ready.special.centers.swb139={index:0,step:10,job:null};
+const wonder=ready.buildings.find(b=>b.type==='swb70');
+wonder.stored=3600;wonder.wonder.remaining=1;wonder.wonder.legacy=false;
+ready.resources.gold=1000;
+write('specials-ready',ready);
+console.log('Prepared start and ready fixtures for real UI import, persistence and collection checks.');

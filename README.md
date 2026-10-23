@@ -1,8 +1,8 @@
 # Auralis Wars
 
-Versión 0.9.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.10.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
-El catálogo incorpora 411 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 28 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
+El catálogo incorpora 412 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 29 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
 
 El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis. Se utilizan posiciones y matrices originales de las misiones disponibles, con reglas de objetivos implementadas en el nuevo motor. No se ejecuta el ActionScript ni se reproduce íntegramente cada delegado, cinemática o servicio social del cliente original.
 
@@ -16,6 +16,12 @@ El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis.
 - scripts/qa-upgrades.mjs: selección y mejora de edificios en la interfaz.
 
 La vista isométrica usa Canvas 2D y atlas WebP. Los archivos 3D anteriores permanecen como fuente histórica y no se cargan ni se almacenan en la caché del juego actual. Las partidas de 0.1.0 conservan su clave y sus IDs.
+
+## Prototipos, maravillas y fusión en 0.10
+
+Área 51 y el centro robótico investigan prototipos en diez etapas. Nueve maravillas producen lotes con recogidas limitadas y restauración. La nueva cámara fusiona dos tropas y devuelve a sus participantes junto al resultado. Las fichas explican las vías de obtención, incluido Megabot por cash local o academia. Metas incorpora cinco días de premios y reservas para excedentes. La demostración organiza sus instalaciones por distritos y permite probar los nuevos procesos.
+
+Se conservan las partidas y los lotes anteriores. La fusión usa una escala Auralis porque faltan sus potencias originales en el catálogo conservado. [Reglas, fuentes, adaptación y validación](docs/SPECIAL-PRODUCTION.md).
 
 ## Interfaz original
 
