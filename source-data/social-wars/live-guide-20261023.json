@@ -1,0 +1,7181 @@
+{
+  "source": "https://wars.fbgamesweb.com/como-jugar",
+  "observed": "2026-10-23",
+  "method": "Visible public codex articles read through the browser; no account or session data.",
+  "buildings": [
+    {
+      "cost": [
+        "Madera60"
+      ],
+      "name": "Campo de maíz",
+      "stats": {
+        "Nivel": "2",
+        "Población": "5",
+        "Tamaño": "4x4",
+        "Vida": "100"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera120"
+      ],
+      "name": "Campo de uvas",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "100"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera200"
+      ],
+      "name": "Granja de vacas",
+      "stats": {
+        "Nivel": "14",
+        "Tamaño": "5x5",
+        "Vida": "140"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera30"
+      ],
+      "name": "Casa I",
+      "stats": {
+        "Nivel": "1",
+        "Población": "3",
+        "Tamaño": "2x2",
+        "Vida": "180"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera60"
+      ],
+      "name": "Casa II",
+      "stats": {
+        "Nivel": "6",
+        "Población": "4",
+        "Tamaño": "2x2",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera120"
+      ],
+      "name": "Casa III",
+      "stats": {
+        "Nivel": "19",
+        "Población": "5",
+        "Tamaño": "2x2",
+        "Vida": "220"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera50"
+      ],
+      "name": "Fábrica de madera I",
+      "stats": {
+        "Nivel": "1",
+        "Tamaño": "2x2",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera100"
+      ],
+      "name": "Fábrica de oro I",
+      "stats": {
+        "Nivel": "2",
+        "Tamaño": "2x2",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera100"
+      ],
+      "name": "Fábrica de acero I",
+      "stats": {
+        "Nivel": "4",
+        "Tamaño": "2x2",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera100"
+      ],
+      "name": "Fábrica de petróleo I",
+      "stats": {
+        "Nivel": "5",
+        "Tamaño": "2x2",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera200"
+      ],
+      "name": "Fábrica de madera II",
+      "stats": {
+        "Nivel": "11",
+        "Tamaño": "2x2",
+        "Vida": "240"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera200"
+      ],
+      "name": "Fábrica de oro II",
+      "stats": {
+        "Nivel": "13",
+        "Tamaño": "2x2",
+        "Vida": "240"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera200"
+      ],
+      "name": "Fábrica de acero II",
+      "stats": {
+        "Nivel": "16",
+        "Tamaño": "2x2",
+        "Vida": "250"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera200"
+      ],
+      "name": "Fábrica de petróleo II",
+      "stats": {
+        "Nivel": "17",
+        "Tamaño": "2x2",
+        "Vida": "240"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro6,000"
+      ],
+      "name": "Fábrica de madera III",
+      "stats": {
+        "Nivel": "21",
+        "Tamaño": "3x3",
+        "Vida": "300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro4,500"
+      ],
+      "name": "Fábrica de oro III",
+      "stats": {
+        "Nivel": "24",
+        "Tamaño": "3x3",
+        "Vida": "300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,500"
+      ],
+      "name": "Fábrica de acero III",
+      "stats": {
+        "Nivel": "27",
+        "Tamaño": "3x3",
+        "Vida": "300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro7,500"
+      ],
+      "name": "Fábrica de petróleo III",
+      "stats": {
+        "Nivel": "30",
+        "Tamaño": "3x3",
+        "Vida": "300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro15,000"
+      ],
+      "name": "Fábrica de madera IV",
+      "stats": {
+        "Nivel": "34",
+        "Tamaño": "3x3",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro20,000"
+      ],
+      "name": "Fábrica de oro IV",
+      "stats": {
+        "Nivel": "37",
+        "Tamaño": "3x3",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro10,000"
+      ],
+      "name": "Fábrica de acero IV",
+      "stats": {
+        "Nivel": "39",
+        "Tamaño": "3x3",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro24,000"
+      ],
+      "name": "Fábrica de petróleo IV",
+      "stats": {
+        "Nivel": "42",
+        "Tamaño": "3x3",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera150"
+      ],
+      "name": "Silo",
+      "stats": {
+        "Nivel": "3",
+        "Población": "20000",
+        "Tamaño": "3x3",
+        "Vida": "180"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero500"
+      ],
+      "name": "Silo II",
+      "stats": {
+        "Nivel": "15",
+        "Población": "25000",
+        "Tamaño": "3x3",
+        "Vida": "180"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero5,000"
+      ],
+      "name": "Silo III",
+      "stats": {
+        "Nivel": "28",
+        "Población": "30000",
+        "Tamaño": "4x4",
+        "Vida": "180"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera350"
+      ],
+      "name": "Mercado I",
+      "stats": {
+        "Nivel": "5",
+        "Tamaño": "4x4",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero100"
+      ],
+      "name": "Centro de espionaje",
+      "stats": {
+        "Nivel": "7",
+        "Tamaño": "4x4",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500"
+      ],
+      "name": "Casa de subastas",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro3,000"
+      ],
+      "name": "Centro robótico",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "3x3",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera50"
+      ],
+      "name": "Premio de reclutamiento",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "3x3",
+        "Vida": "750"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro2,000"
+      ],
+      "name": "Hospital",
+      "stats": {
+        "Nivel": "9",
+        "Tamaño": "4x4",
+        "Vida": "800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera150"
+      ],
+      "name": "Edificio de aliados",
+      "stats": {
+        "Nivel": "10",
+        "Tamaño": "4x4",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500"
+      ],
+      "name": "Mercado II",
+      "stats": {
+        "Nivel": "11",
+        "Tamaño": "4x4",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera350"
+      ],
+      "name": "Mercado de aliados",
+      "stats": {
+        "Nivel": "12",
+        "Tamaño": "4x4",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro10,000"
+      ],
+      "name": "Mercado III",
+      "stats": {
+        "Nivel": "25",
+        "Tamaño": "4x4",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro3,000"
+      ],
+      "name": "Area 51",
+      "stats": {
+        "Nivel": "30",
+        "Tamaño": "5x5",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500"
+      ],
+      "name": "Laboratorio de investigación",
+      "stats": {
+        "Nivel": "35",
+        "Tamaño": "5x5",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro250"
+      ],
+      "name": "Búnker I",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "8",
+        "Nivel": "4",
+        "Tamaño": "2x2",
+        "Vida": "600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash12"
+      ],
+      "name": "Megabúnker",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "18",
+        "Nivel": "10",
+        "Tamaño": "3x3",
+        "Vida": "2,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500"
+      ],
+      "name": "Búnker II",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "10",
+        "Nivel": "13",
+        "Tamaño": "2x2",
+        "Vida": "1,300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,000"
+      ],
+      "name": "Búnker III",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "14",
+        "Nivel": "19",
+        "Tamaño": "3x3",
+        "Vida": "800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash15"
+      ],
+      "name": "Fortaleza especial",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "22",
+        "Nivel": "1",
+        "Tamaño": "4x4",
+        "Vida": "5,000"
+      },
+      "training": [
+        "Entrena: Soldado de arma doble"
+      ]
+    },
+    {
+      "cost": [
+        "Cash25"
+      ],
+      "name": "Fortaleza de cohetes",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "26",
+        "Nivel": "9",
+        "Tamaño": "4x4",
+        "Vida": "8,000"
+      },
+      "training": [
+        "Entrena: Jeep con bazuca doble"
+      ]
+    },
+    {
+      "cost": [
+        "Oro20,000"
+      ],
+      "name": "Fortaleza I",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "18",
+        "Nivel": "20",
+        "Tamaño": "4x4",
+        "Vida": "4,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash30"
+      ],
+      "name": "Megafortaleza",
+      "stats": {
+        "Alcance": "13",
+        "Ataque": "30",
+        "Nivel": "24",
+        "Tamaño": "5x5",
+        "Vida": "12,000"
+      },
+      "training": [
+        "Entrena: APC"
+      ]
+    },
+    {
+      "cost": [
+        "Madera5"
+      ],
+      "name": "Muro I",
+      "stats": {
+        "Nivel": "2",
+        "Tamaño": "1x1",
+        "Vida": "150"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero15"
+      ],
+      "name": "Muro II",
+      "stats": {
+        "Nivel": "9",
+        "Tamaño": "1x1",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero30"
+      ],
+      "name": "Muro III",
+      "stats": {
+        "Nivel": "17",
+        "Tamaño": "1x1",
+        "Vida": "600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero100"
+      ],
+      "name": "Muro IV",
+      "stats": {
+        "Nivel": "24",
+        "Tamaño": "1x1",
+        "Vida": "800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero225"
+      ],
+      "name": "Muro V",
+      "stats": {
+        "Nivel": "32",
+        "Tamaño": "1x1",
+        "Vida": "1,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero125"
+      ],
+      "name": "Torreta I",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "5",
+        "Nivel": "3",
+        "Tamaño": "1x1",
+        "Vida": "300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero250"
+      ],
+      "name": "Torreta II",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "8",
+        "Nivel": "5",
+        "Tamaño": "1x1",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash9"
+      ],
+      "name": "Torreta de doble cohete",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "20",
+        "Nivel": "8",
+        "Tamaño": "1x1",
+        "Vida": "1,600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero375"
+      ],
+      "name": "Torreta III",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "12",
+        "Nivel": "8",
+        "Tamaño": "1x1",
+        "Vida": "700"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash7"
+      ],
+      "name": "Torreta de cañón",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "18",
+        "Nivel": "13",
+        "Tamaño": "1x1",
+        "Vida": "1,500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero500"
+      ],
+      "name": "Torreta IV",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "14",
+        "Nivel": "16",
+        "Tamaño": "1x1",
+        "Vida": "900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero625"
+      ],
+      "name": "Torreta V",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "16",
+        "Nivel": "22",
+        "Tamaño": "1x1",
+        "Vida": "1,100"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero750"
+      ],
+      "name": "Torreta VI",
+      "stats": {
+        "Alcance": "13",
+        "Ataque": "18",
+        "Nivel": "30",
+        "Tamaño": "1x1",
+        "Vida": "1,200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Acero600"
+      ],
+      "name": "Academia de mortero",
+      "stats": {
+        "Nivel": "17",
+        "Tamaño": "3x3",
+        "Vida": "400"
+      },
+      "training": [
+        "Entrena: Lanzamorteros"
+      ]
+    },
+    {
+      "cost": [
+        "Oro800"
+      ],
+      "name": "Academia de tanque de demolición",
+      "stats": {
+        "Nivel": "50",
+        "Tamaño": "3x3",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Tanque de demolición"
+      ]
+    },
+    {
+      "cost": [
+        "Oro300"
+      ],
+      "name": "Hangar de helicóptero I",
+      "stats": {
+        "Nivel": "18",
+        "Tamaño": "3x3",
+        "Vida": "400"
+      },
+      "training": [
+        "Entrena: Helicóptero"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,500"
+      ],
+      "name": "Hangar I",
+      "stats": {
+        "Nivel": "25",
+        "Tamaño": "5x5",
+        "Vida": "400"
+      },
+      "training": [
+        "Entrena: Avión"
+      ]
+    },
+    {
+      "cost": [
+        "Oro450"
+      ],
+      "name": "Hangar de helicóptero II",
+      "stats": {
+        "Nivel": "29",
+        "Tamaño": "3x3",
+        "Vida": "800"
+      },
+      "training": [
+        "Entrena: Helicóptero II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro2,000"
+      ],
+      "name": "Hangar II",
+      "stats": {
+        "Nivel": "33",
+        "Tamaño": "6x6",
+        "Vida": "8,000"
+      },
+      "training": [
+        "Entrena: Avión II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500"
+      ],
+      "name": "Hangar de helicóptero III",
+      "stats": {
+        "Nivel": "38",
+        "Tamaño": "3x3",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Helicóptero III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro3,000"
+      ],
+      "name": "Hangar III",
+      "stats": {
+        "Nivel": "40",
+        "Tamaño": "6x6",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Avión III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,200"
+      ],
+      "name": "Hangar de helicóptero IV",
+      "stats": {
+        "Nivel": "44",
+        "Tamaño": "3x3",
+        "Vida": "1,250"
+      },
+      "training": [
+        "Entrena: Helicóptero IV"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,500"
+      ],
+      "name": "Hangar de helicóptero V",
+      "stats": {
+        "Nivel": "48",
+        "Tamaño": "3x3",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Helicóptero V"
+      ]
+    },
+    {
+      "cost": [
+        "Oro400"
+      ],
+      "name": "Academia de bombero",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "3x3",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Bombero"
+      ]
+    },
+    {
+      "cost": [
+        "Cash14"
+      ],
+      "name": "Academia de lanzallamas",
+      "stats": {
+        "Nivel": "10",
+        "Tamaño": "3x3",
+        "Vida": "400"
+      },
+      "training": [
+        "Entrena: Lanzallamas"
+      ]
+    },
+    {
+      "cost": [
+        "Cash18"
+      ],
+      "name": "Academia de tanque Dominion",
+      "stats": {
+        "Nivel": "10",
+        "Tamaño": "5x5",
+        "Vida": "400"
+      },
+      "training": [
+        "Entrena: Tanque Dominion"
+      ]
+    },
+    {
+      "cost": [
+        "Cash22"
+      ],
+      "name": "Hangar de cazas furtivos",
+      "stats": {
+        "Nivel": "10",
+        "Tamaño": "5x5",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Caza furtivo"
+      ]
+    },
+    {
+      "cost": [
+        "Madera400"
+      ],
+      "name": "Hospital de campaña",
+      "stats": {
+        "Nivel": "15",
+        "Tamaño": "3x3",
+        "Vida": "500"
+      },
+      "training": [
+        "Entrena: Médico"
+      ]
+    },
+    {
+      "cost": [
+        "Acero1,200"
+      ],
+      "name": "Garaje mecánico",
+      "stats": {
+        "Nivel": "20",
+        "Tamaño": "3x3",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Ingeniero"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,100"
+      ],
+      "name": "Garaje antiaéreo",
+      "stats": {
+        "Nivel": "22",
+        "Tamaño": "4x4",
+        "Vida": "500"
+      },
+      "training": [
+        "Entrena: Batería antiaérea"
+      ]
+    },
+    {
+      "cost": [
+        "Madera125"
+      ],
+      "name": "Academia I",
+      "stats": {
+        "Nivel": "1",
+        "Tamaño": "3x3",
+        "Vida": "300"
+      },
+      "training": [
+        "Entrena: Soldado"
+      ]
+    },
+    {
+      "cost": [
+        "Madera150"
+      ],
+      "name": "Academia de bazuca I",
+      "stats": {
+        "Nivel": "3",
+        "Tamaño": "3x3",
+        "Vida": "300"
+      },
+      "training": [
+        "Entrena: Bazuca"
+      ]
+    },
+    {
+      "cost": [
+        "Madera250"
+      ],
+      "name": "Academia II",
+      "stats": {
+        "Nivel": "7",
+        "Tamaño": "4x4",
+        "Vida": "350"
+      },
+      "training": [
+        "Entrena: Soldado II"
+      ]
+    },
+    {
+      "cost": [
+        "Madera300"
+      ],
+      "name": "Academia de bazuca II",
+      "stats": {
+        "Nivel": "10",
+        "Tamaño": "4x4",
+        "Vida": "350"
+      },
+      "training": [
+        "Entrena: Bazuca II"
+      ]
+    },
+    {
+      "cost": [
+        "Madera375"
+      ],
+      "name": "Academia III",
+      "stats": {
+        "Nivel": "21",
+        "Tamaño": "5x5",
+        "Vida": "400"
+      },
+      "training": [
+        "Entrena: Soldado III"
+      ]
+    },
+    {
+      "cost": [
+        "Madera450"
+      ],
+      "name": "Academia de bazuca III",
+      "stats": {
+        "Nivel": "23",
+        "Tamaño": "5x5",
+        "Vida": "400"
+      },
+      "training": [
+        "Entrena: Bazuca III"
+      ]
+    },
+    {
+      "cost": [
+        "Madera600"
+      ],
+      "name": "Academia IV",
+      "stats": {
+        "Nivel": "28",
+        "Tamaño": "4x4",
+        "Vida": "600"
+      },
+      "training": [
+        "Entrena: Soldado IV"
+      ]
+    },
+    {
+      "cost": [
+        "Madera600"
+      ],
+      "name": "Academia de bazuca IV",
+      "stats": {
+        "Nivel": "30",
+        "Tamaño": "4x4",
+        "Vida": "600"
+      },
+      "training": [
+        "Entrena: Bazuca IV"
+      ]
+    },
+    {
+      "cost": [
+        "Madera1,000"
+      ],
+      "name": "Academia V",
+      "stats": {
+        "Nivel": "34",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Soldado V"
+      ]
+    },
+    {
+      "cost": [
+        "Madera1,000"
+      ],
+      "name": "Academia de bazuca V",
+      "stats": {
+        "Nivel": "37",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Bazuca V"
+      ]
+    },
+    {
+      "cost": [
+        "Madera150"
+      ],
+      "name": "Garaje de jeeps I",
+      "stats": {
+        "Nivel": "5",
+        "Tamaño": "3x3",
+        "Vida": "300"
+      },
+      "training": [
+        "Entrena: Jeep con ametralladora"
+      ]
+    },
+    {
+      "cost": [
+        "Oro300"
+      ],
+      "name": "Academia de tanques I",
+      "stats": {
+        "Nivel": "12",
+        "Tamaño": "3x3",
+        "Vida": "300"
+      },
+      "training": [
+        "Entrena: Tanque"
+      ]
+    },
+    {
+      "cost": [
+        "Madera300"
+      ],
+      "name": "Garaje de jeeps II",
+      "stats": {
+        "Nivel": "15",
+        "Tamaño": "4x4",
+        "Vida": "350"
+      },
+      "training": [
+        "Entrena: Jeep con ametralladora II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro350"
+      ],
+      "name": "Academia de tanques II",
+      "stats": {
+        "Nivel": "27",
+        "Tamaño": "4x4",
+        "Vida": "350"
+      },
+      "training": [
+        "Entrena: Tanque II"
+      ]
+    },
+    {
+      "cost": [
+        "Madera450"
+      ],
+      "name": "Garaje de jeeps III",
+      "stats": {
+        "Nivel": "31",
+        "Tamaño": "5x5",
+        "Vida": "400"
+      },
+      "training": [
+        "Entrena: Jeep con ametralladora III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro400"
+      ],
+      "name": "Academia de tanques III",
+      "stats": {
+        "Nivel": "36",
+        "Tamaño": "5x5",
+        "Vida": "500"
+      },
+      "training": [
+        "Entrena: Tanque III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,000"
+      ],
+      "name": "Academia de tanques IV",
+      "stats": {
+        "Nivel": "46",
+        "Tamaño": "4x4",
+        "Vida": "800"
+      },
+      "training": [
+        "Entrena: Tanque IV"
+      ]
+    },
+    {
+      "cost": [
+        "Oro400"
+      ],
+      "name": "Academia de tanques V",
+      "stats": {
+        "Nivel": "54",
+        "Tamaño": "4x4",
+        "Vida": "1,150"
+      },
+      "training": [
+        "Entrena: Tanque V"
+      ]
+    },
+    {
+      "cost": [
+        "Cash7"
+      ],
+      "name": "Escultura",
+      "stats": {
+        "Nivel": "1",
+        "Tamaño": "3x3",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera30"
+      ],
+      "name": "Arbusto esponja",
+      "stats": {
+        "Nivel": "2",
+        "Tamaño": "1x1",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Escultura de general",
+      "stats": {
+        "Nivel": "2",
+        "Tamaño": "2x2",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro20"
+      ],
+      "name": "Flores blancas",
+      "stats": {
+        "Nivel": "4",
+        "Tamaño": "1x1",
+        "Vida": "5"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera30"
+      ],
+      "name": "Flores rojas",
+      "stats": {
+        "Nivel": "6",
+        "Tamaño": "1x1",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro250,000"
+      ],
+      "name": "Rascacielos",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "3x3",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera30"
+      ],
+      "name": "Arbusto",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "1x1",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera30"
+      ],
+      "name": "Flores de hoja roja",
+      "stats": {
+        "Nivel": "9",
+        "Tamaño": "1x1",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera30"
+      ],
+      "name": "Flores de hoja rosa",
+      "stats": {
+        "Nivel": "11",
+        "Tamaño": "1x1",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro275"
+      ],
+      "name": "Flores de hoja azul",
+      "stats": {
+        "Nivel": "12",
+        "Tamaño": "1x1",
+        "Vida": "5"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro225"
+      ],
+      "name": "Flores azules",
+      "stats": {
+        "Nivel": "13",
+        "Tamaño": "1x1",
+        "Vida": "5"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash5"
+      ],
+      "name": "Arco de la victoria",
+      "stats": {
+        "Nivel": "1",
+        "Tamaño": "2x2",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Fuente",
+      "stats": {
+        "Nivel": "1",
+        "Tamaño": "3x3",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash1"
+      ],
+      "name": "Fuente pequeña",
+      "stats": {
+        "Nivel": "5",
+        "Tamaño": "1x1",
+        "Vida": "150"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro50"
+      ],
+      "name": "Lámpara",
+      "stats": {
+        "Nivel": "10",
+        "Tamaño": "1x1",
+        "Vida": "5"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera30"
+      ],
+      "name": "Peral",
+      "stats": {
+        "Nivel": "3",
+        "Tamaño": "1x1",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro50"
+      ],
+      "name": "Manzano",
+      "stats": {
+        "Nivel": "14",
+        "Tamaño": "1x1",
+        "Vida": "5"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash50"
+      ],
+      "name": "Maravilla de cash",
+      "stats": {
+        "Nivel": "1",
+        "Población": "100",
+        "Tamaño": "3x3",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash70"
+      ],
+      "name": "Parlamento",
+      "stats": {
+        "Nivel": "1",
+        "Población": "75",
+        "Tamaño": "4x4",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash70"
+      ],
+      "name": "Templo babilónico",
+      "stats": {
+        "Nivel": "1",
+        "Población": "75",
+        "Tamaño": "4x4",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash20"
+      ],
+      "name": "Edad de piedra",
+      "stats": {
+        "Nivel": "1",
+        "Tamaño": "3x3",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash20"
+      ],
+      "name": "Iguazú",
+      "stats": {
+        "Nivel": "1",
+        "Tamaño": "3x3",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash20"
+      ],
+      "name": "Esfinge",
+      "stats": {
+        "Nivel": "1",
+        "Tamaño": "3x3",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash20"
+      ],
+      "name": "Ankor",
+      "stats": {
+        "Nivel": "1",
+        "Tamaño": "3x3",
+        "Vida": "2,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash40"
+      ],
+      "name": "Chichén Itzá",
+      "stats": {
+        "Nivel": "6",
+        "Tamaño": "4x4",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash40"
+      ],
+      "name": "Dios inca",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "3x3",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash40"
+      ],
+      "name": "Machu Picchu",
+      "stats": {
+        "Nivel": "10",
+        "Tamaño": "3x3",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash40"
+      ],
+      "name": "Babilonia",
+      "stats": {
+        "Nivel": "12",
+        "Población": "50",
+        "Tamaño": "5x5",
+        "Vida": "2,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash32"
+      ],
+      "name": "Academia de sacerdote nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Sacerdote nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Cash30"
+      ],
+      "name": "Hangar de aeronaves vikingas",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Aeronave vikinga"
+      ]
+    },
+    {
+      "cost": [
+        "Cash28"
+      ],
+      "name": "Hangar de dirigible élfico",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Elfo dirigible espacial"
+      ]
+    },
+    {
+      "cost": [
+        "Cash34"
+      ],
+      "name": "Academia de caballero dragón nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Caballero dragón nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Cash32"
+      ],
+      "name": "Academia de elfo jinete de dinosaurio",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Elfo jinete de dinosaurio"
+      ]
+    },
+    {
+      "cost": [
+        "Cash32"
+      ],
+      "name": "Hangar de bicóptero nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Bicóptero nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Cash28"
+      ],
+      "name": "Academia de motoescuadrón vikingo",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Motoescuadrón vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Cash40"
+      ],
+      "name": "Academia de elfo atacante de asedio",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Siege Striker"
+      ]
+    },
+    {
+      "cost": [
+        "Cash34"
+      ],
+      "name": "Academia de francotirador nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Francotirador nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Cash34"
+      ],
+      "name": "Academia de jinete dragón nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "3x3",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Jinete dragón nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Cash32"
+      ],
+      "name": "Nido de alien cornudo",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Alien cornudo"
+      ]
+    },
+    {
+      "cost": [
+        "Cash28"
+      ],
+      "name": "Academia de tanque vikingo",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Tanque vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Cash38"
+      ],
+      "name": "Academia de Kamikaze",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "2,500"
+      },
+      "training": [
+        "Entrena: Kamikaze"
+      ]
+    },
+    {
+      "cost": [
+        "Cash30"
+      ],
+      "name": "Academia de guerrero de espadón",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Guerrero de espadón"
+      ]
+    },
+    {
+      "cost": [
+        "Cash24"
+      ],
+      "name": "Academia de caballero oso",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Caballero oso vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Cash22"
+      ],
+      "name": "Fábrica de martilleros vikingos",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Martillero vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Cash34"
+      ],
+      "name": "Fábrica de núcleos vikinga",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Bot núcleo vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Cash34"
+      ],
+      "name": "Academia de gólem de runas",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "2,500"
+      },
+      "training": [
+        "Entrena: Gólem de runas"
+      ]
+    },
+    {
+      "cost": [
+        "Cash34"
+      ],
+      "name": "Academia de jinete de bestia ardiente",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Jinete de bestia ardiente"
+      ]
+    },
+    {
+      "cost": [
+        "Cash32"
+      ],
+      "name": "Nido de aliens Shredder",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Alien Shredder"
+      ]
+    },
+    {
+      "cost": [
+        "Cash30"
+      ],
+      "name": "Academia de jinete nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Jinete nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Cash28"
+      ],
+      "name": "Academia de francotirador vikingo",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "2,500"
+      },
+      "training": [
+        "Entrena: Francotirador vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Cash28"
+      ],
+      "name": "Hangar de exploradores élficos espaciales",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Elfo explorador espacial"
+      ]
+    },
+    {
+      "cost": [
+        "Cash35"
+      ],
+      "name": "Academia de reptil artillero",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Reptil artillero"
+      ]
+    },
+    {
+      "cost": [
+        "Cash32"
+      ],
+      "name": "Fábrica de bots Punisher",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Bot Punisher"
+      ]
+    },
+    {
+      "cost": [
+        "Cash32"
+      ],
+      "name": "Academia de megabot",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Megabot"
+      ]
+    },
+    {
+      "cost": [
+        "Cash30"
+      ],
+      "name": "Academia de bot pistolero",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Bot pistolero"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Torreta vikinga II",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "23",
+        "Nivel": "8",
+        "Tamaño": "1x1",
+        "Vida": "1,750"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro9,000"
+      ],
+      "name": "Colmena de araña con garras",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Araña con garras"
+      ]
+    },
+    {
+      "cost": [
+        "Oro7,500"
+      ],
+      "name": "Academia de arquero nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Arquero nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro7,500"
+      ],
+      "name": "Academia de elfo arquero espacial",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Elfo arquero espacial"
+      ]
+    },
+    {
+      "cost": [
+        "Oro6,500"
+      ],
+      "name": "Academia de soldado vikingo",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Soldado vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Oro50,000"
+      ],
+      "name": "Academia de elfo sacerdote",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Elfo sacerdote espacial"
+      ]
+    },
+    {
+      "cost": [
+        "Oro8,500"
+      ],
+      "name": "Colmena de arañas ponzoñosas",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Araña ponzoñosa"
+      ]
+    },
+    {
+      "cost": [
+        "Oro7,200"
+      ],
+      "name": "Academia de lancero nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Lancero nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro9,000"
+      ],
+      "name": "Nido de alien ácido",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Alien ácido"
+      ]
+    },
+    {
+      "cost": [
+        "Oro8,000"
+      ],
+      "name": "Academia de caballero nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "3x3",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Entrena: Caballero nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro7,000"
+      ],
+      "name": "Academia de bazuca vikinga",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "4x4",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Entrena: Bazuca vikinga"
+      ]
+    },
+    {
+      "cost": [
+        "Cash1"
+      ],
+      "name": "Muro nebular",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "1x1",
+        "Vida": "1,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Torreta ork II",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "23",
+        "Nivel": "8",
+        "Tamaño": "1x1",
+        "Vida": "1,750"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera60"
+      ],
+      "name": "Casa ork",
+      "stats": {
+        "Nivel": "8",
+        "Población": "4",
+        "Tamaño": "2x2",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Lago mágico",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "3x3",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash1"
+      ],
+      "name": "Muro ork",
+      "stats": {
+        "Nivel": "8",
+        "Tamaño": "1x1",
+        "Vida": "1,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro200"
+      ],
+      "name": "Campo vikingo",
+      "stats": {
+        "Nivel": "8",
+        "Población": "5",
+        "Tamaño": "4x4",
+        "Vida": "100"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Madera60"
+      ],
+      "name": "Casa nebular",
+      "stats": {
+        "Nivel": "8",
+        "Población": "4",
+        "Tamaño": "2x2",
+        "Vida": "200"
+      },
+      "training": []
+    }
+  ],
+  "units": [
+    {
+      "cost": [
+        "Oro800",
+        "Petróleo1,400"
+      ],
+      "name": "Aeronave vikinga",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "29",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "10",
+        "Vida": "700"
+      },
+      "training": [
+        "Se entrena en: Hangar de aeronaves vikingas"
+      ]
+    },
+    {
+      "cost": [
+        "Oro800",
+        "Petróleo1,400"
+      ],
+      "name": "Aeronave vikinga Outsider",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "15",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "8",
+        "Vida": "275"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro80",
+        "Madera160"
+      ],
+      "name": "Aliado de la ONU",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "12",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "100"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro75",
+        "Acero150"
+      ],
+      "name": "Alien colmilludo",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "350"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro75",
+        "Acero150"
+      ],
+      "name": "Alien con garras",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "14",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro950",
+        "Petróleo800"
+      ],
+      "name": "Alien cornudo",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "37",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "800"
+      },
+      "training": [
+        "Se entrena en: Nido de alien cornudo"
+      ]
+    },
+    {
+      "cost": [
+        "Oro75",
+        "Acero150"
+      ],
+      "name": "Alien instigador",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "1,700"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro170",
+        "Acero325"
+      ],
+      "name": "Alien pequeño",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "8",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "8",
+        "Vida": "110"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro700",
+        "Petróleo600"
+      ],
+      "name": "Alien Shredder",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "35",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "750"
+      },
+      "training": [
+        "Se entrena en: Nido de aliens Shredder"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Petróleo400"
+      ],
+      "name": "Alien ácido",
+      "stats": {
+        "Alcance": "6",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "7",
+        "Vida": "200"
+      },
+      "training": [
+        "Se entrena en: Nido de alien ácido"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Acero1,200"
+      ],
+      "name": "APC",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "7",
+        "Vida": "425"
+      },
+      "training": [
+        "Se entrena en: Megafortaleza"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Petróleo400"
+      ],
+      "name": "Araña con garras",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "8",
+        "Vida": "200"
+      },
+      "training": [
+        "Se entrena en: Colmena de araña con garras"
+      ]
+    },
+    {
+      "cost": [
+        "Oro75",
+        "Acero150"
+      ],
+      "name": "Araña cuerpo a cuerpo",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "8",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "8",
+        "Vida": "110"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro900",
+        "Petróleo800"
+      ],
+      "name": "Araña enorme",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "36",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "800"
+      },
+      "training": [
+        "Se entrena en: Colmena de araña enorme"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,100",
+        "Acero900"
+      ],
+      "name": "Araña grande",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "350"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Petróleo300"
+      ],
+      "name": "Araña ponzoñosa",
+      "stats": {
+        "Alcance": "6",
+        "Ataque": "21",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "8",
+        "Vida": "150"
+      },
+      "training": [
+        "Se entrena en: Colmena de arañas ponzoñosas"
+      ]
+    },
+    {
+      "cost": [
+        "Oro170",
+        "Acero325"
+      ],
+      "name": "Araña venenosa",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "14",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Arquero cinturón negro",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,750"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Madera1,600"
+      ],
+      "name": "Arquero nebular",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "120"
+      },
+      "training": [
+        "Se entrena en: Academia de arquero nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Petróleo600"
+      ],
+      "name": "Ataque aéreo",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "15",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Automech de doble hoja",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "51",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Automech de hoja láser",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "59",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Automech Prime",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "57",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro150",
+        "Petróleo300"
+      ],
+      "name": "Avión",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "10",
+        "Vida": "350"
+      },
+      "training": [
+        "Se entrena en: Hangar I"
+      ]
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Petróleo600"
+      ],
+      "name": "Avión II",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "10",
+        "Vida": "450"
+      },
+      "training": [
+        "Se entrena en: Hangar II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Petróleo1,200"
+      ],
+      "name": "Avión III",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "10",
+        "Vida": "600"
+      },
+      "training": [
+        "Se entrena en: Hangar III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Petróleo1,200"
+      ],
+      "name": "Avión IV",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "10",
+        "Vida": "600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Petróleo1,200"
+      ],
+      "name": "Avión V",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "10",
+        "Vida": "600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Petróleo600"
+      ],
+      "name": "B52",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "15",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Bahamut de acero azul",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "48",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro250",
+        "Petróleo500"
+      ],
+      "name": "Barco",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "14",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash6"
+      ],
+      "name": "Barón Rojo",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "29",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "10",
+        "Vida": "675"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Acero1,200"
+      ],
+      "name": "Batería antiaérea",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "10",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "475"
+      },
+      "training": [
+        "Se entrena en: Garaje antiaéreo"
+      ]
+    },
+    {
+      "cost": [
+        "Oro75",
+        "Acero150"
+      ],
+      "name": "Bazuca",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "10",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "50"
+      },
+      "training": [
+        "Se entrena en: Academia de bazuca I"
+      ]
+    },
+    {
+      "cost": [
+        "Oro250",
+        "Madera500"
+      ],
+      "name": "Bazuca doble",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "15",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "3",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro150",
+        "Acero300"
+      ],
+      "name": "Bazuca II",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "14",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "55"
+      },
+      "training": [
+        "Se entrena en: Academia de bazuca II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro225",
+        "Acero450"
+      ],
+      "name": "Bazuca III",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "60"
+      },
+      "training": [
+        "Se entrena en: Academia de bazuca III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Acero500"
+      ],
+      "name": "Bazuca IV",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "115"
+      },
+      "training": [
+        "Se entrena en: Academia de bazuca IV"
+      ]
+    },
+    {
+      "cost": [
+        "Oro675",
+        "Acero550"
+      ],
+      "name": "Bazuca V",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "125"
+      },
+      "training": [
+        "Se entrena en: Academia de bazuca V"
+      ]
+    },
+    {
+      "cost": [
+        "Oro800",
+        "Acero800"
+      ],
+      "name": "Bazuca vikinga",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "150"
+      },
+      "training": [
+        "Se entrena en: Academia de bazuca vikinga"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,100",
+        "Acero900"
+      ],
+      "name": "Bestia explosiva",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Petróleo1,000"
+      ],
+      "name": "Bestia explosiva ATP",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "275"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,100",
+        "Acero900"
+      ],
+      "name": "Bestia explosiva jefe",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "3",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,250",
+        "Petróleo950"
+      ],
+      "name": "Bicho kamikaze",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "14",
+        "Defensa": "1",
+        "Población": "0",
+        "Velocidad": "12",
+        "Vida": "90"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro900",
+        "Petróleo1,500"
+      ],
+      "name": "Bicóptero nebular",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "31",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "750"
+      },
+      "training": [
+        "Se entrena en: Hangar de bicóptero nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro100"
+      ],
+      "name": "Bombero",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "3",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "7",
+        "Vida": "40"
+      },
+      "training": [
+        "Se entrena en: Academia de bombero"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Bot araña",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "50",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "7",
+        "Vida": "2,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro3,000",
+        "Acero2,500"
+      ],
+      "name": "Bot cruzado",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,250"
+      },
+      "training": [
+        "Se entrena en: Fábrica de bot cruzado"
+      ]
+    },
+    {
+      "cost": [
+        "Oro3,100",
+        "Acero2,550"
+      ],
+      "name": "Bot núcleo vikingo",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "46",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,275"
+      },
+      "training": [
+        "Se entrena en: Fábrica de núcleos vikinga"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Acero500"
+      ],
+      "name": "Bot pistolero",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "30",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,200"
+      },
+      "training": [
+        "Se entrena en: Academia de bot pistolero"
+      ]
+    },
+    {
+      "cost": [
+        "Oro5,100",
+        "Petróleo1,400"
+      ],
+      "name": "Bot Punisher",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "41",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,600"
+      },
+      "training": [
+        "Se entrena en: Fábrica de bots Punisher"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Bot samurái",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "43",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,650"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Bot samurái",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "44",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,700"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Acero1,200"
+      ],
+      "name": "Bot supremo",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "42",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "7",
+        "Vida": "1,625"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash6"
+      ],
+      "name": "Buggy de guerra",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "30",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "9",
+        "Vida": "750"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,200",
+        "Madera13,000"
+      ],
+      "name": "Caballero dragón nebular",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "32",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "10",
+        "Vida": "800"
+      },
+      "training": [
+        "Se entrena en: Academia de caballero dragón nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Madera2,000"
+      ],
+      "name": "Caballero nebular",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "23",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "280"
+      },
+      "training": [
+        "Se entrena en: Academia de caballero nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro450",
+        "Madera300"
+      ],
+      "name": "Caballero oso ork",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "12",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "150"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro450",
+        "Madera1,000"
+      ],
+      "name": "Caballero oso vikingo",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "27",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "550"
+      },
+      "training": [
+        "Se entrena en: Academia de caballero oso"
+      ]
+    },
+    {
+      "cost": [
+        "Oro750",
+        "Acero650"
+      ],
+      "name": "Caminante gigante",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "29",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "700"
+      },
+      "training": [
+        "Se entrena en: Fábrica de caminante gigante"
+      ]
+    },
+    {
+      "cost": [
+        "Oro100",
+        "Acero200"
+      ],
+      "name": "Camión",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "5",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Acero600"
+      ],
+      "name": "Camión 3",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "5",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "250"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Acero600"
+      ],
+      "name": "Camión II",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "5",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "250"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,200",
+        "Petróleo1,500"
+      ],
+      "name": "Carnicero de motosierra",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "35",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "700"
+      },
+      "training": [
+        "Se entrena en: Academia de carniceros vikingos"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Petróleo1,200"
+      ],
+      "name": "Caza furtivo",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "10",
+        "Vida": "650"
+      },
+      "training": [
+        "Se entrena en: Hangar de cazas furtivos"
+      ]
+    },
+    {
+      "cost": [
+        "Oro800",
+        "Acero800"
+      ],
+      "name": "Cazador de robots",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "42",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro80",
+        "Madera160"
+      ],
+      "name": "Chica cara cortada",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro2,500",
+        "Petróleo1,000"
+      ],
+      "name": "Crucero élfico espacial",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "35",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "8",
+        "Vida": "1,000"
+      },
+      "training": [
+        "Se entrena en: Hangar de crucero élfico"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Acero900"
+      ],
+      "name": "Cuatriciclo de asalto nebular",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "38",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "700"
+      },
+      "training": [
+        "Se entrena en: Academia de cuatriciclo de asalto nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Doctor Shock",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "49",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,850"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy azul",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy camuflado",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "425"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy de 2 cabezas de fuego helado",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "475"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy de acero azul",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "27",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy de caballero dragón nebular",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "250"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy de jinete dragón nebular",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "16",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy dragón de forja",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy eléctrico",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "475"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy mercurio rojo",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy metálico",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "410"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy negro",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "27",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Draggy rojo",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "390"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Dragón azul",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "44",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,750"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Dragón de 2 cabezas de fuego helado",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "68",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "7",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Dragón de forja",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "56",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "7",
+        "Vida": "2,300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Dragón eléctrico",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "52",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Dragón mercurio rojo",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "54",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "7",
+        "Vida": "2,200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Dragón metálico",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Dragón metálico camuflado",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "46",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,850"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Dragón negro",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "51",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,950"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Dragón rojo",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "42",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,700"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,200",
+        "Petróleo900"
+      ],
+      "name": "Dreadnought",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "44",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,200"
+      },
+      "training": [
+        "Se entrena en: Academia de Dreadnought"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Acero1,200"
+      ],
+      "name": "Droide de combate Andrómeda",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "31",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "750"
+      },
+      "training": [
+        "Se entrena en: Fábrica de droides Andrómeda"
+      ]
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Alfa",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron artillero masivo",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "28",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "550"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron arácnido",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "475"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron automech de doble hoja",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "425"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron automech de hoja láser",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "425"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Automech Prime",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron bot núcleo vikingo",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron de cañón doble",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron de cañón masivo",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Dragonborn",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "425"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron exterminador ardiente",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron exterminador dorado",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "475"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Gamera",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "28",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "550"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Godzilla de fuego",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "29",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "550"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron guerrero espartano",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron gólem de runas",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "425"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Hyper Blazer",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "425"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron King Kong",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "28",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "550"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron mech Avenger",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "27",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron mech de cuchilla grande",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Mech Faraón",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron mech Godzilla",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "27",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "525"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron mech Gran Shogun",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron mech líquido",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron mech verdugo",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "27",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Mesías de éter",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Mesías de éter oscuro",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Némesis",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Proto alado",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "475"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Proyecto Z",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "28",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "550"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron samurái cibernético",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Dron Ultra-Mech",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Madera1,800"
+      ],
+      "name": "Elfo arquero espacial",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "140"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo arquero espacial"
+      ]
+    },
+    {
+      "cost": [
+        "Oro800",
+        "Petróleo400"
+      ],
+      "name": "Elfo artillero plateado",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "32",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "800"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo artillero plateado"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,500",
+        "Acero800"
+      ],
+      "name": "Elfo caballero espacial",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "30",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "700"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo caballero espacial"
+      ]
+    },
+    {
+      "cost": [
+        "Oro2,200",
+        "Petróleo900"
+      ],
+      "name": "Elfo dirigible espacial",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "32",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "10",
+        "Vida": "750"
+      },
+      "training": [
+        "Se entrena en: Hangar de dirigible élfico"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Madera1,800"
+      ],
+      "name": "Elfo espadachín espacial",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "23",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "230"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo espadachín espacial"
+      ]
+    },
+    {
+      "cost": [
+        "Oro2,000",
+        "Acero900"
+      ],
+      "name": "Elfo explorador espacial",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "38",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "750"
+      },
+      "training": [
+        "Se entrena en: Hangar de exploradores élficos espaciales"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,600",
+        "Madera10,000"
+      ],
+      "name": "Elfo jinete de dinosaurio",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "42",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "1,300"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo jinete de dinosaurio"
+      ]
+    },
+    {
+      "cost": [
+        "Oro750",
+        "Acero900"
+      ],
+      "name": "Elfo paladín espacial",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "36",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "800"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo paladín"
+      ]
+    },
+    {
+      "cost": [
+        "Oro800",
+        "Acero1,000"
+      ],
+      "name": "Elfo sacerdote espacial",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "34",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "900"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo sacerdote"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Madera5,000"
+      ],
+      "name": "Elfo sanador espacial",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "650"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo sanador espacial"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,250",
+        "Petróleo950"
+      ],
+      "name": "Equipo kamikaze",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "13",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "600"
+      },
+      "training": [
+        "Se entrena en: Academia de hermanos Kamikaze"
+      ]
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Erradicador",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "550"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Esbirro del pantano",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "250"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro50",
+        "Madera100"
+      ],
+      "name": "Espía especial",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "10",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "3",
+        "Vida": "50"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Exobot de 2 armas",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "49",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Exterminador ardiente",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "58",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Exterminador dorado",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "49",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash2"
+      ],
+      "name": "F-117",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "28",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "11",
+        "Vida": "700"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,500",
+        "Acero1,500"
+      ],
+      "name": "Francotirador nebular",
+      "stats": {
+        "Alcance": "15",
+        "Ataque": "80",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "500"
+      },
+      "training": [
+        "Se entrena en: Academia de francotirador nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro650",
+        "Acero1,000"
+      ],
+      "name": "Francotirador vikingo",
+      "stats": {
+        "Alcance": "15",
+        "Ataque": "75",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "500"
+      },
+      "training": [
+        "Se entrena en: Academia de francotirador vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Acero600"
+      ],
+      "name": "Garras de acero",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "190"
+      },
+      "training": [
+        "Se entrena en: Academia de garras de acero, Muro de desarrollo"
+      ]
+    },
+    {
+      "cost": [
+        "Oro80",
+        "Madera160"
+      ],
+      "name": "General Mike",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "30",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "250"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro80",
+        "Madera160"
+      ],
+      "name": "General Scarlett",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "15",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "250"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro700",
+        "Madera3,500"
+      ],
+      "name": "Guerrero de espadón",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "34",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "700"
+      },
+      "training": [
+        "Se entrena en: Academia de guerrero de espadón"
+      ]
+    },
+    {
+      "cost": [
+        "Oro900",
+        "Madera3,800"
+      ],
+      "name": "Guerrero del laberinto nebular",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "35",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "750"
+      },
+      "training": [
+        "Se entrena en: Academia de guerrero del laberinto nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Cash8"
+      ],
+      "name": "Gólem dorado",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "50",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,950"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash6"
+      ],
+      "name": "Gólem mecánico",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "43",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,650"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro200",
+        "Acero325"
+      ],
+      "name": "Hachero vikingo",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "21",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "200"
+      },
+      "training": [
+        "Se entrena en: Academia de hacha vikinga"
+      ]
+    },
+    {
+      "cost": [
+        "Oro80",
+        "Madera160"
+      ],
+      "name": "Hannibal malvado",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "15",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "150"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro125",
+        "Petróleo250"
+      ],
+      "name": "Helicóptero",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "14",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "200"
+      },
+      "training": [
+        "Se entrena en: Hangar de helicóptero I"
+      ]
+    },
+    {
+      "cost": [
+        "Oro250",
+        "Petróleo500"
+      ],
+      "name": "Helicóptero II",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "300"
+      },
+      "training": [
+        "Se entrena en: Hangar de helicóptero II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Petróleo1,000"
+      ],
+      "name": "Helicóptero III",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "350"
+      },
+      "training": [
+        "Se entrena en: Hangar de helicóptero III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro750",
+        "Petróleo1,500"
+      ],
+      "name": "Helicóptero IV",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "8",
+        "Vida": "400"
+      },
+      "training": [
+        "Se entrena en: Hangar de helicóptero IV"
+      ]
+    },
+    {
+      "cost": [
+        "Oro700",
+        "Petróleo1,300"
+      ],
+      "name": "Helicóptero molotov",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "28",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "10",
+        "Vida": "675"
+      },
+      "training": [
+        "Se entrena en: Hangar de helicóptero molotov"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Petróleo2,000"
+      ],
+      "name": "Helicóptero rojo",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Petróleo2,000"
+      ],
+      "name": "Helicóptero V",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "30",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "8",
+        "Vida": "450"
+      },
+      "training": [
+        "Se entrena en: Hangar de helicóptero V"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,250",
+        "Petróleo950"
+      ],
+      "name": "Hermanos Kamikaze",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "13",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Hyper Blazer",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "47",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,850"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Hércules plateado",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "53",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro800",
+        "Petróleo400"
+      ],
+      "name": "Héroe vigía",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "56",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "7",
+        "Vida": "2,300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro350",
+        "Acero500"
+      ],
+      "name": "Ingeniero",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "10",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "120"
+      },
+      "training": [
+        "Se entrena en: Garaje mecánico"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Petróleo1,000"
+      ],
+      "name": "Jeep asesino con bazuca",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "15",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro150",
+        "Petróleo300"
+      ],
+      "name": "Jeep con ametralladora",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "12",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "150"
+      },
+      "training": [
+        "Se entrena en: Garaje de jeeps I"
+      ]
+    },
+    {
+      "cost": [
+        "Oro225",
+        "Petróleo450"
+      ],
+      "name": "Jeep con ametralladora II",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "16",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "200"
+      },
+      "training": [
+        "Se entrena en: Garaje de jeeps II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Petróleo600"
+      ],
+      "name": "Jeep con ametralladora III",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "250"
+      },
+      "training": [
+        "Se entrena en: Garaje de jeeps III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Petróleo1,000"
+      ],
+      "name": "Jeep con bazuca doble",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "275"
+      },
+      "training": [
+        "Se entrena en: Fortaleza de cohetes"
+      ]
+    },
+    {
+      "cost": [
+        "Oro175",
+        "Acero350"
+      ],
+      "name": "Jefe gólem",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "15,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Madera12,000"
+      ],
+      "name": "Jinete de bestia ardiente",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "40",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,200"
+      },
+      "training": [
+        "Se entrena en: Academia de jinete de bestia ardiente"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Petróleo1,000"
+      ],
+      "name": "Jinete de elefante",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "16",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "90"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro450",
+        "Madera300"
+      ],
+      "name": "Jinete de oso",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "450"
+      },
+      "training": [
+        "Se entrena en: Academia de jinete de oso"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Madera12,000"
+      ],
+      "name": "Jinete dragón nebular",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "30",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "10",
+        "Vida": "725"
+      },
+      "training": [
+        "Se entrena en: Academia de jinete dragón nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro450",
+        "Madera10,000"
+      ],
+      "name": "Jinete nebular",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "36",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "9",
+        "Vida": "650"
+      },
+      "training": [
+        "Se entrena en: Academia de jinete nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Acero1,000"
+      ],
+      "name": "Kamikaze",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "500",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "8",
+        "Vida": "100"
+      },
+      "training": [
+        "Se entrena en: Academia de Kamikaze"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Karateka artillero",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "60",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Karateka de fuego",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "48",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro700",
+        "Petróleo1,300"
+      ],
+      "name": "Kopta ork",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "14",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "250"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Madera1,500"
+      ],
+      "name": "Lancero nebular",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "210"
+      },
+      "training": [
+        "Se entrena en: Academia de lancero nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Petróleo500"
+      ],
+      "name": "Lanzacuchillos",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "21",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "200"
+      },
+      "training": [
+        "Se entrena en: Academia de lanzacuchillos"
+      ]
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Petróleo500"
+      ],
+      "name": "Lanzallamas",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "19",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "120"
+      },
+      "training": [
+        "Se entrena en: Academia de lanzallamas"
+      ]
+    },
+    {
+      "cost": [
+        "Oro80",
+        "Acero120"
+      ],
+      "name": "Lanzamorteros",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "15",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "4",
+        "Vida": "50"
+      },
+      "training": [
+        "Se entrena en: Academia de mortero"
+      ]
+    },
+    {
+      "cost": [
+        "Cash8"
+      ],
+      "name": "Mago convertidor",
+      "stats": {
+        "Alcance": "6",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "10",
+        "Vida": "1,500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro900",
+        "Madera3,000"
+      ],
+      "name": "Mago de destrucción",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "36",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "750"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo mago de destrucción"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,100",
+        "Acero900"
+      ],
+      "name": "Martillero vikingo",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "33",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "650"
+      },
+      "training": [
+        "Se entrena en: Fábrica de martilleros vikingos"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,100",
+        "Acero900"
+      ],
+      "name": "Martillero vikingo Outsider",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "350"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,250",
+        "Petróleo950"
+      ],
+      "name": "Mascota kamikaze",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "14",
+        "Defensa": "1",
+        "Población": "0",
+        "Velocidad": "12",
+        "Vida": "90"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech artillero masivo",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "82",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "3,700"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech arácnido",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "66",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "7",
+        "Vida": "2,900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech ATP",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "4",
+        "Vida": "1,800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Avenger",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "70",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "3,100"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Brutus",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "47",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Brutus negro",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "52",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,100"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech de cañón doble",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "56",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech de cañón masivo",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "52",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,100"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech de cuchilla grande",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "62",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "7",
+        "Vida": "2,700"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Dragonborn",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "50",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,950"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Gamera",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "78",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "3,500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Godzilla",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "74",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "3,300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Godzilla de fuego",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "84",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "3,800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Gran Shogun",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "52",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,050"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech guerrero espartano",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "64",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "2,800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech guerrero faraón",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "65",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,850"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro10,000",
+        "Acero12,000"
+      ],
+      "name": "Mech Hércules",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "53",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,900"
+      },
+      "training": [
+        "Se entrena en: Academia de mech Hércules"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech King Kong",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "76",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "3,400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech líquido",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "53",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "7",
+        "Vida": "2,150"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Proto alado",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "65",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "2,900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech Proyecto Z",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "80",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "3,600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech samurái cibernético",
+      "stats": {
+        "Alcance": "4",
+        "Ataque": "54",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mech verdugo",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "72",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "6",
+        "Vida": "3,200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash6"
+      ],
+      "name": "Megabot",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "40",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,600"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro5,000",
+        "Acero1,400"
+      ],
+      "name": "Megabot",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "40",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,600"
+      },
+      "training": [
+        "Se entrena en: Academia de megabot"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,100",
+        "Acero825"
+      ],
+      "name": "Megahacha",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "34",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "600"
+      },
+      "training": [
+        "Se entrena en: Academia de megahacha"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Acero800"
+      ],
+      "name": "Megalancero",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "32",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "575"
+      },
+      "training": [
+        "Se entrena en: Academia de megalancero"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Megamech celestial",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,700"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro175",
+        "Acero350"
+      ],
+      "name": "Megatanque",
+      "stats": {
+        "Alcance": "13",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "1,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mesías de éter",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "48",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Mesías de éter oscuro",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "55",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,250"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Minibot samurái",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "7",
+        "Vida": "180"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,200",
+        "Madera14,000"
+      ],
+      "name": "Monstruo del pantano",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "50",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "2,000"
+      },
+      "training": [
+        "Se entrena en: Academia de monstruo del pantano"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,200",
+        "Madera14,000"
+      ],
+      "name": "Monstruo del pantano",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "50",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "2,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro550",
+        "Petróleo800"
+      ],
+      "name": "Motoescuadrón vikingo",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "38",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "7",
+        "Vida": "600"
+      },
+      "training": [
+        "Se entrena en: Academia de motoescuadrón vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Multimorfo",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "54",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "2,200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro250",
+        "Madera500"
+      ],
+      "name": "Médico",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "8",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "110"
+      },
+      "training": [
+        "Se entrena en: Hospital de campaña"
+      ]
+    },
+    {
+      "cost": [
+        "Oro2,200",
+        "Petróleo900"
+      ],
+      "name": "Nave espacial Andrómeda",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "34",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "900"
+      },
+      "training": [
+        "Se entrena en: Hangar de nave espacial Andrómeda"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Núcleo blindado Alfa",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "46",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Núcleo Némesis",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "46",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro60",
+        "Acero120"
+      ],
+      "name": "Operaciones especiales",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "10",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "120"
+      },
+      "training": [
+        "Se entrena en: Academia de espías"
+      ]
+    },
+    {
+      "cost": [
+        "Oro75",
+        "Acero150"
+      ],
+      "name": "Orco espadachín",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "8",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "90"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Petróleo500"
+      ],
+      "name": "Orco lanzacuchillos",
+      "stats": {
+        "Alcance": "6",
+        "Ataque": "12",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "100"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,250",
+        "Petróleo950"
+      ],
+      "name": "Ork bestia cornuda",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Acero1,200"
+      ],
+      "name": "Ork con serrucho grande",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,250"
+      },
+      "training": [
+        "Se entrena en: Fábrica de ork con serrucho grande"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,100",
+        "Acero900"
+      ],
+      "name": "Ork explosivo",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "34",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "650"
+      },
+      "training": [
+        "Se entrena en: Academia de ork explosivo"
+      ]
+    },
+    {
+      "cost": [
+        "Oro400",
+        "Petróleo600"
+      ],
+      "name": "Ork lanzallamas",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "21",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "275"
+      },
+      "training": [
+        "Se entrena en: Academia de lanzallamas ork"
+      ]
+    },
+    {
+      "cost": [
+        "Oro400",
+        "Petróleo600"
+      ],
+      "name": "Ork lanzallamas rojo",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "12",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "125"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro1,000",
+        "Acero1,200"
+      ],
+      "name": "Ork sierra de mano rojo",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "350"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro800",
+        "Acero800"
+      ],
+      "name": "OVNI",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "38",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "10",
+        "Vida": "900"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro900",
+        "Acero3,000"
+      ],
+      "name": "Paladín alado",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "39",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "850"
+      },
+      "training": [
+        "Se entrena en: Academia de paladín alado"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Patinador",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "8",
+        "Vida": "1,750"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Perforador asesino",
+      "stats": {
+        "Alcance": "3",
+        "Ataque": "48",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "1,950"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash4"
+      ],
+      "name": "Ranbo",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "23",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash6"
+      ],
+      "name": "Recolector de acero",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "30",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "8",
+        "Vida": "1,500"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro6,000",
+        "Acero8,000"
+      ],
+      "name": "Reptil artillero",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "42",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "7",
+        "Vida": "1,200"
+      },
+      "training": [
+        "Se entrena en: Academia de reptil artillero"
+      ]
+    },
+    {
+      "cost": [
+        "Oro650",
+        "Petróleo1,250"
+      ],
+      "name": "Retaliator extremo",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "27",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "10",
+        "Vida": "650"
+      },
+      "training": [
+        "Se entrena en: Academia Retaliator"
+      ]
+    },
+    {
+      "cost": [
+        "Oro1,250",
+        "Petróleo950"
+      ],
+      "name": "Rudo cornudo",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "45",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "650"
+      },
+      "training": [
+        "Se entrena en: Fábrica de rudo cornudo"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Madera5,000"
+      ],
+      "name": "Sacerdote cruzado",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "275"
+      },
+      "training": [
+        "Se entrena en: Academia de sacerdote cruzado"
+      ]
+    },
+    {
+      "cost": [
+        "Oro800",
+        "Madera3,600"
+      ],
+      "name": "Sacerdote nebular",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "32",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "800"
+      },
+      "training": [
+        "Se entrena en: Academia de sacerdote nebular"
+      ]
+    },
+    {
+      "cost": [
+        "Oro80",
+        "Madera160"
+      ],
+      "name": "Sargento Jack",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "13",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro80",
+        "Madera160"
+      ],
+      "name": "Sargento Megan",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "13",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro10,000",
+        "Petróleo10,000"
+      ],
+      "name": "Siege Striker",
+      "stats": {
+        "Alcance": "15",
+        "Ataque": "400",
+        "Defensa": "1",
+        "Población": "4",
+        "Velocidad": "4",
+        "Vida": "1,500"
+      },
+      "training": [
+        "Se entrena en: Academia de elfo atacante de asedio"
+      ]
+    },
+    {
+      "cost": [
+        "Oro700",
+        "Petróleo1,300"
+      ],
+      "name": "Skylander",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "28",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "9",
+        "Vida": "675"
+      },
+      "training": [
+        "Se entrena en: Hangar de Skylander cruzado"
+      ]
+    },
+    {
+      "cost": [
+        "Oro30",
+        "Acero60"
+      ],
+      "name": "Soldado",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "8",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "50"
+      },
+      "training": [
+        "Se entrena en: Academia I"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Acero600"
+      ],
+      "name": "Soldado con bazuca",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "21",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "100"
+      },
+      "training": [
+        "Se entrena en: Academia de bazuca cruzada"
+      ]
+    },
+    {
+      "cost": [
+        "Oro150",
+        "Acero300"
+      ],
+      "name": "Soldado cruzado",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "90"
+      },
+      "training": [
+        "Se entrena en: Academia de soldado cruzado"
+      ]
+    },
+    {
+      "cost": [
+        "Oro250",
+        "Acero500"
+      ],
+      "name": "Soldado de arma doble",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "110"
+      },
+      "training": [
+        "Se entrena en: Fortaleza especial, Fortaleza de orcos"
+      ]
+    },
+    {
+      "cost": [
+        "Oro170",
+        "Acero300"
+      ],
+      "name": "Soldado espadachín",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "19",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "170"
+      },
+      "training": [
+        "Se entrena en: Academia de espadachín cruzado"
+      ]
+    },
+    {
+      "cost": [
+        "Oro60",
+        "Acero120"
+      ],
+      "name": "Soldado II",
+      "stats": {
+        "Alcance": "6",
+        "Ataque": "12",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "55"
+      },
+      "training": [
+        "Se entrena en: Academia II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro90",
+        "Acero180"
+      ],
+      "name": "Soldado III",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "16",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "60"
+      },
+      "training": [
+        "Se entrena en: Academia III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro120",
+        "Acero240"
+      ],
+      "name": "Soldado IV",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "100"
+      },
+      "training": [
+        "Se entrena en: Academia IV"
+      ]
+    },
+    {
+      "cost": [
+        "Oro225",
+        "Acero350"
+      ],
+      "name": "Soldado jet",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "7",
+        "Vida": "160"
+      },
+      "training": [
+        "Se entrena en: Academia de soldado jet"
+      ]
+    },
+    {
+      "cost": [
+        "Oro425",
+        "Petróleo450"
+      ],
+      "name": "Soldado motorizado",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "25",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "300"
+      },
+      "training": [
+        "Se entrena en: Academia de soldado motorizado"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Acero800"
+      ],
+      "name": "Soldado raso Andrómeda",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "23",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "160"
+      },
+      "training": [
+        "Se entrena en: Academia de soldado raso Andrómeda"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Soldado S.W.A.T.",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "46",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "8",
+        "Vida": "1,850"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro8,000",
+        "Acero10,000"
+      ],
+      "name": "Soldado S.W.A.T.",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "46",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "8",
+        "Vida": "1,850"
+      },
+      "training": [
+        "Se entrena en: Academia de soldado S.W.A.T."
+      ]
+    },
+    {
+      "cost": [
+        "Oro150",
+        "Acero300"
+      ],
+      "name": "Soldado V",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "24",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "110"
+      },
+      "training": [
+        "Se entrena en: Academia V"
+      ]
+    },
+    {
+      "cost": [
+        "Oro200",
+        "Petróleo325"
+      ],
+      "name": "Soldado vikingo",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "19",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "100"
+      },
+      "training": [
+        "Se entrena en: Academia de soldado vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Spinner rojo",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "43",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,650"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro80",
+        "Madera160"
+      ],
+      "name": "Sr. Cigar",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "400"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro325",
+        "Acero500"
+      ],
+      "name": "Sr. Treat",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "200"
+      },
+      "training": [
+        "Se entrena en: Academia de Mr T."
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Petróleo1,000"
+      ],
+      "name": "T-Rex",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "40",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "1,200"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Petróleo1,000"
+      ],
+      "name": "T-Rex de fuego",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "T-Rex megafuego",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "48",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "1,950"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Petróleo1,000"
+      ],
+      "name": "T-Rex verde",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "7",
+        "Vida": "3,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro175",
+        "Acero350"
+      ],
+      "name": "TankBoss",
+      "stats": {
+        "Alcance": "2",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "15,000"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro175",
+        "Acero350"
+      ],
+      "name": "Tanque",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "300"
+      },
+      "training": [
+        "Se entrena en: Academia de tanques I"
+      ]
+    },
+    {
+      "cost": [
+        "Oro450",
+        "Acero850"
+      ],
+      "name": "Tanque cruzado",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "35",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "620"
+      },
+      "training": [
+        "Se entrena en: Academia de tanque cruzado"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Acero1,000"
+      ],
+      "name": "Tanque de demolición",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "575"
+      },
+      "training": [
+        "Se entrena en: Academia de tanque de demolición"
+      ]
+    },
+    {
+      "cost": [
+        "Oro475",
+        "Acero875"
+      ],
+      "name": "Tanque de misiles",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "36",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "630"
+      },
+      "training": [
+        "Se entrena en: Academia de tanque de misiles"
+      ]
+    },
+    {
+      "cost": [
+        "Oro600",
+        "Acero1,200"
+      ],
+      "name": "Tanque Dominion",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "27",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "475"
+      },
+      "training": [
+        "Se entrena en: Academia de tanque Dominion"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Acero900"
+      ],
+      "name": "Tanque grande de orcos",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "16",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "350"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro250",
+        "Acero500"
+      ],
+      "name": "Tanque II",
+      "stats": {
+        "Alcance": "10",
+        "Ataque": "22",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "375"
+      },
+      "training": [
+        "Se entrena en: Academia de tanques II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro325",
+        "Acero650"
+      ],
+      "name": "Tanque III",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "26",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "450"
+      },
+      "training": [
+        "Se entrena en: Academia de tanques III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro400",
+        "Acero800"
+      ],
+      "name": "Tanque IV",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "30",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "525"
+      },
+      "training": [
+        "Se entrena en: Academia de tanques IV"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Acero900"
+      ],
+      "name": "Tanque orco",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "37",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "650"
+      },
+      "training": [
+        "Se entrena en: Academia de tanques ork"
+      ]
+    },
+    {
+      "cost": [
+        "Oro175",
+        "Acero350"
+      ],
+      "name": "Tanque ork básico",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Petróleo600"
+      ],
+      "name": "Tanque rojo",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "18",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "150"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro475",
+        "Acero950"
+      ],
+      "name": "Tanque V",
+      "stats": {
+        "Alcance": "13",
+        "Ataque": "34",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "600"
+      },
+      "training": [
+        "Se entrena en: Academia de tanques V"
+      ]
+    },
+    {
+      "cost": [
+        "Oro500",
+        "Acero900"
+      ],
+      "name": "Tanque vikingo",
+      "stats": {
+        "Alcance": "12",
+        "Ataque": "37",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "5",
+        "Vida": "650"
+      },
+      "training": [
+        "Se entrena en: Academia de tanque vikingo"
+      ]
+    },
+    {
+      "cost": [
+        "Oro10"
+      ],
+      "name": "Trabajador I",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "6",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "25"
+      },
+      "training": [
+        "Se entrena en: Centro de Mando"
+      ]
+    },
+    {
+      "cost": [
+        "Oro10"
+      ],
+      "name": "Trabajador II",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "6",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "30"
+      },
+      "training": [
+        "Se entrena en: Centro de Mando II"
+      ]
+    },
+    {
+      "cost": [
+        "Oro10"
+      ],
+      "name": "Trabajador III",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "6",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "35"
+      },
+      "training": [
+        "Se entrena en: Centro de Mando III"
+      ]
+    },
+    {
+      "cost": [
+        "Oro10"
+      ],
+      "name": "Trabajador IV",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "6",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "7",
+        "Vida": "40"
+      },
+      "training": [
+        "Se entrena en: Centro de Mando IV"
+      ]
+    },
+    {
+      "cost": [
+        "Oro10"
+      ],
+      "name": "Trabajador orco",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "6",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "25"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Cash10"
+      ],
+      "name": "Ultra-Mech",
+      "stats": {
+        "Alcance": "8",
+        "Ataque": "46",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "6",
+        "Vida": "1,800"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro650",
+        "Petróleo1,000"
+      ],
+      "name": "Vikingo láser grande",
+      "stats": {
+        "Alcance": "9",
+        "Ataque": "35",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "5",
+        "Vida": "800"
+      },
+      "training": [
+        "Se entrena en: Academia de vikingo láser"
+      ]
+    },
+    {
+      "cost": [
+        "Cash6"
+      ],
+      "name": "Zepelín",
+      "stats": {
+        "Alcance": "11",
+        "Ataque": "28",
+        "Defensa": "1",
+        "Población": "3",
+        "Velocidad": "11",
+        "Vida": "700"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro300",
+        "Petróleo600"
+      ],
+      "name": "Zodiac",
+      "stats": {
+        "Alcance": "6",
+        "Ataque": "7",
+        "Defensa": "1",
+        "Población": "2",
+        "Velocidad": "6",
+        "Vida": "300"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro200",
+        "Acero325"
+      ],
+      "name": "Zoldier con hacha",
+      "stats": {
+        "Alcance": "1",
+        "Ataque": "20",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "180"
+      },
+      "training": [
+        "Se entrena en: Academia de Zoldier con hacha"
+      ]
+    },
+    {
+      "cost": [
+        "Oro75",
+        "Acero150"
+      ],
+      "name": "Zoldier orco",
+      "stats": {
+        "Alcance": "5",
+        "Ataque": "8",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "5",
+        "Vida": "40"
+      },
+      "training": []
+    },
+    {
+      "cost": [
+        "Oro170",
+        "Acero325"
+      ],
+      "name": "Zoldier pistolero",
+      "stats": {
+        "Alcance": "7",
+        "Ataque": "19",
+        "Defensa": "1",
+        "Población": "1",
+        "Velocidad": "6",
+        "Vida": "100"
+      },
+      "training": [
+        "Se entrena en: Academia de Zoldier pistolero"
+      ]
+    }
+  ]
+}

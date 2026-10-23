@@ -2,6 +2,8 @@
 
 Revisión: 20 de octubre de 2026. Esta revisión distingue la partida observada, la inspección estática del cliente y las funciones implementadas en Auralis. Indexar una función o una película no significa haberla ejecutado ni reproducido.
 
+La [comparación del 23 de octubre](SOCIAL-WARS-LIVE-COMPARISON-20261023.md) añade una cuenta nueva comprobada en Edge, una compra y recompensas verificadas, imágenes de bases avanzadas y diferencias de obtención pendientes. El catálogo público observado ese día se conserva por separado en `source-data/social-wars/live-guide-20261023.json`, sin datos de cuenta.
+
 ## Fuentes y alcance
 
 - Sitio observado: https://wars.fbgamesweb.com/. Se revisaron la base, el desplazamiento del mapa, la tienda, defensas, ampliación, menús de mundo y bloqueos por nivel, además del códice público completo. La cuenta de prueba estaba en nivel 1. El acceso a combates contra otros jugadores mostró el requisito de nivel 8: no se eludió. No se probaron todos los eventos ni misiones de niveles superiores.

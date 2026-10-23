@@ -40,6 +40,7 @@ Las partidas 0.1 y 0.2 se migran sin reemplazar recursos, edificios o tropas. `s
 El [atlas y códice](https://oscard0823.github.io/auralis-wars/archive.html) permite consultar 24 mapas de 100 × 100 y 778 fichas del archivo. La base y las operaciones originales usan mapas de 100 × 100; las doce escaramuzas Auralis conservan sus campos de 32 × 32. El adaptador relaciona 777 objetos del catálogo fuente con funciones y gráficos; el registro restante describe el terreno. El índice incluye 3.199 archivos de recursos, 1.387 archivos AS3 y 63 comandos. Las estadísticas públicas del sitio actual se conservan separadas.
 
 - [Revisión del motor y comportamiento del mapa](docs/SOCIAL-WARS-ANATOMY.md)
+- [Comparación en vivo, bases avanzadas y rutas de obtención — 23 de octubre de 2026](docs/SOCIAL-WARS-LIVE-COMPARISON-20261023.md)
 - [Mediciones de rendimiento](docs/PERFORMANCE.md)
 - `scripts/qa-reference.mjs`: atlas, catálogo, móvil, estabilidad de menús, invalidación de cachés y descarga completa sin conexión.
 - `scripts/qa-performance.mjs`: comparación reproducible del dibujo y peso inicial.
