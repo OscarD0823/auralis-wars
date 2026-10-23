@@ -1,6 +1,6 @@
 # Auralis Wars
 
-Versión 0.10.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.10.1: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
 El catálogo incorpora 412 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 29 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
 

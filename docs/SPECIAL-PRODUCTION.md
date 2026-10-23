@@ -54,6 +54,8 @@ Cada meta nueva completada entrega además un cash; Cash Wonder es otra fuente. 
 
 Los premios sin espacio quedan en reserva: materiales entregables parcialmente y héroes esperando vivienda. Repetir la recogida no duplica recompensas. Las tropas especiales obtenidas pueden investigarse aunque no sean entrenables en una academia normal; los premios reciben el grado ya investigado.
 
+La vista de mejora distingue la integridad de la producción: en 0.10.1 no anuncia aumentos por segundo para las maravillas de lotes y cargas fijas.
+
 ## Integración y compatibilidad
 
 La demostración agrupa industrias, viviendas, ciencia, academias, aviación y reservas. Deja pasillos libres, distribuye defensas por accesos y hace operativos los puentes. Sus ejemplos preparados pertenecen exclusivamente a la demostración.
