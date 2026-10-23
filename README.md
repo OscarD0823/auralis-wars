@@ -1,6 +1,6 @@
 # Auralis Wars
 
-Versión 0.11.0: adaptación web isométrica con dibujos y animaciones del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.12.0: estrategia militar isométrica con arquitectura e iconos propios, más tropas, naturaleza y escenarios del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
 El catálogo incorpora 412 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 29 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
 
@@ -16,6 +16,14 @@ El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis.
 - scripts/qa-upgrades.mjs: selección y mejora de edificios en la interfaz.
 
 La vista isométrica usa Canvas 2D y atlas WebP. Los archivos 3D anteriores permanecen como fuente histórica y no se cargan ni se almacenan en la caché del juego actual. Las partidas de 0.1.0 conservan su clave y sus IDs.
+
+## Civilizaciones y arte propio en 0.12
+
+Cuatro razas elegibles con ventajas aplicadas, ocho facciones NPC y relaciones de clan o de raza. Tratos, ayuda, alianzas, guerras, treguas, fundación pacífica de puestos y decisiones sobre civiles modifican reputación y moralidad. Las nuevas islas tienen costas procedurales v2; las anteriores conservan su versión. Las estaciones afectan a producción colonial y transporte, también durante la ausencia.
+
+Dieciséis diseños arquitectónicos base propios, treinta iconos de interfaz, cuatro emblemas y cincuenta piezas vectoriales. El catálogo histórico se representa mediante familias; todavía no tiene un modelo único para cada entrada. Los personajes y el terreno conservan los recursos anteriores. La demostración permite ver las estaciones y negociar con clanes sin modificar la base real.
+
+[Reglas y compatibilidad](docs/CIVILIZATIONS.md) · [Arte, archivos y prompt final](docs/ART-DIRECTION-0.12.md).
 
 ## Colecciones e inventario en 0.11
 

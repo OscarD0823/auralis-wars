@@ -1,3 +1,5 @@
+> 0.12: la interfaz del juego utiliza ahora iconos de piezas propios. La lámina original citada abajo permanece como referencia histórica; IDs, recompensas y reglas de las colecciones se conservan. Véase [arte Auralis](ART-DIRECTION-0.12.md).
+
 # Colecciones y almacén · 0.11.0
 
 ## Comparación realizada

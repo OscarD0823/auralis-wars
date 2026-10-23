@@ -1,6 +1,6 @@
 import {UNITS,unitLevel} from './engine.js';
 
-export const hudGraphic = (name, cls = '') => '<img class="hud-art '+cls+'" src="./interface/'+name+'.png" alt="" aria-hidden="true" draggable="false">';
+export const hudGraphic = (name, cls = '') => '<img class="hud-art '+cls+'" src="./auralis/icons/'+name+'.svg" alt="" aria-hidden="true" draggable="false">';
 
 // The original neighbour strip is reserved for a future multiplayer release.
 // These portraits operate on the real, local garrison instead of simulated friends.

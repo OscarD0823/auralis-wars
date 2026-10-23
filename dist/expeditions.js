@@ -1,4 +1,5 @@
-import {BIOMES,GENERATOR_VERSION,noise,expeditionWorld,validateProcedural}from'./procedural.js';
+import {civilization,factionForSeed,contactFaction,atWar,allied,raceBonus,factionById} from './diplomacy.js';
+import {BIOMES,GENERATOR_VERSION,noise,expeditionWorld,validateProcedural,seasonAt,seasonalSeconds}from'./procedural.js';
 import {BUILDINGS,UNITS,RESOURCE_KEYS,buildingStats,unitStats,DIFFICULTIES}from'./catalog.js';
 import {reveal}from'./fog.js';
 export {BIOMES,seasonAt}from'./procedural.js';
@@ -7,7 +8,7 @@ export function frontier(s){return s.frontier??={version:1,index:0,target:null,c
 export const colonyPopulation=s=>frontier(s).colonies.reduce((n,c)=>n+c.garrison.reduce((v,u)=>v+UNITS[u.type].pop,0),0);
 export function targetDescription(s,level,biome='any'){
  const f=frontier(s),seed=(s.seed+Math.imul(f.index+1,2654435761))>>>0,keys=Object.keys(BIOMES),b=biome==='any'?keys[Math.floor(noise(9,8,seed)*keys.length)]:biome;
- return{id:'island-'+seed,seed,version:GENERATOR_VERSION,biome:b,level,distance:120+Math.floor(noise(5,4,seed)*880),name:BIOMES[b].name+' · '+String(seed%10000).padStart(4,'0')};
+ return{id:'island-'+seed,seed,version:GENERATOR_VERSION,faction:factionForSeed(seed).id,biome:b,level,distance:120+Math.floor(noise(5,4,seed)*880),name:BIOMES[b].name+' · '+String(seed%10000).padStart(4,'0')};
 }
 export const searchCost=level=>({gold:25+level*10});
 export function colonyPower(c){return c.garrison.reduce((n,u)=>{const st=unitStats(u.type,u.level);return n+(st.damage*3+st.hp*.12)*(u.hp/u.maxHp);},0)+c.buildings.filter(b=>b.hp>0).reduce((n,b)=>n+(buildingStats(b.type,b.level).attack||0)*3,0);}
@@ -25,23 +26,32 @@ export function createExpeditions({makeUnit,log,hqLevel,initGarrison,affordable,
   if(s.battle)return bad('Termina la operación antes de reconocer otra isla.');
   if(!Number.isInteger(level)||level<1||level>10||!(biome==='any'||Object.hasOwn(BIOMES,biome)))return bad('Reconocimiento no válido.');
   const cost=searchCost(level);if(!affordable(s,cost))return bad('Reúne '+cost.gold+' de oro para explorar.');
-  const f=frontier(s);pay(s,cost);f.target=targetDescription(s,level,biome);f.index++;return good('Isla localizada. Revisa sus defensas antes de desembarcar.');
+  const f=frontier(s);pay(s,cost);f.target=targetDescription(s,level,biome);f.index++;if(civilization(s).race)contactFaction(s,f.target.faction);return good('Isla localizada. Revisa sus defensas antes de desembarcar.');
  }
  function forces(s,t){
   const buildings=[],units=[],level=t.level,base=.28+level*.065;
-  const add=(type,x,y)=>{const st=buildingStats(type,level);buildings.push({id:'eb'+buildings.length,type,x,y,level,hp:Math.round(st.hp*base),maxHp:Math.round(st.hp*base),side:'enemy',attack:Math.round((st.attack||0)*base),range:st.range});};
+  const add=(type,x,y)=>{const st=buildingStats(type,level);buildings.push({id:'eb'+buildings.length,type,x,y,level,hp:Math.round(st.hp*base),maxHp:Math.round(st.hp*base),side:'enemy',faction:t.faction,attack:Math.round((st.attack||0)*base),range:st.range});};
   add('hq',73,48);add('goldmine',79,39);add('storage',79,56);add('infantry',68,57);add('tower',64,45);
   if(level>=2)add('tower',65,55);if(level>=3)add('cannon',70,40);if(level>=5)add('bunker',76,63);if(level>=7){add('fortress',79,46);add('bunker',73,59);add('tower',64,62);}
   if(level>=9){add('tower',69,35);add('cannon',63,38);add('storage',79,64);}
   const types=Object.values(UNITS).filter(u=>!u.archive&&!u.waterborne&&!u.heal&&u.hq<=level);
-  for(let i=0;i<2+level*2;i++){const type=types[Math.floor(noise(i,3,t.seed)*types.length)].id,u=makeUnit(s,type,Math.min(5,Math.ceil(level/2)));Object.assign(u,{side:'enemy',x:64+(i%5)*1.7,y:48+Math.floor(i/5)*1.7,order:{kind:'hold',x:64+(i%5)*1.7,y:48+Math.floor(i/5)*1.7},damageScale:DIFFICULTIES[s.difficulty].damage*base});units.push(u);}
+  for(let i=0;i<2+level*2;i++){const type=types[Math.floor(noise(i,3,t.seed)*types.length)].id,u=makeUnit(s,type,Math.min(5,Math.ceil(level/2)));Object.assign(u,{side:'enemy',faction:t.faction,x:64+(i%5)*1.7,y:48+Math.floor(i/5)*1.7,order:{kind:'hold',x:64+(i%5)*1.7,y:48+Math.floor(i/5)*1.7},damageScale:DIFFICULTIES[s.difficulty].damage*base});if(civilization(s).race){const race=factionById(t.faction)?.race;if(race==='kharun'){u.maxHp=Math.round(u.maxHp*1.15);u.hp=u.maxHp;}if(race==='arca')u.damageScale*=1.1;}units.push(u);}
   return{buildings,units};
+ }
+ function settle(s){
+  const f=frontier(s),t=f.target;if(!civilization(s).race||!t||!allied(s,t.faction)||s.battle)return bad('Necesitas una isla reconocida y una alianza con sus habitantes.');
+  if(f.colonies.filter(c=>c.owned).length>=3)return bad('Puedes mantener tres colonias.');
+  const cost={gold:250,wood:180,supply:100};if(!affordable(s,cost))return bad('El acuerdo territorial necesita 250 oro, 180 madera y 100 petróleo.');
+  if(f.colonies.length>=12)f.colonies.splice(f.colonies.findIndex(c=>!c.owned),1);
+  pay(s,cost);const buildings=forces(s,t).buildings.map(b=>({...b,side:'player',level:1,hp:buildingStats(b.type,1).hp,maxHp:buildingStats(b.type,1).hp,attack:buildingStats(b.type,1).attack||0}));
+  const c={id:t.id,target:{...t},name:t.name,level:1,owned:true,stock:inventory(),garrison:[],route:null,routeJob:null,job:null,warning:null,nextAttack:s.time+1800,buildings,explored:[]};f.colonies.push(c);f.target=null;report(s,c,'Puesto establecido por acuerdo. Tu alianza protege este territorio.');return good('Puesto fundado sin combatir. Asigna guarnición y construye la ruta de suministros.');
  }
  function start(s,mode='conquer',colonyId=null){
   const f=frontier(s),old=colonyId&&find(s,colonyId),t=old&&!old.owned?old.target:f.target;
   if(colonyId&&(!old||old.owned))return bad('Ese puesto no está ocupado por la IA.');
   if(s.battle||!s.army.length)return bad('Necesitas un ejército disponible y ninguna operación activa.');
   if(!['raid','conquer'].includes(mode)||!t)return bad('Reconoce una isla primero.');
+  if(civilization(s).race&&t.faction&&!atWar(s,t.faction))return bad(allied(s,t.faction)?'Esta isla pertenece a un aliado. Funda un puesto por acuerdo.':'Este clan es neutral. Negocia o declara la guerra antes de atacar.');
   if(mode==='conquer'&&f.colonies.filter(c=>c.owned).length>=3)return bad('Puedes mantener tres colonias. Abandona una o realiza un saqueo.');
   initGarrison(s);for(const u of s.army)u.homePosition={x:u.x,y:u.y};const enemy=forces(s,t);
   const land=[],water=[];for(let y=48;y<=53;y++)for(let x=20;x<=24;x++){land.push({x:x+.5,y:y+.5});water.push({x:x-10+.5,y:y+.5});}
@@ -85,7 +95,7 @@ export function createExpeditions({makeUnit,log,hqLevel,initGarrison,affordable,
  function ship(s,id){
   const c=find(s,id),f=frontier(s);if(s.battle||!c?.owned||!c.route||f.shipments.some(v=>v.colonyId===id))return bad('Necesitas una ruta operativa y ningún transporte pendiente en esta colonia.');
   const factory=c.route.mode==='sea'?'shipyard':'air';if(!s.buildings.some(b=>b.type===factory&&b.hp>0&&!b.job))return bad('Repara la terminal de la base para despachar.');
-  const cargo=inventory();let room=c.route.mode==='sea'?1500:750;for(const k of RESOURCE_KEYS){cargo[k]=Math.min(Math.floor(c.stock[k]),room);room-=cargo[k];}if(Object.values(cargo).every(v=>v===0))return bad('No hay carga para despachar.');const cost={supply:c.route.mode==='sea'?25:65};if(!affordable(s,cost))return bad('Necesitas petróleo para el transporte.');pay(s,cost);for(const k of RESOURCE_KEYS)c.stock[k]-=cargo[k];const duration=Math.max(30,Math.round(c.target.distance/(c.route.mode==='sea'?2:8)));f.shipments.push({id:'cargo'+s.serial++,colonyId:id,name:c.name,mode:c.route.mode,cargo,started:s.time,ends:s.time+duration,arrived:false});return good('Transporte despachado. La carga llegará en '+duration+' segundos.');
+  const cargo=inventory();let room=c.route.mode==='sea'?1500:750;for(const k of RESOURCE_KEYS){cargo[k]=Math.min(Math.floor(c.stock[k]),room);room-=cargo[k];}if(Object.values(cargo).every(v=>v===0))return bad('No hay carga para despachar.');const cost={supply:c.route.mode==='sea'?25:65};if(!affordable(s,cost))return bad('Necesitas petróleo para el transporte.');pay(s,cost);for(const k of RESOURCE_KEYS)c.stock[k]-=cargo[k];const winter=seasonAt(s.time).index===3&&c.route.mode==='sea'?1.25:1;const duration=Math.max(30,Math.round(c.target.distance/(c.route.mode==='sea'?2:8)*winter*(c.route.mode==='sea'?raceBonus(s,'sea'):1)));f.shipments.push({id:'cargo'+s.serial++,colonyId:id,name:c.name,mode:c.route.mode,cargo,started:s.time,ends:s.time+duration,arrived:false});return good('Transporte despachado. La carga llegará en '+duration+' segundos.');
  }
  function claim(s){let count=0;for(const shipment of frontier(s).shipments.filter(v=>v.arrived))for(const k of RESOURCE_KEYS){const n=Math.min(shipment.cargo[k],Math.max(0,storageCap(s)-s.resources[k]));s.resources[k]+=n;shipment.cargo[k]-=n;count+=n;}frontier(s).shipments=frontier(s).shipments.filter(v=>!v.arrived||Object.values(v.cargo).some(n=>n>0));s.stats.collected+=count;s.xp+=count/20;return count?good('Entregados '+Math.floor(count)+' materiales. El excedente permanece en el transporte.'):bad('No hay entregas o los almacenes están llenos.');}
  function abandon(s,id){const f=frontier(s),c=find(s,id);if(s.battle||!c)return bad('Puesto no disponible.');if(c.garrison.length||f.shipments.some(v=>v.colonyId===id))return bad('Retira las tropas y recoge el transporte antes de abandonar.');f.colonies.splice(f.colonies.indexOf(c),1);return good('Puesto abandonado. Su depósito local se pierde.');}
@@ -105,17 +115,18 @@ export function createExpeditions({makeUnit,log,hqLevel,initGarrison,affordable,
   const f=frontier(s);for(const c of f.colonies){if(!c.owned)continue;const oldLevel=c.level,oldDuration=c.job?Math.max(0,Math.min(dt,c.job.ends-(s.time-dt))):0;
    if(c.job&&c.job.ends<=s.time){c.job=null;c.level++;for(const b of c.buildings){b.level=c.level;const st=buildingStats(b.type,c.level);b.maxHp=st.hp;b.hp=st.hp;b.attack=st.attack||0;}report(s,c,'Puesto mejorado al nivel '+c.level+'.');}
    if(c.routeJob&&c.routeJob.ends<=s.time){c.route={mode:c.routeJob.mode};c.routeJob=null;report(s,c,'Ruta de suministros operativa.');}
-   const primary=BIOMES[c.target.biome].resource,amount=(extractionRate(s,c)*(dt-oldDuration)+extractionRate(s,{level:oldLevel})*oldDuration)/3600;c.stock[primary]=Math.min(colonyCapacity(c),c.stock[primary]+amount);c.stock.gold=Math.min(colonyCapacity(c),c.stock.gold+(primary==='gold'?0:amount*.2));
+   const primary=BIOMES[c.target.biome].resource,start=s.time-dt,amount=(extractionRate(s,c)*seasonalSeconds(start+oldDuration,dt-oldDuration,primary,c.target.biome)+extractionRate(s,{level:oldLevel})*seasonalSeconds(start,oldDuration,primary,c.target.biome))/3600;c.stock[primary]=Math.min(colonyCapacity(c),c.stock[primary]+amount);c.stock.gold=Math.min(colonyCapacity(c),c.stock.gold+(primary==='gold'?0:amount*.2));
+   if(civilization(s).race&&c.target.faction&&!atWar(s,c.target.faction)){c.warning=null;c.nextAttack=Math.max(c.nextAttack,s.time+120);continue;}
    if(online&&!(s.battle?.kind==='colony-defense'&&s.battle.colonyId===c.id)){if(c.warning&&s.time>=c.warning.ends){if(s.battle?.kind==='colony'&&s.battle.colonyId===c.id){const b=s.battle,enemy=forces(s,{...c.target,level:c.level});for(const[i,u]of enemy.units.entries())Object.assign(u,{x:40+i%5,y:48+Math.floor(i/5),order:{kind:'assault',x:73,y:50}});b.units.push(...enemy.units);b.kind='colony-defense';b.elapsed=0;b.limit=300;report(s,c,'La incursión llegó durante tu visita. Defiende el mando.');}else autoDefend(s,c);}else if(!c.warning&&s.time>=c.nextAttack){c.warning={ends:s.time+120};report(s,c,'Reconocimiento enemigo: ataque dentro de dos minutos. Refuerza o dirige la defensa.');}}
   }for(const shipment of f.shipments)if(!shipment.arrived&&shipment.ends<=s.time){shipment.arrived=true;log(s,'Llegó un transporte desde '+shipment.name+'. Recógelo en Expediciones.');}
   if(s.battle&&['expedition','colony','colony-defense'].includes(s.battle.kind))reveal(s.battle);
  }
  function offline(s,dt){for(const c of frontier(s).colonies){c.nextAttack+=dt;if(c.warning)c.warning.ends+=dt;}}
- return{search,start,deploy,deployAll,finish,assign,upgrade,route,ship,claim,abandon,visit,tick,offline,conquered};
+ return{search,settle,start,deploy,deployAll,finish,assign,upgrade,route,ship,claim,abandon,visit,tick,offline,conquered};
 }
 export function validateFrontier(s){
  if(s.frontier===undefined){if(['expedition','colony','colony-defense'].includes(s.battle?.kind))throw Error('Faltan las expediciones del guardado.');return;}const f=s.frontier,finite=(n,max=1e12)=>Number.isFinite(n)&&n>=0&&n<=max,id=v=>typeof v==='string'&&/^[A-Za-z][A-Za-z0-9_-]{0,70}$/.test(v);
- const target=t=>{if(!t||!id(t.id)||t.id!=='island-'+t.seed||!Number.isInteger(t.level)||t.level<1||t.level>10||!finite(t.distance,1000)||typeof t.name!=='string'||t.name.length>100)throw Error('Objetivo de expedición no válido.');validateProcedural(t);};
+ const target=t=>{if(!t||!id(t.id)||t.id!=='island-'+t.seed||!Number.isInteger(t.level)||t.level<1||t.level>10||!finite(t.distance,1000)||typeof t.name!=='string'||t.name.length>100)throw Error('Objetivo de expedición no válido.');validateProcedural(t);if(t.faction!==undefined&&t.faction!==factionForSeed(t.seed).id)throw Error('Facción de isla no válida.');};
  const cargo=v=>{if(!v||RESOURCE_KEYS.some(k=>!finite(v[k],1e8)))throw Error('Carga colonial no válida.');};
  if(!f||f.version!==1||!Number.isInteger(f.index)||f.index<0||!Array.isArray(f.colonies)||f.colonies.length>12||f.colonies.filter(c=>c.owned).length>3||!Array.isArray(f.shipments)||f.shipments.length>12||!Array.isArray(f.reports)||f.reports.length>20)throw Error('Expediciones no válidas.');if(f.target)target(f.target);
  const ids=new Set(),deployed=[...s.army,...(s.battle?[...s.battle.units.filter(u=>u.side==='player'),...s.battle.reserve]:[])],unitIds=new Set(deployed.map(u=>u.id));if(unitIds.size!==deployed.length)throw Error('Tropas duplicadas en el guardado.');

@@ -47,3 +47,7 @@ Se incorporan 31 bitmaps de la GUI de `Basesec_1.5.4.swf`, exportados estáticam
 ## Piezas de colecciones en 0.11
 
 `dist/interface/collectibles.png` conserva sin modificar `assets/images/collectibles3.png` de la revisión fija citada arriba. Las celdas se recortan por CSS; no se redibuja ni se atribuye su arte a Auralis. La configuración de diez colecciones y cincuenta piezas se conserva en `source-data/social-wars/collections.json`; `scripts/prepare-collections.mjs` genera los datos públicos con sus IDs y premios. Véase [implementación y límites](docs/COLLECTIONS.md).
+
+## Arquitectura e iconos Auralis en 0.12
+
+`dist/auralis/` contiene arte propio: dieciséis diseños arquitectónicos base creados con la herramienta integrada de generación de imágenes, treinta iconos de interfaz, cuatro emblemas y una lámina de cincuenta piezas vectoriales propias. Los edificios del juego usan esas familias; los puentes se dibujan con geometría propia. Las tropas y la naturaleza conservan los recursos preservados. Los archivos anteriores permanecen como referencia con sus créditos. [Archivos, integración y prompt final](docs/ART-DIRECTION-0.12.md).

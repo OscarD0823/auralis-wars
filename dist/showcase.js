@@ -1,10 +1,11 @@
+import {contactFaction} from './diplomacy.js';
 import * as E from './engine.js';
 import {surface} from './world.js';
 export const DEMO_DISTRICTS={industry:{name:'Distrito industrial',x:43,y:31},logistics:{name:'Reservas protegidas',x:55,y:42},housing:{name:'Barrio de viviendas',x:64,y:42},military:{name:'Academias y reunión',x:42,y:50},science:{name:'Investigación y prototipos',x:54,y:28},air:{name:'Aviación y puerto',x:64,y:54}};
 const lane=(x,y)=>[46,50,56,62].includes(x)||[32,39,46,54,60].includes(y);
 function district(type){if(type==='house')return'housing';if(['storage','market','embassy'].includes(type))return'logistics';if(['air','heliport','stealth','shipyard'].includes(type))return'air';if(E.BUILDINGS[type].kind==='science'||type==='fusion')return'science';if(E.BUILDINGS[type].resource||E.isWonder(type))return'industry';return'military';}
 // Isolated scenario: deliberate districts and lanes, not a historical player's account.
-export function createAdvancedBase(){
+export function createAdvancedBase(race='aurora'){
  const s=E.createIslandState(341,'easy');s.tutorial=true;s.xp=110000;s.nextRaid=1e12;
  s.world.owned=[24,25,26,27,28,34,35,36,37,38,44,45,46,47,48,54,55,56,57,58,64,65,66,67,68];s.world.revision++;
  for(const b of s.world.bridges)b.broken=false;
@@ -36,5 +37,6 @@ export function createAdvancedBase(){
  const wonder=s.buildings.find(b=>b.type==='swb70');wonder.stored=3600;wonder.wonder.remaining=1;wonder.wonder.legacy=false;
  for(const id of [2,4])for(const item of E.COLLECTIONS.find(c=>c.id===id).items)s.inventory.items[item]=1;
  for(const item of E.COLLECTIONS.find(c=>c.id===6).items.slice(0,3))s.inventory.items[item]=2;
+ E.chooseRace(s,race);for(const f of E.FACTIONS){const r=contactFaction(s,f.id);r.reputation=26;}E.relation(s,'faro').status='ally';E.relation(s,'liga').status='ally';E.relation(s,'ceniza').status='war';E.civilization(s).morality=18;E.searchIsland(s,2,'forest');
  E.log(s,'Demostración: prototipos y fusión listos, y una última recogida de Inca God para probar la restauración. Tu partida principal se conserva.');return s;
 }
