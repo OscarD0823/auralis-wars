@@ -1,8 +1,8 @@
 # Auralis Wars
 
-Versión 0.12.0: estrategia militar isométrica con arquitectura e iconos propios, más tropas, naturaleza y escenarios del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.13.0: estrategia militar isométrica con arquitectura, obreros y ejército Auralis propios para cuatro razas, más unidades especiales, naturaleza y escenarios del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
-El catálogo incorpora 412 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 29 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Los aspectos originales evolucionan por etapas, según las variantes disponibles.
+El catálogo incorpora 412 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 29 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Las familias gráficas propias muestran insignias de nivel; el catálogo preservado conserva las variantes disponibles.
 
 El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis. Se utilizan posiciones y matrices originales de las misiones disponibles, con reglas de objetivos implementadas en el nuevo motor. No se ejecuta el ActionScript ni se reproduce íntegramente cada delegado, cinemática o servicio social del cliente original.
 
@@ -17,11 +17,17 @@ El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis.
 
 La vista isométrica usa Canvas 2D y atlas WebP. Los archivos 3D anteriores permanecen como fuente histórica y no se cargan ni se almacenan en la caché del juego actual. Las partidas de 0.1.0 conservan su clave y sus IDs.
 
+## Identidad visual por raza en 0.13
+
+Aurora, Kharun, Nébari y Arca tienen arquitectura propia, personajes animados y vehículos distintos. Son 64 diseños arquitectónicos base y 120 poses/vehículos en cuatro hojas de actores. El mapa, los catálogos, los retratos y las mejoras comparten la misma identidad. Las facciones NPC conservan su raza. Se cargan las hojas necesarias bajo demanda; todas entran en la descarga opcional sin conexión.
+
+La elección de civilización incluye vistas de prueba y la base avanzada permite cambiar de raza sin modificar la partida principal. [Arte, animaciones, fuentes y límites](docs/RACIAL-ART.md).
+
 ## Civilizaciones y arte propio en 0.12
 
 Cuatro razas elegibles con ventajas aplicadas, ocho facciones NPC y relaciones de clan o de raza. Tratos, ayuda, alianzas, guerras, treguas, fundación pacífica de puestos y decisiones sobre civiles modifican reputación y moralidad. Las nuevas islas tienen costas procedurales v2; las anteriores conservan su versión. Las estaciones afectan a producción colonial y transporte, también durante la ausencia.
 
-Dieciséis diseños arquitectónicos base propios, treinta iconos de interfaz, cuatro emblemas y cincuenta piezas vectoriales. El catálogo histórico se representa mediante familias; todavía no tiene un modelo único para cada entrada. Los personajes y el terreno conservan los recursos anteriores. La demostración permite ver las estaciones y negociar con clanes sin modificar la base real.
+Dieciséis diseños arquitectónicos base propios, treinta iconos de interfaz, cuatro emblemas y cincuenta piezas vectoriales. El catálogo histórico se representa mediante familias; todavía no tiene un modelo único para cada entrada. En 0.13 los obreros y las 33 tropas Auralis adoptan la apariencia de la raza elegida; las unidades especiales del archivo y el terreno conservan sus recursos anteriores. La demostración permite ver las estaciones y negociar con clanes sin modificar la base real.
 
 [Reglas y compatibilidad](docs/CIVILIZATIONS.md) · [Arte, archivos y prompt final](docs/ART-DIRECTION-0.12.md).
 

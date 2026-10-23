@@ -38,5 +38,16 @@ export function createAdvancedBase(race='aurora'){
  for(const id of [2,4])for(const item of E.COLLECTIONS.find(c=>c.id===id).items)s.inventory.items[item]=1;
  for(const item of E.COLLECTIONS.find(c=>c.id===6).items.slice(0,3))s.inventory.items[item]=2;
  E.chooseRace(s,race);for(const f of E.FACTIONS){const r=contactFaction(s,f.id);r.reputation=26;}E.relation(s,'faro').status='ally';E.relation(s,'liga').status='ally';E.relation(s,'ceniza').status='war';E.civilization(s).morality=18;E.searchIsland(s,2,'forest');
+ // Space the demonstration's unusually large garrison along open lanes.
+ // Ground troops must not spawn inside workshops or on top of one another.
+ const hq=s.buildings.find(b=>b.type==='hq'),used=[],land=[],water=[];
+ for(let y=20;y<80;y++)for(let x=25;x<85;x++){
+  const p={x:x+.5,y:y+.5},ground=E.groundAt(s,x,y);
+  if(s.buildings.some(b=>{const n=E.BUILDINGS[b.type].size;return p.x>b.x-.35&&p.x<b.x+n+.35&&p.y>b.y-.35&&p.y<b.y+n+.35;}))continue;
+  if(ground==='grass')land.push(p);else if(ground==='water')water.push(p);
+ }
+ const distance=p=>Math.hypot(p.x-hq.x,p.y-hq.y);
+ land.sort((a,b)=>distance(a)-distance(b));water.sort((a,b)=>Math.hypot(a.x-62,a.y-72)-Math.hypot(b.x-62,b.y-72));
+ for(const u of s.army){const naval=E.UNITS[u.type].waterborne,p=(naval?water:land).find(p=>used.every(q=>Math.hypot(p.x-q.x,p.y-q.y)>=2.1));if(!p)continue;Object.assign(u,{x:p.x,y:p.y,facing:1.1,moving:false,order:null});used.push(p);}
  E.log(s,'Demostración: prototipos y fusión listos, y una última recogida de Inca God para probar la restauración. Tu partida principal se conserva.');return s;
 }

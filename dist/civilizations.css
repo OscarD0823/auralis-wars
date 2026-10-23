@@ -6,3 +6,7 @@
 #home-notice{background-image:url('./auralis/icons/rescue.svg')}
 
 body.in-battle .civilization-pill{display:none}@media(max-width:700px){body:not(.in-battle) .world-title{display:none}}
+
+.race-art-preview{grid-column:1/-1;display:grid;grid-template-columns:1.55fr .8fr .8fr 1.15fr;align-items:end;gap:4px;min-height:115px;padding:10px 5px 2px;background:radial-gradient(ellipse at bottom,#b0c49e80,transparent 75%);border-bottom:1px solid #c9cbb3}.race-art-preview img{width:100%;height:115px;object-fit:contain;object-position:bottom}.race-art-preview img:first-child{height:145px}.demo-banner label{display:flex;align-items:center;gap:5px;font-size:10px}.demo-banner select{max-width:170px;border:1px solid #a4bda3;border-radius:5px;padding:4px;background:#f4f3df;color:#254b4a;font:inherit;min-height:29px}.demo-banner{max-width:720px}.race-card>button{grid-column:1/-1}
+.demo-banner>span{display:none}.demo-banner{padding:6px 10px;gap:8px}
+@media(max-width:700px){.race-art-preview{min-height:95px}.race-art-preview img{height:95px}.race-art-preview img:first-child{height:120px}.demo-banner{top:65px;bottom:auto;left:98px;right:8px;width:auto;max-width:none;transform:none;align-content:start;padding:5px;gap:4px}.demo-banner>b{width:100%;line-height:1.3}.demo-banner label{font-size:8px;width:100%;justify-content:space-between}.demo-banner select{max-width:180px;min-width:0;flex:1;min-height:25px}.demo-banner button{flex:1;min-width:0;margin:0;padding:4px;font-size:8px}}

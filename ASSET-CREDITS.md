@@ -51,3 +51,7 @@ Se incorporan 31 bitmaps de la GUI de `Basesec_1.5.4.swf`, exportados estáticam
 ## Arquitectura e iconos Auralis en 0.12
 
 `dist/auralis/` contiene arte propio: dieciséis diseños arquitectónicos base creados con la herramienta integrada de generación de imágenes, treinta iconos de interfaz, cuatro emblemas y una lámina de cincuenta piezas vectoriales propias. Los edificios del juego usan esas familias; los puentes se dibujan con geometría propia. Las tropas y la naturaleza conservan los recursos preservados. Los archivos anteriores permanecen como referencia con sus créditos. [Archivos, integración y prompt final](docs/ART-DIRECTION-0.12.md).
+
+## Apariencias de civilización en 0.13
+
+Se añaden tres atlas arquitectónicos y cuatro atlas de actores originales, generados con la herramienta integrada: 48 diseños arquitectónicos adicionales y 120 poses/vehículos. Aurora reutiliza el atlas arquitectónico propio de 0.12. Los PNG se conservan con su alfa sin modificar sus píxeles. `scripts/prepare-racial-atlas.py` lee el canal alfa y produce sólo metadatos de recorte y anclas. La animación, selección por alfa y efectos de movimiento se ejecutan en el motor Auralis. Las unidades especiales del archivo mantienen sus recursos y atribución. [Archivos y prompts finales](docs/RACIAL-ART.md).

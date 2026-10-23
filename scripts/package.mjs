@@ -3,7 +3,7 @@ const root=new URL('../dist/',import.meta.url),game=(await import('../dist/confi
 function walk(dir,base=''){for(const item of fs.readdirSync(dir,{withFileTypes:true})){const rel=base+item.name;if(item.name==='assets'||item.name==='scene.js')continue;if(item.isDirectory())walk(path.join(dir,item.name),rel+'/');else if(item.name!=='sw.js'&&!wholeMovies.has('./'+rel))files.push('./'+rel);}}walk(fileURLToPath(root));files.push('./');
 const starting=[atlas.units.settler,atlas.units.rifle,...Object.values(atlas.nature)],essential=new Set(starting.flatMap(id=>{const a=atlas.assets[id];return a.clips?Object.values(a.clips).flat().map(c=>c.file):[a.file];}));
 const legacyIcon=f=>f.startsWith('./interface/')&&!['./interface/toolbar-texture.png','./interface/panel-texture.png'].includes(f);
-const core=files.filter(f=>!legacyIcon(f)&&((!f.startsWith('./classic/')&&!f.startsWith('./reference-data/')&&!f.startsWith('./missions/'))||essential.has(f)||['./classic/atlas.json','./classic/terrain/00.webp','./classic/terrain/01.webp'].includes(f)));
+const core=files.filter(f=>!legacyIcon(f)&&(!f.startsWith('./auralis/races/')||f.endsWith('/atlas.json'))&&((!f.startsWith('./classic/')&&!f.startsWith('./reference-data/')&&!f.startsWith('./missions/'))||essential.has(f)||['./classic/atlas.json','./classic/terrain/00.webp','./classic/terrain/01.webp'].includes(f)));
 fs.writeFileSync(new URL('sw.js',root),`const CACHE=${JSON.stringify(game.id+'-v'+game.version)},PREFIX=${JSON.stringify(game.id+'-')},FILES=${JSON.stringify(files)};
 const CORE=${JSON.stringify(core)};
 const pathOf=f=>new URL(f,self.registration.scope).pathname,ALLOWED=new Set(FILES.map(pathOf));

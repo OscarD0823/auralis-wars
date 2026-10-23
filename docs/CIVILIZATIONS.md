@@ -1,8 +1,8 @@
-# Civilizaciones, diplomacia y estaciones · 0.12.0
+# Civilizaciones, diplomacia y estaciones · 0.13.0
 
 ## Identidad propia
 
-La interfaz utiliza treinta iconos propios, cuatro emblemas raciales y una lámina vectorial de cincuenta piezas de colección. La arquitectura se representa con dieciséis diseños base originales, reutilizados por familias de edificios, con insignias de nivel, colores de civilización, humo industrial y pulsos de laboratorio. Los puentes se dibujan con geometría propia. Las tropas, trabajadores, árboles y terrenos conservan las animaciones y gráficos anteriores. No se han creado 412 modelos únicos ni diez imágenes diferentes para cada nivel.
+La interfaz utiliza treinta iconos propios, cuatro emblemas raciales y una lámina vectorial de cincuenta piezas de colección. La arquitectura se representa con dieciséis diseños base originales, reutilizados por familias de edificios, con insignias de nivel, colores de civilización, humo industrial y pulsos de laboratorio. Los puentes se dibujan con geometría propia. Desde 0.13, los trabajadores y las 33 tropas Auralis usan cuatro hojas propias de animación y vehículos; las unidades especiales del archivo, árboles y terreno conservan los gráficos anteriores. Cada raza dispone de dieciséis familias arquitectónicas propias. No se han creado 412 modelos únicos ni diez imágenes diferentes para cada nivel.
 
 Los detalles de producción del arte, los archivos y el prompt final están en [ART-DIRECTION-0.12.md](ART-DIRECTION-0.12.md). Las imágenes archivadas anteriores permanecen como referencia y por compatibilidad de su catálogo; no representan la nueva autoría.
 
@@ -17,7 +17,7 @@ La elección es permanente para esa partida y no reemplaza edificios, ejército 
 | Nébari | Pueblos anfibios y navegantes | −20% de duración de transportes marítimos |
 | Autómatas de Arca | Comunidades sintéticas | −10% de duración del entrenamiento; se conserva el mínimo de cinco segundos |
 
-Los retratos y animaciones de tropas todavía pertenecen al catálogo anterior; elegir una raza cambia la identidad, sus emblemas, ventajas y relaciones, sin reemplazar automáticamente el aspecto de cada unidad.
+Desde 0.13, elegir una raza cambia los edificios, obreros, retratos y tropas Auralis, además de emblemas, ventajas y relaciones. Las familias se describen en [RACIAL-ART.md](RACIAL-ART.md). El catálogo especial conserva el aspecto de cada unidad.
 
 ## Ocho facciones de NPC
 
