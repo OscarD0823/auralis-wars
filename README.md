@@ -1,6 +1,6 @@
 # Auralis Wars
 
-Versión 0.13.0: estrategia militar isométrica con arquitectura, obreros y ejército Auralis propios para cuatro razas, más unidades especiales, naturaleza y escenarios del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.13.1: estrategia militar isométrica con arquitectura, obreros y ejército Auralis propios para cuatro razas, más unidades especiales, naturaleza y escenarios del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
 El catálogo incorpora 412 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 29 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Las familias gráficas propias muestran insignias de nivel; el catálogo preservado conserva las variantes disponibles.
 
@@ -16,6 +16,10 @@ El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis.
 - scripts/qa-upgrades.mjs: selección y mejora de edificios en la interfaz.
 
 La vista isométrica usa Canvas 2D y atlas WebP. Los archivos 3D anteriores permanecen como fuente histórica y no se cargan ni se almacenan en la caché del juego actual. Las partidas de 0.1.0 conservan su clave y sus IDs.
+
+## Emblemas de facción en 0.13.1
+
+Ocho escudos vectoriales de clan distintos, con símbolos de exploración, comercio, forja, costa y tecnología. Se muestran en diplomacia y en los objetivos de las islas, junto a cuatro escudos de raza renovados. La galería se abre antes de elegir civilización. La identidad del escudo es independiente del estado de alianza o guerra. `scripts/prepare-heraldry.mjs` reproduce los doce SVG.
 
 ## Identidad visual por raza en 0.13
 

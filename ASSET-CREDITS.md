@@ -55,3 +55,7 @@ Se incorporan 31 bitmaps de la GUI de `Basesec_1.5.4.swf`, exportados estáticam
 ## Apariencias de civilización en 0.13
 
 Se añaden tres atlas arquitectónicos y cuatro atlas de actores originales, generados con la herramienta integrada: 48 diseños arquitectónicos adicionales y 120 poses/vehículos. Aurora reutiliza el atlas arquitectónico propio de 0.12. Los PNG se conservan con su alfa sin modificar sus píxeles. `scripts/prepare-racial-atlas.py` lee el canal alfa y produce sólo metadatos de recorte y anclas. La animación, selección por alfa y efectos de movimiento se ejecutan en el motor Auralis. Las unidades especiales del archivo mantienen sus recursos y atribución. [Archivos y prompts finales](docs/RACIAL-ART.md).
+
+## Heráldica propia en 0.13.1
+
+Doce emblemas SVG propios dibujados como vectores editables en `dist/heraldry.js`: cuatro civilizaciones y ocho clanes. `scripts/prepare-heraldry.mjs` genera los archivos, y `prepare-own-icons.mjs` lo invoca para conservar el resultado al regenerar la interfaz. No utilizan imágenes del juego comercial ni generación raster.

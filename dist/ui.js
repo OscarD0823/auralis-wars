@@ -1,4 +1,5 @@
 import {diplomacyPanel} from './diplomacy-ui.js';
+import {heraldryPanel} from './heraldry.js';
 import {onOwnArtLoaded,raceId} from './own-art.js';
 import {inventoryPanel} from './collections-ui.js';
 import {hudGraphic,garrisonRoster} from './classic-hud.js';
@@ -99,6 +100,7 @@ document.addEventListener('click',async event=>{const button=event.target.closes
  else if(a==='inventory'){inventorySection=['items','storage'].includes(type)?type:'collections';modal(inventoryPanel(state,inventorySection,{head,esc,img}));}
  else if(a==='collection-claim'){const r=act(E.claimCollection(state,index),'complete');if(r.ok)modal(inventoryPanel(state,inventorySection,{head,esc,img}));}
  else if(a==='stored-use'){const c=E.COLLECTIONS.find(c=>c.id===index);if(!c)return;if(c.reward.unit){const r=act(E.useStoredReward(state,index),'complete');if(r.ok)modal(inventoryPanel(state,inventorySection,{head,esc,img}));}else{if(state.battle){toast('Regresa a tu base para colocar la recompensa.');return;}storedPlacement=index;tool=c.reward.type;moving=null;candidate=null;selected=[];tab='base';$('#modal').close();scene.setPlacement(tool);dirty=true;toast('Marca suelo libre para colocar el premio. Cancelar lo conserva en el almacén.');}}
+ else if(a==='heraldry'){modal(heraldryPanel({head,esc}));}
  else if(a==='progress'){modal(progressContent(state,{head,img,fmt,esc}));}
  else if(a==='select-worker'||a==='select-workers'){storedPlacement=null;selected=a==='select-workers'?state.workforce.workers.map(w=>w.id):[id];tab='base';tool=null;moving=null;candidate=null;workerOrderMode=false;scene.setPlacement(null);const w=state.workforce.workers.find(w=>w.id===selected[0]);if(w){scene.focus.x=w.x;scene.focus.z=w.y;scene.updateCamera();}dirty=true;}
  else if(a==='worker-target'){workerOrderMode=true;dirty=true;}

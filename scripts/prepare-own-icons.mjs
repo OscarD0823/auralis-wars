@@ -18,3 +18,4 @@ const pieces=[];for(let id=41;id<=90;id++){
 }
 fs.writeFileSync(new URL('../dist/auralis/collectibles.svg',import.meta.url),'<svg xmlns="http://www.w3.org/2000/svg" width="300" height="1080" viewBox="0 0 300 1080">'+pieces.join('')+'</svg>');
 console.log('Created '+Object.keys(mapping).length+' interface icons, four race emblems and one 50-piece vector atlas.');
+await import('./prepare-heraldry.mjs');
