@@ -1,0 +1,53 @@
+{
+  "mode": "built-in image_gen",
+  "useCase": "identity-preserve",
+  "layout": {
+    "columns": 10,
+    "rows": 6,
+    "roles": [
+      "worker",
+      "rifle",
+      "heavy",
+      "medic"
+    ],
+    "views": [
+      "back",
+      "back-right",
+      "right",
+      "front-right",
+      "front"
+    ],
+    "poses": [
+      "left step",
+      "right step",
+      "action"
+    ]
+  },
+  "prompt": "Use case: identity-preserve. Asset type: production transparent directional animation sprite atlas for the existing Auralis Wars isometric RTS. Keep exactly the worker, rifle soldier, heavy launcher soldier and medic from the reference, matching their clothing, faces, equipment and rendered material style, but create NEW viewpoints and gait poses. NO VEHICLES. This is a game sprite sheet, not a scene or infographic.\nLAYOUT STRICT: 10 equal columns by 6 equal rows, exactly 60 separate fully isolated whole-body sprites with generous clear gutters. Divide the sheet into FOUR blocks of 5 columns by 3 rows. Top-left block worker, top-right block rifle infantry, bottom-left block heavy launcher infantry, bottom-right block medic.\nWithin EACH block, its five columns are five different facing directions: column 1 faces straight UP the screen (BACK OF HEAD AND BACKPACK visible, walking away); column 2 faces UP-RIGHT (back three-quarter); column 3 faces RIGHT (true side profile); column 4 faces DOWN-RIGHT (front three-quarter); column 5 faces straight DOWN (FRONT visible, coming toward camera).\nWithin EACH block, first row is walk contact pose left foot forward/right arm forward; second row is walk contact pose right foot forward/left arm forward; THIRD row is planted-feet ACTION pose: worker striking the ground with pickaxe, rifle infantry shouldering and aiming rifle exactly in its facing direction, heavy aiming launcher in facing direction, medic holding scanner toward facing direction. No muzzle flashes, no projectiles, no glow particles. Hands grip weapons consistently. Aim barrel follows the facing, never sideways across the body. Maintain exact same body proportions and model size across a character's 15 sprites.\nView: fixed elevated isometric game camera 30 degrees above ground for ALL cells; rotate character yaw only, do not rotate camera. Detailed stylized 3D prerender appearance, clear readable silhouette, fabric, metal, straps, not clay. Characters stand upright with bent walking knees, not tilted whole figures. Consistent soft lighting upper left. Feet aligned to same baseline within each cell, whole body uncut.\nTRANSPARENCY: actual alpha transparent empty background and gutters, no floor, no shadows, no checkerboard picture, no labels, no text, no frames. Landscape image approximately 5:3 aspect ratio. Exactly 60 sprites.",
+  "assets": [
+    {
+      "race": "aurora",
+      "reference": "dist/auralis/races/aurora-actors.png",
+      "file": "dist/auralis/races/aurora-directional.png",
+      "promptSuffix": "REFERENCE IDENTITY: aurora. The four character designs come from the first four rows of the provided reference; ignore its last vehicle row."
+    },
+    {
+      "race": "kharun",
+      "reference": "dist/auralis/races/kharun-actors.png",
+      "file": "dist/auralis/races/kharun-directional.png",
+      "promptSuffix": "REFERENCE IDENTITY: kharun. The four character designs come from the first four rows of the provided reference; ignore its last vehicle row."
+    },
+    {
+      "race": "nebari",
+      "reference": "dist/auralis/races/nebari-actors.png",
+      "file": "dist/auralis/races/nebari-directional.png",
+      "promptSuffix": "REFERENCE IDENTITY: nebari. The four character designs come from the first four rows of the provided reference; ignore its last vehicle row."
+    },
+    {
+      "race": "arca",
+      "reference": "dist/auralis/races/arca-actors.png",
+      "file": "dist/auralis/races/arca-directional.png",
+      "promptSuffix": "REFERENCE IDENTITY: arca. The four character designs come from the first four rows of the provided reference; ignore its last vehicle row."
+    }
+  ]
+}

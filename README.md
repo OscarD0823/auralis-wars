@@ -1,6 +1,6 @@
 # Auralis Wars
 
-Versión 0.13.1: estrategia militar isométrica con arquitectura, obreros y ejército Auralis propios para cuatro razas, más unidades especiales, naturaleza y escenarios del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
+Versión 0.14.0: marcha con vistas de frente, perfil y espalda; apuntado, disparos y curación sincronizados con el combate real. Estrategia militar isométrica con arquitectura, obreros y ejército Auralis propios para cuatro razas, más unidades especiales, naturaleza y escenarios del archivo de preservación de Social Wars. Incluye 22 operaciones de historia y un asedio semanal con escenarios originales de 100 × 100, niebla de guerra, transporte naval, habilidades, eventos y expansión procedural con colonias de IA. Partida local independiente e instalación PWA. Multijugador y funciones sociales pausados.
 
 El catálogo incorpora 412 familias de edificios/objetos y 307 tipos de actores militares o de misión, además del obrero civil. Los 29 edificios y 33 tipos militares Auralis permanecen como catálogo inicial; las instalaciones preservadas aparecen según la tienda y los planos recuperados. No todos los objetos son comprables ni todas las unidades se entrenan. Los edificios tienen diez niveles y las tropas cinco grados. Las familias gráficas propias muestran insignias de nivel; el catálogo preservado conserva las variantes disponibles.
 
@@ -9,6 +9,7 @@ El motor, el equilibrio, los eventos y las habilidades son adaptaciones Auralis.
 - Juego: https://oscard0823.github.io/auralis-wars/
 - Fuente gráfica: https://github.com/AcidCaos/socialwarriors/tree/c3fceeb1f8e93734a293b9bc25ae6025656f6822
 - [Procedencia, licencia y reconstrucción](ASSET-CREDITS.md)
+- [Marcha, apuntado y animaciones de combate](docs/ACTOR-ANIMATION.md).
 - npm test: simulación y compatibilidad de guardado.
 - npm run check: módulos, rutas y caché.
 - scripts/qa-classic-hud.mjs: interfaz original, selección de tropas, zoom, móvil, actualización de caché y recursos sin conexión.

@@ -1,4 +1,6 @@
-# Identidad visual por raza · 0.13.0
+# Identidad visual por raza · 0.14.0
+
+La versión 0.14 incorpora [marcha direccional y combate sincronizado](ACTOR-ANIMATION.md). La descripción de poses de 0.13 a continuación se conserva como procedencia; los personajes ahora usan los nuevos atlas direccionales.
 
 La elección de Aurora, Kharun, Nébari o Arca cambia la arquitectura, los obreros y las 33 unidades del catálogo Auralis. No altera IDs, estadísticas, recursos, colas, niveles o edificios existentes. Las unidades especiales del catálogo preservado mantienen sus siluetas y animaciones originales; no se presentan como 307 nuevos modelos.
 

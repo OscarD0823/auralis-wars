@@ -19,7 +19,7 @@ export function ownActorFamily(type){
 }
 export const ACTOR_SEQUENCES={idle:[0],walk:[1,0,2,0],gather:[3,4,3,0],carry:[5],attack:[3,4,5,3],death:[0]};
 export function ownActorScale(type){const family=ownActorFamily(type);if(family===null)return null;if(family===2)return type==='titan'?1:.62;if(family===7)return ['scout','drone'].includes(type)?.85:1.5;if(family===9)return type==='frigate'?2.1:1.5;return ({0:.44,1:.44,3:.44,4:1.05,5:1.35,6:1.4,8:1.6})[family];}
-let metadata,racialMetadata,sheet;
+let metadata,racialMetadata,directionalMetadata,sheet;
 const thumbs=new Map(),variants=new Map(),ownImages=new Map(),requests=new Map(),listeners=new Set();
 export const onOwnArtLoaded=fn=>{listeners.add(fn);return()=>listeners.delete(fn);};
 export const ownImage=url=>ownImages.get(url);
@@ -31,8 +31,9 @@ export function loadOwnImage(url){
 export const ownArtReady=typeof document==='undefined'?Promise.resolve():Promise.all([
  fetch(new URL('./auralis/buildings.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('Catálogo Auralis no disponible');return r.json();}),
  loadOwnImage(new URL('./auralis/buildings.png',import.meta.url).href),
- fetch(new URL('./auralis/races/atlas.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('Catálogo de civilizaciones no disponible');return r.json();})
-]).then(([data,image,races])=>{metadata=data;sheet=image;racialMetadata=races;});
+ fetch(new URL('./auralis/races/atlas.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('Catálogo de civilizaciones no disponible');return r.json();}),
+ fetch(new URL('./auralis/races/directional.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('Animaciones de civilizaciones no disponibles');return r.json();})
+]).then(([data,image,races,directions])=>{metadata=data;sheet=image;racialMetadata=races;directionalMetadata=directions;});
 export function ownAsset(type,level=1,race='aurora'){
  const family=ownFamily(type);if(family===null||!metadata)return null;
  race=raceId(race);const data=race==='aurora'?metadata:racialMetadata?.[race]?.buildings;if(!data)return null;
@@ -42,6 +43,11 @@ export function ownAsset(type,level=1,race='aurora'){
 export function ownActorAsset(type,level=1,race='aurora'){
  const family=ownActorFamily(type);race=raceId(race);const data=racialMetadata?.[race]?.actors;if(family===null||!data)return null;
  const key=race+':u:'+family+':'+level;if(variants.has(key))return variants.get(key);
+ if(family<4&&directionalMetadata?.[race]){
+  const data=directionalMetadata[race],role=data.families[family],states={};
+  for(const name of ['idle','walk','gather','carry','attack','death'])states[name]=role.directions.map(([a,b,action])=>name==='walk'||name==='carry'?[a,b]:name==='gather'?[a,action,action,a]:name==='attack'||name==='idle'&&[1,2].includes(family)?[action]:[a]);
+  const result={file:new URL('./auralis/races/'+race+'-directional.png',import.meta.url).href,frames:data.frames,anchors:data.anchors,states,displayWidth:role.displayWidth,ownActor:true,directional:true,vehicle:false,race,family,level};variants.set(key,result);return result;
+ }
  const vehicle=family>=4,indices=vehicle?[24+family-4]:Array.from({length:6},(_,i)=>family*6+i),frames=indices.map(i=>data.frames[i]),anchors=indices.map(i=>data.anchors[i]);
  const states=Object.fromEntries(Object.entries(ACTOR_SEQUENCES).map(([name,seq])=>[name,[vehicle?[0]:name==='attack'&&family===3?[3,4,3]:seq]]));
  const result={file:new URL('./auralis/races/'+race+'-actors.png',import.meta.url).href,frames,anchors,states,displayWidth:vehicle?frames[0][2]:data.scales[family],ownActor:true,vehicle,race,family,level};variants.set(key,result);return result;
@@ -49,7 +55,7 @@ export function ownActorAsset(type,level=1,race='aurora'){
 export function ownThumbnail(type,level=1,race='aurora',unit=false){
  const a=unit?ownActorAsset(type,level,race):ownAsset(type,level,race);if(!a)return'';const key=a.race+':'+(unit?'u':'b')+a.family+':'+level;if(thumbs.has(key))return thumbs.get(key);
  const image=ownImage(a.file);if(!image){loadOwnImage(a.file).catch(()=>{});return'';}
- const c=document.createElement('canvas');c.width=180;c.height=170;const x=c.getContext('2d'),f=a.frames[0],scale=Math.min(166/f[2],151/f[3]);
+ const c=document.createElement('canvas');c.width=180;c.height=170;const x=c.getContext('2d'),f=a.frames[a.states.idle[a.directional?3:0][0]],scale=Math.min(166/f[2],151/f[3]);
  x.drawImage(image,...f,(180-f[2]*scale)/2,158-f[3]*scale,f[2]*scale,f[3]*scale);
  if(level>1&&!unit){x.fillStyle='#234655';x.fillRect(58,155,64,12);x.fillStyle='#e8c476';x.fillRect(60,157,60*Math.min(10,level)/10,8);}
  const url=c.toDataURL('image/png');thumbs.set(key,url);return url;
